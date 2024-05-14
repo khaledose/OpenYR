@@ -592,6 +592,11 @@ faction-yuri =
 
 ## Allied Buildings
 
+## Allied Defenses
+actor-gawall =
+   .name = Allied Wall
+   .description = Heavy wall capable of blocking units and projectiles.
+
 ## Allied Infantries
 actor-e1 =
    .name = G.I.
@@ -604,6 +609,11 @@ actor-e1 =
 ## Soviet Buildings
 actor-napowr =
    .name = Tesla Reactor
+
+## Soviet Defenses
+actor-nawall =
+   .name = Soviet Wall
+   .description = Heavy wall capable of blocking units and projectiles.
 
 ## Soviet Infantries
 actor-e2 =
@@ -618,6 +628,11 @@ actor-yapowr =
    .name = Bio Reactor
    .description = Provides power for other structures.
       Can be occupied with up to 5 infantry for 100 more power each.
+
+## Yuri Defenses
+actor-yawall =
+   .name = Citadel Wall
+   .description = Heavy wall capable of blocking units and projectiles.
 
 ## Yuri Infantries
 actor-init =

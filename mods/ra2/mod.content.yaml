@@ -24,6 +24,7 @@ Rules:
 	ra2|actors/factions/allied/buildings/Barracks/rules.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/rules.yaml
+	ra2|actors/factions/allied/defenses/Wall/rules.yaml
 	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
 	ra2|actors/factions/allied/infantries/G.I/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
@@ -35,12 +36,14 @@ Rules:
 	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/rules.yaml
+	ra2|actors/factions/soviet/defenses/Wall/rules.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/rules.yaml
 	ra2|actors/factions/soviet/infantries/Engineer/rules.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
 	ra2|actors/factions/yuri/buildings/Barracks/rules.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/rules.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
+	ra2|actors/factions/yuri/defenses/Wall/rules.yaml
 	ra2|actors/factions/yuri/infantries/Engineer/rules.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
@@ -70,6 +73,7 @@ Sequences:
 	ra2|actors/factions/allied/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
+	ra2|actors/factions/allied/defenses/Wall/sequences.yaml
 	ra2|actors/factions/allied/infantries/G.I/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
 	ra2|actors/factions/neutral/buildings/civilian/sequences.yaml
@@ -80,11 +84,13 @@ Sequences:
 	ra2|actors/factions/soviet/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/sequences.yaml
+	ra2|actors/factions/soviet/defenses/Wall/sequences.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/sequences.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/sequences.yaml
+	ra2|actors/factions/yuri/defenses/Wall/sequences.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/sequences.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
 	ra2|actors/misc/sequences.yaml

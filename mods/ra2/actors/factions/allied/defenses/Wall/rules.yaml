@@ -1,0 +1,18 @@
+gawall:
+	Inherits: ^Wall
+	Buildable:
+		Prerequisites: ~building.allies, gapile, ~techlevel.1
+		Description: actor-gawall.description
+	Tooltip:
+		Name: actor-gawall.name
+	Tooltip@NoRow:
+		Name: actor-gawall.name
+	LineBuild:
+		NodeTypes: gawall
+	LineBuildNode:
+		Types: gawall
+	WithWallSpriteBody:
+		Type: gawall
+	Replaceable:
+		Types: AlliedGate
+

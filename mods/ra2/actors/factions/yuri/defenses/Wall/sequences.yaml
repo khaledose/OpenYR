@@ -1,0 +1,26 @@
+yawall:
+	Defaults:
+		Offset: 0, -15
+	idle:
+		Filename: ygwall.shp
+		TilesetFilenames:
+			SNOW: yawall.shp
+		Length: 16
+		ShadowStart: 48
+	damaged-idle:
+		Filename: ygwall.shp
+		TilesetFilenames:
+			SNOW: yawall.shp
+		Start: 16
+		Length: 16
+		ShadowStart: 64
+	critical-idle:
+		Filename: ygwall.shp
+		TilesetFilenames:
+			SNOW: yawall.shp
+		Start: 32
+		Length: 16
+		ShadowStart: 80
+	icon:
+		Filename: cameomd|citwicon.shp
+		Offset: 0,0
