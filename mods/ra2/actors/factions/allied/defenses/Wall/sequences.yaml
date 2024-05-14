@@ -1,0 +1,38 @@
+gawall:
+	Defaults:
+		Offset: 0, -15
+	idle:
+		Filename: gtwall.shp
+		TilesetFilenames:
+			SNOW: gawall.shp
+			URBAN: guwall.shp
+			NEWURBAN: gnwall.shp
+			DESERT: gdwall.shp
+			LUNAR: glwall.shp
+		Length: 16
+		ShadowStart: 48
+	damaged-idle:
+		Filename: gtwall.shp
+		TilesetFilenames:
+			SNOW: gawall.shp
+			URBAN: guwall.shp
+			NEWURBAN: gnwall.shp
+			DESERT: gdwall.shp
+			LUNAR: glwall.shp
+		Start: 16
+		Length: 16
+		ShadowStart: 64
+	critical-idle:
+		Filename: gtwall.shp
+		TilesetFilenames:
+			SNOW: gawall.shp
+			URBAN: guwall.shp
+			NEWURBAN: gnwall.shp
+			DESERT: gdwall.shp
+			LUNAR: glwall.shp
+		Start: 32
+		Length: 16
+		ShadowStart: 80
+	icon:
+		Filename: cameo|wallicon.shp
+		Offset: 0,0

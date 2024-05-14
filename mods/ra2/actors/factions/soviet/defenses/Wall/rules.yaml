@@ -1,0 +1,18 @@
+nawall:
+	Inherits: ^Wall
+	Buildable:
+		Prerequisites: ~building.soviets, ~nahand, ~techlevel.1
+		Description: actor-nawall.description
+	Tooltip:
+		Name: actor-nawall.name
+	Tooltip@NoRow:
+		Name: actor-nawall.name
+	LineBuild:
+		NodeTypes: nawall
+	LineBuildNode:
+		Types: nawall
+	WithWallSpriteBody:
+		Type: nawall
+	Replaceable:
+		Types: SovietGate
+

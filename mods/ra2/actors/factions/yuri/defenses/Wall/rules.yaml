@@ -1,0 +1,18 @@
+yawall:
+	Inherits: ^Wall
+	Buildable:
+		Prerequisites: ~building.yuri, yabrck, ~techlevel.2
+		Description: actor-yawall.description
+	Tooltip:
+		Name: actor-yawall.name
+	Tooltip@NoRow:
+		Name: actor-yawall.name
+	LineBuild:
+		NodeTypes: yawall
+	LineBuildNode:
+		Types: yawall
+	WithWallSpriteBody:
+		Type: yawall
+	Replaceable:
+		Types: YuriGate
+

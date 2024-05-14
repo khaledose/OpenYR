@@ -1,0 +1,38 @@
+nawall:
+	Defaults:
+		Offset: 0, -15
+	idle:
+		Filename: ntwall.shp
+		TilesetFilenames:
+			SNOW: nawall.shp
+			URBAN: nuwall.shp
+			NEWURBAN: nnwall.shp
+			DESERT: ndwall.shp
+			LUNAR: nlwall.shp
+		Length: 16
+		ShadowStart: 48
+	damaged-idle:
+		Filename: ntwall.shp
+		TilesetFilenames:
+			SNOW: nawall.shp
+			URBAN: nuwall.shp
+			NEWURBAN: nnwall.shp
+			DESERT: ndwall.shp
+			LUNAR: nlwall.shp
+		Start: 16
+		Length: 16
+		ShadowStart: 64
+	critical-idle:
+		Filename: ntwall.shp
+		TilesetFilenames:
+			SNOW: nawall.shp
+			URBAN: nuwall.shp
+			NEWURBAN: nnwall.shp
+			DESERT: ndwall.shp
+			LUNAR: nlwall.shp
+		Start: 32
+		Length: 16
+		ShadowStart: 80
+	icon:
+		Filename: cameo|nwalicon.shp
+		Offset: 0,0
