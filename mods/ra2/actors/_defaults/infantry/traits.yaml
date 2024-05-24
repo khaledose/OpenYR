@@ -15,3 +15,12 @@
 	WithProductionIconOverlay:
 		Types: chevron-veteran
 		Prerequisites: barracks.infiltrated
+
+^Wanderer:
+	Wanders:
+		MinMoveDelay: 150
+		MaxMoveDelay: 750
+
+^Panicker:
+	ScaredyCat:
+		AttackPanicChance: 0
