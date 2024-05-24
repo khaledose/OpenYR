@@ -74,6 +74,10 @@ meta-constructionvehicle =
    .name = Mobile Construction Vehicle
    .description = Deploys into a Construction Yard.
 
+## Civilian Infantries
+meta-civilianinfantry =
+   .name = Civilian
+
 ## Factions
 faction-random =
    .name = Random

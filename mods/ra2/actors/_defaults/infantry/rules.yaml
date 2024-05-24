@@ -92,3 +92,38 @@
 		RequiresCondition: !undeployed
 	WithInfantryBody:
 		RequiresCondition: undeployed
+
+^BasicCivilian:
+	Buildable:
+		Queue: Infantry.Neutral
+	Health:
+		HP: 5000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: meta-civilianinfantry.name
+	Tooltip@NoRow:
+		Name: meta-civilianinfantry.name
+	WithInfantryBody:
+		IdleSequences: idle1
+	MapEditorData:
+		Categories: Infantry, Infantry - Civilian
+
+^Civilian:
+	Inherits: ^Person
+	Inherits@1: ^BasicCivilian
+	Inherits@2: ^Panicker
+	Inherits@3: ^Wanderer
+	-TakeCover:
+
+^ArmedCivilian:
+	Inherits: ^GroundInfantry
+	Inherits@1: ^BasicCivilian
