@@ -61,3 +61,34 @@
 		Duration: 50
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+
+^DeployableInfantry:
+	Inherits: ^GroundInfantry
+	Mobile:
+		RequiresCondition: undeployed
+	TakeCover:
+		RequiresCondition: undeployed
+	RevealOnFire:
+		ArmamentNames: primary, deployed
+	AttackFrontal:
+		Armaments: primary, deployed
+		Voice: Attack
+		FacingTolerance: 2
+		RequiresCondition: undeployed
+	Turreted:
+		Turret: deploy
+		RealignDelay: -1
+		RequiresCondition: deployed
+	AttackTurreted:
+		Turrets: deploy
+		Armaments: deployed
+		Voice: Attack
+		RequiresCondition: deployed
+	GrantConditionOnDeploy:
+		UndeployedCondition: undeployed
+		DeployedCondition: deployed
+		Voice: Deploy
+	WithDeployedInfantryBody:
+		RequiresCondition: !undeployed
+	WithInfantryBody:
+		RequiresCondition: undeployed
