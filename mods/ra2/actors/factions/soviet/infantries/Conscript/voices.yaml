@@ -1,0 +1,8 @@
+ConscriptVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iconsea, iconseb, iconsec
+		Move: iconmoa, iconmob, iconmoc, iconmod
+		Attack: iconata, iconatb, iconatc, iconatd
+		Feedback: iconfea, iconfeb, iconfec
+		Die: icondia, icondib, icondic, icondid, icondie

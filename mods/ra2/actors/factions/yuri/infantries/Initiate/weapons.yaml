@@ -1,0 +1,55 @@
+PsychicJab:
+	Inherits: ^MachineGun
+	ReloadDelay: 15
+	Range: 4c512
+	Report: iiniatta.wav
+	Warhead@1Dam: TargetDamage
+		Damage: 2500
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 80
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, NonTemporal
+	Warhead@2Eff: CreateEffect
+		Image: fire
+		Explosions: large
+
+PsychicJabE:
+	Inherits: PsychicJab
+	Range: 6c0
+	Warhead@1Dam: TargetDamage
+		Damage: 3000
+
+UCPsychicJab:
+	Inherits: PsychicJab
+	Range: 6c0
+	Projectile: InstantHit
+		Blockable: false
+	Warhead@1Dam: TargetDamage
+		Damage: 6300
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 80
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 30
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, FlameDeath, NonTemporal
+
+UCPsychicJabE:
+	Inherits: UCPsychicJab
+	Warhead@1Dam: TargetDamage
+		Damage: 7300

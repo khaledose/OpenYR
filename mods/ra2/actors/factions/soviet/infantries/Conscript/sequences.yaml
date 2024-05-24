@@ -1,0 +1,17 @@
+e2:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@PRONE: ^ProneShooter
+	Defaults:
+		Filename: conquer|cons.shp
+	icon:
+		Filename: cameo|e2icon.shp
+	muzzle:
+		Filename: conqmd|uccons.shp
+		Length: *
+		Tick: 60
+	cheer:
+		Start: 293
+	paradrop:
+		Start: 292

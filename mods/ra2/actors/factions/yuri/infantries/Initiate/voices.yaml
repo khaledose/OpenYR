@@ -1,0 +1,8 @@
+InitiateVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iinisea, iiniseb, iinisec, iinisee
+		Move: iinimoa, iinimoc, iinimod, iinimoe
+		Attack: iiniata, iiniatb, iiniatc, iiniatd, iiniate, iiniatf
+		Feedback: iinifea, iinifeb, iinifec, iinifed, iinifee
+		Die: iinidia, iinidib, iinidic, iinidid, iinidie

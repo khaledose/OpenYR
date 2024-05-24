@@ -1,0 +1,35 @@
+e2:
+	Inherits: ^GroundInfantry
+	Inherits@VETERAN: ^InfantryPromotable
+	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.soviets, ~techlevel.1
+		Description: actor-e2.description
+		BuildPaletteOrder: 10
+	Health:
+		HP: 12500
+	Armor:
+		Type: Flak
+	Valued:
+		Cost: 100
+	DeliversCash:
+		Payload: 50
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 5c0
+	Tooltip:
+		Name: actor-e2.name
+	Tooltip@NoRow:
+		Name: actor-e2.name
+	Armament@primary:
+		Weapon: M1Carbine
+		LocalOffset: 256,0,768
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: M1CarbineE
+		LocalOffset: 256,0,768
+		RequiresCondition: rank-elite
+	Voiced:
+		VoiceSet: ConscriptVoice

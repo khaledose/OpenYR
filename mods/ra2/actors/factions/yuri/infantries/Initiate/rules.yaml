@@ -1,0 +1,33 @@
+init:
+	Inherits: ^GroundInfantry
+	Inherits@VETERAN: ^InfantryPromotable
+	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.yuri, ~techlevel.1
+		Description: actor-init.description
+		BuildPaletteOrder: 10
+	Health:
+		HP: 10000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 200
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 9c0
+	Tooltip:
+		Name: actor-init.name
+	Tooltip@NoRow:
+		Name: actor-init.name
+	Armament@primary:
+		Weapon: PsychicJab
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: PsychicJabE
+		RequiresCondition: rank-elite
+	Voiced:
+		VoiceSet: InitiateVoice

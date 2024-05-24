@@ -86,9 +86,26 @@ meta-barracks =
 ## Factions
 ## Allied Buildings
 
+## Allied Infantries
+actor-e1 =
+   .name = G.I.
+   .description = General-purpose infantry.
+      Can deploy to gain more range and damage.
+
+      Strong vs Infantry
+      Weak vs Vehicles, Aircraft
+
 ## Soviet Buildings
 actor-napowr =
    .name = Tesla Reactor
+
+## Soviet Infantries
+actor-e2 =
+   .name = Conscript
+   .description = Cheap rifle infantry.
+
+      Strong vs Infantry
+      Weak vs Vehicles, Aircraft
 
 ## Yuri Buildings
 actor-yapowr =
@@ -99,6 +116,14 @@ actor-yapowr =
 ## Civilian Infantries
 meta-civilianinfantry =
    .name = Civilian
+
+## Yuri Infantries
+actor-init =
+   .name = Initiate
+   .description = Basic Yuri Infantry.
+
+      Strong vs Infantry
+      Weak vs Vehicles, Aircraft
 
 ## Other
 meta-crate-name = Crate
