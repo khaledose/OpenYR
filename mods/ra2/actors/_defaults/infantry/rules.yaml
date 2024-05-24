@@ -48,3 +48,16 @@
 		Sequence: stand
 	MapEditorData:
 		Categories: Infantry
+
+^GroundInfantry:
+	Inherits: ^Person
+	Guard:
+		Voice: Attack
+	AttackFrontal:
+		Voice: Attack
+		FacingTolerance: 2
+	RevealOnFire:
+		ArmamentNames: primary
+		Duration: 50
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
