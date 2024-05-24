@@ -13,6 +13,11 @@
 		ImpactActors: false
 		ValidTargets: Ground, Water, Air
 
+^Gun:
+	Inherits: ^MachineGun
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+
 ^SA:
 	Inherits: ^MachineGun
 	Warhead@1Dam: TargetDamage
@@ -63,3 +68,68 @@
 			Concrete: 3
 			Drone: 200
 			Rocket: 50
+
+^HollowPoint:
+	Inherits: ^Gun
+	Warhead@1Dam: TargetDamage
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 1
+			Medium: 1
+			Heavy: 1
+			Wood: 1
+			Steel: 1
+			Concrete: 1
+			Drone: 1
+			Rocket: 100
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath, NonTemporal
+
+^HollowPoint2:
+	Inherits@1: ^HollowPoint
+	Warhead@1Dam: TargetDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 1
+			Steel: 1
+			Concrete: 1
+			Drone: 1
+			Rocket: 100
+
+^HollowPoint3:
+	Inherits@1: ^HollowPoint
+	Warhead@1Dam: TargetDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 2
+			Medium: 2
+			Heavy: 2
+			Wood: 2
+			Steel: 2
+			Concrete: 2
+			Drone: 100
+			Rocket: 100
+
+^HollowPoint4:
+	Inherits: ^HollowPoint
+	Warhead@1Dam: TargetDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 100
+			Rocket: 100
