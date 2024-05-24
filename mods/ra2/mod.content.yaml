@@ -50,6 +50,7 @@ Sequences:
 	ra2|actors/_defaults/misc/sequences.yaml
 	ra2|actors/_defaults/shared/sequences.yaml
 	ra2|actors/_defaults/vehicle/sequences.yaml
+	ra2|actors/_defaults/weapon/sequences.yaml
 	ra2|actors/_defaults/world/sequences.yaml
 	ra2|actors/factions/allied/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/sequences.yaml

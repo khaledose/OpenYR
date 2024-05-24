@@ -18,6 +18,19 @@
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
 
+^Bullet:
+	InvalidTargets: Underwater
+	Projectile: Bullet
+		Image: 120mm
+		Speed: 500
+		Palette: ra
+		Shadow: true
+		LaunchAngle: 62
+	Warhead@1Dam: SpreadDamage
+		InvalidTargets: Underwater
+	Warhead@2Eff: CreateEffect
+		ValidTargets: Ground, Air
+
 ^SA:
 	Inherits: ^MachineGun
 	Warhead@1Dam: TargetDamage
