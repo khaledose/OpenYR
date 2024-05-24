@@ -1,0 +1,65 @@
+^MachineGun:
+	ValidTargets: Ground, Water
+	InvalidTargets: UnderWater, Bridge, Wall, Fence, Tree
+	Projectile: InstantHit
+		Inaccuracy: 0c256
+		Blockable: true
+	Warhead@1Dam: TargetDamage
+		Spread: 0c64
+		ValidTargets: Ground, Water
+		InvalidTargets: UnderWater, Bridge, Wall, Fence, Tree
+	Warhead@2Eff: CreateEffect
+		Explosions: piffpiff
+		ImpactActors: false
+		ValidTargets: Ground, Water, Air
+
+^SA:
+	Inherits: ^MachineGun
+	Warhead@1Dam: TargetDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath, NonTemporal
+
+^SSA:
+	Inherits: ^MachineGun
+	Warhead@1Dam: TargetDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone80Percent, TriggerProne, BulletDeath, NonTemporal
+
+^Gatling:
+	Inherits: ^MachineGun
+	Report: bgatweaa.wav, bgatweab.wav, bgatweac.wav, bgatwead.wav
+	Warhead@1Dam: TargetDamage
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 30
+			Heavy: 10
+			Wood: 10
+			Steel: 5
+			Concrete: 3
+			Drone: 200
+			Rocket: 50

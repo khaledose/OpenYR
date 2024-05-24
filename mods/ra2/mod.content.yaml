@@ -89,5 +89,6 @@ Voices:
 Weapons:
 	ra2|actors/_defaults/infantry/weapons.yaml
 	ra2|actors/_defaults/shared/weapons.yaml
+	ra2|actors/_defaults/weapon/weapons.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/weapons.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/weapons.yaml
