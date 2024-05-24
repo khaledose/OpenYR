@@ -181,6 +181,24 @@
 		Length: 6
 		Start: 86
 
+engineer:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@PRONE: ^Prone
+	Defaults:
+		Filename: conquer|engineer.shp
+	icon:
+		Filename: cameo|engnicon.shp
+	liedown:
+		Start: 212
+	standup:
+		Start: 228
+	cheer:
+		Start: 245
+	paradrop:
+		Start: 244
+
 flameguy:
 	Defaults:
 		Filename: conquer|flameguy.shp

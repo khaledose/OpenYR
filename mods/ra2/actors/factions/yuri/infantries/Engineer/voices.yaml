@@ -1,0 +1,8 @@
+YuriEngineerVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ienysea, ienyseb, ienysec, ienysed
+		Move: ienymoa, ienymob, ienymoc
+		Action: ienyata, ienyatb, ienyatc 
+		Feedback: ienyfea, ienyfeb, ienyfec
+		Die: ienydia, ienydib, ienydic, ienydid

@@ -1,0 +1,8 @@
+yengineer:
+	Inherits: ^Engineer
+	Buildable:
+		Prerequisites: ~infantry.yuri, ~techlevel.1
+	RenderSprites:
+		Image: engineer
+	Voiced:
+		VoiceSet: YuriEngineerVoice

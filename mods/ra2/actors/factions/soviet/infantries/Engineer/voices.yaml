@@ -1,0 +1,8 @@
+SovietEngineerVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ienssea, iensseb, ienssec, ienssed
+		Move: iensmoa, iensmob, iensmoc
+		Action: iensata, iensatb, iensatc 
+		Feedback: iensfea, iensfeb, iensfec
+		Die: iensdia, iensdib, iensdic, iensdid

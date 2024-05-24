@@ -1,0 +1,8 @@
+sengineer:
+	Inherits: ^Engineer
+	Buildable:
+		Prerequisites: ~infantry.soviets, ~techlevel.1
+	RenderSprites:
+		Image: engineer
+	Voiced:
+		VoiceSet: SovietEngineerVoice

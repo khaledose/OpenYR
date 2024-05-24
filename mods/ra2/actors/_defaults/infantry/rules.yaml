@@ -142,6 +142,47 @@
 	Inherits: ^GroundInfantry
 	Inherits@1: ^BasicCivilian
 
+^Engineer:
+	Inherits: ^Person
+	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Description: meta-engineer.description
+		BuildPaletteOrder: 20
+	Health:
+		HP: 7500
+	Armor:
+		Type: None
+	Valued:
+		Cost: 500
+	DeliversCash:
+		Payload: 250
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: meta-engineer.name
+	Tooltip@NoRow:
+		Name: meta-engineer.name
+	InstantlyRepairs:
+		Types: building
+		RepairSound: urepair.wav
+		ValidRelationships: Ally, Neutral
+	RepairsBridges:
+		RepairNotification: BridgeRepaired
+	CaptureManager:
+	Captures@INSTANT:
+		CaptureTypes: building, tech
+		RequiresCondition: instantcapture
+	Captures@TIMED:
+		CaptureDelay: 75
+		CaptureTypes: building, tech
+		RequiresCondition: !instantcapture
+	GrantConditionOnPrerequisite@INSTANTCAPTURE:
+		Condition: instantcapture
+		Prerequisites: global-instantcapture
+
 FLAMEGUY:
 	Inherits: ^ExistsInWorld
 	Inherits@1: ^Sprite
