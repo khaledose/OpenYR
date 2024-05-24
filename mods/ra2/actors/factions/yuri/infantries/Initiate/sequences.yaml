@@ -1,0 +1,35 @@
+init:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@ProneShooter: ^ProneShooter
+	Defaults:
+		Filename: conqmd|init.shp
+	icon:
+		Filename: cameomd|initicon.shp
+	muzzle:
+		Filename: conqmd|ucinit.shp
+		Length: *
+		Tick: 60
+	idle2:
+		Length: 20
+	die1:
+		Start: 139
+	die2:
+		Start: 154
+	shoot:
+		Start: 209
+	liedown:
+		Start: 169
+	prone-stand:
+		Frames: 91, 97, 103, 109, 115, 121, 127, 133
+	prone-run:
+		Start: 91
+	prone-shoot:
+		Start: 257
+	standup:
+		Start: 185
+	cheer:
+		Start: 201
+	paradrop:
+		Start: 305

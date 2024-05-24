@@ -1,0 +1,46 @@
+e1:
+	Inherits: ^DeployableInfantry
+	Inherits@VETERAN: ^InfantryPromotable
+	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.allies, ~techlevel.1
+		Description: actor-e1.description
+		BuildPaletteOrder: 10
+	Health:
+		HP: 12500
+	Armor:
+		Type: None
+	Valued:
+		Cost: 200
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 5c0
+	Tooltip:
+		Name: actor-e1.name
+	Tooltip@NoRow:
+		Name: actor-e1.name
+	Armament@primary:
+		Weapon: M60
+		RequiresCondition: !rank-elite && undeployed
+	Armament@elite:
+		Weapon: M60E
+		RequiresCondition: rank-elite && undeployed
+	Armament@deployed:
+		Name: deployed
+		Weapon: para
+		Turret: deploy
+		RequiresCondition: !rank-elite && deployed
+	Armament@elite-deployed:
+		Name: deployed
+		Weapon: paraE
+		Turret: deploy
+		RequiresCondition: rank-elite && deployed
+	GrantConditionOnDeploy:
+		DeploySounds: igidepa.wav
+		UndeploySounds: igidepb.wav
+	Voiced:
+		VoiceSet: GIVoice

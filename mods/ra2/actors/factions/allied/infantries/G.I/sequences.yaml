@@ -1,0 +1,31 @@
+e1:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@PRONE: ^ProneShooter
+	Defaults:
+		Filename: conquer|gi.shp
+	icon:
+		Filename: cameo|giicon.shp
+	muzzle:
+		Filename: conquer|ucflash.shp
+		Length: *
+		Tick: 60
+	deploy:
+		Start: 300
+		Length: 15
+	deployed:
+		Start: 292
+		Facings: 8
+	deployed-shoot:
+		Start: 315
+		Length: 6
+		Facings: 8
+	undeploy:
+		Start: 276
+		Length: 2
+		Facings: 2
+	cheer:
+		Start: 364
+	paradrop:
+		Start: 363

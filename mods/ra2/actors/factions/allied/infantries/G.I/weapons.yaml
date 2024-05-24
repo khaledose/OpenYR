@@ -1,0 +1,52 @@
+M60:
+	Inherits: ^SA
+	ReloadDelay: 20
+	Range: 4c0
+	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
+	Warhead@1Dam: TargetDamage
+		Damage: 1500
+
+M60E:
+	Inherits: M60
+	Warhead@1Dam: TargetDamage
+		Damage: 2500
+
+para:
+	Inherits: ^SSA
+	ReloadDelay: 15
+	Range: 5c0
+	Report: igiat2a.wav, igiat2b.wav, igiat2c.wav, igiat2d.wav, igiat2c.wav, igiat2d.wav
+	Warhead@1Dam: TargetDamage
+		Damage: 2500
+
+paraE:
+	Inherits: para
+	Range: 6c0
+
+UCpara:
+	Inherits: ^MachineGun
+	ReloadDelay: 15
+	Range: 6c0
+	Report: baocatta.wav, baocattb.wav, baocattc.wav
+	Projectile: InstantHit
+		Blockable: false
+	Warhead@1Dam: TargetDamage
+		Damage: 3000
+		Versus: 
+			None: 100
+			Flak: 80
+			Plate: 80
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 30
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath, NonTemporal
+
+UCparaE:
+	Inherits: UCpara
+	Warhead@1Dam: TargetDamage
+		Damage: 4000

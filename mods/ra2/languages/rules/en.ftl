@@ -83,19 +83,6 @@ meta-barracks =
    .name = Barracks
    .description = Trains infantry.
 
-## Factions
-## Allied Buildings
-
-## Soviet Buildings
-actor-napowr =
-   .name = Tesla Reactor
-
-## Yuri Buildings
-actor-yapowr =
-   .name = Bio Reactor
-   .description = Provides power for other structures.
-      Can be occupied with up to 5 infantry for 100 more power each.
-
 ## Civilian Infantries
 meta-civilianinfantry =
    .name = Civilian
@@ -194,6 +181,43 @@ faction-yuri =
 
       uses mind-control and genetic mutation to corrupt the battlefield.
       Their special units can seize the forces and structures of their enemies.
+
+## Allied Buildings
+
+## Allied Infantries
+actor-e1 =
+   .name = G.I.
+   .description = General-purpose infantry.
+      Can deploy to gain more range and damage.
+
+      Strong vs Infantry
+      Weak vs Vehicles, Aircraft
+
+## Soviet Buildings
+actor-napowr =
+   .name = Tesla Reactor
+
+## Soviet Infantries
+actor-e2 =
+   .name = Conscript
+   .description = Cheap rifle infantry.
+
+      Strong vs Infantry
+      Weak vs Vehicles, Aircraft
+
+## Yuri Buildings
+actor-yapowr =
+   .name = Bio Reactor
+   .description = Provides power for other structures.
+      Can be occupied with up to 5 infantry for 100 more power each.
+
+## Yuri Infantries
+actor-init =
+   .name = Initiate
+   .description = Basic Yuri Infantry.
+
+      Strong vs Infantry
+      Weak vs Vehicles, Aircraft
 
 ## Other
 meta-crate-name = Crate
