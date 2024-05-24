@@ -83,6 +83,14 @@ meta-barracks =
    .name = Barracks
    .description = Trains infantry.
 
+## Default Infantries
+meta-engineer =
+   .name = Engineer
+   .description = Captures enemy structures, repairs damaged buildings and bridges.
+      Disarms explosives.
+
+      Unarmed
+
 ## Civilian Infantries
 meta-civilianinfantry =
    .name = Civilian

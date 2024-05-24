@@ -24,16 +24,19 @@ Rules:
 	ra2|actors/factions/allied/buildings/Barracks/rules.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/rules.yaml
+	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
 	ra2|actors/factions/allied/infantries/G.I/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/rules.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/rules.yaml
+	ra2|actors/factions/soviet/infantries/Engineer/rules.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
 	ra2|actors/factions/yuri/buildings/Barracks/rules.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/rules.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
+	ra2|actors/factions/yuri/infantries/Engineer/rules.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
 	ra2|actors/misc/rules.yaml
@@ -89,10 +92,13 @@ TileSets:
 
 Voices:
 	ra2|actors/_defaults/infantry/voices.yaml
+	ra2|actors/factions/allied/infantries/Engineer/voices.yaml
 	ra2|actors/factions/allied/infantries/G.I/voices.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voices.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/voices.yaml
+	ra2|actors/factions/soviet/infantries/Engineer/voices.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voices.yaml
+	ra2|actors/factions/yuri/infantries/Engineer/voices.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/voices.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/voices.yaml
 
