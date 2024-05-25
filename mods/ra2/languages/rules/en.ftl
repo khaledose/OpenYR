@@ -245,6 +245,26 @@ actor-init =
       Strong vs Infantry
       Weak vs Vehicles, Aircraft
 
+## Misc
+## Light
+actor-galite-white-name = (Invisible Light Post)
+actor-galite-black-name = (Invisible Negative Light Post)
+actor-galite-red-name = (Invisible Red Light Post)
+actor-galite-cyan-name = (Invisible Negative Red Light Post)
+actor-galite-green-name = (Invisible Green Light Post)
+actor-galite-blue-name = (Invisible Blue Light Post)
+actor-galite-yellow-name = (Invisible Yellow Light Post)
+actor-galite-orange-name = (Invisible Orange Light Post)
+actor-galite-purple-name = (Invisible Purple Light Post)
+actor-galite-morning-temp-name = (Invisible Temperate Morning Light Post)
+actor-galite-day-temp-name = (Invisible Temperate Day Light Post)
+actor-galite-dusk-temp-name = (Invisible Temperate Dusk Light Post)
+actor-galite-night-temp-name = (Invisible Temperate Night Light Post)
+actor-galite-morning-snow-name = (Invisible Snow Morning Light Post)
+actor-galite-day-snow-name = (Invisible Snow Day Light Post)
+actor-galite-dusk-snow-name = (Invisible Snow Dusk Light Post)
+actor-galite-dusk-night-name = (Invisible Snow Night Light Post)
+
 ## Drills
 meta-oredrill-name = Ore Drill
 

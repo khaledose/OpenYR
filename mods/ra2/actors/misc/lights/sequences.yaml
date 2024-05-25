@@ -1,0 +1,9 @@
+galite:
+	Defaults:
+		Filename: galite.shp
+	idle:
+		Offset: 0, -15
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
