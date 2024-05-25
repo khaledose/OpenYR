@@ -1,0 +1,66 @@
+cakrmw:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: 0, -12
+		Filename: ctkrmw.shp
+		TilesetFilenames:
+			SNOW: cakrmw.shp
+			URBAN: cukrmw.shp
+			NEWURBAN: cnkrmw.shp
+			DESERT: cdkrmw.shp
+			LUNAR: clkrmw.shp
+	idle:
+		Length: 16
+		ShadowStart: 48
+	damaged-idle:
+		Start: 16
+		Length: 16
+		ShadowStart: 64
+	critical-idle:
+		Start: 32
+		Length: 16
+		ShadowStart: 80
+
+cafncb:
+	Inherits: ^Fence
+	Defaults:
+		Filename: ctfncb.shp
+		TilesetFilenames:
+			SNOW: cafncb.shp
+			URBAN: cufncb.shp
+			NEWURBAN: cnfncb.shp
+			DESERT: cdfncb.shp
+			LUNAR: clfncb.shp
+
+cafncw:
+	Inherits: ^Fence
+	Defaults:
+		Filename: ctfncw.shp
+		TilesetFilenames:
+			SNOW: cafncw.shp
+			URBAN: cufncw.shp
+			NEWURBAN: cnfncw.shp
+			DESERT: cdfncw.shp
+			LUNAR: clfncw.shp
+
+gasand:
+	Inherits: ^Fence
+	Defaults:
+		Filename: gtsand.shp
+		TilesetFilenames:
+			SNOW: gasand.shp
+			URBAN: gusand.shp
+			NEWURBAN: gnsand.shp
+			DESERT: gdsand.shp
+			LUNAR: glsand.shp
+
+cafncp:
+	Inherits: ^Fence
+	Defaults:
+		Filename: ctfncp.shp
+		TilesetFilenames:
+			SNOW: cafncp.shp
+			URBAN: cufncp.shp
+			NEWURBAN: cnfncp.shp
+			DESERT: cdfncp.shp
+			LUNAR: clfncp.shp

@@ -209,3 +209,75 @@ barracks.infiltrated:
 		Prerequisites: global-techbuildarea
 	MapEditorData:
 		Categories: Building - Tech
+^Wall:
+	Inherits: ^BasicBuilding
+	Inherits@HANDICAPS: ^PlayerHandicaps
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 10
+	Building:
+		BuildSounds: uplace.wav
+	RequiresBuildableArea:
+		AreaTypes: defense
+		Adjacent: 6
+	LineBuild:
+		Range: 6
+		NodeTypes: wall
+	LineBuildNode:
+		Types: wall
+	Health:
+		HP: 30000
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 100
+	RevealsShroud:
+		Range: 1c0
+	Tooltip:
+		Name: meta-wall.name
+	Tooltip@NoRow:
+		Name: meta-wall.name
+	Targetable:
+		TargetTypes: Ground, Wall, NoAutoTarget
+	WithWallSpriteBody:
+		Type: wall
+	Sellable:
+		SellSounds: uselbuil.wav
+	CustomSellValue:
+		Value: 0
+	Crushable:
+		CrushClasses: wall
+	BlocksProjectiles:
+	MapEditorData:
+		Categories: Building - Wall
+
+^Fence:
+	Inherits: ^Wall
+	Buildable:
+		Queue: Support.Neutral
+	LineBuild:
+		NodeTypes: fence
+	LineBuildNode:
+		Types: fence
+	Health:
+		HP: 10000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 25
+	Tooltip:
+		Name: meta-fence.name
+	Tooltip@NoRow:
+		Name: meta-fence.name
+	Targetable:
+		TargetTypes: Ground, Fence, NoAutoTarget
+	WithWallSpriteBody:
+		Type: fence
+	Crushable:
+		CrushClasses: fence
+	SoundOnDamageTransition:
+		DamagedSounds: gblacrua.wav, gblacrub.wav
+		DestroyedSounds: gblacrua.wav, gblacrub.wav
+	MapEditorData:
+		Categories: Building - Fence
+	-BlocksProjectiles:

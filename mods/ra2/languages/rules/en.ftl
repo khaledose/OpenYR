@@ -192,6 +192,17 @@ actor-hdstn01 =
    .name = Alrington Stones
 actor-camov01 =
    .name = Drive In Movie Screen
+## Walls
+actor-cakrmw =
+   .name = Kremlin Walls
+actor-gasand =
+   .name = Sandbags
+actor-cafncb =
+   .name = Black Fence
+actor-cafncw =
+   .name = White Fence
+actor-cafncp =
+   .name = Prison Camp Fence
 
 ## Civilian Infantries
 meta-civilianinfantry =

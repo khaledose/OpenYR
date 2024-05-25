@@ -1,0 +1,72 @@
+cakrmw:
+	Inherits: ^Wall
+	Buildable:
+		Queue: Support.Civilian.Shared
+	Tooltip:
+		Name: actor-cakrmw.name
+	Tooltip@NoRow:
+		Name: actor-cakrmw.name
+	Armor:
+		Type: Concrete
+	LineBuild:
+		NodeTypes: cakrmw
+	LineBuildNode:
+		Types: cakrmw
+	WithWallSpriteBody:
+		Type: cakrmw
+
+gasand:
+	Inherits: ^Fence
+	Tooltip:
+		Name: actor-gasand.name
+	Tooltip@NoRow:
+		Name: actor-gasand.name
+	SoundOnDamageTransition:
+		DamagedSounds: gsancrua.wav, gsancrub.wav
+		DestroyedSounds: gsancrua.wav, gsancrub.wav
+	LineBuild:
+		NodeTypes: gasand
+	LineBuildNode:
+		Types: gasand
+	WithWallSpriteBody:
+		Type: gasand
+
+cafncb:
+	Inherits: ^Fence
+	Tooltip:
+		Name: actor-cafncb.name
+	Tooltip@NoRow:
+		Name: actor-cafncb.name
+	LineBuild:
+		NodeTypes: cafncb
+	LineBuildNode:
+		Types: cafncb
+	WithWallSpriteBody:
+		Type: cafncb
+
+cafncw:
+	Inherits: ^Fence
+	Tooltip:
+		Name: actor-cafncw.name
+	Tooltip@NoRow:
+		Name: actor-cafncw.name
+	LineBuild:
+		NodeTypes: cafncw
+	LineBuildNode:
+		Types: cafncw
+	WithWallSpriteBody:
+		Type: cafncw
+
+cafncp:
+	Inherits: ^Fence
+	Tooltip:
+		Name: actor-cafncp.name
+	Tooltip@NoRow:
+		Name: actor-cafncp.name
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: cafncp
+	LineBuildNode:
+		Types: cafncp
+	WithWallSpriteBody:
+		Type: cafncp
