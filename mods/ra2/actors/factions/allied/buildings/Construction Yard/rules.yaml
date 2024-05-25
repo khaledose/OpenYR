@@ -1,0 +1,17 @@
+gacnst:
+	Inherits: ^ConstructionYard
+	IsometricSelectable:
+		DecorationHeight: 60
+	ProvidesPrerequisite@building.allies:
+		Prerequisite: building.allies
+	ProvidesPrerequisite@building.france:
+		Prerequisite: building.france
+		Factions: france
+	Transforms:
+		IntoActor: amcv
+	WithIdleOverlay@fans:
+		Sequence: idle-fans
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	WithBuildingPlacedOverlay:
+		RequiresCondition: !build-incomplete # && !chronodisable

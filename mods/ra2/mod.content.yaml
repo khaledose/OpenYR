@@ -21,8 +21,11 @@ Rules:
 	ra2|actors/_defaults/vehicle/rules.yaml
 	ra2|actors/_defaults/vehicle/traits.yaml
 	ra2|actors/_defaults/world/rules.yaml
+	ra2|actors/factions/allied/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
+	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
+	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
 	ra2|actors/misc/rules.yaml
 	ra2|actors/misc/crates/rules.yaml
@@ -41,8 +44,11 @@ Sequences:
 	ra2|actors/_defaults/shared/sequences.yaml
 	ra2|actors/_defaults/vehicle/sequences.yaml
 	ra2|actors/_defaults/world/sequences.yaml
+	ra2|actors/factions/allied/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/yuri/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
 	ra2|actors/misc/sequences.yaml
 	ra2|actors/misc/crates/sequences.yaml

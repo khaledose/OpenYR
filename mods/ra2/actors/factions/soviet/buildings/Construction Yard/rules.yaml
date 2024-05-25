@@ -1,0 +1,19 @@
+nacnst:
+	Inherits: ^ConstructionYard
+	IsometricSelectable:
+		DecorationHeight: 90
+	ProvidesPrerequisite@building.soviets:
+		Prerequisite: building.soviets
+	Transforms:
+		IntoActor: smcv
+	WithIdleOverlay@top:
+		Sequence: idle-top
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	WithSpriteBody@crane:
+		Sequence: idle-crane
+		Name: crane
+		RequiresCondition: !build-incomplete
+	WithBuildingPlacedAnimation:
+		Body: crane
+		RequiresCondition: !build-incomplete
