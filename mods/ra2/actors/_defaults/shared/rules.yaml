@@ -104,3 +104,13 @@
 		Palette: pips
 		Position: BottomRight
 		ValidRelationships: Ally, Enemy, Neutral
+
+^GivesCrateOnDeath:
+	SpawnActorOnDeath@crate:
+		DeathType: NonTemporal
+		Actor: crate
+
+^GivesMoneyCrateOnDeath:
+	SpawnActorOnDeath@crate:
+		DeathType: NonTemporal
+		Actor: crate.money

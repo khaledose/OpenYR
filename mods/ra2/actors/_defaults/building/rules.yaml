@@ -209,6 +209,41 @@ barracks.infiltrated:
 		Prerequisites: global-techbuildarea
 	MapEditorData:
 		Categories: Building - Tech
+
+^CivilianBuilding:
+	Inherits: ^Building
+	Inherits@REPAIR: ^RepairableBuilding
+	IsometricSelectable:
+		Voice:
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: meta-civbuilding.name
+	Tooltip@NoRow:
+		Name: meta-civbuilding.name
+	InstantlyRepairable:
+		Types: civilian
+	MapEditorData:
+		Categories: Building - Civilian
+
+^Rubble:
+	Inherits: ^Object
+	Inherits@shape: ^1x1Rubble
+	Tooltip:
+		Name: meta-rubble.name
+	Tooltip@NoRow:
+		Name: meta-rubble.name
+	RenderSprites:
+		Palette: rubble
+	WithSpriteBody:
+		Sequence: rubble
+	MapEditorData:
+		Categories: Building - Rubble
+
 ^Wall:
 	Inherits: ^BasicBuilding
 	Inherits@HANDICAPS: ^PlayerHandicaps

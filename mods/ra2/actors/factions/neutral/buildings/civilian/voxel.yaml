@@ -1,0 +1,3 @@
+cahead:
+	turret: localmd|cahead
+	damaged-turret: localmd|caheaddm 	
