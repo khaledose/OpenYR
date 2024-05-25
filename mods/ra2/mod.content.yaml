@@ -29,6 +29,7 @@ Rules:
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
 	ra2|actors/factions/neutral/buildings/prop/rules.yaml
 	ra2|actors/factions/neutral/buildings/tech/rules.yaml
+ra2|actors/factions/neutral/buildings/wall/rules.yaml
 	ra2|actors/factions/neutral/infantries/rules.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
@@ -72,6 +73,7 @@ Sequences:
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
 	ra2|actors/factions/neutral/buildings/prop/sequences.yaml
 	ra2|actors/factions/neutral/buildings/tech/sequences.yaml
+	ra2|actors/factions/neutral/buildings/wall/sequences.yaml
 	ra2|actors/factions/neutral/infantries/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
