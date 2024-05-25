@@ -1,0 +1,72 @@
+nacnst:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: 4, -58
+	idle:
+		Filename: ngcnst.shp
+		TilesetFilenames:
+			SNOW: nacnst.shp
+		ShadowStart: 3
+		ZOffset: -1024
+	damaged-idle:
+		Filename: ngcnst.shp
+		TilesetFilenames:
+			SNOW: nacnst.shp
+		Start: 1
+		ShadowStart: 4
+		ZOffset: -1024
+	idle-crane:
+		Filename: ngcnst_c.shp
+		TilesetFilenames:
+			SNOW: nacnst_c.shp
+		Length: 1
+		ShadowStart: 4
+		Tick: 150
+	damaged-idle-crane:
+		Filename: ngcnst_c.shp
+		TilesetFilenames:
+			SNOW: nacnst_c.shp
+		Start: 1
+		Length: 1
+		ShadowStart: 5
+		Tick: 150
+	make:
+		Filename: ntcnstmk.shp
+		TilesetFilenames:
+			SNOW: nacnstmk.shp
+			URBAN: nucnstmk.shp
+			NEWURBAN: nncnstmk.shp
+			DESERT: ndcnstmk.shp
+			LUNAR: nlcnstmk.shp
+		Length: 31
+		ShadowStart: 31
+	idle-top:
+		Filename: ngcnst_a.shp
+		TilesetFilenames:
+			SNOW: nacnst_a.shp
+		Length: 11
+		Tick: 200
+	damaged-idle-top:
+		Filename: ngcnst_a.shp
+		TilesetFilenames:
+			SNOW: nacnst_a.shp
+		Start: 11
+		Length: 11
+		Tick: 150
+	build:
+		Filename: ngcnst_b.shp
+		TilesetFilenames:
+			SNOW: nacnst_b.shp
+		Length: 21
+		ShadowStart: 42
+		Tick: 150
+		ZOffset: 1c0
+	damaged-build:
+		Filename: ngcnst_b.shp
+		TilesetFilenames:
+			SNOW: nacnst_b.shp
+		Start: 21
+		Length: 21
+		ShadowStart: 63
+		Tick: 150
+		ZOffset: 1c0

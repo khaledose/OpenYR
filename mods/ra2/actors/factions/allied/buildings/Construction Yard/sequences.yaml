@@ -1,0 +1,51 @@
+gacnst:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: 3, -60
+	idle:
+		Filename: ggcnst.shp
+		TilesetFilenames:
+			SNOW: gacnst.shp
+		ShadowStart: 3
+	make:
+		Filename: gtcnstmk.shp
+		TilesetFilenames:
+			SNOW: gacnstmk.shp
+			URBAN: gucnstmk.shp
+			NEWURBAN: gncnstmk.shp
+			DESERT: gdcnstmk.shp
+			LUNAR: glcnstmk.shp
+		Length: 29
+		ShadowStart: 29
+	damaged-idle:
+		Filename: ggcnst.shp
+		TilesetFilenames:
+			SNOW: gacnst.shp
+		Start: 1
+		ShadowStart: 4
+	idle-fans:
+		Filename: ggcnst_a.shp
+		TilesetFilenames:
+			SNOW: gacnst_a.shp
+		Length: 6
+		Tick: 150
+	damaged-idle-fans:
+		Filename: ggcnst_a.shp
+		TilesetFilenames:
+			SNOW: gacnst_a.shp
+		Start: 5
+		Length: 6
+		Tick: 150
+	crane-overlay:
+		Filename: ggcnst_b.shp
+		TilesetFilenames:
+			SNOW: gacnst_b.shp
+		Length: 20
+		Tick: 150
+	damaged-crane-overlay:
+		Filename: ggcnst_b.shp
+		TilesetFilenames:
+			SNOW: gacnst_b.shp
+		Start: 20
+		Length: 20
+		Tick: 150

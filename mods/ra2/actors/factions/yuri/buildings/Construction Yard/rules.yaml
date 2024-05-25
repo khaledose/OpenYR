@@ -1,0 +1,18 @@
+yacnst:
+	Inherits: ^ConstructionYard
+	IsometricSelectable:
+		DecorationHeight: 60
+	ProvidesPrerequisite@building.yuri:
+		Prerequisite: building.yuri
+	Transforms:
+		IntoActor: pcv
+	WithIdleOverlay@top:
+		Sequence: idle-top
+		RequiresCondition: !build-incomplete
+	WithSpriteBody@crane:
+		Sequence: idle-crane
+		Name: crane
+		RequiresCondition: !build-incomplete
+	WithBuildingPlacedAnimation:
+		Body: crane
+		RequiresCondition: !build-incomplete
