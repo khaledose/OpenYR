@@ -1,0 +1,4823 @@
+# American Set
+
+cahse01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 60000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cahse01.rubble
+
+cahse01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: cahse01
+
+cahse02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cahse02.rubble
+
+cahse02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: cahse02
+
+cahse03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cahse03.rubble
+
+cahse03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: cahse03
+
+cahse04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cahse04.rubble
+
+cahse04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: cahse04
+
+cahse05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^1x2Shape
+	Health:
+		HP: 30000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cahse05.rubble
+
+cahse05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^1x2Rubble
+	RenderSprites:
+		Image: cahse05
+
+cahse06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x1Shape
+	Health:
+		HP: 30000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cahse06.rubble
+
+cahse06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x1Rubble
+	RenderSprites:
+		Image: cahse06
+
+cahse07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 60000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cahse07.rubble
+
+cahse07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: cahse07
+
+# Washington Set
+
+cawash01:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawash01.name
+	Tooltip@NoRow:
+		Name: actor-cawash01.name
+	SpawnActorOnDeath@rubble:
+		Actor: cawash01.rubble
+
+cawash01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawash01
+		Palette: rubble-urban
+
+cawash03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash03.rubble
+
+cawash03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x3Rubble
+	RenderSprites:
+		Image: cawash03
+		-Palette:
+		PlayerPalette: player
+
+cawash04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash04.rubble
+
+cawash04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawash04
+
+cawash05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x2Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash05.rubble
+
+cawash05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x2Rubble
+	RenderSprites:
+		Image: cawash05
+
+cawash06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash06.rubble
+
+cawash06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawash06
+
+cawash07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash07.rubble
+
+cawash07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cawash07
+
+cawash08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash08.rubble
+
+cawash08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: cawash08
+
+cawash09:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash09.rubble
+
+cawash09.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cawash09
+
+cawash10:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash10.rubble
+
+cawash10.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawash10
+
+cawash11:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash11.rubble
+
+cawash11.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawash11
+
+cawsh12:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 165
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawsh12.name
+	Tooltip@NoRow:
+		Name: actor-cawsh12.name
+	SpawnActorOnDeath@rubble:
+		Actor: cawsh12.rubble
+
+cawsh12.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cawsh12
+		Palette: rubble-urban
+
+cawash13:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash13.rubble
+
+cawash13.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: cawash13
+
+cawash14:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawash14.name
+	Tooltip@NoRow:
+		Name: actor-cawash14.name
+	SpawnActorOnDeath@rubble:
+		Actor: cawash14.rubble
+
+cawash14.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cawash14
+		Palette: rubble-urban
+
+cawash15:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawash15.name
+	Tooltip@NoRow:
+		Name: actor-cawash15.name
+	SpawnActorOnDeath@rubble:
+		Actor: cawash15.rubble
+
+cawash15.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: cawash15
+		Palette: rubble-urban
+
+cawash16:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^5x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawash16.name
+	Tooltip@NoRow:
+		Name: actor-cawash16.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash16.rubble
+
+cawash16.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^5x3Rubble
+	RenderSprites:
+		Image: cawash16
+
+cawash17:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@CRATE: ^GivesCrateOnDeath
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawash17.name
+	Tooltip@NoRow:
+		Name: actor-cawash17.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash17.rubble
+
+cawash17.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: cawash17
+
+cawash19:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 50000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawash19.name
+	Tooltip@NoRow:
+		Name: actor-cawash19.name
+	WithIdleOverlay@flag:
+		Sequence: idle-flag
+		#PauseOnCondition: chronodisable
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawash19.rubble
+
+cawash19.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawash19
+
+cawa2a:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawa2a.name
+	Tooltip@NoRow:
+		Name: actor-cawa2a.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawa2a.rubble
+
+cawa2a.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawa2a
+
+cawa2b:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawa2b.name
+	Tooltip@NoRow:
+		Name: actor-cawa2b.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawa2b.rubble
+
+cawa2b.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawa2b
+
+cawa2c:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawa2c.name
+	Tooltip@NoRow:
+		Name: actor-cawa2c.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawa2c.rubble
+
+cawa2c.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawa2c
+
+cawa2d:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawa2d.name
+	Tooltip@NoRow:
+		Name: actor-cawa2d.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cawa2d.rubble
+
+cawa2d.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cawa2d
+
+# New York Set
+
+canewy01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy01.rubble
+
+canewy01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: canewy01
+
+canewy04:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 225
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-canewy04.name
+	Tooltip@NoRow:
+		Name: actor-canewy04.name
+	SpawnActorOnDeath@rubble:
+		Actor: canewy04.rubble
+	RenderSprites:
+		Palette: liberty
+	WithDeathAnimation:
+		DeathSequencePalette: liberty
+
+canewy04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canewy04
+		Palette: rubble-urban
+
+canewy05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-canewy05.name
+	Tooltip@NoRow:
+		Name: actor-canewy05.name
+	RenderSprites:
+		PlayerPalette:
+		Palette: city
+
+canewy06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 225
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-canewy06.name
+	Tooltip@NoRow:
+		Name: actor-canewy06.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy06.rubble
+
+canewy06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canewy06
+
+canewy07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-canewy07.name
+	Tooltip@NoRow:
+		Name: actor-canewy07.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy07.rubble
+
+canewy07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canewy07
+
+canewy08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-canewy08.name
+	Tooltip@NoRow:
+		Name: actor-canewy08.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy08.rubble
+
+canewy08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canewy08
+
+canewy10:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 210
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy10.rubble
+
+canewy10.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: canewy10
+
+canewy11:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy11.rubble
+
+canewy11.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: canewy11
+
+canewy12:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy12.rubble
+
+canewy12.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: canewy12
+
+canewy13:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 195
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy13.rubble
+
+canewy13.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canewy13
+
+canewy14:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 195
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy14.rubble
+
+canewy14.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canewy14
+
+canewy15:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy15.rubble
+
+canewy15.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canewy15
+
+canewy16:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 210
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy16.rubble
+
+canewy16.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: canewy16
+
+canewy17:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy17.rubble
+
+canewy17.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: canewy17
+
+canewy18:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy18.rubble
+
+canewy18.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: canewy18
+
+canewy20:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x5Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-canewy20.name
+	Tooltip@NoRow:
+		Name: actor-canewy20.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy20.rubble
+
+canewy20.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x5Rubble
+	RenderSprites:
+		Image: canewy20
+
+canewy21:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^5x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-canewy21.name
+	Tooltip@NoRow:
+		Name: actor-canewy21.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canewy21.rubble
+
+canewy21.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^5x3Rubble
+	RenderSprites:
+		Image: canewy21
+
+canwy05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 265
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canwy05.rubble
+
+canwy05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: canwy05
+
+canwy09:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 225
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canwy09.rubble
+
+canwy09.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: canwy09
+
+canwy22:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canwy22.rubble
+
+canwy22.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canwy22
+
+canwy23:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 210
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canwy23.rubble
+
+canwy23.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: canwy23
+
+canwy24:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 165
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canwy24.rubble
+
+canwy24.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canwy24
+
+canwy25:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canwy25.rubble
+
+canwy25.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: canwy25
+
+canwy26:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^5x3Shape
+	IsometricSelectable:
+		DecorationHeight: 165
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: canwy26.rubble
+
+canwy26.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^5x3Rubble
+	RenderSprites:
+		Image: canwy26
+
+# San Fransisco Set
+
+casanf01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf01.rubble
+
+casanf01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: casanf01
+		Palette: rubble-temperate
+
+casanf02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf02.rubble
+
+casanf02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: casanf02
+		Palette: rubble-temperate
+
+casanf03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf03.rubble
+
+casanf03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: casanf03
+		Palette: rubble-temperate
+
+
+casanf04:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x5Shape
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf04.name
+	Tooltip@NoRow:
+		Name: actor-casanf04.name
+
+casanf05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf05.name
+	Tooltip@NoRow:
+		Name: actor-casanf05.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf05.rubble
+
+casanf05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: casanf05
+
+casanf06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf06.rubble
+
+casanf06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: casanf06
+		Palette: rubble-newurban
+
+casanf07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf07.rubble
+
+casanf07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: casanf07
+		Palette: rubble-temperate
+
+casanf08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf08.rubble
+
+casanf08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: casanf08
+		Palette: rubble-temperate
+
+casanf09:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x5Shape
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf09.name
+	Tooltip@NoRow:
+		Name: actor-casanf09.name
+
+casanf10:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x5Shape
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf10.name
+	Tooltip@NoRow:
+		Name: actor-casanf10.name
+
+casanf11:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x5Shape
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf11.name
+	Tooltip@NoRow:
+		Name: actor-casanf11.name
+
+casanf12:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x5Shape
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf12.name
+	Tooltip@NoRow:
+		Name: actor-casanf12.name
+
+casanf13:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x5Shape
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf13.name
+	Tooltip@NoRow:
+		Name: actor-casanf13.name
+
+casanf14:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x5Shape
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad, Water
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf14.name
+	Tooltip@NoRow:
+		Name: actor-casanf14.name
+
+casanf15:
+	Inherits: ^CivilianBuilding
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf15.name
+	Tooltip@NoRow:
+		Name: actor-casanf15.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf15.rubble
+
+casanf15.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: casanf15
+
+casanf16:
+	Inherits: ^CivilianBuilding
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casanf16.name
+	Tooltip@NoRow:
+		Name: actor-casanf16.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf16.rubble
+
+casanf16.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: casanf16
+
+casanf17:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf17.rubble
+
+casanf17.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: casanf17
+
+casanf18:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x5Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casanf18.rubble
+
+casanf18.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x5Rubble
+	RenderSprites:
+		Image: casanf18
+
+# Los Angeles Set
+
+cala01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala01.rubble
+
+cala01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cala01
+
+cala03:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x1Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala03.name
+	Tooltip@NoRow:
+		Name: actor-cala03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala03.rubble
+
+cala03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x1Rubble
+	RenderSprites:
+		Image: cala03
+
+cala04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala04.name
+	Tooltip@NoRow:
+		Name: actor-cala04.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala04.rubble
+
+cala04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cala04
+
+cala05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala05.name
+	Tooltip@NoRow:
+		Name: actor-cala05.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala05.rubble
+
+cala05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cala05
+
+cala06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-cala06.name
+	Tooltip@NoRow:
+		Name: actor-cala06.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala06.rubble
+
+cala06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: cala06
+
+cala07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala07.name
+	Tooltip@NoRow:
+		Name: actor-cala07.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala07.rubble
+
+cala07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cala07
+
+cala08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x2Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cala08.name
+	Tooltip@NoRow:
+		Name: actor-cala08.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala08.rubble
+
+cala08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x2Rubble
+	RenderSprites:
+		Image: cala08
+
+cala09:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala09.name
+	Tooltip@NoRow:
+		Name: actor-cala09.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala09.rubble
+
+cala09.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cala09
+
+cala10:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^1x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 20000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Tooltip:
+		Name: actor-cala10.name
+	Tooltip@NoRow:
+		Name: actor-cala10.name
+	WithIdleOverlay@overlay:
+		Sequence: idle-overlay
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala10.rubble
+
+cala10.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^1x3Rubble
+	RenderSprites:
+		Image: cala10
+
+cala11:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala11.name
+	Tooltip@NoRow:
+		Name: actor-cala11.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala11.rubble
+
+cala11.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: cala11
+
+cala12:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala12.name
+	Tooltip@NoRow:
+		Name: actor-cala12.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala12.rubble
+
+cala12.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: cala12
+
+cala13:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x1Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cala13.name
+	Tooltip@NoRow:
+		Name: actor-cala13.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala13.rubble
+
+cala13.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x1Rubble
+	RenderSprites:
+		Image: cala13
+
+cala14:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cala14.name
+	Tooltip@NoRow:
+		Name: actor-cala14.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala14.rubble
+
+cala14.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cala14
+
+cala15:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cala15.name
+	Tooltip@NoRow:
+		Name: actor-cala15.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cala15.rubble
+
+cala15.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cala15
+
+# ST. Louis Set
+
+castl01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl01.rubble
+
+castl01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl01
+
+castl02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl02.rubble
+
+castl02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl02
+
+castl03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl03.rubble
+
+castl03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl03
+
+castl04:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@shape: ^2x6Shape
+	IsometricSelectable:
+		DecorationHeight: 240
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-castl04.name
+	Tooltip@NoRow:
+		Name: actor-castl04.name
+	SpawnActorOnDeath@rubble:
+		Actor: castl04.rubble
+
+castl04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x6Rubble
+	RenderSprites:
+		Image: castl04
+		Palette: rubble-urban
+
+castl05a:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05a.name
+	Tooltip@NoRow:
+		Name: actor-castl05a.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05a.rubble
+
+castl05a.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05a
+
+castl05b:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05b.name
+	Tooltip@NoRow:
+		Name: actor-castl05b.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05b.rubble
+
+castl05b.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05b
+
+castl05c:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05c.name
+	Tooltip@NoRow:
+		Name: actor-castl05c.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05c.rubble
+
+castl05c.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05c
+
+castl05d:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05d.name
+	Tooltip@NoRow:
+		Name: actor-castl05d.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05d.rubble
+
+castl05d.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05d
+
+castl05e:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05e.name
+	Tooltip@NoRow:
+		Name: actor-castl05e.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05e.rubble
+
+castl05e.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05e
+
+castl05f:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05f.name
+	Tooltip@NoRow:
+		Name: actor-castl05f.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05f.rubble
+
+castl05f.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05f
+
+castl05g:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05g.name
+	Tooltip@NoRow:
+		Name: actor-castl05g.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05g.rubble
+
+castl05g.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05g
+
+castl05h:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-castl05h.name
+	Tooltip@NoRow:
+		Name: actor-castl05h.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: castl05h.rubble
+
+castl05h.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: castl05h
+
+# Texas Set
+
+catexs01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs01.rubble
+
+catexs01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: catexs01
+
+catexs02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 200000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-catexs02.name
+	Tooltip@NoRow:
+		Name: actor-catexs02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs02.rubble
+
+catexs02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: catexs02
+
+catexs03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 150
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs03.rubble
+
+catexs03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: catexs03
+
+catexs04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 165
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs04.rubble
+
+catexs04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: catexs04
+
+catexs05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 150
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs05.rubble
+
+catexs05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: catexs05
+
+catexs06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs06.rubble
+
+catexs06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: catexs06
+
+catexs07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs07.rubble
+
+catexs07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: catexs07
+
+catexs08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catexs08.rubble
+
+catexs08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: catexs08
+
+# Miami Set
+
+camiam01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x2Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camiam01.rubble
+
+camiam01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x2Rubble
+	RenderSprites:
+		Image: camiam01
+
+camiam02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x2Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camiam02.rubble
+
+camiam02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x2Rubble
+	RenderSprites:
+		Image: camiam02
+
+camiam03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camiam03.rubble
+
+camiam03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: camiam03
+
+camiam05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camiam05.rubble
+
+camiam05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: camiam05
+
+camiam06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camiam06.rubble
+
+camiam06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: camiam06
+
+camiam07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camiam07.rubble
+
+camiam07.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: camiam07
+
+camiam08:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x1Shape
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-camiam08.name
+	Tooltip@NoRow:
+		Name: actor-camiam08.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camiam08.rubble
+
+camiam08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x1Rubble
+	RenderSprites:
+		Image: camiam08
+
+# Chicago Set
+
+cachig01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cachig01.rubble
+
+cachig01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: cachig01
+
+cachig02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cachig02.rubble
+
+cachig02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: cachig02
+
+cachig03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 165
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cachig03.rubble
+
+cachig03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: cachig03
+
+cachig04:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 195
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cachig04.name
+	Tooltip@NoRow:
+		Name: actor-cachig04.name
+	SpawnActorOnDeath@rubble:
+		Actor: cachig04.rubble
+
+cachig04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cachig04
+		Palette: rubble-urban
+
+cachig05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 330
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cachig05.name
+	Tooltip@NoRow:
+		Name: actor-cachig05.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cachig05.rubble
+
+cachig05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: cachig05
+
+cachig06:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 225
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-cachig06.name
+	Tooltip@NoRow:
+		Name: actor-cachig06.name
+	SpawnActorOnDeath@rubble:
+		Actor: cachig06.rubble
+
+cachig06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cachig06
+		Palette: rubble-urban
+
+# Seattle Set
+
+caseat01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 195
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-caseat01.name
+	Tooltip@NoRow:
+		Name: actor-caseat01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caseat01.rubble
+
+caseat01.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: caseat01
+
+caseat02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-caseat02.name
+	Tooltip@NoRow:
+		Name: actor-caseat02.name
+	WithIdleOverlay@globe:
+		Sequence: idle-globe
+		#PauseOnCondition: chronodisable
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caseat02.rubble
+
+caseat02.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: caseat02
+
+# Colorado Set
+
+cacolo01:
+	Inherits: ^CivilianBuilding
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^5x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cacolo01.name
+	Tooltip@NoRow:
+		Name: actor-cacolo01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cacolo01.rubble
+
+cacolo01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^5x3Rubble
+	RenderSprites:
+		Image: cacolo01
+
+# Mexico Set
+
+camex01:
+	Inherits: ^CivilianBuilding
+	# Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@shape: ^3x2Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 200000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 12c0
+	Tooltip:
+		Name: actor-camex01.name
+	Tooltip@NoRow:
+		Name: actor-camex01.name
+	# Armament:
+	# 	Weapon: MayanPrism
+	# 	LocalOffset: 0,0,4c864
+	# AttackPrism:
+	# 	ReloadDelay: 20
+	# 	ChargeDelay: 0
+	# 	InitialChargeDelay: 0
+	# 	#PauseOnCondition: chronodisable
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camex01.rubble
+
+camex01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Rubble
+	RenderSprites:
+		Image: camex01
+
+camex02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camex02.name
+	Tooltip@NoRow:
+		Name: actor-camex02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camex02.rubble
+
+camex02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: camex02
+
+camex03:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camex03.name
+	Tooltip@NoRow:
+		Name: actor-camex03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camex03.rubble
+
+camex03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camex03
+
+camex04:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camex04.name
+	Tooltip@NoRow:
+		Name: actor-camex04.name
+	Armor:
+		Type: Concrete
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camex04.rubble
+
+camex04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: camex04
+
+camex05:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camex05.name
+	Tooltip@NoRow:
+		Name: actor-camex05.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camex05.rubble
+
+camex05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: camex05
+
+# Easter Island Set
+
+caeast01:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CAPTURE: ^CapturableBuilding
+	# Inherits@AUTOTARGET: ^AutoTargetGround
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Power:
+		Amount: -100
+		# RequiresCondition: !chronodisable
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-caeast01.name
+	Tooltip@NoRow:
+		Name: actor-caeast01.name
+	# Armament:
+	# 	Weapon: PrismShot
+	# 	LocalOffset: 0,0,4c0
+	# AttackPrism:
+	# 	ReloadDelay: 45
+	# 	ChargeDelay: 0
+	# 	InitialChargeDelay: 0
+	# 	Voice:
+	# 	PauseOnCondition: chronodisable
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caeast01.rubble
+
+caeast01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: caeast01
+
+caeast02:
+	Inherits: ^CivilianBuilding
+	# Inherits@AUTOTARGET: ^AutoTargetGround
+	# Inherits@LOWPOWER: ^DisabledOnLowPowerOrPowerDown
+	Inherits@SOUND: ^CollapsingMonumentSound
+	Inherits@SHAPE: ^2x2Shape
+	# Inherits@TURRET: ^WithVoxelTurretBuildingPowered
+	IsometricSelectable:
+		DecorationHeight: 135
+	Power:
+		Amount: -100
+		# RequiresCondition: !chronodisable
+	Health:
+		HP: 300000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-caeast02.name
+	Tooltip@NoRow:
+		Name: actor-caeast02.name
+	# Armament:
+	# 	Weapon: BustShot
+	# 	LocalOffset: 512,-256,1024, 512,256,1024
+	Turreted:
+		TurnSpeed: 12
+		Offset: 0,0,3096
+		InitialFacing: 640
+	RenderVoxels:
+		Image: cahead
+		Scale: 1.17
+	WithVoxelTurret:
+		# RequiresCondition: !(dmg_heavy || dmg_crit)
+	# WithVoxelTurret@damaged:
+	# 	Sequence: damaged-turret
+	# 	RequiresCondition: (dmg_heavy || dmg_crit)
+	# WithTurretRotateSound:
+	# 	RotatingSounds: byublo1a.wav, byublo2a.wav, byublo2b.wav, byublo2c.wav, byublo3a.wav
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caeast02.rubble
+
+caeast02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: caeast02
+
+# Russian Set
+
+carus01:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-carus01.name
+	Tooltip@NoRow:
+		Name: actor-carus01.name
+	SpawnActorOnDeath@rubble:
+		Actor: carus01.rubble
+
+carus01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: carus01
+		Palette: rubble-snow
+
+carus02a:
+	Inherits: ^CivilianBuilding
+	IsometricSelectable:
+		DecorationHeight: 165
+	Health:
+		HP: 80000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-carus02a.name
+	Tooltip@NoRow:
+		Name: actor-carus02a.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus02a.rubble
+
+carus02a.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: carus02a
+		Palette: rubble-snow
+
+carus02b:
+	Inherits: ^CivilianBuilding
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 50000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-carus02b.name
+	Tooltip@NoRow:
+		Name: actor-carus02b.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus02b.rubble
+
+carus02b.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: carus02b
+		Palette: rubble-snow
+
+carus02c:
+	Inherits: ^CivilianBuilding
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-carus02c.name
+	Tooltip@NoRow:
+		Name: actor-carus02c.name
+
+carus02d:
+	Inherits: ^CivilianBuilding
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-carus02d.name
+	Tooltip@NoRow:
+		Name: actor-carus02d.name
+
+carus02e:
+	Inherits: ^CivilianBuilding
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-carus02e.name
+	Tooltip@NoRow:
+		Name: actor-carus02e.name
+
+carus02f:
+	Inherits: ^CivilianBuilding
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-carus02f.name
+	Tooltip@NoRow:
+		Name: actor-carus02f.name
+
+carus02g:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-carus02g.name
+	Tooltip@NoRow:
+		Name: actor-carus02g.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus02g.rubble
+
+carus02g.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: carus02g
+		Palette: rubble-snow
+
+carus03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x5Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-carus03.name
+	Tooltip@NoRow:
+		Name: actor-carus03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus03.rubble
+
+carus03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x5Rubble
+	RenderSprites:
+		Image: carus03
+
+carus04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 8
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus04.rubble
+
+carus04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: carus04
+
+carus05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 8
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus05.rubble
+
+carus05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: carus05
+
+carus06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 8
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus06.rubble
+
+carus06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: carus06
+
+carus07:
+	Inherits: ^CivilianBuilding
+	Inherits@CRATE: ^GivesCrateOnDeath
+	#Inherits@GARRISON: ^Garrisonable
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus07.rubble
+
+carus07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: carus07
+
+carus08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus08.rubble
+
+carus08.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: carus08
+
+carus09:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x1Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus09.rubble
+
+carus09.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x1Rubble
+	RenderSprites:
+		Image: carus09
+
+carus10:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^1x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus10.rubble
+
+carus10.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^1x2Rubble
+	RenderSprites:
+		Image: carus10
+
+carus11:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x1Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 5
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: carus11.rubble
+
+carus11.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x1Rubble
+	RenderSprites:
+		Image: carus11
+
+# Euro Set
+
+caeur1:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 30000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 3
+	Tooltip:
+		Name: actor-caeur1.name
+	Tooltip@NoRow:
+		Name: actor-caeur1.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caeur1.rubble
+
+caeur1.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: caeur1
+
+caeur2:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 30000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 3
+	Tooltip:
+		Name: actor-caeur2.name
+	Tooltip@NoRow:
+		Name: actor-caeur2.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caeur2.rubble
+
+caeur2.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: caeur2
+
+caeur04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caeur04.rubble
+
+caeur04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x3Rubble
+	RenderSprites:
+		Image: caeur04
+
+# Paris Set
+
+capars01:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	# Inherits@AUTOTARGET: ^AutoTargetGround
+	# Inherits@POWER: ^DisabledOnUncharged
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 265
+	Power:
+		Amount: -100
+	Health:
+		HP: 300000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-capars01.name
+	Tooltip@NoRow:
+		Name: actor-capars01.name
+	# Armament:
+	# 	Weapon: EiffelBolt
+	# 	LocalOffset: 0,0,13c512
+	# 	RequiresCondition: charged || overcharged
+	# AttackTesla:
+	# 	Voice:
+	# 	ReloadDelay: 20
+	# 	ChargeDelay: 0
+	# 	PauseOnCondition: disabled || chronodisable
+	SpawnActorOnDeath@rubble:
+		Actor: capars01.rubble
+
+capars01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: capars01
+		Palette: rubble-urban
+
+capars02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars02.rubble
+
+capars02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: capars02
+
+caprs03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 50000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-caprs03.name
+	Tooltip@NoRow:
+		Name: actor-caprs03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caprs03.rubble
+
+caprs03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: caprs03
+
+capars04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 50000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 6
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars04.rubble
+
+capars04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: capars04
+
+capars05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 50000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 6
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars05.rubble
+
+capars05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: capars05
+
+capars06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 50000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 6
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars06.rubble
+
+capars06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: capars06
+
+capars08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars08.rubble
+
+capars08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: capars08
+
+capars09:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars09.rubble
+
+capars09.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: capars09
+
+capars10:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-capars10.name
+	Tooltip@NoRow:
+		Name: actor-capars10.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars10.rubble
+
+capars10.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x3Rubble
+	RenderSprites:
+		Image: capars10
+
+capars11:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-capars11.name
+	Tooltip@NoRow:
+		Name: actor-capars11.name
+	SpawnActorOnDeath@rubble:
+		Actor: capars11.rubble
+
+capars11.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: capars11
+		Palette: rubble-urban
+
+capars12:
+	Inherits: ^CivilianBuilding
+	Inherits@CRATE: ^GivesMoneyCrateOnDeath
+	Inherits@SOUND: ^CollapsingMonumentSound
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x5Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-capars12.name
+	Tooltip@NoRow:
+		Name: actor-capars12.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars12.rubble
+
+capars12.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x5Rubble
+	RenderSprites:
+		Image: capars12
+
+capars13:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-capars13.name
+	Tooltip@NoRow:
+		Name: actor-capars13.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars13.rubble
+
+capars13.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: capars13
+
+capars14:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-capars14.name
+	Tooltip@NoRow:
+		Name: actor-capars14.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: capars14.rubble
+
+capars14.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x3Rubble
+	RenderSprites:
+		Image: capars14
+
+# London Set
+
+calond01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: calond01.rubble
+
+calond01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: calond01
+		Palette: rubble-newurban
+
+calond03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-calond03.name
+	Tooltip@NoRow:
+		Name: actor-calond03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: calond03.rubble
+
+calond03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: calond03
+		Palette: rubble-temperate
+
+calond04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-calond04.name
+	Tooltip@NoRow:
+		Name: actor-calond04.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: calond04.rubble
+
+calond04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Rubble
+	RenderSprites:
+		Image: calond04
+		Palette: rubble-temperate
+
+calond05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	IsometricSelectable:
+		DecorationHeight: 210
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Tooltip:
+		Name: actor-calond05.name
+	Tooltip@NoRow:
+		Name: actor-calond05.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: calond05.rubble
+
+calond05.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: calond05
+		Palette: rubble-newurban
+
+calond06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 165
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-calond06.name
+	Tooltip@NoRow:
+		Name: actor-calond06.name
+	WithIdleOverlay@flag:
+		Sequence: idle-flag
+		#PauseOnCondition: chronodisable
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: calond06.rubble
+
+calond06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: calond06
+		Palette: rubble-newurban
+
+# Transylvania Set
+
+catran01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-catran01.name
+	Tooltip@NoRow:
+		Name: actor-catran01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catran01.rubble
+
+catran01.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: catran01
+
+catran02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-catran02.name
+	Tooltip@NoRow:
+		Name: actor-catran02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catran02.rubble
+
+catran02.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: catran02
+
+catran03:
+	Inherits: ^CivilianBuilding
+	Inherits@COLLAPSE: ^CollapsingMonumentAnimation
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-catran03.name
+	Tooltip@NoRow:
+		Name: actor-catran03.name
+	SpawnActorOnDeath@rubble:
+		Actor: catran03.rubble
+
+catran03.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: catran03
+
+# Morrocco Set
+
+camorr01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr01.rubble
+
+camorr01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr01
+		Palette: rubble-temperate
+
+camorr02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr02.rubble
+
+camorr02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr02
+		Palette: rubble-temperate
+
+camorr03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 8c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr03.rubble
+
+camorr03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr03
+		Palette: rubble-temperate
+
+camorr04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr04.rubble
+
+camorr04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr04
+		Palette: rubble-temperate
+
+camorr05:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr05.rubble
+
+camorr05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr05
+		Palette: rubble-temperate
+
+camorr06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr06.rubble
+
+camorr06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr06
+		Palette: rubble-temperate
+
+camorr07:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr07.rubble
+
+camorr07.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr07
+		Palette: rubble-temperate
+
+camorr08:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr08.rubble
+
+camorr08.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr08
+		Palette: rubble-temperate
+
+camorr09:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr09.rubble
+
+camorr09.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr09
+		Palette: rubble-temperate
+
+camorr10:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 195
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camorr10.rubble
+
+camorr10.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: camorr10
+		Palette: rubble-temperate
+
+# Egypt Set
+
+caegyp01:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 210
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-caegyp01.name
+	Tooltip@NoRow:
+		Name: actor-caegyp01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caegyp01.rubble
+
+caegyp01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: caegyp01
+		Palette: rubble-temperate
+
+caegyp02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-caegyp02.name
+	Tooltip@NoRow:
+		Name: actor-caegyp02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caegyp02.rubble
+
+caegyp02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: caegyp02
+		Palette: rubble-temperate
+
+caegyp03:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-caegyp03.name
+	Tooltip@NoRow:
+		Name: actor-caegyp03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caegyp02.rubble
+
+caegyp03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x2Rubble
+	RenderSprites:
+		Image: caegyp03
+		Palette: rubble-temperate
+
+caegyp04:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 210
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-caegyp04.name
+	Tooltip@NoRow:
+		Name: actor-caegyp04.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caegyp04.rubble
+
+caegyp04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: caegyp04
+		Palette: rubble-temperate
+
+caegyp05:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 210
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-caegyp05.name
+	Tooltip@NoRow:
+		Name: actor-caegyp05.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caegyp05.rubble
+
+caegyp05.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: caegyp05
+		Palette: rubble-temperate
+
+caegyp06:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-caegyp06.name
+	Tooltip@NoRow:
+		Name: actor-caegyp06.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caegyp06.rubble
+
+caegyp06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: caegyp06
+		Palette: rubble-temperate
+
+# Sydney Set
+
+camsc10:
+	Inherits: ^CivilianBuilding
+	# Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	# Garrisonable:
+	# 	MaxWeight: 8
+	Tooltip:
+		Name: actor-camsc10.name
+	Tooltip@NoRow:
+		Name: actor-camsc10.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camsc10.rubble
+
+camsc10.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: camsc10
+
+casydn02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casydn02.name
+	Tooltip@NoRow:
+		Name: actor-casydn02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casydn02.rubble
+
+casydn02.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: casydn02
+
+casydn03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-casydn03.name
+	Tooltip@NoRow:
+		Name: actor-casydn03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: casydn03.rubble
+
+casydn03.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: casydn03
+
+# Army Set
+
+caarmy01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x2Shape
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 8
+	Tooltip:
+		Name: actor-caarmy01.name
+	Tooltip@NoRow:
+		Name: actor-caarmy01.name
+
+caarmy02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Health:
+		HP: 20000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 4
+	Tooltip:
+		Name: actor-caarmy02.name
+	Tooltip@NoRow:
+		Name: actor-caarmy02.name
+
+caarmy03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Health:
+		HP: 20000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 4
+	Tooltip:
+		Name: actor-caarmy03.name
+	Tooltip@NoRow:
+		Name: actor-caarmy03.name
+
+caarmy04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Health:
+		HP: 20000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 4
+	Tooltip:
+		Name: actor-caarmy04.name
+	Tooltip@NoRow:
+		Name: actor-caarmy04.name
+
+# Bunkers Set
+
+cabunk01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 200000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 8
+	Tooltip:
+		Name: actor-cabunk01.name
+	Tooltip@NoRow:
+		Name: actor-cabunk01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cabunk01.rubble
+
+cabunk01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cabunk01
+
+cabunk02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 200000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 8
+	Tooltip:
+		Name: actor-cabunk02.name
+	Tooltip@NoRow:
+		Name: actor-cabunk02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cabunk02.rubble
+
+cabunk02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cabunk02
+
+cabunk03:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 200000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 8
+	Tooltip:
+		Name: actor-cabunk03.name
+	Tooltip@NoRow:
+		Name: actor-cabunk03.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cabunk03.rubble
+
+cabunk03.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cabunk03
+
+cabunk04:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 200000
+	Armor:
+		Type: Steel
+	#Garrisonable:
+	#	MaxWeight: 8
+	Tooltip:
+		Name: actor-cabunk04.name
+	Tooltip@NoRow:
+		Name: actor-cabunk04.name
+	Armor:
+		Type: Concrete
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cabunk04.rubble
+
+cabunk04.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cabunk04
+
+# Tech Buildings
+
+calab:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-calab.name
+	Tooltip@NoRow:
+		Name: actor-calab.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: calab.rubble
+
+calab.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: calab
+
+catech01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-catech01.name
+	Tooltip@NoRow:
+		Name: actor-catech01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catech01.rubble
+
+catech01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: catech01
+
+catime01:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-catime01.name
+	Tooltip@NoRow:
+		Name: actor-catime01.name
+
+catime02:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-catime02.name
+	Tooltip@NoRow:
+		Name: actor-catime02.name
+
+yacomd:
+	Inherits: ^CivilianBuilding
+	Inherits@CAPTURE: ^CapturableBuilding
+	Inherits@SHAPE: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 3000
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-yacomd.name
+	Tooltip@NoRow:
+		Name: actor-yacomd.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: yacomd.rubble
+
+yacomd.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: yacomd
+
+yapppt:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@SOUND: ^CollapsingMonumentSound
+	Inherits@SHAPE: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-yapppt.name
+	Tooltip@NoRow:
+		Name: actor-yapppt.name
+	# -WithIdleOverlay@garrisoned:
+
+yarock:
+	Inherits: ^CivilianBuilding
+	Inherits@SHAPE: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 70000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: actor-yarock.name
+	Tooltip@NoRow:
+		Name: actor-yarock.name
+	# WithIdleOverlay:
+	# 	Sequence: rocket-idle
+	# 	RequiresCondition: rocket-ready
+	#	PauseOnCondition: chronodisable
+
+napsyb:
+	Inherits: ^BaseStructure
+	# Inherits@LOWPOWER: ^DisabledOnLowPowerOrPowerDown
+	Inherits@SHAPE: ^2x2Shape
+	Buildable:
+		Queue: Building.Neutral
+	IsometricSelectable:
+		DecorationHeight: 120
+	Power:
+		Amount: -100
+		# RequiresCondition: !chronodisable
+	Health:
+		HP: 75000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 1000
+	RevealsShroud:
+		Range: 10c0
+	Tooltip:
+		Name: actor-napsyb.name
+	Tooltip@NoRow:
+		Name: actor-napsyb.name
+	WithIdleOverlay@spin:
+		Sequence: idle-spin
+		# PauseOnCondition: disabled || chronodisable
+		RequiresCondition: !build-incomplete
+	AmbientSound@Ambient:
+		SoundFiles: gpsyampa.wav, gpsyampb.wav, gpsyampc.wav
+		RequiresCondition: !build-incomplete # && !disabled && !chronodisable
+
+# Other
+
+cabarn02:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 50000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 5
+	Tooltip:
+		Name: actor-cabarn02.name
+	Tooltip@NoRow:
+		Name: actor-cabarn02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cabarn02.rubble
+
+cabarn02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cabarn02
+
+cafrma:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-cafrma.name
+	Tooltip@NoRow:
+		Name: actor-cafrma.name
+
+cafarm01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 6
+	Tooltip:
+		Name: actor-cafarm01.name
+	Tooltip@NoRow:
+		Name: actor-cafarm01.name
+
+cafarm02:
+	Inherits: ^CivilianBuilding
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cafarm02.name
+	Tooltip@NoRow:
+		Name: actor-cafarm02.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cafarm02.rubble
+
+cafarm02.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: cafarm02
+		-Palette:
+		PlayerPalette: player
+
+cafarm06:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 135
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	#Garrisonable:
+	#	MaxWeight: 5
+	Tooltip:
+		Name: actor-cafarm06.name
+	Tooltip@NoRow:
+		Name: actor-cafarm06.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cafarm06.rubble
+
+cafarm06.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: cafarm06
+
+caind01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-caind01.name
+	Tooltip@NoRow:
+		Name: actor-caind01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caind01.rubble
+
+caind01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: caind01
+
+cagas01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-cagas01.name
+	Tooltip@NoRow:
+		Name: actor-cagas01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: cagas01.rubble
+
+cagas01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: cagas01
+
+caswst01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x3Shape
+	IsometricSelectable:
+		DecorationHeight: 195
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: caswst01.rubble
+
+caswst01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x3Rubble
+	RenderSprites:
+		Image: caswst01
+
+camov02:
+	Inherits: ^CivilianBuilding
+	# Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	# Garrisonable:
+	# 	MaxWeight: 5
+	Tooltip:
+		Name: actor-camov02.name
+	Tooltip@NoRow:
+		Name: actor-camov02.name
+	WithIdleOverlay:
+		# PauseOnCondition: chronodisable
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: camov02.rubble
+
+camov02.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Rubble
+	RenderSprites:
+		Image: camov02
+
+camsc07:
+	Inherits: ^CivilianBuilding
+	# Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 60000
+	Armor:
+		Type: Concrete
+	# Garrisonable:
+	# 	MaxWeight: 6
+	Tooltip:
+		Name: actor-camsc07.name
+	Tooltip@NoRow:
+		Name: actor-camsc07.name
+
+camsc08:
+	Inherits: ^CivilianBuilding
+	# Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 20000
+	Armor:
+		Type: Wood
+	# Garrisonable:
+	# 	MaxWeight: 6
+	Tooltip:
+		Name: actor-camsc08.name
+	Tooltip@NoRow:
+		Name: actor-camsc08.name
+
+camsc09:
+	Inherits: ^CivilianBuilding
+	# Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 20000
+	Armor:
+		Type: Wood
+	# Garrisonable:
+	# 	MaxWeight: 6
+	Tooltip:
+		Name: actor-camsc09.name
+	Tooltip@NoRow:
+		Name: actor-camsc09.name

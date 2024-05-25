@@ -27,9 +27,10 @@ Rules:
 	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
 	ra2|actors/factions/allied/infantries/G.I/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
+	ra2|actors/factions/neutral/buildings/civilian/rules.yaml
 	ra2|actors/factions/neutral/buildings/prop/rules.yaml
 	ra2|actors/factions/neutral/buildings/tech/rules.yaml
-ra2|actors/factions/neutral/buildings/wall/rules.yaml
+	ra2|actors/factions/neutral/buildings/wall/rules.yaml
 	ra2|actors/factions/neutral/infantries/rules.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
@@ -71,6 +72,7 @@ Sequences:
 	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
 	ra2|actors/factions/allied/infantries/G.I/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/neutral/buildings/civilian/sequences.yaml
 	ra2|actors/factions/neutral/buildings/prop/sequences.yaml
 	ra2|actors/factions/neutral/buildings/tech/sequences.yaml
 	ra2|actors/factions/neutral/buildings/wall/sequences.yaml
@@ -111,6 +113,7 @@ Voices:
 	ra2|actors/factions/allied/infantries/Engineer/voices.yaml
 	ra2|actors/factions/allied/infantries/G.I/voices.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voices.yaml
+	ra2|actors/factions/neutral/buildings/civilian/voices.yaml
 	ra2|actors/factions/neutral/infantries/voices.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/voices.yaml
 	ra2|actors/factions/soviet/infantries/Engineer/voices.yaml

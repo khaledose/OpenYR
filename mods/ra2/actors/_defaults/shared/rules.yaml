@@ -113,3 +113,13 @@
 	WithProductionIconOverlay:
 		Types: chevron-veteran
 		Prerequisites: barracks.infiltrated
+
+^GivesCrateOnDeath:
+	SpawnActorOnDeath@crate:
+		DeathType: NonTemporal
+		Actor: crate
+
+^GivesMoneyCrateOnDeath:
+	SpawnActorOnDeath@crate:
+		DeathType: NonTemporal
+		Actor: crate.money
