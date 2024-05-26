@@ -57,6 +57,9 @@ dropdown-map-creeps =
    .label = Creep Actors
    .description = Hostile forces spawn on the battlefield
 
+## Defaults
+notification-unit-lost = Unit lost.
+
 ## Factions
 faction-random =
    .name = Random
