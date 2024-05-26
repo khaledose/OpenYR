@@ -59,6 +59,7 @@ dropdown-map-creeps =
 
 ## Defaults
 notification-unit-lost = Unit lost.
+notification-unit-promoted = Unit promoted.
 notification-primary-building-selected = Primary building selected.
 notification-repairing = Repairing.
 notification-building-captured = Building captured.

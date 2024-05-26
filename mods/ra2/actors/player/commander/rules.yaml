@@ -146,16 +146,16 @@ Player:
 		IsPlayerPalette: true
 		Palette: player
 	GrantConditionOnPrerequisiteManager:
-	# ProductionIconOverlayManager@chevron-veteran:
-	# 	Type: chevron-veteran
-	# 	Image: cameo-chevron
-	# 	Sequence: veteran
-	# 	Palette: pips
-	# ProductionIconOverlayManager@chevron-elite:
-	# 	Type: chevron-elite
-	# 	Image: cameo-chevron
-	# 	Sequence: elite
-	# 	Palette: pips
+	ProductionIconOverlayManager@chevron-veteran:
+		Type: chevron-veteran
+		Image: veterancy-pips
+		Sequence: veteran
+		Palette: pips
+	ProductionIconOverlayManager@chevron-elite:
+		Type: chevron-elite
+		Image: veterancy-pips
+		Sequence: elite
+		Palette: pips
 	PlayerExperience:
 	GameSaveViewportManager:
 	EnemyWatcher:
