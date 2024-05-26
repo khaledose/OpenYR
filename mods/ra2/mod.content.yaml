@@ -13,6 +13,7 @@ Notifications:
 Rules:
 	ra2|actors/_defaults/misc/rules.yaml
 	ra2|actors/_defaults/player/rules.yaml
+	ra2|actors/_defaults/shared/rules.yaml
 	ra2|actors/_defaults/world/rules.yaml
 	ra2|actors/misc/rules.yaml
 	ra2|actors/misc/crates/rules.yaml

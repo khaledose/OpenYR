@@ -57,5 +57,8 @@ dropdown-map-creeps =
    .label = Creep Actors
    .description = Hostile forces spawn on the battlefield
 
+## Defaults
+notification-unit-lost = Unit lost.
+
 ## Other
 meta-crate-name = Crate
