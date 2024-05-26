@@ -63,6 +63,11 @@ notification-primary-building-selected = Primary building selected.
 notification-repairing = Repairing.
 notification-building-captured = Building captured.
 
+## Default Buildings
+meta-constructionyard =
+   .name = Construction Yard
+   .description = Allows construction of base structures.
+
 ## Factions
 faction-random =
    .name = Random

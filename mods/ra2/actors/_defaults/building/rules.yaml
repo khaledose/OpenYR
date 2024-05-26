@@ -103,3 +103,35 @@
 		DeathTypes: NonTemporal
 	MapEditorData:
 		Categories: Building - Base
+
+^ConstructionYard:
+	Inherits: ^BaseStructure
+	Inherits@DEPLOY: ^DeployIntoMCV
+	Inherits@SHAPE: ^4x4Shape
+	Buildable:
+		Queue: Building.Unused
+		Description: meta-constructionyard.description
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 3000
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: meta-constructionyard.name
+	Tooltip@NoRow:
+		Name: meta-constructionyard.name
+	Production:
+		Produces: Building, Support
+		# PauseOnCondition: chronodisable
+	ProductionBar@Building.Shared:
+		ProductionType: Building
+	ProductionBar@Support.Shared:
+		ProductionType: Support
+		Color: 8A8A8A
+	BaseBuilding:
+	Transforms:
+		Offset: 1,1
+	MustBeDestroyed:
