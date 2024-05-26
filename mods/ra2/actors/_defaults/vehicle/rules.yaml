@@ -1,0 +1,21 @@
+^Vehicle:
+	Inherits: ^Actor
+	Inherits@1: ^Voxel
+	Inherits@2: ^LowHealthSpeedPenalty
+	Inherits@3: ^VehicleDamagedEffects
+	Buildable:
+		Queue: Vehicle
+		BuildDurationModifier: 100
+	Mobile:
+		Voice: Move
+		Speed: 90
+		TurnSpeed: 20
+		Locomotor: wheeled
+		TerrainOrientationAdjustmentMargin: 256
+	Explodes:
+		Weapon: VehicleExplosion
+		EmptyWeapon: VehicleExplosion
+		DeathTypes: NonTemporal
+	Targetable:
+		TargetTypes: Ground, Vehicle, DroneInfection
+	Guardable:
