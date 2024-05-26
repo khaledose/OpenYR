@@ -181,3 +181,35 @@
 		Length: 6
 		Start: 86
 
+flameguy:
+	Defaults:
+		Filename: conquer|flameguy.shp
+		Facings: 8
+		Tick: 80
+		IgnoreWorldTint: true
+	idle:
+	stand:
+	run:
+		Length: 6
+	die:
+		Start: 44
+		Facings: 1
+		Length: 104
+
+corpse:
+	Defaults:
+		Length: *
+		ZOffset: -512
+		Tick: 2500
+	death_a:
+		Filename: death_a.shp
+	death_b:
+		Filename: death_b.shp
+	death_c:
+		Filename: death_c.shp
+	death_d:
+		Filename: death_d.shp
+	death_e:
+		Filename: death_e.shp
+	death_f:
+		Filename: death_f.shp

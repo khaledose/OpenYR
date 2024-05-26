@@ -46,6 +46,20 @@
 		MoveSequence: run
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	Explodes@corpse:
+		DeathTypes: NonTemporal, ExplosionDeath, BulletDeath
+		Weapon: CorpseSpawner
+		EmptyWeapon: CorpseSpawner
+	WithDeathAnimation@normal:
+		DeathSequencePalette: infantry
+		DeathTypes:
+			ExplosionDeath: 1
+			BulletDeath: 2
+	DeathSounds@normal:
+		DeathTypes: ExplosionDeath, BulletDeath
+	SpawnActorOnDeath@flame:
+		Actor: FLAMEGUY
+		DeathType: FlameDeath
 	MapEditorData:
 		Categories: Infantry
 
@@ -127,3 +141,28 @@
 ^ArmedCivilian:
 	Inherits: ^GroundInfantry
 	Inherits@1: ^BasicCivilian
+
+FLAMEGUY:
+	Inherits: ^ExistsInWorld
+	Inherits@1: ^Sprite
+	HitShape:
+	HiddenUnderFog:
+	Mobile:
+		Speed: 71
+		Locomotor: flameguy
+	WithInfantryBody:
+		IdleSequences: run
+	Health:
+		HP: 16000
+	ChangesHealth:
+		Step: -1000
+		StartIfBelow: 101
+	ScaredyCat:
+		PanicSequencePrefix:
+	RenderSprites:
+		Palette: flameguy
+	WithDeathAnimation:
+		FallbackSequence: die
+		UseDeathTypeSuffix: false
+		DeathSequencePalette: flameguy
+		DeathPaletteIsPlayerPalette: false

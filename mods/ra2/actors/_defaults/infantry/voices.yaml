@@ -1,0 +1,8 @@
+^InfantryDeath:
+	DefaultVariant: .wav
+	Voices:
+		Zapped: igenzapa
+		PsyCrush: igenexpa
+		Melted: igenmela, igenmelb, igenmelc
+		Explosion: gexpshaa
+		Virus: gvirexpa, gvirexpb

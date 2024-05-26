@@ -69,9 +69,11 @@ TileSets:
 	ra2|actors/world/tilesets/lunar.yaml
 
 Voices:
+	ra2|actors/_defaults/infantry/voices.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voices.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voices.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/voices.yaml
 
 Weapons:
+	ra2|actors/_defaults/infantry/weapons.yaml
 	ra2|actors/_defaults/shared/weapons.yaml
