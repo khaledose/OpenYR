@@ -60,6 +60,40 @@
 	# GrantExternalConditionToProduced:
 	# 	Condition: produced
 
+^DeployIntoVehicle:
+	Transforms:
+		Facing: 896
+		Voice: Undeploy
+		RequiresCondition: !build-incomplete
+	TransformsIntoMobile:
+		RequiresCondition: !build-incomplete # && !chronodisable
+		Locomotor: heavytracked
+		Voice: Undeploy
+	# TransformsIntoRepairable:
+	# 	RequiresCondition: !build-incomplete && !chronodisable
+	# 	RepairActors: gadept, nadept, nadepb, caoutp, caoutb
+	# 	Voice: Undeploy
+	# 	RequiresForceMove: true
+	TransformsIntoPassenger:
+		RequiresCondition: !build-incomplete # && !chronodisable
+		CargoType: Vehicle
+		Voice: Undeploy
+		RequiresForceMove: true
+
+^DeployIntoMCV:
+	Inherits: ^DeployIntoVehicle
+	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
+		Condition: factundeploy
+		Prerequisites: global-factundeploy
+	Transforms:
+		RequiresCondition: !build-incomplete && factundeploy
+	TransformsIntoMobile:
+		RequiresCondition: !build-incomplete && factundeploy # && !chronodisable
+	# TransformsIntoRepairable:
+	# 	RequiresCondition: !build-incomplete && factundeploy # && !chronodisable
+	TransformsIntoPassenger:
+		RequiresCondition: !build-incomplete && factundeploy # && !chronodisable
+
 # Effects
 ^BuildingDamagedEffects:
 	FloatingSpriteEmitter@heavysmoke:
