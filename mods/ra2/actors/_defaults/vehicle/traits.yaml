@@ -1,0 +1,21 @@
+^LowHealthSpeedPenalty:
+	SpeedMultiplier@CRITICAL:
+		Modifier: 75
+		RequiresCondition: critical
+	GrantConditionOnDamageState@CRITICAL:
+		Condition: critical
+		ValidDamageStates: Critical
+
+^VehicleDamagedEffects:
+	FloatingSpriteEmitter@heavysmoke:
+		Image: smoke
+		Sequences: small, large
+		Lifetime: 40
+		Duration: -1
+		SpawnFrequency: 10, 20
+		Speed: 72
+		Gravity: 48
+		Offset: 0,0,192
+		RequiresCondition: heavydamage
+	GrantConditionOnDamageState@heavydamage:
+		Condition: heavydamage

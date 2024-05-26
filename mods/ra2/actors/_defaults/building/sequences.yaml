@@ -1,0 +1,75 @@
+^NoIcon:
+	icon:
+		Filename: cameo|xxicon.shp
+		TilesetFilenames:
+			TEMPERATE: cameo|xxicon.shp
+			SNOW: cameo|xxicon.shp
+			URBAN: cameo|xxicon.shp
+			NEWURBAN: cameo|xxicon.shp
+			DESERT: cameo|xxicon.shp
+			LUNAR: cameo|xxicon.shp
+		Offset: 0,0
+
+^Prop:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: 0,-15
+	idle:
+		ShadowStart: 3
+
+^BuildingNoRubble:
+	Inherits: ^NoIcon
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+^BuildingWithRubble:
+	Inherits: ^NoIcon
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
+
+^GarrisonableBuilding:
+	garrisoned:
+		Start: 2
+		ShadowStart: 6
+
+^Fence:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: 0,-15
+	idle:
+		Length: 16
+		ShadowStart: 32
+	damaged-idle:
+		Start: 16
+		Length: 16
+		ShadowStart: 48
+
+rallypoint:
+	flag:
+		Filename: conquer|mouse.shp
+		Start: 269
+		Length: 10
+		Offset: 2,-12
+		ZOffset: -1023
+	circles:
+		Filename: conquer|mouse.shp
+		Start: 249
+		Length: 10
+		ZOffset: -2047
+
+repair:
+	repairing:
+		Filename: wrench.shp
+		Length: 7
+		Tick: 160
+		ZOffset: 2047

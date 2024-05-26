@@ -1,0 +1,487 @@
+^SelectableBuilding:
+	IsometricSelectable:
+		Priority: 3
+		Height: 0
+		DecorationHeight: 30
+	IsometricSelectionDecorations:
+	WithTextControlGroupDecoration:
+		Margin: 1, 1
+
+^RepairableBuilding:
+	RepairableBuilding:
+		RepairStep: 700
+		RepairingNotification: Repairing
+		RepairingTextNotification: notification-repairing
+	WithBuildingRepairDecoration:
+		Image: repair
+		Sequence: repairing
+		Position: Center
+		Palette: mouse
+	InstantlyRepairable:
+		Types: building
+		RequiresCondition: repairable
+	GrantConditionOnDamageState@repair:
+		Condition: repairable
+		ValidDamageStates: Light, Medium, Heavy, Critical
+
+^CapturableBuilding:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CaptureNotification:
+		Notification: BuildingCaptured
+		TextNotification: notification-building-captured
+	CapturableProgressBar:
+
+^PrimaryBuilding:
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		Position: Top
+		UsePlayerColor: true
+		RequiresCondition: primary
+	PrimaryBuilding:
+		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
+		SelectionTextNotification: notification-primary-building-selected
+
+^Factory:
+	Production:
+		# PauseOnCondition: chronodisable
+	ProductionBar:
+	CommandBarBlacklist:
+		DisableStop: false
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
+		TextNotification: notification-new-rally-point-established
+	ExitsDebugOverlay:
+	# GrantExternalConditionToProduced:
+	# 	Condition: produced
+
+# Effects
+^BuildingDamagedEffects:
+	FloatingSpriteEmitter@heavysmoke:
+		Image: smoke
+		Sequences: small, large
+		Lifetime: 40
+		Duration: -1
+		SpawnFrequency: 6, 20
+		TurnRate: 5
+		Speed: 32
+		Gravity: 48
+		Offset: -384,-384,0, 384,384,0
+		RequiresCondition: heavydamage
+	FloatingSpriteEmitter@heavyfire:
+		Image: fire
+		Sequences: small, medium, large
+		Palette: effect
+		Lifetime: 80
+		Duration: -1
+		SpawnFrequency: 96
+		Speed: 0
+		Gravity: 0
+		Offset: -384,-384,0, 384,384,0
+		RequiresCondition: heavydamage
+	GrantConditionOnDamageState@heavydamage:
+		Condition: heavydamage
+
+^CollapsingMonumentSound:
+	DeathSounds:
+		DeathTypes: NonTemporal
+	Voiced:
+		VoiceSet: MonumentVoice
+
+^CollapsingMonumentAnimation:
+	Inherits: ^CollapsingMonumentSound
+	WithDeathAnimation:
+		DeathSequence: collapse
+		UseDeathTypeSuffix: false
+		DeathPaletteIsPlayerPalette: false
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+
+# Shapes
+^1x1Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+
+^1x1Rubble:
+	Inherits: ^1x1Shape
+	Building:
+		Footprint: =
+
+^1x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -1024
+			BottomRight: 512, 1024
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+
+^1x2Rubble:
+	Inherits: ^1x2Shape
+	Building:
+		Footprint: = =
+
+^1x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -1536
+			BottomRight: 512, 1536
+	Building:
+		Footprint: x x x
+		Dimensions: 1, 3
+
+^1x3Rubble:
+	Inherits: ^1x3Shape
+	Building:
+		Footprint: = = =
+
+^1x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -2048
+			BottomRight: 512, 2048
+	Building:
+		Footprint: x x x x
+		Dimensions: 1, 4
+
+^2x1Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -512
+			BottomRight: 1024, 512
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+
+^2x1Rubble:
+	Inherits: ^2x1Shape
+	Building:
+		Footprint: ==
+
+^2x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -1024
+			BottomRight: 1024, 1024
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+
+^2x2Rubble:
+	Inherits: ^2x2Shape
+	Building:
+		Footprint: == ==
+
+^2x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -1536
+			BottomRight: 1024, 1536
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 2, 3
+
+^2x3Rubble:
+	Inherits: ^2x3Shape
+	Building:
+		Footprint: == == ==
+
+^2x5Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -2560
+			BottomRight: 1024, 2560
+	Building:
+		Footprint: xx xx xx xx xx
+		Dimensions: 2, 5
+
+^2x5Rubble:
+	Inherits: ^2x5Shape
+	Building:
+		Footprint: == == == == ==
+
+^2x6Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -3072
+			BottomRight: 1024, 3072
+	Building:
+		Footprint: xx xx xx xx xx xx
+		Dimensions: 2, 6
+
+^2x6Rubble:
+	Inherits: ^2x6Shape
+	Building:
+		Footprint: == == == == == ==
+
+^3x1Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -512
+			BottomRight: 1536, 512
+	Building:
+		Footprint: xxx
+		Dimensions: 3, 1
+
+^3x1Rubble:
+	Inherits: ^3x1Shape
+	Building:
+		Footprint: ===
+
+^3x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -1024
+			BottomRight: 1536, 1024
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+
+^3x2Rubble:
+	Inherits: ^3x2Shape
+	Building:
+		Footprint: === ===
+
+^3x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+
+^3x3Rubble:
+	Inherits: ^3x3Shape
+	Building:
+		Footprint: === === ===
+
+^3x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -2048
+			BottomRight: 1536, 2048
+	Building:
+		Footprint: xxx xxx xxx xxx
+		Dimensions: 3, 4
+
+^3x4Rubble:
+	Inherits: ^3x4Shape
+	Building:
+		Footprint: === === === ===
+
+^3x5Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -2560
+			BottomRight: 1536, 2560
+	Building:
+		Footprint: xxx xxx xxx xxx xxx
+		Dimensions: 3, 5
+
+^3x5Rubble:
+	Inherits: ^3x5Shape
+	Building:
+		Footprint: === === === === ===
+
+^4x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -2048, -1024
+			BottomRight: 2048, 1024
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+
+^4x2Rubble:
+	Inherits: ^4x2Shape
+	Building:
+		Footprint: ==== ====
+
+^4x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2048, -1536
+			BottomRight: 2048, 1536
+	Building:
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 4, 3
+
+^4x3Rubble:
+	Inherits: ^4x3Shape
+	Building:
+		Footprint: ==== ==== ====
+
+^4x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2048, -2048
+			BottomRight: 2048, 2048
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4,4
+
+^4x4Rubble:
+	Inherits: ^4x4Shape
+	Building:
+		Footprint: ==== ==== ==== ====
+
+^4x6Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2048, -3072
+			BottomRight: 2048, 3072
+
+^5x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2560, -1536
+			BottomRight: 2560, 1536
+	Building:
+		Footprint: xxxxx xxxxx xxxxx
+		Dimensions: 5, 3
+
+^5x3Rubble:
+	Inherits: ^5x3Shape
+	Building:
+		Footprint: ===== ===== =====
+
+^5x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2560, -2048
+			BottomRight: 2560, 2048
+	Building:
+		Footprint: xxxxx xxxxx xxxxx xxxxx
+		Dimensions: 5, 4
+
+^6x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -3072, -2048
+			BottomRight: 3072, 2048
+	Building:
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+		Dimensions: 6, 4
+
+^6x4Rubble:
+	Inherits: ^6x4Shape
+	Building:
+		Footprint: ====== ====== ====== ======
+
+^NormalRefineryShape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2048, -1536
+			BottomRight: 1024, 1536
+	Building:
+		Footprint: xxx+ xxx+ xxx+
+		Dimensions: 4, 3
+
+^FlippedRefineryShape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -1536
+			BottomRight: 2048, 1536
+
+^FlippedRefineryXShape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -2048
+			BottomRight: 1536, 1024
+
+^FlippedRefineryYShape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -1024
+			BottomRight: 1536, 2048
+
+^NormalFactoryShape:
+	HitShape:
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2560, -1536
+			BottomRight: 1536, 1536
+	Building:
+		Footprint: xxxx+ xxxx+ xxxx+
+		Dimensions: 5, 3
+
+^FlippedFactoryShape:
+	HitShape:
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -1536
+			BottomRight: 2560, 1536
+
+^FlippedFactoryXShape:
+	HitShape:
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -2560
+			BottomRight: 1536, 1536
+
+^FlippedFactoryYShape:
+	HitShape:
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 2560

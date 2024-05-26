@@ -1,0 +1,105 @@
+^Object:
+	Inherits@1: ^Sprite
+	Inherits@2: ^ExistsInWorld
+	Inherits@3: ^WithTooltip
+	Inherits@SHAPE: ^1x1Shape
+	Interactable:
+	FrozenUnderFog:
+	AppearsOnRadar:
+	AppearsOnMapPreview:
+
+^BasicBuilding:
+	Inherits: ^Object
+	Buildable:
+		Queue: Support.Unused
+	Building:
+		TerrainTypes: Clear, Rough, Road, DirtRoad
+	ActorPreviewPlaceBuildingPreview:
+		PreviewAlpha: 0.55
+		Palette: placefootprint
+		LineBuildFootprintAlpha: 0.5
+		FootprintUnderPreview: Valid, LineBuild, Invalid
+		FootprintOverPreview: None
+	Targetable:
+		TargetTypes: Ground, NoAutoTarget
+	OwnerLostAction:
+		Action: ChangeOwner
+
+^Building:
+	Inherits: ^BasicBuilding
+	Inherits@1: ^SelectableBuilding
+	Inherits@2: ^PlayerHandicaps
+	Inherits@3: ^BuildingDamagedEffects
+	Targetable:
+		TargetTypes: Ground, Structure
+	RevealsShroud:
+		Range: 6c0
+		MaxHeightDelta: 3
+	SoundOnDamageTransition:
+		DamageTypes: NonTemporal
+		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
+		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
+	WithSpriteBody:
+		# PauseOnCondition: chronodisable
+	Explodes:
+		Weapon: BuildingExplosion
+		EmptyWeapon: VehicleExplosion
+		DeathTypes: NonTemporal
+		Type: Footprint
+	ThrowsShrapnel:
+		Weapons: LargeDebris
+		Pieces: 5, 10
+	ProximityCaptor:
+		Types: Building
+	Guardable:
+		Range: 3c0
+	Demolishable:
+		# RequiresCondition: !invulnerability && !forceshield && !chronodisable
+
+^BuildableStructure:
+	Inherits: ^Building
+	Building:
+		BuildSounds: uplace.wav
+		UndeploySounds: uselbuil.wav
+	Buildable:
+		BuildDurationModifier: 100
+	Power:
+		# RequiresCondition: !chronodisable
+	Sellable:
+		SellSounds: uselbuil.wav
+		Notification: StructureSold
+		RequiresCondition: !build-incomplete # && !chronodisable
+	OwnerLostAction:
+		Action: Kill
+		DeathTypes: BulletDeath, NonTemporal
+	WithMakeAnimation:
+		Condition: build-incomplete
+
+^BaseStructure:
+	Inherits: ^BuildableStructure
+	Inherits@CAPTURE: ^CapturableBuilding
+	Inherits@REPAIR: ^RepairableBuilding
+	Buildable:
+		Queue: Building
+	ProvidesPrerequisite@default:
+		# RequiresCondition: !chronodisable
+	GivesBuildableArea:
+		AreaTypes: building, defense
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 4
+	# SpawnActorsOnSell@allies:
+	# 	ActorTypes: e1, e1, e1
+	# 	Factions: america, germany, england, france, korea
+	# SpawnActorsOnSell@soviets:
+	# 	ActorTypes: e2, e2, e2, e2
+	# 	Factions: cuba, libya, iraq, russia
+	# SpawnActorsOnSell@psicorps:
+	# 	ActorTypes: init, init, init
+	# 	Factions: psicorps
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	ShakeOnDeath:
+		DeathTypes: NonTemporal
+	MapEditorData:
+		Categories: Building - Base

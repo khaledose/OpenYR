@@ -59,6 +59,9 @@ dropdown-map-creeps =
 
 ## Defaults
 notification-unit-lost = Unit lost.
+notification-primary-building-selected = Primary building selected.
+notification-repairing = Repairing.
+notification-building-captured = Building captured.
 
 ## Factions
 faction-random =
