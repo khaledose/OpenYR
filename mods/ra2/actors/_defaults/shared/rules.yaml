@@ -47,6 +47,7 @@
 	CombatDebugOverlay:
 	RenderDebugState:
 	DrawLineToTarget:
+	GivesVeterancy:
 	ScriptTriggers:
 	Huntable:
 
@@ -71,3 +72,27 @@
 ^FlatSelectionMode:
 	Selectable:
 		PriorityModifiers: Ctrl
+
+^GainsExperience:
+	GainsVeterancy:
+		ExperiencePerLevel: 300, 600
+		LevelUpNotification: LevelUp
+		LevelUpTextNotification: notification-unit-promoted
+		LevelUpImage: crate-effects
+	GrantConditionOnVeterancyLevel:
+		Level: 2
+		Condition: rank-elite
+	VeterancyModifier:
+		DamageRates: 110
+		StrengthRates: 50
+		SpeedRates: 120
+		SightRates: 130
+		ReloadRates: 60
+		HealRates: 0, 10
+		ExperienceRates: 200, 300
+	VeterancyDecoration:
+		Image: veterancy-pips
+		SequencePerLevel: veteran, elite
+		Palette: pips
+		Position: BottomRight
+		ValidRelationships: Ally, Enemy, Neutral

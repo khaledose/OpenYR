@@ -6,3 +6,12 @@
 		Voice: Feedback
 		ValidRelationships: None
 		RequiresCondition: feedback
+
+^InfantryPromotable:
+	Inherits: ^GainsExperience
+	VeterancyOnProduction:
+		InitialRank: 2
+		Prerequisites: barracks.infiltrated
+	WithProductionIconOverlay:
+		Types: chevron-veteran
+		Prerequisites: barracks.infiltrated
