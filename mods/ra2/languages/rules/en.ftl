@@ -68,6 +68,11 @@ meta-constructionyard =
    .name = Construction Yard
    .description = Allows construction of base structures.
 
+## Default Vehicles
+meta-constructionvehicle =
+   .name = Mobile Construction Vehicle
+   .description = Deploys into a Construction Yard.
+
 ## Factions
 faction-random =
    .name = Random
