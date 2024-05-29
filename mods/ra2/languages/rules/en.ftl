@@ -357,3 +357,4 @@ meta-trafficlight-name = Traffic Light
 meta-streetlight-name = Street Light
 meta-telephonepole-name = Utility Pole
 meta-rock-name = Rock
+meta-tree-name = Tree

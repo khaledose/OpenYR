@@ -1,0 +1,340 @@
+^Tree:
+	Inherits: ^NoIcon
+	idle:
+		ShadowStart: 1
+
+tree01:
+	Inherits: ^Tree
+	idle:
+		Filename: tree01.tem
+		TilesetFilenames:
+			SNOW: tree01.sno
+			URBAN: tree01.urb
+			NEWURBAN: tree01.ubn
+			DESERT: tree01.des
+
+tree02:
+	Inherits: ^Tree
+	idle:
+		Filename: tree02.tem
+		TilesetFilenames:
+			SNOW: tree02.sno
+			URBAN: tree02.urb
+			NEWURBAN: tree02.ubn
+			DESERT: tree02.des
+
+tree03:
+	Inherits: ^Tree
+	idle:
+		Filename: tree03.tem
+		TilesetFilenames:
+			SNOW: tree03.sno
+			URBAN: tree03.urb
+			NEWURBAN: tree03.ubn
+			DESERT: tree03.des
+
+tree04:
+	Inherits: ^Tree
+	idle:
+		Filename: tree04.tem
+		TilesetFilenames:
+			SNOW: tree04.sno
+			URBAN: tree04.urb
+			NEWURBAN: tree04.ubn
+			DESERT: tree04.des
+
+tree05:
+	Inherits: ^Tree
+	idle:
+		Filename: tree05.tem
+		TilesetFilenames:
+			SNOW: tree05.sno
+			URBAN: tree05.urb
+			NEWURBAN: tree05.ubn
+			DESERT: tree05.des
+
+tree06:
+	Inherits: ^Tree
+	idle:
+		Filename: tree06.tem
+		TilesetFilenames:
+			SNOW: tree06.sno
+			URBAN: tree06.urb
+			NEWURBAN: tree06.ubn
+			DESERT: tree06.des
+
+tree07:
+	Inherits: ^Tree
+	idle:
+		Filename: tree07.tem
+		TilesetFilenames:
+			SNOW: tree07.sno
+			URBAN: tree07.urb
+			NEWURBAN: tree07.ubn
+			DESERT: tree07.des
+
+tree08:
+	Inherits: ^Tree
+	idle:
+		Filename: tree08.tem
+		TilesetFilenames:
+			SNOW: tree08.sno
+			URBAN: tree08.urb
+			NEWURBAN: tree08.ubn
+			DESERT: tree08.des
+
+tree09:
+	Inherits: ^Tree
+	idle:
+		Filename: tree09.tem
+		TilesetFilenames:
+			SNOW: tree09.sno
+			URBAN: tree09.urb
+			NEWURBAN: tree09.ubn
+			DESERT: tree09.des
+
+tree10:
+	Inherits: ^Tree
+	idle:
+		Filename: tree10.tem
+		TilesetFilenames:
+			SNOW: tree10.sno
+			URBAN: tree10.urb
+			NEWURBAN: tree10.ubn
+			DESERT: tree10.des
+
+tree11:
+	Inherits: ^Tree
+	idle:
+		Filename: tree11.tem
+		TilesetFilenames:
+			SNOW: tree11.sno
+			URBAN: tree11.urb
+			NEWURBAN: tree11.ubn
+			DESERT: tree11.des
+
+tree12:
+	Inherits: ^Tree
+	idle:
+		Filename: tree12.tem
+		TilesetFilenames:
+			SNOW: tree12.sno
+			URBAN: tree12.urb
+			NEWURBAN: tree12.ubn
+			DESERT: tree12.des
+
+tree13:
+	Inherits: ^Tree
+	idle:
+		Filename: tree13.tem
+		TilesetFilenames:
+			SNOW: tree13.sno
+			URBAN: tree13.urb
+			NEWURBAN: tree13.ubn
+			DESERT: tree13.des
+
+tree14:
+	Inherits: ^Tree
+	idle:
+		Filename: tree14.tem
+		TilesetFilenames:
+			SNOW: tree14.sno
+			URBAN: tree14.urb
+			NEWURBAN: tree14.ubn
+			DESERT: tree14.des
+
+tree15:
+	Inherits: ^Tree
+	idle:
+		Filename: tree15.tem
+		TilesetFilenames:
+			SNOW: tree15.sno
+			URBAN: tree15.urb
+			NEWURBAN: tree15.ubn
+			DESERT: tree15.des
+
+tree16:
+	Inherits: ^Tree
+	idle:
+		Filename: tree16.tem
+		TilesetFilenames:
+			SNOW: tree16.sno
+			URBAN: tree16.urb
+			NEWURBAN: tree16.ubn
+			DESERT: tree16.des
+
+tree17:
+	Inherits: ^Tree
+	idle:
+		Filename: tree17.tem
+		TilesetFilenames:
+			SNOW: tree17.sno
+			URBAN: tree17.urb
+			NEWURBAN: tree17.ubn
+			DESERT: tree17.des
+
+tree18:
+	Inherits: ^Tree
+	idle:
+		Filename: tree18.tem
+		TilesetFilenames:
+			SNOW: tree18.sno
+			URBAN: tree18.urb
+			NEWURBAN: tree18.ubn
+			DESERT: tree18.des
+
+tree19:
+	Inherits: ^Tree
+	idle:
+		Filename: tree19.tem
+		TilesetFilenames:
+			SNOW: tree19.sno
+			URBAN: tree19.urb
+			NEWURBAN: tree19.ubn
+			DESERT: tree19.des
+
+tree20:
+	Inherits: ^Tree
+	idle:
+		Filename: tree20.tem
+		TilesetFilenames:
+			SNOW: tree20.sno
+			URBAN: tree20.urb
+			NEWURBAN: tree20.ubn
+			DESERT: tree20.des
+
+tree21:
+	Inherits: ^Tree
+	idle:
+		Filename: tree21.tem
+		TilesetFilenames:
+			SNOW: tree21.sno
+			URBAN: tree21.urb
+			NEWURBAN: tree21.ubn
+			DESERT: tree21.des
+
+tree22:
+	Inherits: ^Tree
+	idle:
+		Filename: tree22.tem
+		TilesetFilenames:
+			SNOW: tree22.sno
+			URBAN: tree22.urb
+			NEWURBAN: tree22.ubn
+			DESERT: tree22.des
+
+tree23:
+	Inherits: ^Tree
+	idle:
+		Filename: tree23.tem
+		TilesetFilenames:
+			SNOW: tree23.sno
+			URBAN: tree23.urb
+			NEWURBAN: tree23.ubn
+			DESERT: tree23.des
+
+tree24:
+	Inherits: ^Tree
+	idle:
+		Filename: tree24.tem
+		TilesetFilenames:
+			SNOW: tree24.sno
+			URBAN: tree24.urb
+			NEWURBAN: tree24.ubn
+			DESERT: tree24.des
+
+tree25:
+	Inherits: ^Tree
+	idle:
+		Filename: tree25.tem
+		TilesetFilenames:
+			SNOW: tree25.sno
+			URBAN: tree25.urb
+			NEWURBAN: tree25.ubn
+			DESERT: tree25.des
+
+tree26:
+	Inherits: ^Tree
+	idle:
+		Filename: tree26.tem
+		TilesetFilenames:
+			SNOW: tree26.sno
+			URBAN: tree26.urb
+			NEWURBAN: tree26.ubn
+			DESERT: tree26.des
+
+tree27:
+	Inherits: ^Tree
+	idle:
+		Filename: tree27.tem
+		TilesetFilenames:
+			SNOW: tree27.sno
+			URBAN: tree27.urb
+			NEWURBAN: tree27.ubn
+			DESERT: tree27.des
+
+tree28:
+	Inherits: ^Tree
+	idle:
+		Filename: tree28.tem
+		TilesetFilenames:
+			SNOW: tree28.sno
+			URBAN: tree28.urb
+			NEWURBAN: tree28.ubn
+			DESERT: tree28.des
+
+tree29:
+	Inherits: ^Tree
+	idle:
+		Filename: tree29.des
+		TilesetFilenames:
+			NEWURBAN: tree29.ubn
+
+tree30:
+	Inherits: ^Tree
+	idle:
+		Filename: tree30.des
+		TilesetFilenames:
+			NEWURBAN: tree30.ubn
+
+tree31:
+	Inherits: ^Tree
+	idle:
+		Filename: tree31.des
+		TilesetFilenames:
+			NEWURBAN: tree31.ubn
+
+tree32:
+	Inherits: ^Tree
+	idle:
+		Filename: tree32.des
+		TilesetFilenames:
+			NEWURBAN: tree32.ubn
+
+tree33:
+	Inherits: ^Tree
+	idle:
+		Filename: tree33.des
+		TilesetFilenames:
+			NEWURBAN: tree33.ubn
+
+tree34:
+	Inherits: ^Tree
+	idle:
+		Filename: tree34.des
+		TilesetFilenames:
+			NEWURBAN: tree34.ubn
+
+tree35:
+	Inherits: ^Tree
+	idle:
+		Filename: tree35.des
+		TilesetFilenames:
+			NEWURBAN: tree35.ubn
+
+tree36:
+	Inherits: ^Tree
+	idle:
+		Filename: tree36.des
+		TilesetFilenames:
+			NEWURBAN: tree36.ubn
