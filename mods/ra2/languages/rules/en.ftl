@@ -98,6 +98,9 @@ meta-engineer =
 actor-caoild =
    .name = Tech Oil Derrick
    .description = Periodically provides cash.
+actor-cahosp =
+   .name = Tech Hospital
+   .description = Allows infantry to self-heal.
 
 ## Props
 actor-camisc01 =
