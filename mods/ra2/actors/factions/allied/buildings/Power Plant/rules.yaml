@@ -1,0 +1,23 @@
+gapowr:
+	Inherits: ^PowerPlant
+	Inherits@SHAPE: ^2x2Shape
+	Buildable:
+		Prerequisites: ~building.allies, ~techlevel.1
+	IsometricSelectable:
+		DecorationHeight: 60
+	Power:
+		Amount: 200
+	Health:
+		HP: 75000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 800
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@glow:
+		Sequence: idle-glow
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	Explodes:
+		Weapon: PowerPlantExplosion

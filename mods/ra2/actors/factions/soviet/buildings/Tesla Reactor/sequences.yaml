@@ -1,0 +1,37 @@
+napowr:
+	Defaults:
+		Offset: -15, -37
+	idle:
+		Filename: ngpowr.shp
+		TilesetFilenames:
+			SNOW: napowr.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ngpowr.shp
+		TilesetFilenames:
+			SNOW: napowr.shp
+		Start: 1
+		ShadowStart: 4
+	idle-lights:
+		Filename: ngpowr_a.shp
+		TilesetFilenames:
+			SNOW: napowr_a.shp
+		Length: 19
+		Tick: 150
+	damaged-idle-lights:
+		Filename: ngpowr_a.shp
+		TilesetFilenames:
+			SNOW: napowr_a.shp
+		Start: 19
+		Length: 19
+		Tick: 150
+	make:
+		Filename: ntpowrmk.shp
+		TilesetFilenames:
+			SNOW: napowrmk.shp
+			URBAN: nupowrmk.shp
+		Length: 26
+		ShadowStart: 26
+	icon:
+		Filename: cameo|npwricon.shp
+		Offset: 0,0

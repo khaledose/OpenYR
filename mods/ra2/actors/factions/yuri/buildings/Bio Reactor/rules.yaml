@@ -1,0 +1,32 @@
+yapowr:
+	Inherits: ^PowerPlant
+	Inherits@SHAPE: ^2x2Shape
+	Buildable:
+		Prerequisites: ~building.yuri, ~techlevel.1
+		Description: actor-yapowr.description
+	IsometricSelectable:
+		DecorationHeight: 60
+	Power:
+		Amount: 150
+	Health:
+		HP: 70000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 600
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-yapowr.name
+	Tooltip@NoRow:
+		Name: actor-yapowr.name
+	WithIdleOverlay@empty:
+		Sequence: empty
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@lights:
+		Sequence: idle-lights
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	Explodes:
+		Weapon: PowerPlantExplosion
