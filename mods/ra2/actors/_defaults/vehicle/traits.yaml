@@ -19,3 +19,20 @@
 		RequiresCondition: heavydamage
 	GrantConditionOnDamageState@heavydamage:
 		Condition: heavydamage
+
+^MachineShopRepair:
+	ChangesHealth@MACHINESHOP:
+		PercentageStep: 1
+		Delay: 100
+		StartIfBelow: 100
+		RequiresCondition: repair
+	WithDecoration@MACHINESHOP:
+		Image: bonus-pips
+		Sequence: repair
+		Palette: pips
+		Position: TopRight
+		ValidRelationships: Ally
+		RequiresCondition: repair
+	GrantConditionOnPrerequisite@MACHINESHOP:
+		Condition: repair
+		Prerequisites: camach
