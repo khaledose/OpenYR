@@ -92,6 +92,27 @@
 	RenderSprites:
 		Palette: terrain
 
+^Tree:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-tree-name
+	Tooltip@NoRow:
+		Name: meta-tree-name
+	Targetable:
+		TargetTypes: Ground, Tree, NoAutoTarget
+	Crushable:
+		CrushClasses: tree
+		CrushSound: gsancrua.wav
+	RenderSprites:
+		Palette: terrain
+	RadarColorFromTerrain:
+		Terrain: Tree
+	AppearsOnMapPreview:
+		Terrain: Tree
+	MapEditorData:
+		Categories: Misc - Trees
+		ExcludeTilesets: LUNAR
+
 ^Rock:
 	Inherits: ^Prop
 	Tooltip:
