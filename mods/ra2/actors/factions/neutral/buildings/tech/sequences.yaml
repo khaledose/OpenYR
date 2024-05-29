@@ -134,3 +134,21 @@ camach:
 		TilesetFilenames:
 			SNOW: camach_f.shp
 		Length: 16
+
+caslab:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: cgslab.shp
+		TilesetFilenames:
+			SNOW: caslab.shp
+		Offset: 0, -45
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	flag:
+		Filename: cgslab_f.shp
+		TilesetFilenames:
+			SNOW: caslab_f.shp
+		Length: 16

@@ -107,6 +107,9 @@ actor-capowr =
 actor-camach =
    .name = Tech Machine Shop
    .description = Allows vehicles to self-repair.
+actor-caslab =
+   .name = Tech Secret Lab
+   .description = Allow construction of a new 3rd tier vehicle.
 
 ## Props
 actor-camisc01 =

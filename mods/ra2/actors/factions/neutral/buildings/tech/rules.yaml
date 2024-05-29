@@ -111,3 +111,25 @@ camach:
 		Sequence: flag
 		# PauseOnCondition: chronodisable
 
+caslab:
+	Inherits: ^TechBuilding
+	Inherits@SHAPE: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-caslab.name
+	Tooltip@NoRow:
+		Name: actor-caslab.name
+	TooltipDescription:
+		Description: actor-caslab.description
+	ProvidesPrerequisite@default:
+		RequiresCondition: enabled
+	WithIdleOverlay@flag:
+		Sequence: flag
+		# PauseOnCondition: chronodisable
