@@ -1,0 +1,44 @@
+gapile:
+	Defaults:
+		Offset: -15, -38
+	idle:
+		Filename: ggpile.shp
+		TilesetFilenames:
+			SNOW: gapile.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ggpile.shp
+		TilesetFilenames:
+			SNOW: gapile.shp
+		Start: 1
+		ShadowStart: 4
+	idle-flag:
+		Filename: ggpile_a.shp
+		TilesetFilenames:
+			SNOW: gapile_a.shp
+		Length: 16
+		ShadowStart: 32
+	damaged-idle-flag:
+		Filename: ggpile_a.shp
+		TilesetFilenames:
+			SNOW: gapile_a.shp
+		Start: 16
+		Length: 16
+		ShadowStart: 48
+	#dead: ggpiledm # SHP broken & unused
+	#	Length: 25
+	#	ShadowStart: 25
+	#	Tick: 100
+	make:
+		Filename: gtpilemk.shp
+		TilesetFilenames:
+			SNOW: gapilemk.shp
+			URBAN: gupilemk.shp
+			NEWURBAN: gnpilemk.shp
+			DESERT: gdpilemk.shp
+			LUNAR: glpilemk.shp
+		Length: 25
+		ShadowStart: 25
+	icon:
+		Filename: cameo|brrkicon.shp
+		Offset: 0,0

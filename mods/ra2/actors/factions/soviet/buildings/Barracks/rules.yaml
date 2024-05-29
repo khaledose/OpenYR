@@ -1,0 +1,25 @@
+nahand:
+	Inherits: ^Barracks
+	Inherits@SHAPE: ^2x2Shape
+	Buildable:
+		Prerequisites: ~building.soviets, napowr, ~techlevel.2
+	IsometricSelectable:
+		DecorationHeight: 135
+	RevealsShroud:
+		Range: 6c0
+	RallyPoint:
+		Path: 3,3
+	Exit@1:
+		SpawnOffset: -512,768,0
+		ExitCell: 1,2
+	Exit@2:
+		SpawnOffset: -512,768,0
+		ExitCell: 0,2
+	ProvidesPrerequisite@infantry.soviets:
+		Prerequisite: infantry.soviets
+	ProvidesPrerequisite@infantry.iraq:
+		Prerequisite: infantry.iraq
+		Factions: iraq
+	ProvidesPrerequisite@infantry.cuba:
+		Prerequisite: infantry.cuba
+		Factions: cuba

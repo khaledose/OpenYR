@@ -1,0 +1,38 @@
+yabrck:
+	Defaults:
+		Offset: 15,-37
+	idle:
+		Filename: ygbrck.shp
+		TilesetFilenames:
+			SNOW: yabrck.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ygbrck.shp
+		TilesetFilenames:
+			SNOW: yabrck.shp
+		Start: 1
+		ShadowStart: 4
+	idle-lights:
+		Filename: ygbrck_a.shp
+		TilesetFilenames:
+			SNOW: yabrck_a.shp
+		Length: 8
+		ShadowStart: 16
+		Tick: 150
+	damaged-idle-lights:
+		Filename: ygbrck_a.shp
+		TilesetFilenames:
+			SNOW: yabrck_a.shp
+		Start: 8
+		Length: 8
+		ShadowStart: 24
+		Tick: 150
+	make:
+		Filename: ygbrckmk.shp
+		TilesetFilenames:
+			SNOW: yabrckmk.shp
+		Length: 25
+		ShadowStart: 25
+	icon:
+		Filename: cameomd|brckicon.shp
+		Offset: 0,0

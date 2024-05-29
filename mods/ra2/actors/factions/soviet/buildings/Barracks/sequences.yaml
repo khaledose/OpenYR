@@ -1,0 +1,27 @@
+nahand:
+	Defaults:
+		Offset: 1, -31
+	idle:
+		Filename: nghand.shp
+		TilesetFilenames:
+			SNOW: nahand.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: nghand.shp
+		TilesetFilenames:
+			SNOW: nahand.shp
+		Start: 1
+		ShadowStart: 4
+	make:
+		Filename: nthandmk.shp
+		TilesetFilenames:
+			SNOW: nahandmk.shp
+			URBAN: nuhandmk.shp
+			NEWURBAN: nnhandmk.shp
+			DESERT: ndhandmk.shp
+			LUNAR: nlhandmk.shp
+		Length: 25
+		ShadowStart: 25
+	icon:
+		Filename: cameo|handicon.shp
+		Offset: 0,0

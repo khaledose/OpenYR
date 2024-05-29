@@ -1,0 +1,21 @@
+yabrck:
+	Inherits: ^Barracks
+	Inherits@SHAPE: ^2x3Shape
+	Buildable:
+		Prerequisites: ~building.yuri, yapowr, ~techlevel.2
+	IsometricSelectable:
+		DecorationHeight: 105
+	RallyPoint:
+		Path: 2,1
+	Exit@1:
+		SpawnOffset: 724,362,0
+		ExitCell: 2,2
+	Exit@2:
+		SpawnOffset: 724,362,0
+		ExitCell: 2,1
+	WithIdleOverlay@lights:
+		Sequence: idle-lights
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@infantry.yuri:
+		Prerequisite: infantry.yuri
