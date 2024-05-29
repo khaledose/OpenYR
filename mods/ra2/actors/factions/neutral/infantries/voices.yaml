@@ -1,0 +1,98 @@
+CivilianAlliedMaleVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iciasea, iciaseb, iciasec
+		Move: iciamoa, iciamob, iciamoc
+		Attack: iciaata, iciaatb, iciaatc
+		Feedback: iciafea, iciafeb, iciafec
+		Die: iciadia, iciadib, iciadic, iciadid
+
+CivilianSovietMaleVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: icissea, icisseb, icissec, icissed
+		Move: icismoa, icismob, icismoc
+		Attack: icisata, icisatb, icisatc
+		Feedback: icisfea, icisfeb, icisfec
+		Die: icisdia, icisdib, icisdic
+
+CivilianAlliedFemaleVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: icfasea, icfaseb, icfasec, icfased
+		Move: icfamoa, icfamob, icfamoc, icfamod
+		Attack: icfaata, icfaatb, icfaatc, icfaatd
+		Feedback: icfafea, icfafeb, icfafec
+		Die: icfadia, icfadib, icfadic
+
+CivilianSovietFemaleVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: icfssea, icfsseb, icfssec, icfssed, icfssee
+		Move: icfsmoa, icfsmob, icfsmoc, icfsmod
+		Attack: icfsata, icfsatb, icfsatc, icfsatd
+		Feedback: icfsfea, icfsfeb
+		Die: icfsdia, icfsdib, icfsdic
+
+CivilianTexanVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ictesea, icteseb, ictesec, ictesed
+		Move: ictemoa, ictemob, ictemoc, ictemod
+		Attack: icteata, icteatb, icteatc, icteatd
+		Feedback: ictefea, ictefeb, ictefec
+		Die: ictedia, ictedib, ictedic
+
+EinsteinVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: ieinsea, ieinseb, ieinsec, ieinsed, ieinsee
+		Move: ieinmoa, ieinmob, ieinmoc, ieinmod, ieinmoe
+		Attack: ieinata, ieinatb, ieinatc, ieinatd, ieinate
+		Feedback: ieinfea, ieinfeb, ieinfec, ieinfed, ieinfee
+		Die: ieindia, ieindib, ieindic, ieindid, ieindie
+
+RomanovVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iromsea, iromseb, iromsec, iromsee
+		Move: irommoa, irommob, irommoc, irommod, irommoe
+		Attack: iromata, iromatb, iromatc, iromatd, iromate
+		Feedback: iromfea, iromfeb, iromfec, iromfed, iromfee
+		Die: iromdia, iromdib, iromdic, iromdid, iromdie
+
+ArnoldVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iarnsea, iarnseb, iarnsec, iarnsed
+		Move: iarnmod, iarnmoe
+		Attack: iarnata, iarnatb, iarnatc, iarnatd, iarnate
+		Feedback: iarnfea, iarnfeb, iarnfec, iarnfed, iarnfee
+		Die: iarndia, iarndib, iarndic, iarndid, iarndie
+
+StallionVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: islysea, islyseb, islysec
+		Move: islymoa, islymob, islymoc, islymod, islymoe
+		Attack: islyata, islyatb, islyatc, islyatd, islyate
+		Feedback: islyfec, islyfed, islyfee
+		Die: islydia, islydib, islydic, islydid, islydie
+
+SecretServiceVoice:
+	Inherits: ^InfantryDeath
+	DefaultVariant: .wav
+	Voices:
+		Select: isecsea, isecseb, isecsec, isecsed, isecsee, isecsef
+		Move: isecmoa, isecmob, isecmoc, isecmod
+		Attack: isecata, isecatb, isecatc, isecatd, isecate
+		Die: isecdia, isecdib, isecdic
+
+MummyVoice:
+	Inherits: ^InfantryDeath
+	DefaultVariant: .wav
+	Voices:
+		Select: gmumsela, gmumselb, gmumselc
+		Move: gmummova, gmummovd
+		Attack: gmummova, gmummovd
+		Die: gmumdiea, gmumdieb, gmumdiec, gmumdied

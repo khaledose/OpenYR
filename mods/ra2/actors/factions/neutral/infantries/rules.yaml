@@ -1,0 +1,214 @@
+civ1:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedFemaleVoice
+
+civ2:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civ3:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civa:
+	Inherits: ^ArmedCivilian
+	Inherits@PANIC: ^Panicker
+	Inherits@WANDERS: ^Wanderer
+	Armament:
+		Weapon: Pistola
+	Voiced:
+		VoiceSet: CivilianTexanVoice
+	-TakeCover:
+
+civb:
+	Inherits: ^ArmedCivilian
+	Inherits@PANIC: ^Panicker
+	Inherits@WANDERS: ^Wanderer
+	Armament:
+		Weapon: Pistola
+	Voiced:
+		VoiceSet: CivilianTexanVoice
+	-TakeCover:
+
+civc:
+	Inherits: ^ArmedCivilian
+	Inherits@PANIC: ^Panicker
+	Inherits@WANDERS: ^Wanderer
+	Armament:
+		Weapon: Pistola
+	Voiced:
+		VoiceSet: CivilianTexanVoice
+	-TakeCover:
+
+civbbp:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civbfm:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civbf:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedFemaleVoice
+
+civbtm:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+civsfm:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianSovietMaleVoice
+
+civsf:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianSovietFemaleVoice
+
+civstm:
+	Inherits: ^Civilian
+	Voiced:
+		VoiceSet: CivilianSovietMaleVoice
+
+vladimir:
+	Inherits: ^ArmedCivilian
+	DeliversCash:
+		Payload: 200
+	Tooltip:
+		Name: actor-vladimir.name
+	Tooltip@NoRow:
+		Name: actor-vladimir.name
+	Armament:
+		Weapon: Pistola
+	WithInfantryBody:
+		IdleSequences: idle1, idle2
+
+pentgen:
+	Inherits: ^ArmedCivilian
+	DeliversCash:
+		Payload: 200
+	Tooltip:
+		Name: actor-pentgen.name
+	Tooltip@NoRow:
+		Name: actor-pentgen.name
+	Armament:
+		Weapon: Pistola
+	Voiced:
+		VoiceSet: GIVoice
+
+ssrv:
+	Inherits: ^ArmedCivilian
+	Tooltip:
+		Name: actor-ssrv.name
+	Tooltip@NoRow:
+		Name: actor-ssrv.name
+	Armament:
+		Weapon: Pistola
+	Voiced:
+		VoiceSet: SecretServiceVoice
+
+pres:
+	Inherits: ^Person
+	Inherits@1: ^BasicCivilian
+	DeliversCash:
+		Payload: 2000
+	Tooltip:
+		Name: actor-pres.name
+	Tooltip@NoRow:
+		Name: actor-pres.name
+
+# Yuri's Revenge Civilians
+rmnv:
+	Inherits: ^Person
+	Inherits@1: ^BasicCivilian
+	Tooltip:
+		Name: actor-rmnv.name
+	Tooltip@NoRow:
+		Name: actor-rmnv.name
+	Voiced:
+		VoiceSet: RomanovVoice
+
+eins:
+	Inherits: ^Civilian
+	DeliversCash:
+		Payload: 200
+	Tooltip:
+		Name: actor-eins.name
+	Tooltip@NoRow:
+		Name: actor-eins.name
+	Voiced:
+		VoiceSet: EinsteinVoice
+
+mumy:
+	Inherits: ^ArmedCivilian
+	Inherits@SELFHEALING: ^SelfHealing
+	Inherits@WANDERS: ^Wanderer
+	Health:
+		HP: 40000
+	Armor:
+		Type: Plate
+	Valued:
+		Cost: 100
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 45
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-mumy.name
+	Tooltip@NoRow:
+		Name: actor-mumy.name
+	WithInfantryBody:
+		IdleSequences: idle1, idle2
+	Voiced:
+		VoiceSet: MummyVoice
+	-TakeCover:
+
+arnd:
+	Inherits: ^ArmedCivilian
+	Health:
+		HP: 20000
+	Armor:
+		Type: Plate
+	Mobile:
+		Speed: 90
+	Tooltip:
+		Name: actor-arnd.name
+	Tooltip@NoRow:
+		Name: actor-arnd.name
+	Armament:
+		Weapon: TermiGun
+	WithInfantryBody:
+		IdleSequences: idle1, idle2
+	Voiced:
+		VoiceSet: ArnoldVoice
+
+stln:
+	Inherits: ^ArmedCivilian
+	Health:
+		HP: 20000
+	Armor:
+		Type: Plate
+	Mobile:
+		Speed: 90
+	Tooltip:
+		Name: actor-stln.name
+	Tooltip@NoRow:
+		Name: actor-stln.name
+	Armament@primary:
+		Weapon: StalGun
+	Armament@secondary:
+		Weapon: StalGren
+	WithInfantryBody:
+		IdleSequences: idle1, idle2
+	Voiced:
+		VoiceSet: StallionVoice

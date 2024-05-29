@@ -1,0 +1,58 @@
+Pistola:
+	Inherits: ^SA
+	ReloadDelay: 20
+	Range: 3c0
+	Report: icivatta.wav, icivattb.wav
+	Warhead@1Dam: TargetDamage
+		Damage: 200
+
+TermiGun:
+	Inherits: ^HollowPoint
+	ReloadDelay: 5
+	Range: 6c0
+	Report: iarnatta.wav, iarnattb.wav
+	Warhead@1Dam: TargetDamage
+		Damage: 12500
+
+StalGun:
+	Inherits: ^HollowPoint4
+	ReloadDelay: 10
+	Range: 6c0
+	Report: islyat1a.wav, islyat1b.wav
+	ValidTargets: Ground, Water
+	InvalidTargets: Structure, WaterStructure, Bridge, Wall, Fence, Tree
+	Warhead@1Dam: TargetDamage
+		Damage: 12500
+		InvalidTargets: Structure, WaterStructure, Bridge, Wall, Fence, Tree
+
+StalGren:
+	Inherits: ^Bullet
+	Inherits@EXPLOSION: MiniNukeExplosion
+	ReloadDelay: 10
+	Range: 6c0
+	Report: islyat2a.wav
+	ValidTargets: Structure, WaterStructure
+	Warhead@1Dam: SpreadDamage
+		Damage: 1000000
+		Versus:
+			None: 0
+			Flak: 0
+			Plate: 0
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 100
+			Steel: 100
+			Concrete: 100
+			Drone: 0
+			Rocket: 0
+		DamageTypes: NonTemporal
+		ValidTargets: Structure, WaterStructure
+
+ClintGun:
+	Inherits: ^HollowPoint
+	ReloadDelay: 10
+	Range: 6c0
+	Report: icliatta.wav, icliattb.wav, icliattc.wav
+	Warhead@1Dam: TargetDamage
+		Damage: 12500
