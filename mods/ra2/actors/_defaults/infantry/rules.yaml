@@ -1,6 +1,7 @@
 ^Infantry:
 	Inherits: ^Actor
 	Inherits@1: ^Sprite
+	Inherits@2: ^HospitalHealing
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Buildable:

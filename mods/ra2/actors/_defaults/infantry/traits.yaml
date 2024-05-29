@@ -16,6 +16,23 @@
 		Types: chevron-veteran
 		Prerequisites: barracks.infiltrated
 
+^HospitalHealing:
+	ChangesHealth@HOSPITAL:
+		PercentageStep: 1
+		Delay: 100
+		StartIfBelow: 100
+		RequiresCondition: heal
+	WithDecoration@HOSPITAL:
+		Image: bonus-pips
+		Sequence: heal
+		Palette: pips
+		Position: TopRight
+		ValidRelationships: Ally
+		RequiresCondition: heal
+	GrantConditionOnPrerequisite@HOSPITAL:
+		Condition: heal
+		Prerequisites: cahosp
+
 ^Wanderer:
 	Wanders:
 		MinMoveDelay: 150

@@ -37,3 +37,29 @@ caoild:
 		SoundFiles: boillo2a.wav, boillo2b.wav, boillo2c.wav
 		RequiresCondition: enabled
 
+cahosp:
+	Inherits: ^TechBuilding
+	Inherits@SHAPE: ^6x4Shape
+	IsometricSelectable:
+		DecorationHeight: 105
+	Health:
+		HP: 80000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-cahosp.name
+	Tooltip@NoRow:
+		Name: actor-cahosp.name
+	TooltipDescription:
+		Description: actor-cahosp.description
+	ProvidesPrerequisite@default:
+		RequiresCondition: enabled # && !chronodisable
+	WithIdleOverlay:
+		# PauseOnCondition: disabled || chronodisable
+	WithIdleOverlay@flag:
+		Sequence: flag
+		Offset: 0,-500,2520
+		# PauseOnCondition: chronodisable
+

@@ -45,3 +45,51 @@ caoild:
 			LUNAR: cloild_f.shp
 		Length: 16
 		Offset: 0, -9
+
+cahosp:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: cthosp.shp
+		TilesetFilenames:
+			SNOW: cahosp.shp
+			URBAN: cuhosp.shp
+			NEWURBAN: cnhosp.shp
+			DESERT: cdhosp.shp
+			LUNAR: clhosp.shp
+		Offset: -30, -75
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-overlay:
+		Filename: cthosp_a.shp
+		TilesetFilenames:
+			SNOW: cahosp_a.shp
+			URBAN: cuhosp_a.shp
+			NEWURBAN: cnhosp_a.shp
+			DESERT: cdhosp_a.shp
+			LUNAR: clhosp_a.shp
+		Length: 2
+		Tick: 400
+	damaged-idle-overlay:
+		Filename: cthosp_a.shp
+		TilesetFilenames:
+			SNOW: cahosp_a.shp
+			URBAN: cuhosp_a.shp
+			NEWURBAN: cnhosp_a.shp
+			DESERT: cdhosp_a.shp
+			LUNAR: clhosp_a.shp
+		Start: 2
+		Length: 2
+		Tick: 400
+	flag:
+		Filename: cthosp_f.shp
+		TilesetFilenames:
+			SNOW: cahosp_f.shp
+			URBAN: cuhosp_f.shp
+			NEWURBAN: cnhosp_f.shp
+			DESERT: cdhosp_f.shp
+			LUNAR: clhosp_f.shp
+		Length: 16
+		Offset: -9, -23
