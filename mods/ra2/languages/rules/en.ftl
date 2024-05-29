@@ -270,3 +270,4 @@ meta-oredrill-name = Ore Drill
 
 ## Other
 meta-crate-name = Crate
+meta-rock-name = Rock

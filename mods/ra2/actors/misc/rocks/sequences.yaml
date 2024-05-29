@@ -1,0 +1,140 @@
+^Rock:
+	Inherits: ^NoIcon
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+
+trock01:
+	Inherits: ^Rock
+	idle:
+		Filename: trock01.tem
+		TilesetFilenames:
+			SNOW: trock01.sno
+			URBAN: trock01.urb
+			NEWURBAN: trock01.ubn
+			DESERT: trock01.des
+			LUNAR: trock01.lun
+
+trock02:
+	Inherits: ^Rock
+	idle:
+		Filename: trock02.tem
+		TilesetFilenames:
+			SNOW: trock02.sno
+			URBAN: trock02.urb
+			NEWURBAN: trock02.ubn
+			DESERT: trock02.des
+			LUNAR: trock02.lun
+
+trock03:
+	Inherits: ^Rock
+	idle:
+		Filename: trock03.tem
+		TilesetFilenames:
+			SNOW: trock03.sno
+			URBAN: trock03.urb
+			NEWURBAN: trock03.ubn
+			DESERT: trock03.des
+			LUNAR: trock03.lun
+
+trock04:
+	Inherits: ^Rock
+	idle:
+		Filename: trock04.tem
+		TilesetFilenames:
+			SNOW: trock04.sno
+			URBAN: trock04.urb
+			NEWURBAN: trock04.ubn
+			DESERT: trock04.des
+			LUNAR: trock04.lun
+
+trock05:
+	Inherits: ^Rock
+	idle:
+		Filename: trock05.tem
+		TilesetFilenames:
+			SNOW: trock05.sno
+			URBAN: trock05.urb
+			NEWURBAN: trock05.ubn
+			DESERT: trock05.des
+			LUNAR: trock05.lun
+
+srock01:
+	Inherits: ^Rock
+	idle:
+		Filename: srock01.tem
+		TilesetFilenames:
+			SNOW: srock01.sno
+			URBAN: srock01.urb
+			NEWURBAN: srock01.ubn
+			DESERT: srock01.des
+			LUNAR: srock01.lun
+
+srock02:
+	Inherits: ^Rock
+	idle:
+		Filename: srock02.tem
+		TilesetFilenames:
+			SNOW: srock02.sno
+			URBAN: srock02.urb
+			NEWURBAN: srock02.ubn
+			DESERT: srock02.des
+			LUNAR: srock02.lun
+
+srock03:
+	Inherits: ^Rock
+	idle:
+		Filename: srock03.tem
+		TilesetFilenames:
+			SNOW: srock03.sno
+			URBAN: srock03.urb
+			NEWURBAN: srock03.ubn
+			DESERT: srock03.des
+			LUNAR: srock03.lun
+
+srock04:
+	Inherits: ^Rock
+	idle:
+		Filename: srock04.tem
+		TilesetFilenames:
+			SNOW: srock04.sno
+			URBAN: srock04.urb
+			NEWURBAN: srock04.ubn
+			DESERT: srock04.des
+			LUNAR: srock04.lun
+
+srock05:
+	Inherits: ^Rock
+	idle:
+		Filename: srock05.tem
+		TilesetFilenames:
+			SNOW: srock05.sno
+			URBAN: srock05.urb
+			NEWURBAN: srock05.ubn
+			DESERT: srock05.des
+			LUNAR: srock05.lun
+
+lunrk1:
+	Inherits: ^Rock
+	idle:
+		Filename: lunrk1.des
+lunrk2:
+	Inherits: ^Rock
+	idle:
+		Filename: lunrk2.des
+lunrk3:
+	Inherits: ^Rock
+	idle:
+		Filename: lunrk3.des
+lunrk4:
+	Inherits: ^Rock
+	idle:
+		Filename: lunrk4.des
+lunrk5:
+	Inherits: ^Rock
+	idle:
+		Filename: lunrk5.des
+lunrk6:
+	Inherits: ^Rock
+	idle:
+		Filename: lunrk6.des

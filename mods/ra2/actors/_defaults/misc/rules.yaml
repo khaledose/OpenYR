@@ -46,6 +46,22 @@
 	MapEditorData:
 		Categories: Misc - Drills
 
+^Rock:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-rock-name
+	Tooltip@NoRow:
+		Name: meta-rock-name
+	WithSpriteBody:
+	RenderSprites:
+		Palette: terrain
+	RadarColorFromTerrain:
+		Terrain: Rock
+	AppearsOnMapPreview:
+		Terrain: Rock
+	MapEditorData:
+		Categories: Misc - Rocks
+
 ^LampPost:
 	Interactable:
 	AlwaysVisible:
