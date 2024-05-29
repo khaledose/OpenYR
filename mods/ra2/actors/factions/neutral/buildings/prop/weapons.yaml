@@ -1,0 +1,19 @@
+SmallBarrelExplosion:
+	Inherits: OilExplosion
+	Warhead@1Dam: SpreadDamage
+		Damage: 20000
+	Warhead@2Eff: CreateEffect
+		Image: barrelexplosion
+		Explosions: small
+		ImpactSounds: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+		ImpactActors: false
+		ValidTargets: Ground, Water, Air
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch
+
+LargeBarrelExplosion:
+	Inherits: SmallBarrelExplosion
+	Warhead@2Eff: CreateEffect
+		Explosions: large
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch

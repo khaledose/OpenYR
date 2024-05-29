@@ -46,6 +46,52 @@
 	MapEditorData:
 		Categories: Misc - Drills
 
+^Prop:
+	Inherits: ^BasicBuilding
+	Health:
+		HP: 5000
+	Armor:
+		Type: Wood
+	WithSpriteBody:
+	MapEditorData:
+		Categories: Neutral - Props
+
+^StreetSign:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-streetsign-name
+	Tooltip@NoRow:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+^TrafficLight:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-trafficlight-name
+	Tooltip@NoRow:
+		Name: meta-trafficlight-name
+	RenderSprites:
+		Palette: terrain
+
+^StreetLight:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-streetlight-name
+	Tooltip@NoRow:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+^TelephonePole:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-telephonepole-name
+	Tooltip@NoRow:
+		Name: meta-telephonepole-name
+	RenderSprites:
+		Palette: terrain
+
 ^Rock:
 	Inherits: ^Prop
 	Tooltip:

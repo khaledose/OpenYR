@@ -27,6 +27,7 @@ Rules:
 	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
 	ra2|actors/factions/allied/infantries/G.I/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
+	ra2|actors/factions/neutral/buildings/prop/rules.yaml
 	ra2|actors/factions/neutral/infantries/rules.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
@@ -67,6 +68,7 @@ Sequences:
 	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
 	ra2|actors/factions/allied/infantries/G.I/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/neutral/buildings/prop/sequences.yaml
 	ra2|actors/factions/neutral/infantries/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
@@ -117,6 +119,7 @@ Weapons:
 	ra2|actors/_defaults/weapon/weapons.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/weapons.yaml
 	ra2|actors/factions/allied/infantries/G.I/weapons.yaml
+	ra2|actors/factions/neutral/buildings/prop/weapons.yaml
 	ra2|actors/factions/neutral/infantries/weapons.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/weapons.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/weapons.yaml

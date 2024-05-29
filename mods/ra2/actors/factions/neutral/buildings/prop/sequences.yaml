@@ -1,0 +1,790 @@
+sign01:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: sign01.tem
+		TilesetFilenames:
+			SNOW: sign01.sno
+			URBAN: sign01.urb
+			NEWURBAN: sign01.ubn
+			DESERT: sign01.des
+			LUNAR: sign01.lun
+	idle:
+		ShadowStart: 1
+
+sign02:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: sign02.tem
+		TilesetFilenames:
+			SNOW: sign02.sno
+			URBAN: sign02.urb
+			NEWURBAN: sign02.ubn
+			DESERT: sign02.des
+			LUNAR: sign02.lun
+	idle:
+		ShadowStart: 1
+
+sign03:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: sign03.tem
+		TilesetFilenames:
+			SNOW: sign03.sno
+			URBAN: sign03.urb
+			NEWURBAN: sign03.ubn
+			DESERT: sign03.des
+			LUNAR: sign03.lun
+	idle:
+
+sign04:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: sign04.tem
+		TilesetFilenames:
+			SNOW: sign04.sno
+			URBAN: sign04.urb
+			NEWURBAN: sign04.ubn
+			DESERT: sign04.des
+			LUNAR: sign04.lun
+	idle:
+		ShadowStart: 1
+
+sign05:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: sign05.tem
+		TilesetFilenames:
+			SNOW: sign05.sno
+			URBAN: sign05.urb
+			NEWURBAN: sign05.ubn
+			DESERT: sign05.des
+			LUNAR: sign05.lun
+	idle:
+		ShadowStart: 1
+
+sign06:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: sign06.tem
+		TilesetFilenames:
+			SNOW: sign06.sno
+			URBAN: sign06.urb
+			NEWURBAN: sign06.ubn
+			DESERT: sign06.des
+			LUNAR: sign06.lun
+	idle:
+		ShadowStart: 1
+
+trff01:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: trff01.tem
+		TilesetFilenames:
+			SNOW: trff01.sno
+			URBAN: trff01.urb
+			NEWURBAN: trff01.ubn
+			DESERT: trff01.des
+			LUNAR: trff01.lun
+	idle:
+		ShadowStart: 1
+
+trff02:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: trff02.tem
+		TilesetFilenames:
+			SNOW: trff02.sno
+			URBAN: trff02.urb
+			NEWURBAN: trff02.ubn
+			DESERT: trff02.des
+			LUNAR: trff02.lun
+	idle:
+		ShadowStart: 1
+
+trff03:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: trff03.tem
+		TilesetFilenames:
+			SNOW: trff03.sno
+			URBAN: trff03.urb
+			NEWURBAN: trff03.ubn
+			DESERT: trff03.des
+			LUNAR: trff03.lun
+	idle:
+		ShadowStart: 1
+
+trff04:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: trff04.tem
+		TilesetFilenames:
+			SNOW: trff04.sno
+			URBAN: trff04.urb
+			NEWURBAN: trff04.ubn
+			DESERT: trff04.des
+			LUNAR: trff04.lun
+	idle:
+		ShadowStart: 1
+
+lt_gen01:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_gen01.tem
+		TilesetFilenames:
+			SNOW: lt_gen01.sno
+			URBAN: lt_gen01.urb
+			NEWURBAN: lt_gen01.ubn
+			DESERT: lt_gen01.des
+			LUNAR: lt_gen01.lun
+	idle:
+		ShadowStart: 1
+
+lt_gen02:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_gen02.tem
+		TilesetFilenames:
+			SNOW: lt_gen02.sno
+			URBAN: lt_gen02.urb
+			NEWURBAN: lt_gen02.ubn
+			DESERT: lt_gen02.des
+			LUNAR: lt_gen02.lun
+	idle:
+		ShadowStart: 1
+
+lt_gen03:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_gen03.tem
+		TilesetFilenames:
+			SNOW: lt_gen03.sno
+			URBAN: lt_gen03.urb
+			NEWURBAN: lt_gen03.ubn
+			DESERT: lt_gen03.des
+			LUNAR: lt_gen03.lun
+	idle:
+		ShadowStart: 1
+
+lt_gen04:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_gen04.tem
+		TilesetFilenames:
+			SNOW: lt_gen04.sno
+			URBAN: lt_gen04.urb
+			NEWURBAN: lt_gen04.ubn
+			DESERT: lt_gen04.des
+			LUNAR: lt_gen04.lun
+	idle:
+		ShadowStart: 1
+
+lt_sgn01:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_sgn01.tem
+		TilesetFilenames:
+			SNOW: lt_sgn01.sno
+			URBAN: lt_sgn01.urb
+			NEWURBAN: lt_sgn01.ubn
+			DESERT: lt_sgn01.des
+			LUNAR: lt_sgn01.lun
+	idle:
+		ShadowStart: 1
+
+lt_sgn02:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_sgn02.tem
+		TilesetFilenames:
+			SNOW: lt_sgn02.sno
+			URBAN: lt_sgn02.urb
+			NEWURBAN: lt_sgn02.ubn
+			DESERT: lt_sgn02.des
+			LUNAR: lt_sgn02.lun
+	idle:
+		ShadowStart: 1
+
+lt_sgn03:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_sgn03.tem
+		TilesetFilenames:
+			SNOW: lt_sgn03.sno
+			URBAN: lt_sgn03.urb
+			NEWURBAN: lt_sgn03.ubn
+			DESERT: lt_sgn03.des
+			LUNAR: lt_sgn03.lun
+	idle:
+		ShadowStart: 1
+
+lt_sgn04:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_sgn04.tem
+		TilesetFilenames:
+			SNOW: lt_sgn04.sno
+			URBAN: lt_sgn04.urb
+			NEWURBAN: lt_sgn04.ubn
+			DESERT: lt_sgn04.des
+			LUNAR: lt_sgn04.lun
+	idle:
+
+lt_eur01:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_eur01.tem
+		TilesetFilenames:
+			SNOW: lt_eur01.sno
+			URBAN: lt_eur01.urb
+			NEWURBAN: lt_eur01.ubn
+			DESERT: lt_eur01.des
+			LUNAR: lt_eur01.lun
+	idle:
+		ShadowStart: 1
+
+lt_eur02:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: lt_eur02.tem
+		TilesetFilenames:
+			SNOW: lt_eur02.sno
+			URBAN: lt_eur02.urb
+			NEWURBAN: lt_eur02.ubn
+			DESERT: lt_eur02.des
+			LUNAR: lt_eur02.lun
+	idle:
+		ShadowStart: 1
+
+pole01:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: pole01.tem
+		TilesetFilenames:
+			SNOW: pole01.sno
+			URBAN: pole01.urb
+			NEWURBAN: pole01.ubn
+			DESERT: pole01.des
+			LUNAR: pole01.lun
+	idle:
+		ShadowStart: 1
+
+pole02:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: pole02.tem
+		TilesetFilenames:
+			SNOW: pole02.sno
+			URBAN: pole02.urb
+			NEWURBAN: pole02.ubn
+			DESERT: pole02.des
+			LUNAR: pole02.lun
+	idle:
+		ShadowStart: 1
+
+camsc01:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmsc01.shp
+		TilesetFilenames:
+			SNOW: camsc01.shp
+			URBAN: cumsc01.shp
+			NEWURBAN: cnmsc01.shp
+			DESERT: cdmsc01.shp
+			LUNAR: clmsc01.shp
+
+camsc02:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmsc02.shp
+		TilesetFilenames:
+			SNOW: camsc02.shp
+			URBAN: cumsc02.shp
+			NEWURBAN: cnmsc02.shp
+			DESERT: cdmsc02.shp
+			LUNAR: clmsc02.shp
+
+camsc03:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmsc03.shp
+		TilesetFilenames:
+			SNOW: camsc03.shp
+			URBAN: cumsc03.shp
+			NEWURBAN: cnmsc03.shp
+			DESERT: cdmsc03.shp
+			LUNAR: clmsc03.shp
+
+camsc04:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmsc04.shp
+		TilesetFilenames:
+			SNOW: camsc04.shp
+			URBAN: cumsc04.shp
+			NEWURBAN: cnmsc04.shp
+			DESERT: cdmsc04.shp
+			LUNAR: clmsc04.shp
+
+camsc05:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmsc05.shp
+		TilesetFilenames:
+			SNOW: camsc05.shp
+			URBAN: cumsc05.shp
+			NEWURBAN: cnmsc05.shp
+			DESERT: cdmsc05.shp
+			LUNAR: clmsc05.shp
+
+camsc06:
+	Inherits: ^Prop
+	idle-fire:
+		Filename: ctmsc06a.shp
+		TilesetFilenames:
+			SNOW: camsc06a.shp
+			URBAN: cumsc06a.shp
+			NEWURBAN: cnmsc06a.shp
+			DESERT: cdmsc06a.shp
+			LUNAR: clmsc06a.shp
+		Length: 4
+		ShadowStart: 4
+		Tick: 80
+	idle:
+		Filename: ctmsc06.shp
+		TilesetFilenames:
+			SNOW: camsc06.shp
+			URBAN: cumsc06.shp
+			NEWURBAN: cnmsc06.shp
+			DESERT: cdmsc06.shp
+			LUNAR: clmsc06.shp
+
+camsc11:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmsc11.shp
+		TilesetFilenames:
+			SNOW: camsc11.shp
+			URBAN: cumsc11.shp
+			NEWURBAN: cnmsc11.shp
+			DESERT: cdmsc11.shp
+			LUNAR: clmsc11.shp
+
+camsc12:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmsc12.shp
+		TilesetFilenames:
+			SNOW: camsc12.shp
+			URBAN: cumsc12.shp
+			NEWURBAN: cnmsc12.shp
+			DESERT: cdmsc12.shp
+			LUNAR: clmsc12.shp
+
+camsc13:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctmsc13.shp
+		TilesetFilenames:
+			SNOW: camsc13.shp
+			URBAN: cumsc13.shp
+			NEWURBAN: cnmsc13.shp
+			DESERT: cdmsc13.shp
+			LUNAR: clmsc13.shp
+		Offset: 15,-22
+
+camisc01:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmisc01.shp
+		TilesetFilenames:
+			SNOW: camisc01.shp
+			URBAN: cumisc01.shp
+			NEWURBAN: cnmisc01.shp
+			DESERT: cdmisc01.shp
+			LUNAR: clmisc01.shp
+
+camisc02:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmisc02.shp
+		TilesetFilenames:
+			SNOW: camisc02.shp
+			URBAN: cumisc02.shp
+			NEWURBAN: cnmisc02.shp
+			DESERT: cdmisc02.shp
+			LUNAR: clmisc02.shp
+
+camisc03:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmisc03.shp
+		TilesetFilenames:
+			SNOW: camisc03.shp
+			URBAN: cumisc03.shp
+			NEWURBAN: cnmisc03.shp
+			DESERT: cdmisc03.shp
+			LUNAR: clmisc03.shp
+
+camisc04:
+	Inherits: ^Prop
+	idle:
+		Filename: ctmisc04.shp
+		TilesetFilenames:
+			SNOW: camisc04.shp
+			URBAN: cumisc04.shp
+			NEWURBAN: cnmisc04.shp
+			DESERT: cdmisc04.shp
+			LUNAR: clmisc04.shp
+
+camisc05:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctmisc05.shp
+		TilesetFilenames:
+			SNOW: camisc05.shp
+			URBAN: cumisc05.shp
+			NEWURBAN: cnmisc05.shp
+			DESERT: cdmisc05.shp
+			LUNAR: clmisc05.shp
+		Offset: 0,-15
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+
+camisc06:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctmisc06.shp
+		TilesetFilenames:
+			SNOW: camisc06.shp
+			URBAN: cumisc06.shp
+			NEWURBAN: cnmisc06.shp
+			DESERT: cdmisc06.shp
+			LUNAR: clmisc06.shp
+		Offset: -15,-22
+
+capark01:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctpark01.shp
+		TilesetFilenames:
+			SNOW: capark01.shp
+			URBAN: cupark01.shp
+			DESERT: cdpark01.shp
+			LUNAR: clpark01.shp
+
+capark02:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctpark02.shp
+		TilesetFilenames:
+			SNOW: capark02.shp
+			URBAN: cupark02.shp
+			DESERT: cdpark02.shp
+			LUNAR: clpark02.shp
+
+capark03:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctpark03.shp
+		TilesetFilenames:
+			SNOW: capark03.shp
+			URBAN: cupark03.shp
+			NEWURBAN: cnpark03.shp
+			DESERT: cdpark03.shp
+			LUNAR: clpark03.shp
+		Offset: 0,-30
+
+capark04:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cgpark04.shp
+	idle:
+		ShadowStart: 1
+
+capark05:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cgpark05.shp
+	idle:
+		ShadowStart: 1
+
+capark06:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cgpark06.shp
+	idle:
+		ShadowStart: 1
+
+castrt01:
+	Inherits: ^Prop
+	idle:
+		Filename: ctstrt01.shp
+		TilesetFilenames:
+			SNOW: castrt01.shp
+			URBAN: custrt01.shp
+			NEWURBAN: cnstrt01.shp
+			DESERT: cdstrt01.shp
+			LUNAR: clstrt01.shp
+
+castrt02:
+	Inherits: ^Prop
+	Defaults:
+		Filename: castrt02.shp
+
+castrt03:
+	Inherits: ^Prop
+	Defaults:
+		Filename: castrt03.shp
+
+castrt04:
+	Inherits: ^Prop
+	Defaults:
+		Filename: castrt04.shp
+
+castrt05:
+	Inherits: ^Prop
+	idle:
+		Filename: ctstrt05.shp
+		TilesetFilenames:
+			SNOW: castrt05.shp
+			URBAN: custrt05.shp
+			NEWURBAN: cnstrt05.shp
+			DESERT: cdstrt05.shp
+			LUNAR: clstrt05.shp
+
+ammocrat:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ammo01.shp
+
+cabarr01:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cabarr01.shp
+
+cabarr02:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cabarr02.shp
+
+casin03e:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cgsin03e.shp
+	idle:
+		ShadowStart: 1
+
+casin03s:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cgsin03s.shp
+	idle:
+		ShadowStart: 1
+
+caurb01:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cgurb01.shp
+	idle:
+		ShadowStart: 1
+
+caurb02:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cgurb02.shp
+	idle:
+		ShadowStart: 1
+
+caurb03:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cuurb03.shp
+	idle:
+		ShadowStart: 1
+
+cawash18:
+	Inherits: ^Prop
+	Defaults:
+		Filename: ctwash18.shp
+		TilesetFilenames:
+			SNOW: cawash18.shp
+			URBAN: cuwash18.shp
+			NEWURBAN: cnwash18.shp
+			DESERT: cdwash18.shp
+			LUNAR: clwash18.shp
+		Offset: 0,-30
+	idle-water:
+		Filename: ctwsh18a.shp
+		TilesetFilenames:
+			SNOW: cawsh18a.shp
+			URBAN: cuwsh18a.shp
+			NEWURBAN: cnwsh18a.shp
+			DESERT: cdwsh18a.shp
+			LUNAR: clwsh18a.shp
+		Length: 10
+		ShadowStart: 10
+		Tick: 80
+
+camiam04:
+	Inherits: ^BuildingNoRubble
+	Inherits@GARRISON: ^GarrisonableBuilding
+	Defaults:
+		Filename: ctmiam04.shp
+		TilesetFilenames:
+			SNOW: camiam04.shp
+			URBAN: cumiam04.shp
+			NEWURBAN: cnmiam04.shp
+			DESERT: cdmiam04.shp
+			LUNAR: clmiam04.shp
+		Offset: 0,-15
+	garrisoned:
+		ShadowStart: 5
+
+caeuro05:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: cteuro05.shp
+		TilesetFilenames:
+			SNOW: caeuro05.shp
+			URBAN: cueuro05.shp
+			NEWURBAN: cneuro05.shp
+			DESERT: cdeuro05.shp
+			LUNAR: cleuro05.shp
+		Offset: 0,-30
+
+capars07:
+	Inherits: ^Prop
+	idle:
+		Filename: ctpars07.shp
+		TilesetFilenames:
+			SNOW: capars07.shp
+			URBAN: cupars07.shp
+			NEWURBAN: cnpars07.shp
+			DESERT: cdpars07.shp
+			LUNAR: clpars07.shp
+
+cafrmb:
+	Inherits: ^BuildingNoRubble
+	Inherits@GARRISON: ^GarrisonableBuilding
+	Defaults:
+		Filename: ctfrmb.shp
+		TilesetFilenames:
+			SNOW: cafrmb.shp
+			URBAN: cufrmb.shp
+			NEWURBAN: cnfrmb.shp
+			DESERT: cdfrmb.shp
+			LUNAR: clfrmb.shp
+		Offset: 0,-15
+	garrisoned:
+		ShadowStart: 5
+
+cagard01:
+	Inherits: ^Prop
+	idle-flag:
+		Filename: ctgrd1_a.shp
+		TilesetFilenames:
+			SNOW: cagrd1_a.shp
+			URBAN: cugrd1_a.shp
+			NEWURBAN: cngrd1_a.shp
+			DESERT: cdgrd1_a.shp
+			LUNAR: clgrd1_a.shp
+		Length: 9
+		ShadowStart: 9
+		Tick: 80
+	idle:
+		Filename: ctgard01.shp
+		TilesetFilenames:
+			SNOW: cagard01.shp
+			URBAN: cugard01.shp
+			NEWURBAN: cngard01.shp
+			DESERT: cdgard01.shp
+			LUNAR: clgard01.shp
+
+hdstn01:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: hdstn01.tem
+		TilesetFilenames:
+			SNOW: hdstn01.sno
+			URBAN: hdstn01.urb
+			NEWURBAN: hdstn01.ubn
+			DESERT: hdstn01.des
+			LUNAR: hdstn01.lun
+	idle:
+		ShadowStart: 1
+
+camov01:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: ctmov01.shp
+		TilesetFilenames:
+			SNOW: camov01.shp
+			URBAN: cumov01.shp
+			NEWURBAN: cnmov01.shp
+			DESERT: cdmov01.shp
+			LUNAR: clmov01.shp
+		Offset: 45,-37
+	idle-overlay:
+		Filename: ctmov01_a.shp
+		TilesetFilenames:
+			SNOW: camov01_a.shp
+			URBAN: cumov01_a.shp
+			NEWURBAN: cnmov01_a.shp
+			DESERT: cdmov01_a.shp
+			LUNAR: clmov01_a.shp
+		Length: 30
+		Tick: 200
+	damaged-idle-overlay:
+		Filename: ctmov01_a.shp
+		TilesetFilenames:
+			SNOW: camov01_a.shp
+			URBAN: cumov01_a.shp
+			NEWURBAN: cnmov01_a.shp
+			DESERT: cdmov01_a.shp
+			LUNAR: clmov01_a.shp
+		Start: 30
+		Length: 30
+		Tick: 200
+
+calunr01:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cllunr01.shp
+		Offset: 0,-30
+
+calunr02:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cllunr02.shp
+
+cawt01:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: ctwt01.shp
+		TilesetFilenames:
+			SNOW: cawt01.shp
+			URBAN: cuwt01.shp
+			NEWURBAN: cnwt01.shp
+			DESERT: cdwt01.shp
+			LUNAR: clwt01.shp
+		Offset: 0,-15
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		ShadowStart: 3
+
+cats01:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: ctts01.shp
+		TilesetFilenames:
+			SNOW: cats01.shp
+			URBAN: cuts01.shp
+			NEWURBAN: cnts01.shp
+			DESERT: cdts01.shp
+			LUNAR: clts01.shp
+		Offset: 0,-30

@@ -1,0 +1,623 @@
+hdstn01:
+	Inherits: ^Prop
+	Tooltip:
+		Name: actor-hdstn01.name
+	Tooltip@NoRow:
+		Name: actor-hdstn01.name
+	RenderSprites:
+		Palette: terrain
+
+lt_gen01:
+	Inherits: ^StreetLight
+
+lt_gen02:
+	Inherits: ^StreetLight
+
+lt_gen03:
+	Inherits: ^StreetLight
+
+lt_gen04:
+	Inherits: ^StreetLight
+
+lt_sgn01:
+	Inherits: ^StreetLight
+
+lt_sgn02:
+	Inherits: ^StreetLight
+
+lt_sgn03:
+	Inherits: ^StreetLight
+
+lt_sgn04:
+	Inherits: ^StreetLight
+
+lt_eur01:
+	Inherits: ^StreetLight
+
+lt_eur02:
+	Inherits: ^StreetLight
+
+pole01:
+	Inherits: ^TelephonePole
+
+pole02:
+	Inherits: ^TelephonePole
+
+sign01:
+	Inherits: ^StreetSign
+
+sign02:
+	Inherits: ^StreetSign
+
+sign03:
+	Inherits: ^StreetSign
+
+sign04:
+	Inherits: ^StreetSign
+
+sign05:
+	Inherits: ^StreetSign
+
+sign06:
+	Inherits: ^StreetSign
+
+trff01:
+	Inherits: ^TrafficLight
+
+trff02:
+	Inherits: ^TrafficLight
+
+trff03:
+	Inherits: ^TrafficLight
+
+trff04:
+	Inherits: ^TrafficLight
+
+castrt01:
+	Inherits: ^Prop
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-castrt01.name
+	Tooltip@NoRow:
+		Name: actor-castrt01.name
+
+castrt02:
+	Inherits: castrt01
+	Tooltip:
+		Name: actor-castrt02.name
+	Tooltip@NoRow:
+		Name: actor-castrt02.name
+
+castrt03:
+	Inherits: castrt01
+	Tooltip:
+		Name: actor-castrt03.name
+	Tooltip@NoRow:
+		Name: actor-castrt03.name
+
+castrt04:
+	Inherits: castrt01
+	Tooltip:
+		Name: actor-castrt04.name
+	Tooltip@NoRow:
+		Name: actor-castrt04.name
+
+ammocrat:
+	Inherits: camisc01
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-ammocrat.name
+	Tooltip@NoRow:
+		Name: actor-ammocrat.name
+
+camisc01:
+	Inherits: ^Prop
+	Health:
+		HP: 500
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camisc01.name
+	Tooltip@NoRow:
+		Name: actor-camisc01.name
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	Targetable@barrel:
+		TargetTypes: Barrel
+	Explodes:
+		Weapon: LargeBarrelExplosion
+		EmptyWeapon: LargeBarrelExplosion
+
+camisc02:
+	Inherits: camisc01
+	Tooltip:
+		Name: actor-camisc02.name
+	Tooltip@NoRow:
+		Name: actor-camisc02.name
+	Explodes:
+		Weapon: SmallBarrelExplosion
+		EmptyWeapon: SmallBarrelExplosion
+
+cabarr01:
+	Inherits: ^Prop
+	Health:
+		HP: 100000
+	Armor:
+		Type: concrete
+	Tooltip:
+		Name: actor-cabarr01.name
+	Tooltip@NoRow:
+		Name: actor-cabarr01.name
+
+cabarr02:
+	Inherits: cabarr01
+
+camsc04:
+	Inherits: camsc03
+	IsometricSelectable:
+		DecorationHeight: 15
+	Tooltip:
+		Name: actor-camsc04.name
+	Tooltip@NoRow:
+		Name: actor-camsc04.name
+
+camsc05:
+	Inherits: camsc04
+	Tooltip:
+		Name: actor-camsc05.name
+	Tooltip@NoRow:
+		Name: actor-camsc05.name
+
+camsc02:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 5000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-camsc02.name
+	Tooltip@NoRow:
+		Name: actor-camsc02.name
+
+camsc03:
+	Inherits: camsc02
+	Health:
+		HP: 100
+	Tooltip:
+		Name: actor-camsc03.name
+	Tooltip@NoRow:
+		Name: actor-camsc03.name
+
+camsc12:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-camsc12.name
+	Tooltip@NoRow:
+		Name: actor-camsc12.name
+
+castrt05:
+	Inherits: castrt01
+	IsometricSelectable:
+		DecorationHeight: 30
+	Tooltip:
+		Name: actor-castrt05.name
+	Tooltip@NoRow:
+		Name: actor-castrt05.name
+
+camsc06:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-camsc06.name
+	Tooltip@NoRow:
+		Name: actor-camsc06.name
+	WithIdleOverlay@fire:
+		Sequence: idle-fire
+		# PauseOnCondition: chronodisable
+
+camisc05:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camisc05.name
+	Tooltip@NoRow:
+		Name: actor-camisc05.name
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+
+camsc13:
+	Inherits: ^Prop
+	Inherits@shape: ^1x2Shape
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 80000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camsc13.name
+	Tooltip@NoRow:
+		Name: actor-camsc13.name
+
+camov01:
+	Inherits: ^Prop
+	Inherits@shape: ^1x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 50000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-camov01.name
+	Tooltip@NoRow:
+		Name: actor-camov01.name
+	WithIdleOverlay:
+		# PauseOnCondition: chronodisable
+
+camisc03:
+	Inherits: ^Prop
+	Health:
+		HP: 10000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camisc03.name
+	Tooltip@NoRow:
+		Name: actor-camisc03.name
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+
+capars07:
+	Inherits: ^Prop
+	Health:
+		HP: 10000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-capars07.name
+	Tooltip@NoRow:
+		Name: actor-capars07.name
+
+cafrmb:
+	Inherits: ^Prop
+	# Inherits@GARRISON: ^Garrisonable
+	Health:
+		HP: 5000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	# Garrisonable:
+	# 	MaxWeight: 1
+	Tooltip:
+		Name: actor-cafrmb.name
+	Tooltip@NoRow:
+		Name: actor-cafrmb.name
+
+caurb02:
+	Inherits: ^Prop
+	Health:
+		HP: 500
+	Tooltip:
+		Name: actor-caurb02.name
+	Tooltip@NoRow:
+		Name: actor-caurb02.name
+
+cagard01:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 60
+	Health:
+		HP: 10000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-cagard01.name
+	Tooltip@NoRow:
+		Name: actor-cagard01.name
+	WithIdleOverlay@flag:
+		Sequence: idle-flag
+		# PauseOnCondition: chronodisable
+
+caurb03:
+	Inherits: ^Prop
+	Health:
+		HP: 500
+	Tooltip:
+		Name: actor-caurb03.name
+	Tooltip@NoRow:
+		Name: actor-caurb03.name
+
+camsc01:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-camsc01.name
+	Tooltip@NoRow:
+		Name: actor-camsc01.name
+
+camiam04:
+	Inherits: ^Prop
+	# Inherits@GARRISON: ^Garrisonable
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 20000
+	Armor:
+		Type: Wood
+	# Garrisonable:
+	# 	MaxWeight: 3
+	Tooltip:
+		Name: actor-camiam04.name
+	Tooltip@NoRow:
+		Name: actor-camiam04.name
+	# WithIdleOverlay@flag:
+	# 	Sequence: garrisoned-flag
+	# 	PauseOnCondition: chronodisable
+	# 	RequiresCondition: loaded
+
+camisc04:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camisc04.name
+	Tooltip@NoRow:
+		Name: actor-camisc04.name
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+
+capark01:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-capark01.name
+	Tooltip@NoRow:
+		Name: actor-capark01.name
+
+capark06:
+	Inherits: capark01
+	Tooltip:
+		Name: actor-capark06.name
+	Tooltip@NoRow:
+		Name: actor-capark06.name
+
+capark04:
+	Inherits: capark01
+	Tooltip:
+		Name: actor-capark04.name
+	Tooltip@NoRow:
+		Name: actor-capark04.name
+
+capark05:
+	Inherits: capark01
+	Tooltip:
+		Name: actor-capark05.name
+	Tooltip@NoRow:
+		Name: actor-capark05.name
+
+capark02:
+	Inherits: ^Prop
+	Inherits@shape: ^2x1Shape
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-capark02.name
+	Tooltip@NoRow:
+		Name: actor-capark02.name
+
+capark03:
+	Inherits: ^Prop
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-capark03.name
+	Tooltip@NoRow:
+		Name: actor-capark03.name
+
+casin03e:
+	Inherits: ^Prop
+	Health:
+		HP: 500
+	Tooltip:
+		Name: actor-casin03e.name
+	Tooltip@NoRow:
+		Name: actor-casin03e.name
+
+casin03s:
+	Inherits: casin03e
+
+caeuro05:
+	Inherits: ^Prop
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-caeuro05.name
+	Tooltip@NoRow:
+		Name: actor-caeuro05.name
+
+caurb01:
+	Inherits: ^Prop
+	Health:
+		HP: 500
+	Tooltip:
+		Name: actor-caurb01.name
+	Tooltip@NoRow:
+		Name: actor-caurb01.name
+
+camsc11:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 15
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camsc11.name
+	Tooltip@NoRow:
+		Name: actor-camsc11.name
+
+camisc06:
+	Inherits: ^Prop
+	Inherits@shape: ^2x1Shape
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-camisc06.name
+	Tooltip@NoRow:
+		Name: actor-camisc06.name
+	Explodes:
+		Weapon: MiniNukeExplosion
+		EmptyWeapon: MiniNukeExplosion
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+
+cawash18:
+	Inherits: ^Prop
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 20000
+	Armor:
+		Type: Concrete
+	Tooltip:
+		Name: actor-cawash18.name
+	Tooltip@NoRow:
+		Name: actor-cawash18.name
+	WithIdleOverlay@water:
+		Sequence: idle-water
+		# PauseOnCondition: chronodisable
+	AmbientSound@Ambient:
+		SoundFiles: gfoulo1a.wav, gfoulo1b.wav, gfoulo1c.wav
+
+calunr01:
+	Inherits: ^Prop
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-calunr01.name
+	Tooltip@NoRow:
+		Name: actor-calunr01.name
+
+calunr02:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 30
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-calunr02.name
+	Tooltip@NoRow:
+		Name: actor-calunr02.name
+
+cawt01:
+	Inherits: ^Prop
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-cawt01.name
+	Tooltip@NoRow:
+		Name: actor-cawt01.name
+
+cats01:
+	Inherits: ^Prop
+	Inherits@shape: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 30000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-cats01.name
+	Tooltip@NoRow:
+		Name: actor-cats01.name
