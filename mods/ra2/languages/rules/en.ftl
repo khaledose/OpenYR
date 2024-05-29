@@ -74,6 +74,10 @@ meta-constructionvehicle =
    .name = Mobile Construction Vehicle
    .description = Deploys into a Construction Yard.
 
+meta-powerplant =
+   .name = Power Plant
+   .description = Provides power for other structures.
+
 ## Civilian Infantries
 meta-civilianinfantry =
    .name = Civilian

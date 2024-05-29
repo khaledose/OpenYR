@@ -135,3 +135,18 @@
 	Transforms:
 		Offset: 1,1
 	MustBeDestroyed:
+
+^PowerPlant:
+	Inherits: ^BaseStructure
+	Inherits@LOWPOWER: ^DisabledOnLowPower
+	Buildable:
+		Description: meta-powerplant.description
+		BuildPaletteOrder: 10
+	Tooltip:
+		Name: meta-powerplant.name
+	Tooltip@NoRow:
+		Name: meta-powerplant.name
+	PowerTooltip:
+	ScalePowerWithHealth:
+	SoundOnDamageTransition:
+		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
