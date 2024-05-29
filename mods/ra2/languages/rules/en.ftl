@@ -93,6 +93,12 @@ meta-engineer =
 
       Unarmed
 
+## Neutral Buildings
+## Tech Buildings
+actor-caoild =
+   .name = Tech Oil Derrick
+   .description = Periodically provides cash.
+
 ## Props
 actor-camisc01 =
    .name = Barrels

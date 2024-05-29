@@ -1,0 +1,47 @@
+caoild:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: ctoild.shp
+		TilesetFilenames:
+			SNOW: caoild.shp
+			URBAN: cuoild.shp
+			NEWURBAN: cnoild.shp
+			DESERT: cdoild.shp
+			LUNAR: cloild.shp
+		Offset: 0, -30
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-pump:
+		Filename: ctoild_a.shp
+		TilesetFilenames:
+			SNOW: caoild_a.shp
+			URBAN: cuoild_a.shp
+			NEWURBAN: cnoild_a.shp
+			DESERT: cdoild_a.shp
+			LUNAR: cloild_a.shp
+		Length: 32
+		ShadowStart: 64
+	damaged-idle-pump:
+		Filename: ctoild_a.shp
+		TilesetFilenames:
+			SNOW: caoild_a.shp
+			URBAN: cuoild_a.shp
+			NEWURBAN: cnoild_a.shp
+			DESERT: cdoild_a.shp
+			LUNAR: cloild_a.shp
+		Start: 32
+		Length: 32
+		ShadowStart: 96
+	flag:
+		Filename: ctoild_f.shp
+		TilesetFilenames:
+			SNOW: caoild_f.shp
+			URBAN: cuoild_f.shp
+			NEWURBAN: cnoild_f.shp
+			DESERT: cdoild_f.shp
+			LUNAR: cloild_f.shp
+		Length: 16
+		Offset: 0, -9
