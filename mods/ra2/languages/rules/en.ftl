@@ -46,6 +46,7 @@ notification-construction-complete = Construction complete.
 notification-unit-ready = Unit ready.
 notification-unable-to-build-more = Unable to build more.
 notification-unable-to-comply-building-in-progress = Unable to comply. Building in progress.
+notification-new-rally-point-established = New rally point established.
 
 ## World
 resource-ore = Ore
@@ -77,6 +78,10 @@ meta-constructionvehicle =
 meta-powerplant =
    .name = Power Plant
    .description = Provides power for other structures.
+
+meta-barracks =
+   .name = Barracks
+   .description = Trains infantry.
 
 ## Factions
 ## Allied Buildings
