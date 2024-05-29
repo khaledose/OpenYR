@@ -150,3 +150,39 @@
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+
+^Barracks:
+	Inherits: ^BaseStructure
+	Inherits@PRIMARY: ^PrimaryBuilding
+	Inherits@FACTORY: ^Factory
+	Buildable:
+		Description: meta-barracks.description
+		BuildPaletteOrder: 30
+	Power:
+		Amount: -10
+	Health:
+		HP: 50000
+	Armor:
+		Type: Steel
+	Valued:
+		Cost: 500
+	RevealsShroud:
+		Range: 5c0
+	Tooltip:
+		Name: meta-barracks.name
+	Tooltip@NoRow:
+		Name: meta-barracks.name
+	Production:
+		Produces: Infantry
+	ProductionBar:
+		ProductionType: Infantry
+	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
+		Proxy: barracks.infiltrated
+		InfiltratedNotification: TechnologyStolen
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+
+barracks.infiltrated:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+		Prerequisite: barracks.infiltrated
