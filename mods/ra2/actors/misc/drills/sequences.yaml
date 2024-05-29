@@ -1,0 +1,44 @@
+^Drill:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: -1, -16
+	idle:
+		ShadowStart: 11
+	active:
+		Start: 1
+		Length: 10
+		ShadowStart: 12
+		Tick: 160
+
+tibtre01:
+	Inherits: ^Drill
+	Defaults:
+		Filename: tibtre01.tem
+		TilesetFilenames:
+			SNOW: tibtre01.sno
+			URBAN: tibtre01.urb
+			NEWURBAN: tibtre01.ubn
+			DESERT: tibtre01.des
+			LUNAR: tibtre01.lun
+
+tibtre02:
+	Inherits: ^Drill
+	Defaults:
+		Filename: tibtre02.tem
+		TilesetFilenames:
+			SNOW: tibtre02.sno
+			URBAN: tibtre02.urb
+			NEWURBAN: tibtre02.ubn
+			DESERT: tibtre02.des
+			LUNAR: tibtre02.lun
+
+tibtre03:
+	Inherits: ^Drill
+	Defaults:
+		Filename: tibtre03.tem
+		TilesetFilenames:
+			SNOW: tibtre03.sno
+			URBAN: tibtre03.urb
+			NEWURBAN: tibtre03.ubn
+			DESERT: tibtre03.des
+			LUNAR: tibtre03.lun

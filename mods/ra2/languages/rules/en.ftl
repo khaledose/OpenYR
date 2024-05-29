@@ -245,5 +245,8 @@ actor-init =
       Strong vs Infantry
       Weak vs Vehicles, Aircraft
 
+## Drills
+meta-oredrill-name = Ore Drill
+
 ## Other
 meta-crate-name = Crate
