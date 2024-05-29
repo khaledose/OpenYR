@@ -1,0 +1,384 @@
+# CIVILIANS
+
+eins:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@PANIC: ^Panic
+	Defaults:
+		Filename: conqmd|eins.shp
+	run:
+		Start: 133
+	die1:
+		Start: 118
+	die2:
+		Start: 118
+	panic-run:
+		Start: 8
+	cheer:
+		Start: 56
+		Length: 15
+	paradrop:
+		Start: 0
+	-idle2:
+
+vladimir:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@PRONE: ^Prone
+	Defaults:
+		Filename: conquer|vladimir.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+
+rmnv:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@PRONE: ^Prone
+	Defaults:
+		Filename: conqmd|rmnv.shp
+	cheer:
+		Length: 8
+		Start: 196
+	liedown:
+		Start: 164
+	standup:
+		Start: 180
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+mumy:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Inherits@SHOOTER: ^AnimalAttack
+	Defaults:
+		Filename: conqmd|mumy.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+
+pentgen:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Defaults:
+		Filename: conquer|pentgen.shp
+	liedown:
+		Facings: 2
+		Length: 2
+		Start: 198
+	paradrop:
+		Length: 1
+		Start: 0
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-shoot:
+		Facings: 8
+		Length: 6
+		Start: 214
+	prone-stand:
+		Facings: 8
+		Length: 1
+		Start: 134
+	standup:
+		Facings: 2
+		Length: 2
+		Start: 182
+	cheer:
+		Length: 15
+		Start: 56
+	-idle2:
+
+ssrv:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PRONE: ^PanicOrProneShooter
+	Defaults:
+		Filename: conquer|ssrv.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+###############################################
+
+arnd:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@PRONE: ^ProneShooter
+	Defaults:
+		Filename: conqmd|arnd.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 292
+
+stln:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@PRONE: ^ProneShooter
+	Defaults:
+		Filename: conqmd|stln.shp
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 292
+
+###############################################
+
+pres:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@PANIC: ^Panic
+	Defaults:
+		Filename: conquer|pres.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civbbp:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@PANIC: ^Panic
+	Defaults:
+		Filename: conquer|civbbp.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civbf:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@PANIC: ^Panic
+	Defaults:
+		Filename: conquer|civbf.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civbfm:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@PANIC: ^Panic
+	Defaults:
+		Filename: conquer|civbfm.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civbtm:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@PANIC: ^Panic
+	Defaults:
+		Filename: conquer|civbtm.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+###############################################
+
+civsf:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PRONE: ^PanicOrProneShooter
+	Defaults:
+		Filename: conquer|civsf.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civsfm:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PRONE: ^PanicOrProneShooter
+	Defaults:
+		Filename: conquer|civsfm.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civstm:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PRONE: ^PanicOrProneShooter
+	Defaults:
+		Filename: conquer|civstm.shp
+	die1:
+		Length: 13
+		Start: 71
+	die2:
+		Length: 13
+		Start: 71
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+###############################################
+
+civ1:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PANIC: ^PanicOrProne
+	Defaults:
+		Filename: conquer|civ1.shp
+	cheer:
+		Length: 8
+		Start: 230
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civ2:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PANIC: ^PanicOrProne
+	Defaults:
+		Filename: conquer|civ2.shp
+	cheer:
+		Length: 8
+		Start: 230
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civ3:
+	Inherits: ^BasicInfantry
+	Defaults:
+		Filename: conquer|civ3.shp
+	cheer:
+		Length: 8
+		Start: 228
+	die1:
+		Length: 13
+		Start: 71
+	die2:
+		Length: 13
+		Start: 71
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 132
+	paradrop:
+		Length: 1
+		Start: 0
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 180
+	prone-stand:
+		Facings: 8
+		Length: 1
+		Start: 182
+	shoot:
+		Facings: 8
+		Length: 6
+		Start: 84
+	-idle2:
+
+###############################################
+
+civa:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PRONE: ^PanicOrProneShooter
+	Defaults:
+		Filename: conquer|civa.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civb:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PRONE: ^PanicOrProneShooter
+	Defaults:
+		Filename: conquer|civb.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
+
+civc:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^CivilianDeathAnimation
+	Inherits@SHOOTER: ^CivilianShooter
+	Inherits@PRONE: ^PanicOrProneShooter
+	Defaults:
+		Filename: conquer|civc.shp
+	cheer:
+		Length: 15
+		Start: 56
+	paradrop:
+		Length: 1
+		Start: 0
+	-idle2:
