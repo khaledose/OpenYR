@@ -1,0 +1,39 @@
+caoild:
+	Inherits: ^TechBuilding
+	Inherits@SHAPE: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-caoild.name
+	Tooltip@NoRow:
+		Name: actor-caoild.name
+	TooltipDescription:
+		Description: actor-caoild.description
+	UpdatesDerrickCount:
+	GivesCashOnCapture:
+		Amount: 1000
+	CashTrickler:
+		InitialDelay: 100
+		Interval: 100
+		Amount: 20
+		# PauseOnCondition: chronodisable
+		RequiresCondition: enabled
+	Explodes:
+		Weapon: OilExplosion
+	WithIdleOverlay@pump:
+		Sequence: idle-pump
+		PauseOnCondition: !enabled # || chronodisable
+	WithIdleOverlay@flag:
+		Sequence: flag
+		Offset: 1000,0,0
+		# PauseOnCondition: chronodisable
+	AmbientSound@running:
+		SoundFiles: boillo2a.wav, boillo2b.wav, boillo2c.wav
+		RequiresCondition: enabled
+
