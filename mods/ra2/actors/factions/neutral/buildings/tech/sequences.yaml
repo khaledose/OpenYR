@@ -93,3 +93,21 @@ cahosp:
 			LUNAR: clhosp_f.shp
 		Length: 16
 		Offset: -9, -23
+
+camach:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: cgmach.shp
+		TilesetFilenames:
+			SNOW: camach.shp
+		Offset: 0, -45
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	flag:
+		Filename: cgmach_f.shp
+		TilesetFilenames:
+			SNOW: camach_f.shp
+		Length: 16

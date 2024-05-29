@@ -101,6 +101,9 @@ actor-caoild =
 actor-cahosp =
    .name = Tech Hospital
    .description = Allows infantry to self-heal.
+actor-camach =
+   .name = Tech Machine Shop
+   .description = Allows vehicles to self-repair.
 
 ## Props
 actor-camisc01 =

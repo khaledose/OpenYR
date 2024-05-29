@@ -3,6 +3,7 @@
 	Inherits@1: ^Voxel
 	Inherits@2: ^LowHealthSpeedPenalty
 	Inherits@3: ^VehicleDamagedEffects
+	Inherits@4: ^MachineShopRepair
 	Buildable:
 		Queue: Vehicle
 		BuildDurationModifier: 100
