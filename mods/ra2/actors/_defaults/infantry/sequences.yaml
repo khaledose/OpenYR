@@ -1,0 +1,183 @@
+^BasicInfantry:
+	icon:
+		Filename: cameo|xxicon.shp
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 120
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 120
+	cheer:
+		Length: 8
+	paradrop:
+		Length: 1
+
+^AirInfantry:
+	icon:
+		Filename: cameo|xxicon.shp
+	fly:
+		Start: 292
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle:
+		Start: 418
+		Length: 9
+		Tick: 100
+	die:
+		Start: 340
+		Length: 16
+		Facings: 2
+		Tick: 200
+	cheer:
+		Length: 8
+	paradrop:
+		Length: 1
+	shadow:
+		Filename: infshdw.shp
+		Start: 1
+		Length: 1
+		Facings: 1
+
+^DeathEffects:
+	die4:
+		Filename: nukedie.shp
+		TilesetFilenames:
+			SNOW: nukedie.shp
+		Length: *
+		Tick: 50
+	die5:
+		Filename: yuridie.shp
+		TilesetFilenames:
+			SNOW: yuridie.shp
+		Length: *
+		Tick: 80
+	die6:
+		Filename: electro.shp
+		TilesetFilenames:
+			SNOW: electro.shp
+		Length: *
+		Tick: 80
+	die7:
+		Filename: virusd.shp
+		TilesetFilenames:
+			SNOW: virusd.shp
+		Length: *
+		Tick: 80
+	die8:
+		Filename: brutdie.shp
+		TilesetFilenames:
+			SNOW: brutdie.shp
+		Length: *
+		Tick: 80
+	die9:
+		Filename: gendeath.shp
+		TilesetFilenames:
+			SNOW: gendeath.shp
+		Length: *
+		Tick: 80
+
+^DeathAnimation:
+	Inherits: ^DeathEffects
+	die1:
+		Length: 15
+		Start: 134
+	die2:
+		Length: 15
+		Start: 149
+
+^CivilianDeathAnimation:
+	Inherits: ^DeathEffects
+	die1:
+		Length: 15
+		Start: 71
+	die2:
+		Length: 15
+		Start: 71
+
+^AnimalDeathAnimation:
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+
+^Shooter:
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+
+^CivilianShooter:
+	Inherits: ^Shooter
+	shoot:
+		Start: 86
+
+^AnimalAttack:
+	Inherits: ^Shooter
+	shoot:
+		Start: 116
+
+^Prone:
+	liedown:
+		Start: 260
+		Length: 2
+		Facings: 2
+	prone-stand:
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+	standup:
+		Start: 276
+		Length: 2
+		Facings: 2
+
+^ProneShooter:
+	Inherits: ^Prone
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 8
+
+^Panic:
+	panic-run:
+		Facings: 8
+		Length: 6
+		Start: 86
+	prone-run:
+		Facings: 8
+		Length: 6
+		Start: 134
+	prone-stand:
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
+		Facings: 8
+
+^PanicOrProne:
+	Inherits: ^Panic
+	panic-run:
+		Start: 134
+	prone-run:
+		Start: 182
+	prone-stand:
+		Frames: 182, 188, 194, 200, 206, 212, 218, 224
+
+^PanicOrProneShooter:
+	Inherits: ^PanicOrProne
+	prone-shoot:
+		Facings: 8
+		Length: 6
+		Start: 86
+

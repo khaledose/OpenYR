@@ -1,0 +1,50 @@
+^Infantry:
+	Inherits: ^Actor
+	Inherits@1: ^Sprite
+	Selectable:
+		Bounds: 482, 1448, 0, -530
+	Buildable:
+		BuildDurationModifier: 100
+	Cloneable:
+		Types: Infantry
+	RenderSprites:
+		PlayerPalette: infantry
+	WithEditorInfantryBody:
+
+^Person:
+	Inherits: ^Infantry
+	Mobile:
+		Voice: Move
+		Locomotor: foot
+		AlwaysTurnInPlace: true
+		TurnsWhileMoving: true
+	Crushable:
+		WarnProbability: 0
+		CrushClasses: vehicle
+		CrushSound: igensqua.wav
+	TakeCover:
+		DamageModifiers:
+			Prone30Percent: 30
+			Prone50Percent: 50
+			Prone70Percent: 70
+			Prone80Percent: 80
+			Prone100Percent: 100
+		DamageTriggers: TriggerProne
+	Guardable:
+	Targetable:
+		TargetTypes: Ground, Infantry, Disguise
+	EdibleByLeap:
+	Chronoshiftable:
+		ExplodeInstead: true
+		ReturnToOrigin: false
+	TurnOnIdle:
+		MinDelay: 125
+		MaxDelay: 250
+	WithInfantryBody:
+		IdleSequences: idle1, idle2
+		StandSequences: stand
+		MoveSequence: run
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	MapEditorData:
+		Categories: Infantry

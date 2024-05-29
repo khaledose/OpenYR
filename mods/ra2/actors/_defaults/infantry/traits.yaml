@@ -1,0 +1,8 @@
+^GivesFeedbackOnDamage:
+	GrantConditionOnDamageState@feedback:
+		Condition: feedback
+		ValidDamageStates: Critical
+	VoiceAnnouncement:
+		Voice: Feedback
+		ValidRelationships: None
+		RequiresCondition: feedback
