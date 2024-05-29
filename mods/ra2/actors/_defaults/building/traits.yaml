@@ -136,6 +136,21 @@
 	SpawnActorOnDeath@rubble:
 		DeathType: NonTemporal
 
+# Power
+^LowPowerOverlay:
+	WithColoredOverlay@IDISABLE:
+		Color: 00000080
+		RequiresCondition: disabled
+	GrantCondition@IDISABLE:
+		Condition: disabled
+		RequiresCondition: lowpower # || power-outage || powerdown || diskdrain
+
+^DisabledOnLowPower:
+	Inherits: ^LowPowerOverlay
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+
 # Shapes
 ^1x1Shape:
 	HitShape:
