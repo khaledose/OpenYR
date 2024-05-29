@@ -94,6 +94,29 @@ cahosp:
 		Length: 16
 		Offset: -9, -23
 
+capowr:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: cgpowr.shp
+		TilesetFilenames:
+			SNOW: capowr.shp
+		Offset: 0, -30
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	flag:
+		Filename: ctoild_f.shp
+		TilesetFilenames:
+			SNOW: caoild_f.shp
+			URBAN: cuoild_f.shp
+			NEWURBAN: cnoild_f.shp
+			DESERT: cdoild_f.shp
+			LUNAR: cloild_f.shp
+		Length: 16
+		Offset: 48, -37
+
 camach:
 	Inherits: ^NoIcon
 	Defaults:
