@@ -64,6 +64,8 @@ notification-unit-promoted = Unit promoted.
 notification-primary-building-selected = Primary building selected.
 notification-repairing = Repairing.
 notification-building-captured = Building captured.
+notification-tech-building-captured = Tech building captured.
+notification-tech-building-lost = Tech building lost.
 
 ## Default Buildings
 meta-constructionyard =
