@@ -21,12 +21,15 @@ Rules:
 	ra2|actors/_defaults/vehicle/rules.yaml
 	ra2|actors/_defaults/vehicle/traits.yaml
 	ra2|actors/_defaults/world/rules.yaml
+	ra2|actors/factions/allied/buildings/Barracks/rules.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
+	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/rules.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
+	ra2|actors/factions/yuri/buildings/Barracks/rules.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/rules.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
@@ -48,12 +51,15 @@ Sequences:
 	ra2|actors/_defaults/shared/sequences.yaml
 	ra2|actors/_defaults/vehicle/sequences.yaml
 	ra2|actors/_defaults/world/sequences.yaml
+	ra2|actors/factions/allied/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/soviet/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/sequences.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/yuri/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml

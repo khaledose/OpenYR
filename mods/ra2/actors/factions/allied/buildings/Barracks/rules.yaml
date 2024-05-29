@@ -1,0 +1,24 @@
+gapile:
+	Inherits: ^Barracks
+	Inherits@SHAPE: ^3x2Shape
+	Buildable:
+		Prerequisites: ~building.allies, gapowr, ~techlevel.2
+	IsometricSelectable:
+		DecorationHeight: 60
+	RallyPoint:
+		Path: 2, 3
+	Exit@1:
+		SpawnOffset: 0,768,0
+		ExitCell: 2,2
+	Exit@2:
+		SpawnOffset: -694,-196,0
+		ExitCell: 0,2
+	WithIdleOverlay@flag:
+		Sequence: idle-flag
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	ProvidesPrerequisite@infantry.allies:
+		Prerequisite: infantry.allies
+	ProvidesPrerequisite@infantry.england:
+		Prerequisite: infantry.england
+		Factions: england
