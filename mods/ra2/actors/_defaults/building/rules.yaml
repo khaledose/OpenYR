@@ -186,3 +186,26 @@ barracks.infiltrated:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 		Prerequisite: barracks.infiltrated
+
+^TechBuilding:
+	Inherits: ^Building
+	Inherits@CAPTURE: ^CapturableBuilding
+	Inherits@REPAIR: ^RepairableBuilding
+	GrantConditionOnCombatantOwner:
+		Condition: enabled
+	Capturable:
+		Types: tech
+		# RequiresCondition: !invulnerability
+	CaptureNotification:
+		Notification: TechBuildingCaptured
+		TextNotification: notification-tech-building-captured
+		LoseNotification: TechBuildingLost
+		LoseTextNotification: notification-tech-building-lost
+	GivesBuildableArea:
+		AreaTypes: building, defense
+		RequiresCondition: techbuild
+	GrantConditionOnPrerequisite@BUILD:
+		Condition: techbuild
+		Prerequisites: global-techbuildarea
+	MapEditorData:
+		Categories: Building - Tech
