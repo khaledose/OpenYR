@@ -1,0 +1,5 @@
+PowerPlantExplosion:
+	Inherits: BuildingExplosion
+	Warhead@2Eff: CreateEffect
+		Explosions: large_twlt, large_bang, large_brnl, verylarge_clsn, large_tumu, powerplant_explosion
+		ImpactSounds: bpowdiea.wav, bpowdieb.wav

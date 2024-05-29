@@ -1,0 +1,66 @@
+yapowr:
+	Defaults:
+		Offset: 0, -30
+	idle:
+		Filename: ygpowr.shp
+		TilesetFilenames:
+			SNOW: yapowr.shp
+		Length: 1
+		ShadowStart: 3
+		Tick: 150
+	damaged-idle:
+		Filename: ygpowr.shp
+		TilesetFilenames:
+			SNOW: yapowr.shp
+		Start: 1
+		Length: 1
+		ShadowStart: 4
+		Tick: 150
+	empty:
+		Filename: ygpowr_a.shp
+		TilesetFilenames:
+			SNOW: yapowr_a.shp
+		Length: 8
+		Tick: 150
+	damaged-empty:
+		Filename: ygpowr_a.shp
+		TilesetFilenames:
+			SNOW: yapowr_a.shp
+		Start: 8
+		Length: 8
+		Tick: 150
+	loaded:
+		Filename: ygpowr_b.shp
+		TilesetFilenames:
+			SNOW: yapowr_b.shp
+		Length: 8
+		Tick: 150
+	damaged-loaded:
+		Filename: ygpowr_b.shp
+		TilesetFilenames:
+			SNOW: yapowr_b.shp
+		Start: 8
+		Length: 8
+		Tick: 150
+	idle-lights:
+		Filename: ygpowr_c.shp
+		TilesetFilenames:
+			SNOW: yapowr_c.shp
+		Length: 5
+		Tick: 200
+	damaged-idle-lights:
+		Filename: ygpowr_c.shp
+		TilesetFilenames:
+			SNOW: yapowr_c.shp
+		Start: 5
+		Length: 2
+		Tick: 200
+	make:
+		Filename: ygpowrmk.shp
+		TilesetFilenames:
+			SNOW: yapowrmk.shp
+		Length: 23
+		ShadowStart: 23
+	icon:
+		Filename: cameomd|ypwricon.shp
+		Offset: 0,0

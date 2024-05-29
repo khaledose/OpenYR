@@ -1,0 +1,42 @@
+gapowr:
+	Defaults:
+		Offset: 0, -31
+	idle:
+		Filename: ggpowr.shp
+		TilesetFilenames:
+			SNOW: gapowr.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ggpowr.shp
+		TilesetFilenames:
+			SNOW: gapowr.shp
+		Start: 1
+		ShadowStart: 4
+	idle-glow:
+		Filename: ggpowr_a.shp
+		TilesetFilenames:
+			SNOW: gapowr_a.shp
+		Length: 8
+		ShadowStart: 16
+		Tick: 150
+	damaged-idle-glow:
+		Filename: ggpowr_a.shp
+		TilesetFilenames:
+			SNOW: gapowr_a.shp
+		Start: 8
+		Length: 8
+		ShadowStart: 24
+		Tick: 150
+	make:
+		Filename: gtpowrmk.shp
+		TilesetFilenames:
+			SNOW: gapowrmk.shp
+			URBAN: gupowrmk.shp
+			NEWURBAN: gnpowrmk.shp
+			DESERT: gdpowrmk.shp
+			LUNAR: glpowrmk.shp
+		Length: 25
+		ShadowStart: 25
+	icon:
+		Filename: cameo|powricon.shp
+		Offset: 0,0

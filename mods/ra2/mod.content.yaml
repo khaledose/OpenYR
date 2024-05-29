@@ -22,9 +22,12 @@ Rules:
 	ra2|actors/_defaults/vehicle/traits.yaml
 	ra2|actors/_defaults/world/rules.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/rules.yaml
+	ra2|actors/factions/allied/buildings/Power Plant/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
+	ra2|actors/factions/soviet/buildings/Tesla Reactor/rules.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
+	ra2|actors/factions/yuri/buildings/Bio Reactor/rules.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
 	ra2|actors/misc/rules.yaml
@@ -46,9 +49,12 @@ Sequences:
 	ra2|actors/_defaults/vehicle/sequences.yaml
 	ra2|actors/_defaults/world/sequences.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/sequences.yaml
+	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
+	ra2|actors/factions/soviet/buildings/Tesla Reactor/sequences.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/yuri/buildings/Bio Reactor/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
 	ra2|actors/misc/sequences.yaml
@@ -77,3 +83,5 @@ Voices:
 Weapons:
 	ra2|actors/_defaults/infantry/weapons.yaml
 	ra2|actors/_defaults/shared/weapons.yaml
+	ra2|actors/factions/allied/buildings/Power Plant/weapons.yaml
+	ra2|actors/factions/soviet/buildings/Tesla Reactor/weapons.yaml

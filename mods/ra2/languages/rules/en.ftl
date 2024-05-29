@@ -78,6 +78,19 @@ meta-powerplant =
    .name = Power Plant
    .description = Provides power for other structures.
 
+## Factions
+## Allied Buildings
+
+## Soviet Buildings
+actor-napowr =
+   .name = Tesla Reactor
+
+## Yuri Buildings
+actor-yapowr =
+   .name = Bio Reactor
+   .description = Provides power for other structures.
+      Can be occupied with up to 5 infantry for 100 more power each.
+
 ## Civilian Infantries
 meta-civilianinfantry =
    .name = Civilian
