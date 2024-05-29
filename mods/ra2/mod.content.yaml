@@ -42,6 +42,7 @@ Rules:
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
 	ra2|actors/misc/rules.yaml
 	ra2|actors/misc/crates/rules.yaml
+	ra2|actors/misc/drills/rules.yaml
 	ra2|actors/player/commander/rules.yaml
 	ra2|actors/player/editor/rules.yaml
 	ra2|actors/world/factions.yaml
@@ -77,6 +78,7 @@ Sequences:
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
 	ra2|actors/misc/sequences.yaml
 	ra2|actors/misc/crates/sequences.yaml
+	ra2|actors/misc/drills/sequences.yaml
 	ra2|actors/world/smudgelayers/sequences.yaml
 
 ModelSequences:

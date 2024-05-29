@@ -23,6 +23,29 @@
 	RenderSpritesEditorOnly:
 		Image: ambient
 
+^OreDrill:
+	Inherits: ^BasicBuilding
+	Tooltip:
+		Name: meta-oredrill-name
+	Tooltip@NoRow:
+		Name: meta-oredrill-name
+	Targetable:
+		TargetTypes: OreDrill
+	SeedsResource:
+		ResourceType: Ore
+		Interval: 50
+	RenderSprites:
+		Palette: player
+	WithSpriteBody:
+	WithIdleAnimation:
+		Interval: 50
+	RadarColorFromTerrain:
+		Terrain: Ore
+	AppearsOnMapPreview:
+		Terrain: Ore
+	MapEditorData:
+		Categories: Misc - Drills
+
 ^LampPost:
 	Interactable:
 	AlwaysVisible:
