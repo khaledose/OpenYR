@@ -5,26 +5,50 @@ World:
 		Class: none
 		ClassName: options-starting-units.mcv-only
 		Factions: america, england, france, germany, korea
+		BaseActor: amcv
+		BaseActorFacing: 640
 	StartingUnits@unholyamcv:
 		Class: unholy
 		ClassName: options-starting-units.unholy-alliance
 		Factions: america, england, france, germany, korea
+		BaseActor: amcv
+		BaseActorFacing: 640
+		SupportActors: smcv, pcv
+		SupportActorsFacing: 640
+		InnerSupportRadius: 4
+		OuterSupportRadius: 5
 	StartingUnits@smcv:
 		Class: none
 		ClassName: options-starting-units.mcv-only
 		Factions: russia, iraq, cuba, libya
+		BaseActor: smcv
+		BaseActorFacing: 640
 	StartingUnits@unholysmcv:
 		Class: unholy
 		ClassName: options-starting-units.unholy-alliance
 		Factions: russia, iraq, cuba, libya
+		BaseActor: smcv
+		BaseActorFacing: 640
+		SupportActors: amcv, pcv
+		SupportActorsFacing: 640
+		InnerSupportRadius: 4
+		OuterSupportRadius: 5
 	StartingUnits@pcv:
 		Class: none
 		ClassName: options-starting-units.mcv-only
 		Factions: psicorps
+		BaseActor: pcv
+		BaseActorFacing: 640
 	StartingUnits@unholypcv:
 		Class: unholy
 		ClassName: options-starting-units.unholy-alliance
 		Factions: psicorps
+		BaseActor: pcv
+		BaseActorFacing: 640
+		SupportActors: amcv, smcv
+		SupportActorsFacing: 640
+		InnerSupportRadius: 4
+		OuterSupportRadius: 5
 	ChatCommands:
 	DevCommands:
 	DebugVisualizationCommands:

@@ -1,0 +1,7 @@
+pcv:
+	Inherits: ^ConstructionVehicle
+	Transforms:
+		IntoActor: yacnst
+	Voiced:
+		VoiceSet: YuriConstructionVehicleVoice
+

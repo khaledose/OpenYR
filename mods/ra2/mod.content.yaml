@@ -21,6 +21,9 @@ Rules:
 	ra2|actors/_defaults/vehicle/rules.yaml
 	ra2|actors/_defaults/vehicle/traits.yaml
 	ra2|actors/_defaults/world/rules.yaml
+	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
+	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
+	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
 	ra2|actors/misc/rules.yaml
 	ra2|actors/misc/crates/rules.yaml
 	ra2|actors/player/commander/rules.yaml
@@ -38,11 +41,17 @@ Sequences:
 	ra2|actors/_defaults/shared/sequences.yaml
 	ra2|actors/_defaults/vehicle/sequences.yaml
 	ra2|actors/_defaults/world/sequences.yaml
+	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/soviet/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
 	ra2|actors/misc/sequences.yaml
 	ra2|actors/misc/crates/sequences.yaml
 	ra2|actors/world/smudgelayers/sequences.yaml
 
 ModelSequences:
+	ra2|actors/factions/allied/vehicles/MCV/voxels.yaml
+	ra2|actors/factions/soviet/vehicles/MCV/voxels.yaml
+	ra2|actors/factions/yuri/vehicles/MCV/voxels.yaml
 
 TileSets:
 	ra2|actors/world/tilesets/temperat.yaml
@@ -53,6 +62,9 @@ TileSets:
 	ra2|actors/world/tilesets/lunar.yaml
 
 Voices:
+	ra2|actors/factions/allied/vehicles/MCV/voices.yaml
+	ra2|actors/factions/soviet/vehicles/MCV/voices.yaml
+	ra2|actors/factions/yuri/vehicles/MCV/voices.yaml
 
 Weapons:
 	ra2|actors/_defaults/shared/weapons.yaml
