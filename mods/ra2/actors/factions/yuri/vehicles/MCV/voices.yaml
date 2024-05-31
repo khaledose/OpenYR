@@ -1,0 +1,5 @@
+YuriConstructionVehicleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vmcysea, vmcyseb, vmcysec, vmcysed, vmcysee
+		Move: vmcymoa, vmcymob, vmcymoc, vmcymod, vmcymoe

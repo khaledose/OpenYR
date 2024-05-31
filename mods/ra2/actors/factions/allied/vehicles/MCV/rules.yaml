@@ -1,0 +1,7 @@
+amcv:
+	Inherits: ^ConstructionVehicle
+	Transforms:
+		IntoActor: gacnst
+	Voiced:
+		VoiceSet: AlliedConstructionVehicleVoice
+
