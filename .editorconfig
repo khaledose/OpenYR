@@ -174,7 +174,7 @@ dotnet_diagnostic.IDE0180.severity = warning
 ## Namespace declaration preferences
 
 # IDE0160/IDE0161 Use block-scoped namespace/Use file-scoped namespace
-#csharp_style_namespace_declarations = block_scoped
+csharp_style_namespace_declarations = file_scoped
 dotnet_diagnostic.IDE0160.severity = warning
 dotnet_diagnostic.IDE0161.severity = warning
 

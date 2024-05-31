@@ -1,0 +1,48 @@
+crate:
+	Inherits: ^Crate
+	Crate:
+		Duration: 6000
+	GiveCashCrateAction:
+		Amount: 2000
+		SelectionShares: 20
+		UseCashTick: true
+		Sequence: dollar
+		Sound: ubonus.wav
+	RevealMapCrateAction:
+		SelectionShares: 10
+		Sequence: reveal-map
+		Sound: bspyon.wav
+	LevelUpCrateAction:
+		SelectionShares: 20
+		Sequence: levelup
+	HealActorsCrateAction:
+		SelectionShares: 10
+		Sequence: heal
+		Sound: gcraheal.wav
+	GrantExternalConditionCrateAction@fpower:
+		Condition: crate-firepower
+		SelectionShares: 10
+		Sequence: fpower
+		Sound: gcrafire.wav
+		Notification: FirepowerUpgraded
+	GrantExternalConditionCrateAction@armor:
+		Condition: crate-armor
+		SelectionShares: 10
+		Sequence: armor
+		Sound: gcraarmo.wav
+		Notification: ArmorUpgraded
+	GrantExternalConditionCrateAction@speed:
+		Condition: crate-armor
+		SelectionShares: 10
+		Sequence: speed
+		Sound: gcraspee.wav
+		Notification: SpeedUpgraded
+
+crate.money:
+	Inherits: ^Crate
+	GiveCashCrateAction:
+		Amount: 5000
+		SelectionShares: 100
+		UseCashTick: true
+		Sequence: dollar
+		Sound: ubonus.wav

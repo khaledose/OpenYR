@@ -1,0 +1,75 @@
+^AlliedFactions:
+	Faction@allies:
+		Name: Allies
+		InternalName: random-allies
+		RandomFactionMembers: america, england, france, germany, korea
+		Side: Randoms
+		Description: Random Allied Country\nA random Allied country will be chosen when the game starts.
+	Faction@usa:
+		Name: United States
+		InternalName: america
+		Side: Allies
+		Description: United States of America\nCapital: Washington D.C. (1776-1973)\n             Seattle (1973-)\n\nSpecial Infantry: Navy SEAL\nSpecial Ability: Airborne\nSpecial Upgrade: Boost-Gliding Systems
+	Faction@uk:
+		Name: United Kingdom
+		InternalName: england
+		Side: Allies
+		Description: United Kingdom of Great Britain and Northern Ireland\nCapital: London\n\n\nSpecial Infantry: Sniper\nSpecial Ability: Carpet Bombing\nSpecial Upgrade: Portable Weaponry
+	Faction@france:
+		Name: France
+		InternalName: france
+		Side: Allies
+		Description: French Fourth Republic\nCapital: Paris\n\n\nSpecial Building: Mirage Turret\nSpecial Ability: Force Shield\nSpecial Upgrade: Grand Cannon Protocols
+	Faction@germany:
+		Name: Germany
+		InternalName: germany
+		Side: Allies
+		Description: German Republic\nCapital: Berlin\n\n\nSpecial Vehicle: Tank Destroyer\nSpecial Ability: Chrono Grizzly\nSpecial Upgrade: Advanced Gun Systems
+	Faction@korea:
+		Name: Korea
+		InternalName: korea
+		Side: Allies
+		Description: Republic of Korea\nCapital: Seoul\n\n\nSpecial Aircraft: Black Eagle\nSpecial Ability: Chronobomb\nSpecial Upgrade: EMP Munitions
+
+^SovietFactions:
+	Faction@soviets:
+		Name: Soviets
+		InternalName: random-soviets
+		RandomFactionMembers: russia, iraq, cuba, libya
+		Side: Randoms
+		Description: Random Soviet Country\nA random Soviet country will be chosen when the game starts.
+	Faction@russia:
+		Name: Soviet Union
+		InternalName: russia
+		Side: Soviets
+		Description: Union of Soviet Socialist Republics\nCapital: Moscow\n\n\nSpecial Vehicle: Tesla Tank\nSpecial Ability: Tesla Drop\nSpecial Upgrade: Overcharge
+	Faction@iraq:
+		Name: Iraq
+		InternalName: iraq
+		Side: Soviets
+		Description: Iraqi Republic\nCapital: Baghdad\n\n\nSpecial Infantry: Desolator\nSpecial Ability: Radiation Missile\nSpecial Upgrade: Advanced Irradiators
+	Faction@cuba:
+		Name: Cuba
+		InternalName: cuba
+		Side: Soviets
+		Description: Republic of Cuba\nCapital: Havana\n\n\nSpecial Infantry: Terrorist\nSpecial Ability: Death Bombs\nSpecial Upgrade: Targeted Explosives
+	Faction@libya:
+		Name: Libya
+		InternalName: libya
+		Side: Soviets
+		Description: Libyan Arab Jamahiriya\nCapital: Tripoli\n\n\nSpecial Vehicle: Demolition Truck\nSpecial Ability: Ambush\nSpecial Upgrade: High Explosive Bombs
+
+^YuriFactions:
+	Faction@yuri:
+		Name: Yuri
+		InternalName: psicorps
+		Side: Randoms
+		Description: Yurigrad\nCenter of Operations: Kuban Region\n\n\nSpecial Vehicle: Slave Miner\nSpecial Ability: Psi-Ops Drop\nSpecial Upgrade: Chaos Tank Compensators
+
+^RandomFactions:
+	Faction@random:
+		Name: Random
+		InternalName: Random
+		RandomFactionMembers: random-allies, random-soviets, psicorps
+		Side: Randoms
+		Description: Random Country\nA random country will be chosen when the game starts.

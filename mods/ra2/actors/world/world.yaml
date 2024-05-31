@@ -1,0 +1,106 @@
+World:
+	Inherits: ^BaseWorld
+	Inherits@SmudgeLayers: ^SmudgeLayers
+	StartingUnits@amcv:
+		Class: none
+		ClassName: options-starting-units.mcv-only
+		Factions: america, england, france, germany, korea
+	StartingUnits@unholyamcv:
+		Class: unholy
+		ClassName: options-starting-units.unholy-alliance
+		Factions: america, england, france, germany, korea
+	StartingUnits@smcv:
+		Class: none
+		ClassName: options-starting-units.mcv-only
+		Factions: russia, iraq, cuba, libya
+	StartingUnits@unholysmcv:
+		Class: unholy
+		ClassName: options-starting-units.unholy-alliance
+		Factions: russia, iraq, cuba, libya
+	StartingUnits@pcv:
+		Class: none
+		ClassName: options-starting-units.mcv-only
+		Factions: psicorps
+	StartingUnits@unholypcv:
+		Class: unholy
+		ClassName: options-starting-units.unholy-alliance
+		Factions: psicorps
+	ChatCommands:
+	DevCommands:
+	DebugVisualizationCommands:
+	PathFinderOverlay:
+	HierarchicalPathFinderOverlay:
+	PlayerCommands:
+	HelpCommand:
+	ScreenShaker:
+	BuildingInfluence:
+	CellTriggerOverlay:
+	ProductionQueueFromSelection:
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	ResourceLayer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12
+	ResourceClaimLayer:
+	WithResourceAnimation:
+		Image: oreshimmering
+		Types: Ore, Gems
+		Ratio: 5
+		Interval: 50
+		Palette: effect
+	BridgeLayer:
+	WarheadDebugOverlay:
+	ExitsDebugOverlayManager:
+	CustomTerrainDebugOverlay:
+	SpawnMapActors:
+	MapBuildRadius:
+		AllyBuildRadiusCheckboxDisplayOrder: 4
+		BuildRadiusCheckboxDisplayOrder: 7
+	MapOptions:
+		ShortGameCheckboxDisplayOrder: 2
+		TechLevelDropdownDisplayOrder: 4
+		GameSpeedDropdownDisplayOrder: 2
+		TechLevel: techlevel.3
+	CreateMapPlayers:
+	CrateSpawner:
+		SpawnInterval: 3000
+		WaterChance: 25
+		InitialSpawnDelay: 1000
+	MapCreeps:
+		CheckboxVisible: false
+	MapStartingLocations:
+		SeparateTeamSpawnsCheckboxDisplayOrder: 6
+	SpawnStartingUnits:
+		DropdownDisplayOrder: 1
+	PathFinder:
+	ValidateOrder:
+	DebugPauseState:
+	RadarPings:
+	StartGameNotification:
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
+	LoadWidgetAtGameStart:
+		ShellmapRoot: MAINMENU_PRERELEASE_NOTIFICATION
+	TimeLimitManager:
+		TimeLimitDisplayOrder: 5
+		TimeLimitWarnings:
+			1: OneMinuteRemaining
+			2: TwoMinutesRemaining
+			3: ThreeMinutesRemaining
+			4: FourMinutesRemaining
+			5: FiveMinutesRemaining
+			10: TenMinutesRemaining
+			20: TwentyMinutesRemaining
+	OrderEffects:
+		TerrainFlashImage: moveflsh
+		TerrainFlashSequence: idle
+		TerrainFlashPalette: moveflash

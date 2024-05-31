@@ -1,0 +1,83 @@
+veterancy-pips:
+	Defaults:
+		Filename: conqmd|pips.shp
+		Offset: 2, 2
+	veteran:
+		Start: 14
+	elite:
+		Start: 15
+
+bonus-pips:
+	Defaults:
+		Filename: conqmd|pips.shp
+		Offset: 2, 2
+	heal:
+		Start: 13
+	repair:
+		Start: 20
+
+small-color-pips:
+	Defaults:
+		Filename: conqmd|pips2.shp
+		Offset: 2, 2
+	empty:
+	green:
+		Start: 1
+	yellow:
+		Start: 2
+	gray:
+		Start: 3
+	red:
+		Start: 4
+	blue:
+		Start: 5
+
+large-color-pips:
+	Defaults:
+		Filename: conqmd|pips.shp
+		Offset: 2, 2
+	empty:
+	green:
+		Start: 1
+	yellow:
+		Start: 2
+	gray:
+		Start: 3
+	red:
+		Start: 4
+	blue:
+		Start: 5
+
+ammo-pips:
+	Defaults:
+		Filename: conqmd|pips2.shp
+		Offset: 2, 2
+	empty:
+		Start: 14
+	green:
+		Start: 13
+	red:
+		Start: 15
+	yellow:
+		Start: 16
+	blue:
+		Start: 18
+
+garrison-pips:
+	Defaults:
+		Filename: conqmd|pips2.shp
+		Offset: 2, 2
+	empty:
+		Start: 6
+	green:
+		Start: 7
+	yellow:
+		Start: 8
+	gray:
+		Start: 9
+	red:
+		Start: 10
+	blue:
+		Start: 11
+	purple:
+		Start: 12

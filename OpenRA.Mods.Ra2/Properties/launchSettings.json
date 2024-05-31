@@ -1,0 +1,38 @@
+{
+  "profiles": {
+    "RA2": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
+      "commandLineArgs": "Game.Mod=ra2 Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
+    },
+    "TS": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
+      "commandLineArgs": "Game.Mod=ts Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
+    },
+    "RA": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
+      "commandLineArgs": "Game.Mod=ra Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
+    },
+    "CNC": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
+      "commandLineArgs": "Game.Mod=cnc Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
+    },
+    "D2K": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
+      "commandLineArgs": "Game.Mod=d2k Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
+    },
+    "Utility": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.Utility.exe",
+      "commandLineArgs": "ra2 --check-yaml",
+      "environmentVariables": {
+        "ENGINE_DIR": "..\\..\\engine",
+        "MOD_SEARCH_PATHS": "..\\..\\mods,..\\..\\engine\\mods"
+      }
+    }
+  }
+}

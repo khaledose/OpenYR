@@ -1,0 +1,26 @@
+EditorWorld:
+	Inherits: ^BaseWorld
+	MarkerLayerOverlay:
+	EditorActorLayer:
+	EditorCursorLayer:
+	EditorResourceLayer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Sand, Rough, Road, DirtRoad
+				MaxDensity: 12
+	EditorSelectionLayer:
+		AltPixelOffset: 0,1
+	LoadWidgetAtGameStart:
+	EditorActionManager:
+	BuildableTerrainOverlay:
+		AllowedTerrainTypes: Clear, Rough, Road, DirtRoad, Water
+		Palette: ra
+		Alpha: 0.35

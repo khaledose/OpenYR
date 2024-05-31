@@ -1,0 +1,314 @@
+shroud:
+	shroud:
+		Filename: conquer|shroud.shp
+		Length: *
+	fog:
+		Filename: conquer|fog.shp
+		Length: *
+
+resources:
+	Defaults:
+		Length: 12
+		ShadowStart: 12
+		Offset: 0, -15
+	tib01:
+		Filename: tib01.tem
+		TilesetFilenames:
+			SNOW: tib01.sno
+			URBAN: tib01.urb
+			NEWURBAN: tib01.ubn
+			LUNAR: tib01.lun
+			DESERT: tib01.des
+	tib02:
+		Filename: tib02.tem
+		TilesetFilenames:
+			SNOW: tib02.sno
+			URBAN: tib02.urb
+			NEWURBAN: tib02.ubn
+			LUNAR: tib02.lun
+			DESERT: tib02.des
+		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
+		ShadowStart: -1
+	tib03:
+		Filename: tib03.tem
+		TilesetFilenames:
+			SNOW: tib03.sno
+			URBAN: tib03.urb
+			NEWURBAN: tib03.ubn
+			LUNAR: tib03.lun
+			DESERT: tib03.des
+	tib04:
+		Filename: tib04.tem
+		TilesetFilenames:
+			SNOW: tib04.sno
+			URBAN: tib04.urb
+			NEWURBAN: tib04.ubn
+			LUNAR: tib04.lun
+			DESERT: tib04.des
+	tib05:
+		Filename: tib05.tem
+		TilesetFilenames:
+			SNOW: tib05.sno
+			URBAN: tib05.urb
+			NEWURBAN: tib05.ubn
+			LUNAR: tib05.lun
+			DESERT: tib05.des
+	tib06:
+		Filename: tib06.tem
+		TilesetFilenames:
+			SNOW: tib06.sno
+			URBAN: tib06.urb
+			NEWURBAN: tib06.ubn
+			LUNAR: tib06.lun
+			DESERT: tib06.des
+	tib07:
+		Filename: tib07.tem
+		TilesetFilenames:
+			SNOW: tib07.sno
+			URBAN: tib07.urb
+			NEWURBAN: tib07.ubn
+			LUNAR: tib07.lun
+			DESERT: tib07.des
+	tib08:
+		Filename: tib08.tem
+		TilesetFilenames:
+			SNOW: tib08.sno
+			URBAN: tib08.urb
+			NEWURBAN: tib08.ubn
+			LUNAR: tib08.lun
+			DESERT: tib08.des
+	tib09:
+		Filename: tib09.tem
+		TilesetFilenames:
+			SNOW: tib09.sno
+			URBAN: tib09.urb
+			NEWURBAN: tib09.ubn
+			LUNAR: tib09.lun
+			DESERT: tib09.des
+	tib10:
+		Filename: tib10.tem
+		TilesetFilenames:
+			SNOW: tib10.sno
+			URBAN: tib10.urb
+			NEWURBAN: tib10.ubn
+			LUNAR: tib10.lun
+			DESERT: tib10.des
+	tib11:
+		Filename: tib11.tem
+		TilesetFilenames:
+			SNOW: tib11.sno
+			URBAN: tib11.urb
+			NEWURBAN: tib11.ubn
+			LUNAR: tib11.lun
+			DESERT: tib11.des
+	tib12:
+		Filename: tib12.tem
+		TilesetFilenames:
+			SNOW: tib12.sno
+			URBAN: tib12.urb
+			NEWURBAN: tib12.ubn
+			LUNAR: tib12.lun
+			DESERT: tib12.des
+	tib13:
+		Filename: tib13.tem
+		TilesetFilenames:
+			SNOW: tib13.sno
+			URBAN: tib13.urb
+			NEWURBAN: tib13.ubn
+			LUNAR: tib13.lun
+			DESERT: tib13.des
+	tib14:
+		Filename: tib14.tem
+		TilesetFilenames:
+			SNOW: tib14.sno
+			URBAN: tib14.urb
+			NEWURBAN: tib14.ubn
+			LUNAR: tib14.lun
+			DESERT: tib14.des
+		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
+		ShadowStart: -1
+	tib15:
+		Filename: tib15.tem
+		TilesetFilenames:
+			SNOW: tib15.sno
+			URBAN: tib15.urb
+			NEWURBAN: tib15.ubn
+			LUNAR: tib15.lun
+			DESERT: tib15.des
+	tib16:
+		Filename: tib16.tem
+		TilesetFilenames:
+			SNOW: tib16.sno
+			URBAN: tib16.urb
+			NEWURBAN: tib16.ubn
+			LUNAR: tib16.lun
+			DESERT: tib16.des
+	tib17:
+		Filename: tib17.tem
+		TilesetFilenames:
+			SNOW: tib17.sno
+			URBAN: tib17.urb
+			NEWURBAN: tib17.ubn
+			LUNAR: tib17.lun
+			DESERT: tib17.des
+	tib18:
+		Filename: tib18.tem
+		TilesetFilenames:
+			SNOW: tib18.sno
+			URBAN: tib18.urb
+			NEWURBAN: tib18.ubn
+			LUNAR: tib18.lun
+			DESERT: tib18.des
+	tib19:
+		Filename: tib19.tem
+		TilesetFilenames:
+			SNOW: tib19.sno
+			URBAN: tib19.urb
+			NEWURBAN: tib19.ubn
+			LUNAR: tib19.lun
+			DESERT: tib19.des
+	tib20:
+		Filename: tib20.tem
+		TilesetFilenames:
+			SNOW: tib20.sno
+			URBAN: tib20.urb
+			NEWURBAN: tib20.ubn
+			LUNAR: tib20.lun
+			DESERT: tib20.des
+	gem01:
+		Filename: gem01.tem
+		TilesetFilenames:
+			SNOW: gem01.sno
+			URBAN: gem01.urb
+			NEWURBAN: gem01.ubn
+			LUNAR: gem01.lun
+			DESERT: gem01.des
+	gem02:
+		Filename: gem02.tem
+		TilesetFilenames:
+			SNOW: gem02.sno
+			URBAN: gem02.urb
+			NEWURBAN: gem02.ubn
+			LUNAR: gem02.lun
+			DESERT: gem02.des
+	gem03:
+		Filename: gem03.tem
+		TilesetFilenames:
+			SNOW: gem03.sno
+			URBAN: gem03.urb
+			NEWURBAN: gem03.ubn
+			LUNAR: gem03.lun
+			DESERT: gem03.des
+	gem04:
+		Filename: gem04.tem
+		TilesetFilenames:
+			SNOW: gem04.sno
+			URBAN: gem04.urb
+			NEWURBAN: gem04.ubn
+			LUNAR: gem04.lun
+			DESERT: gem04.des
+	gem05:
+		Filename: gem05.tem
+		TilesetFilenames:
+			SNOW: gem05.sno
+			URBAN: gem05.urb
+			NEWURBAN: gem05.ubn
+			LUNAR: gem05.lun
+			DESERT: gem05.des
+	gem06:
+		Filename: gem06.tem
+		TilesetFilenames:
+			SNOW: gem06.sno
+			URBAN: gem06.urb
+			NEWURBAN: gem06.ubn
+			LUNAR: gem06.lun
+			DESERT: gem06.des
+	gem07:
+		Filename: gem07.tem
+		TilesetFilenames:
+			SNOW: gem07.sno
+			URBAN: gem07.urb
+			NEWURBAN: gem07.ubn
+			LUNAR: gem07.lun
+			DESERT: gem07.des
+	gem08:
+		Filename: gem08.tem
+		TilesetFilenames:
+			SNOW: gem08.sno
+			URBAN: gem08.urb
+			NEWURBAN: gem08.ubn
+			LUNAR: gem08.lun
+			DESERT: gem08.des
+	gem09:
+		Filename: gem09.tem
+		TilesetFilenames:
+			SNOW: gem09.sno
+			URBAN: gem09.urb
+			NEWURBAN: gem09.ubn
+			LUNAR: gem09.lun
+			DESERT: gem09.des
+	gem10:
+		Filename: gem10.tem
+		TilesetFilenames:
+			SNOW: gem10.sno
+			URBAN: gem10.urb
+			NEWURBAN: gem10.ubn
+			LUNAR: gem10.lun
+			DESERT: gem10.des
+	gem11:
+		Filename: gem11.tem
+		TilesetFilenames:
+			SNOW: gem11.sno
+			URBAN: gem11.urb
+			NEWURBAN: gem11.ubn
+			LUNAR: gem11.lun
+			DESERT: gem11.des
+	gem12:
+		Filename: gem12.tem
+		TilesetFilenames:
+			SNOW: gem12.sno
+			URBAN: gem12.urb
+			NEWURBAN: gem12.ubn
+			LUNAR: gem12.lun
+			DESERT: gem12.des
+
+oreshimmering:
+	idle:
+		Filename: conquer|twnk1.shp
+		Length: *
+
+overlay:
+	Defaults:
+		Filename: conquer|place.shp
+		Offset: 0, -15
+	build-valid-temperate:
+	build-valid-snow:
+	build-valid-urban:
+	build-valid-newurban:
+	build-valid-desert:
+	build-valid-lunar:
+	build-invalid:
+		Start: 1
+	target-select:
+	target-invalid:
+		Start: 1
+	target-valid-snow:
+		Start: 2
+	target-valid-temperate:
+		Start: 2
+	target-valid-urban:
+		Start: 2
+	target-valid-newurban:
+		Start: 2
+	target-valid-desert:
+		Start: 2
+	target-valid-lunar:
+		Start: 2
+
+editor-overlay:
+	Defaults:
+		Filename: conquer|place.shp
+		Offset: 0, -15
+	copy:
+	paste:
+		Start: 1

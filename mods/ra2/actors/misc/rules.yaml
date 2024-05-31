@@ -1,0 +1,5 @@
+mpspawn:
+	Inherits: ^SystemActor
+
+waypoint:
+	Inherits: ^SystemActor

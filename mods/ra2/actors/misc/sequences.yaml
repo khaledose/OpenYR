@@ -1,0 +1,65 @@
+mpspawn:
+	idle:
+		Filename: mpspawn.shp
+		Length: *
+
+waypoint:
+	idle:
+		Filename: waypoint.shp
+		Length: *
+
+beacon:
+	idle:
+		Filename: pbeacon.shp
+		Length: 20
+		Tick: 200
+		ZOffset: 2047
+	arrow:
+		Filename: pbeacon.shp
+		Length: 1
+		ZOffset: 2047
+	nukeicon:
+		Filename: cameo|nukeicon.shp
+		Length: *
+		Offset: 0,-86
+	paraicon:
+		Filename: cameo|paraicon.shp
+		Length: *
+		Offset: 0,-86
+	aparicon:
+		Filename: cameo|aparicon.shp
+		Length: *
+		Offset: 0,-86
+	spypicon:
+		Filename: cameomd|spypicon.shp
+		Length: *
+		Offset: 0,-86
+	bolticon:
+		Filename: cameo|bolticon.shp
+		Length: *
+		Offset: 0,-86
+	muteicon:
+		Filename: cameomd|muteicon.shp
+		Length: *
+		Offset: 0,-86
+	xxicon:
+		Filename: cameo|xxicon.shp
+		Length: *
+		Offset: 0,-86
+	clock:
+		Filename: clock.shp
+		Length: *
+		Offset: 0,-86
+		BlendMode: Multiply
+
+clock:
+	idle:
+		Filename: clock.shp
+		Length: *
+		BlendMode: Multiply
+
+moveflsh:
+	idle:
+		Filename: conquer|ring.shp
+		Length: *
+		Tick: 30
