@@ -61,3 +61,17 @@
 		WaterSequence: water
 	MapEditorData:
 		Categories: Misc - Crates
+
+^ColorPicker:
+	Inherits: ^Voxel
+	AlwaysVisible:
+	Mobile:
+		InitialFacing: 640
+		Locomotor: wheeled
+	WithVoxelBody:
+		ShowShadow: false
+	RenderSprites:
+		Palette: colorpicker
+	RenderVoxels:
+		Palette: colorpicker
+

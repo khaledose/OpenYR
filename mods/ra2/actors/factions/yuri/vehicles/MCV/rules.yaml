@@ -5,3 +5,9 @@ pcv:
 	Voiced:
 		VoiceSet: YuriConstructionVehicleVoice
 
+pcv.colorpicker:
+	Inherits: ^ColorPicker
+	RenderSprites:
+		Image: pcv
+	RenderVoxels:
+		Image: pcv

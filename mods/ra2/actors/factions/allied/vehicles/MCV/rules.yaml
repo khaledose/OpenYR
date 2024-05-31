@@ -5,3 +5,9 @@ amcv:
 	Voiced:
 		VoiceSet: AlliedConstructionVehicleVoice
 
+amcv.colorpicker:
+	Inherits: ^ColorPicker
+	RenderSprites:
+		Image: amcv
+	RenderVoxels:
+		Image: amcv

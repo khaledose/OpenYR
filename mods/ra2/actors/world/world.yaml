@@ -124,6 +124,17 @@ World:
 			5: FiveMinutesRemaining
 			10: TenMinutesRemaining
 			20: TwentyMinutesRemaining
+	ColorPickerManager:
+		PreviewActor: amcv.colorpicker
+		PresetColors: DEE308, FF1818, 2973E7, 39D629, FFA518, 31D6E7, 9429BD, FF9CEF, 6F7104, 7F0C0C, 143973, 1C6B14, 7F520C, 186B73, 4A145E, 7F484E
+		FactionPreviewActors:
+			random-soviets: smcv.colorpicker
+			random-psicorps: pcv.colorpicker
+			libya: smcv.colorpicker
+			cuba: smcv.colorpicker
+			iraq: smcv.colorpicker
+			russia: smcv.colorpicker
+			psicorps: pcv.colorpicker
 	OrderEffects:
 		TerrainFlashImage: moveflsh
 		TerrainFlashSequence: idle
