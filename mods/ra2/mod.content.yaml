@@ -33,6 +33,7 @@ Rules:
 Sequences:
 	ra2|actors/_defaults/building/sequences.yaml
 	ra2|actors/_defaults/shared/sequences.yaml
+	ra2|actors/_defaults/vehicle/sequences.yaml
 	ra2|actors/_defaults/world/sequences.yaml
 	ra2|actors/misc/sequences.yaml
 	ra2|actors/misc/crates/sequences.yaml

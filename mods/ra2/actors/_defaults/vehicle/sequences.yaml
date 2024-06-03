@@ -1,0 +1,100 @@
+^WithMachineGunMuzzle:
+	muzzle:
+		Combine:
+			0:
+				Filename: mgun-n.shp
+				Length: 6
+			1:
+				Filename: mgun-nw.shp
+				Length: 6
+			2:
+				Filename: mgun-w.shp
+				Length: 6
+			3:
+				Filename: mgun-sw.shp
+				Length: 6
+			4:
+				Filename: mgun-s.shp
+				Length: 6
+			5:
+				Filename: mgun-se.shp
+				Length: 6
+			6:
+				Filename: mgun-e.shp
+				Length: 6
+			7:
+				Filename: mgun-ne.shp
+				Length: 6
+		Facings: 8
+		Length: 6
+		Offset: 0, 0
+
+^WithGatlingMuzzle:
+	muzzle:
+		Offset: 0,0
+		Combine:
+			0:
+				Filename: mgun-n.shp
+				Length: 6
+			1:
+				Filename: mgun-nw.shp
+				Length: 6
+			2:
+				Filename: mgun-w.shp
+				Length: 6
+			3:
+				Filename: mgun-sw.shp
+				Length: 3
+			4:
+				Filename: mgun-s.shp
+				Length: 6
+			5:
+				Filename: mgun-se.shp
+				Length: 6
+			6:
+				Filename: mgun-e.shp
+				Length: 6
+			7:
+				Filename: mgun-ne.shp
+				Length: 6
+		Facings: 8
+		Length: 3
+		ZOffset: 1
+	muzzle-1:
+		Filename: conquer|gunfire.shp
+		Length: *
+		Offset: 0,0
+		ZOffset: 1
+	muzzle-2:
+		Filename: conquer|vtmuzzle.shp
+		Length: *
+		Offset: 0,0
+		ZOffset: 1
+
+^WithCannonMuzzle:
+	muzzle:
+		Filename: conquer|gunfire.shp
+		Length: *
+	muzzle-2:
+		Filename: conquer|vtmuzzle.shp
+		Length: *
+
+^WithFlakMuzzle:
+	muzzle:
+		Filename: conquer|gunfire.shp
+		Length: *
+		Offset: 0,0
+
+^WithMirageMuzzle:
+	muzzle:
+		Filename: conquer|vtmuzzle.shp
+		Length: *
+		Offset: 0,0
+
+^WithApocMuzzle:
+	muzzle:
+		Filename: conquer|apmuzzle.shp
+		Length: *
+	muzzle-2:
+		Filename: conquer|vtmuzzle.shp
+		Length: *
