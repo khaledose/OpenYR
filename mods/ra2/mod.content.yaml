@@ -48,6 +48,7 @@ Rules:
 	ra2|actors/factions/yuri/infantries/Initiate/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
 	ra2|actors/misc/rules.yaml
+	ra2|actors/misc/bridges/rules.yaml
 	ra2|actors/misc/crates/rules.yaml
 	ra2|actors/misc/drills/rules.yaml
 	ra2|actors/misc/lights/rules.yaml
@@ -94,6 +95,7 @@ Sequences:
 	ra2|actors/factions/yuri/infantries/Initiate/sequences.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
 	ra2|actors/misc/sequences.yaml
+	ra2|actors/misc/bridges/sequences.yaml
 	ra2|actors/misc/crates/sequences.yaml
 	ra2|actors/misc/drills/sequences.yaml
 	ra2|actors/misc/lights/sequences.yaml
@@ -140,3 +142,4 @@ Weapons:
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/weapons.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/weapons.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/weapons.yaml
+	ra2|actors/misc/bridges/weapons.yaml

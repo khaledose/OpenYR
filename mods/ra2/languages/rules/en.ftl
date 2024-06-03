@@ -78,6 +78,14 @@ meta-civbuilding =
 meta-rubble =
    .name = Rubble
 
+## Bridges
+actor-cabhut =
+   .name = Bridge Repair Hut
+meta-wooden-bridge =
+   .name = Wooden Bridge
+meta-concrete-bridge =
+   .name = Concrete Bridge
+
 ## Default Vehicles
 meta-constructionvehicle =
    .name = Mobile Construction Vehicle

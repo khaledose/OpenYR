@@ -1,0 +1,147 @@
+cabhut:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^Sprite
+	Inherits@3: ^1x1Shape
+	Interactable:
+	FrozenUnderFog:
+	Tooltip:
+		Name: actor-cabhut.name
+	Targetable:
+		TargetTypes: BridgeRepairHut
+	BridgeHut:
+		RepairPropagationDelay: 0
+		DemolishPropagationDelay: 5
+		NeighbourOffsets: -2,-2, -2,-1, -2,0, -2,1, -2,2, -1,-2, -1,-1, -1,0, -1,1, -1,2, 0,-2, 0,-1, 0,1, 0,2, 1,-2, 1,-1, 1,0, 1,1, 1,2, 2,-2, 2,-1, 2,0, 2,1, 2,2
+	WithSpriteBody:
+	RenderSprites:
+		Palette: player
+	MapEditorData:
+		Categories: Building - Bridge
+
+lobrdb_a:
+	Inherits: ^LowBridge_A
+	Tooltip:
+		Name: meta-concrete-bridge.name
+	SpawnActorOnDeath:
+		Actor: lobrdb_a_d
+
+lobrdb_b:
+	Inherits: ^LowBridge_B
+	Tooltip:
+		Name: meta-concrete-bridge.name
+	SpawnActorOnDeath:
+		Actor: lobrdb_b_d
+
+lobrdb_a_d:
+	Inherits: ^LowBridgeDead_A
+	BridgePlaceholder:
+		ReplaceWithActor: lobrdb_a
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdb_r_ne, lobrdb_r_sw
+
+lobrdb_b_d:
+	Inherits: ^LowBridgeDead_B
+	BridgePlaceholder:
+		ReplaceWithActor: lobrdb_b
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdb_r_nw, lobrdb_r_se
+
+lobrdb_r_se:
+	Inherits: ^LowBridgeRamp_B
+	BridgePlaceholder:
+		NeighbourOffsets: -1,1
+	Tooltip:
+		Name: meta-concrete-bridge.name
+
+lobrdb_r_nw:
+	Inherits: ^LowBridgeRamp_B
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	Tooltip:
+		Name: meta-concrete-bridge.name
+
+lobrdb_r_ne:
+	Inherits: ^LowBridgeRamp_A
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	Tooltip:
+		Name: meta-concrete-bridge.name
+
+lobrdb_r_sw:
+	Inherits: ^LowBridgeRamp_A
+	BridgePlaceholder:
+		NeighbourOffsets: 1,-1
+	Tooltip:
+		Name: meta-concrete-bridge.name
+
+lobrdg_a:
+	Inherits: ^LowBridge_A
+	Tooltip:
+		Name: meta-wooden-bridge.name
+	SpawnActorOnDeath:
+		Actor: lobrdg_a_d
+
+lobrdg_b:
+	Inherits: ^LowBridge_B
+	Tooltip:
+		Name: meta-wooden-bridge.name
+	SpawnActorOnDeath:
+		Actor: lobrdg_b_d
+
+lobrdg_a_d:
+	Inherits: ^LowBridgeDead_A
+	BridgePlaceholder:
+		ReplaceWithActor: lobrdg_a
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdg_r_ne, lobrdg_r_sw
+
+lobrdg_b_d:
+	Inherits: ^LowBridgeDead_B
+	BridgePlaceholder:
+		ReplaceWithActor: lobrdg_b
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdg_r_nw, lobrdg_r_se
+
+lobrdg_r_se:
+	Inherits: ^LowBridgeRamp_B
+	BridgePlaceholder:
+		NeighbourOffsets: -1,1
+	Tooltip:
+		Name: meta-wooden-bridge.name
+
+lobrdg_r_nw:
+	Inherits: ^LowBridgeRamp_B
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	Tooltip:
+		Name: meta-wooden-bridge.name
+
+lobrdg_r_ne:
+	Inherits: ^LowBridgeRamp_A
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	Tooltip:
+		Name: meta-wooden-bridge.name
+
+lobrdg_r_sw:
+	Inherits: ^LowBridgeRamp_A
+	BridgePlaceholder:
+		NeighbourOffsets: 1,-1
+	Tooltip:
+		Name: meta-wooden-bridge.name
+
+bridge1:
+	Inherits: ^ElevatedBridgePlaceholder
+
+bridge2:
+	Inherits: ^ElevatedBridgePlaceholder
+
+bridgb1:
+	Inherits: ^ElevatedBridgePlaceholder
+	Tooltip:
+		Name: meta-wooden-bridge.name
+
+bridgb2:
+	Inherits: ^ElevatedBridgePlaceholder
+	Tooltip:
+		Name: meta-wooden-bridge.name

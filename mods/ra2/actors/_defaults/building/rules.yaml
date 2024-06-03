@@ -316,3 +316,134 @@ barracks.infiltrated:
 	MapEditorData:
 		Categories: Building - Fence
 	-BlocksProjectiles:
+
+^Bridge:
+	Interactable:
+	AlwaysVisible:
+	RenderSprites:
+		Palette: terrain
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		QuantizedFacings: 1
+	RadarColorFromTerrain:
+		Terrain: Bridge
+	AppearsOnMapPreview:
+		Terrain: Bridge
+	MapEditorData:
+		Categories: Building - Bridge
+
+^LowBridgeRamp:
+	Inherits: ^Bridge
+	WithSpriteBody:
+	AppearsOnRadar:
+	EditorOnlyTooltip:
+		Name: meta-bridge-ramp-name
+
+^LowBridgeRamp_A:
+	Inherits: ^LowBridgeRamp
+	Inherits@shape: ^3x1Shape
+	Building:
+		Footprint: ===
+
+^LowBridgeRamp_B:
+	Inherits: ^LowBridgeRamp
+	Inherits@shape: ^1x3Shape
+	Building:
+		Footprint: = = =
+
+^LowBridge:
+	Inherits: ^Bridge
+	HitShape:
+	Health:
+		HP: 50000
+	Armor:
+		Type: Concrete
+	GroundLevelBridge:
+		DemolishWeapon: BuildingExplosion
+	Targetable:
+		TargetTypes: Ground, Building, Bridge
+		RequiresForceFire: true
+	WithBridgeSpriteBody:
+		Sequences: idle, idle2, idle3, idle4
+		ADestroyedSequences: adead
+		BDestroyedSequences: bdead
+		ABDestroyedSequences: abdead
+	ShakeOnDeath:
+		Duration: 5
+		Intensity: 1
+	AppearsOnRadar:
+
+^LowBridge_A:
+	Inherits: ^LowBridge
+	Inherits@shape: ^3x1Shape
+	Building:
+		Footprint: ===
+	GroundLevelBridge:
+		NeighbourOffsets: 1,-1, 1,1
+	WithBridgeSpriteBody:
+		AOffset: 1,-1
+		BOffset: 1,1
+
+^LowBridge_B:
+	Inherits: ^LowBridge
+	Inherits@shape: ^1x3Shape
+	Building:
+		Footprint: = = =
+	GroundLevelBridge:
+		NeighbourOffsets: -1,1, 1,1
+	WithBridgeSpriteBody:
+		AOffset: -1,1
+		BOffset: 1,1
+
+^LowBridgeDead:
+	Inherits: ^Bridge
+	BridgePlaceholder:
+		DamageState: Dead
+	Interactable:
+		Bounds: 2316, 2316
+	EditorOnlyTooltip:
+		Name: meta-dead-bridge-name
+
+^LowBridgeDead_A:
+	Inherits: ^LowBridgeDead
+	Inherits@shape: ^3x1Shape
+	Building:
+		Footprint: ===
+	BridgePlaceholder:
+		NeighbourOffsets: 1,-1, 1,1
+	WithDeadBridgeSpriteBody:
+		AOffset: 1,-1
+		BOffset: 1,1
+
+^LowBridgeDead_B:
+	Inherits: ^LowBridgeDead
+	Inherits@shape: ^1x3Shape
+	Building:
+		Footprint: = = =
+	BridgePlaceholder:
+		NeighbourOffsets: -1,1, 1,1
+	WithDeadBridgeSpriteBody:
+		AOffset: 1,1
+		BOffset: -1,1
+
+^ElevatedBridgePlaceholder:
+	AlwaysVisible:
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Bridge
+	AppearsOnMapPreview:
+		Terrain: Bridge
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		QuantizedFacings: 1
+	Tooltip:
+		Name: meta-concrete-bridge.name
+	Immobile:
+		OccupiesSpace: false
+	MapEditorData:
+		Categories: Building - Bridge
+	Interactable:
+		Bounds: 2316, 6950

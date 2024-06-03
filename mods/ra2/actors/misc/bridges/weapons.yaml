@@ -1,0 +1,6 @@
+Demolish:
+	Warhead@1Dam: SpreadDamage
+		DamageTypes: DefaultDeath, NonTemporal
+	Warhead@2Eff: CreateEffect
+		Explosions: large_twlt
+		ImpactSounds: expnew09.wav

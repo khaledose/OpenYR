@@ -54,6 +54,13 @@
 		Length: 16
 		ShadowStart: 48
 
+^bridge:
+	Defaults:
+		ZOffset: -1c511
+		Start: 1
+		ZRamp: 1
+		Offset: 0, 0, 0.5
+
 rallypoint:
 	flag:
 		Filename: conquer|mouse.shp
