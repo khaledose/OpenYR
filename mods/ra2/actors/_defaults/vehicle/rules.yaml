@@ -56,3 +56,55 @@
 		Voice: Move
 	MapEditorData:
 		Categories: Vehicle, Vehicle - MCV
+
+^MinerVehicle:
+	Inherits: ^Vehicle
+	Inherits@SELECTION_MODE: ^LowPrioritySelectionMode
+	Inherits@SELFHEALING: ^SelfHealing
+	Buildable:
+		BuildPaletteOrder: 10
+	Selectable:
+		Priority: 7
+		Bounds: 1544, 2509, 0, -289
+	Health:
+		HP: 100000
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 1400
+	DeliversCash:
+		Payload: 1400
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 4c0
+	Harvester:
+		Type: Unload
+		Resources: Ore, Gems
+		BaleLoadDelay: 12
+		BaleUnloadDelay: 0
+		FullyLoadedSpeed: 100
+		HarvestVoice: Harvest
+	StoresResources:
+		Capacity: 20
+		Resources: Ore, Gems
+	DockClientManager:
+		Voice: Deliver
+	WithHarvestOverlay:
+		LocalOffset: 121,0,0
+		Palette: effect
+	WithVoxelUnloadBody:
+	WithStoresResourcesPipsDecoration:
+		Image: small-color-pips
+		Margin: 4, 3
+		Palette: ra
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 5
+		EmptySequence: empty
+		FullSequence: green
+		ResourceSequences:
+			Ore: yellow
+			Gems: blue
+	MapEditorData:
+		Categories: Vehicle - Miner
