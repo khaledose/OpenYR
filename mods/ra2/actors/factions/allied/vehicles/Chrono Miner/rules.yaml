@@ -1,0 +1,12 @@
+cmin:
+	Inherits: ^MinerVehicle
+	Buildable:
+		Description: actor-cmin.description
+	Tooltip:
+		Name: actor-cmin.name
+	Tooltip@NoRow:
+		Name: actor-cmin.name
+	StoresResources:
+		Capacity: 20
+	Voiced:
+		VoiceSet: ChronoMinerVoice

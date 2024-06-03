@@ -1,0 +1,7 @@
+ChronoMinerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vchrsea, vchrseb, vchrsec, vchrsed, vchrsee
+		Move: vchrmoa, vchrmob, vchrmoc, vchrmod, vchrmoe
+		Harvest: vchrhaa, vchrhab, vchrhac, vchrhad, vchrhae
+		Deliver: vchrgoa, vchrgob, vchrgoc, vchrgod, vchrgoe

@@ -27,6 +27,7 @@ Rules:
 	ra2|actors/factions/allied/defenses/Wall/rules.yaml
 	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
 	ra2|actors/factions/allied/infantries/G.I/rules.yaml
+	ra2|actors/factions/allied/vehicles/Chrono Miner/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
 	ra2|actors/factions/neutral/buildings/civilian/rules.yaml
 	ra2|actors/factions/neutral/buildings/prop/rules.yaml
@@ -40,6 +41,7 @@ Rules:
 	ra2|actors/factions/soviet/infantries/Conscript/rules.yaml
 	ra2|actors/factions/soviet/infantries/Engineer/rules.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
+	ra2|actors/factions/soviet/vehicles/War Miner/rules.yaml
 	ra2|actors/factions/yuri/buildings/Barracks/rules.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/rules.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
@@ -77,6 +79,7 @@ Sequences:
 	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
 	ra2|actors/factions/allied/defenses/Wall/sequences.yaml
 	ra2|actors/factions/allied/infantries/G.I/sequences.yaml
+	ra2|actors/factions/allied/vehicles/Chrono Miner/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
 	ra2|actors/factions/neutral/buildings/civilian/sequences.yaml
 	ra2|actors/factions/neutral/buildings/prop/sequences.yaml
@@ -89,6 +92,7 @@ Sequences:
 	ra2|actors/factions/soviet/defenses/Wall/sequences.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/sequences.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/soviet/vehicles/War Miner/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/sequences.yaml
@@ -106,9 +110,11 @@ Sequences:
 	ra2|actors/world/smudgelayers/sequences.yaml
 
 ModelSequences:
+	ra2|actors/factions/allied/vehicles/Chrono Miner/voxels.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voxels.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voxels.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/voxels.yaml
+	ra2|actors/factions/soviet/vehicles/War Miner/voxels.yaml
 
 TileSets:
 	ra2|actors/world/tilesets/temperat.yaml
@@ -122,12 +128,14 @@ Voices:
 	ra2|actors/_defaults/infantry/voices.yaml
 	ra2|actors/factions/allied/infantries/Engineer/voices.yaml
 	ra2|actors/factions/allied/infantries/G.I/voices.yaml
+	ra2|actors/factions/allied/vehicles/Chrono Miner/voices.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voices.yaml
 	ra2|actors/factions/neutral/buildings/civilian/voices.yaml
 	ra2|actors/factions/neutral/infantries/voices.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/voices.yaml
 	ra2|actors/factions/soviet/infantries/Engineer/voices.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voices.yaml
+	ra2|actors/factions/soviet/vehicles/War Miner/voices.yaml
 	ra2|actors/factions/yuri/infantries/Engineer/voices.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/voices.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/voices.yaml
@@ -143,5 +151,6 @@ Weapons:
 	ra2|actors/factions/neutral/infantries/weapons.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/weapons.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/weapons.yaml
+	ra2|actors/factions/soviet/vehicles/War Miner/weapons.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/weapons.yaml
 	ra2|actors/misc/bridges/weapons.yaml

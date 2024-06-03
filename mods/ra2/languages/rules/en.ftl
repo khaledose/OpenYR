@@ -614,6 +614,11 @@ actor-e1 =
       Strong vs Infantry
       Weak vs Vehicles, Aircraft
 
+## Allied Vehicles
+actor-cmin =
+   .name = Chrono Miner
+   .description = Gathers Ore and Gems.
+
 ## Soviet Buildings
 actor-napowr =
    .name = Tesla Reactor
@@ -630,6 +635,11 @@ actor-e2 =
 
       Strong vs Infantry
       Weak vs Vehicles, Aircraft
+
+## Soviet Vehicles
+actor-harv =
+   .name = War Miner
+   .description = Gathers Ore and Gems.
 
 ## Yuri Buildings
 actor-yapowr =
