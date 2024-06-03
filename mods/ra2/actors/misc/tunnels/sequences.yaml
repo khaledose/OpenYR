@@ -1,0 +1,35 @@
+tuntop01:
+	Inherits: ^Tunnel
+	idle:
+		Filename: tuntop01.tem
+		TilesetFilenames:
+			SNOW: tuntop01.sno
+			DESERT: tuntop01.des
+		Offset: 30, -61, 45
+
+tuntop02:
+	Inherits: ^Tunnel
+	idle:
+		Filename: tuntop02.tem
+		TilesetFilenames:
+			SNOW: tuntop02.sno
+			DESERT: tuntop02.des
+		Offset: -30, -61, 45
+
+tuntop03:
+	Inherits: ^Tunnel
+	idle:
+		Filename: tuntop03.tem
+		TilesetFilenames:
+			SNOW: tuntop03.sno
+			DESERT: tuntop03.des
+		Offset: 30, -61, 30
+
+tuntop04:
+	Inherits: ^Tunnel
+	idle:
+		Filename: tuntop04.tem
+		TilesetFilenames:
+			SNOW: tuntop04.sno
+			DESERT: tuntop04.des
+		Offset: -30, -61, 30

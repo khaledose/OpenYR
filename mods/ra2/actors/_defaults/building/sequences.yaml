@@ -61,6 +61,10 @@
 		ZRamp: 1
 		Offset: 0, 0, 0.5
 
+^Tunnel:
+	idle:
+		ZRamp: 1
+
 rallypoint:
 	flag:
 		Filename: conquer|mouse.shp
