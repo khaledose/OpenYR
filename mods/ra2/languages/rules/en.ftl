@@ -72,6 +72,10 @@ meta-constructionyard =
    .name = Construction Yard
    .description = Allows construction of base structures.
 
+meta-refinery =
+   .name = Ore Refinery
+   .description = Processes ore into credits.
+
 meta-civbuilding =
    .name = Civilian Building
 
