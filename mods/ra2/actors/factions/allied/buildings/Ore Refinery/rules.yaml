@@ -1,0 +1,56 @@
+garefn:
+	Inherits: ^Refinery
+	Inherits@SHAPE: ^NormalRefineryShape
+	Buildable:
+		Prerequisites: ~building.allies, gapowr, ~techlevel.1
+	IsometricSelectable:
+		DecorationHeight: 60
+	Power:
+		Amount: -50
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 2000
+	CustomSellValue:
+		Value: 300
+	RevealsShroud:
+		Range: 6c0
+	FreeActor:
+		Actor: cmin
+		SpawnOffset: 3,1
+		Facing: 640
+	WithDockedOverlay:
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@bib:
+		Sequence: idle-bib
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@drill:
+		Sequence: idle-drill
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	FloatingSpriteEmitter@refinerysmoke1:
+		Offset: -1024,-512,3456
+		Image: smoke
+		Sequences: small
+		Palette: effect50alpha
+		SpawnFrequency: 1, 2
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 27, 54
+		Duration: 39
+		RequiresCondition: resource-delivered
+	FloatingSpriteEmitter@refinerysmoke2:
+		Offset: -64,-1280,3456
+		Image: smoke
+		Sequences: small
+		Palette: effect50alpha
+		SpawnFrequency: 1,2
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 27, 54
+		Duration: 39
+		RequiresCondition: resource-delivered

@@ -23,6 +23,7 @@ Rules:
 	ra2|actors/_defaults/world/rules.yaml
 	ra2|actors/factions/allied/buildings/Barracks/rules.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/rules.yaml
+	ra2|actors/factions/allied/buildings/Ore Refinery/rules.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/rules.yaml
 	ra2|actors/factions/allied/defenses/Wall/rules.yaml
 	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
@@ -36,6 +37,7 @@ Rules:
 	ra2|actors/factions/neutral/infantries/rules.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
+	ra2|actors/factions/soviet/buildings/Ore Refinery/rules.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/rules.yaml
 	ra2|actors/factions/soviet/defenses/Wall/rules.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/rules.yaml
@@ -76,6 +78,7 @@ Sequences:
 	ra2|actors/_defaults/world/sequences.yaml
 	ra2|actors/factions/allied/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/allied/buildings/Construction Yard/sequences.yaml
+	ra2|actors/factions/allied/buildings/Ore Refinery/sequences.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
 	ra2|actors/factions/allied/defenses/Wall/sequences.yaml
 	ra2|actors/factions/allied/infantries/G.I/sequences.yaml
@@ -88,6 +91,7 @@ Sequences:
 	ra2|actors/factions/neutral/infantries/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
+	ra2|actors/factions/soviet/buildings/Ore Refinery/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/sequences.yaml
 	ra2|actors/factions/soviet/defenses/Wall/sequences.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/sequences.yaml

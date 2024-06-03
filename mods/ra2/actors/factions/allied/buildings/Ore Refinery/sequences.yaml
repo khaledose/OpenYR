@@ -1,0 +1,52 @@
+garefn:
+	Defaults:
+		Offset: -12, -52
+	idle:
+		Filename: ggrefn.shp
+		TilesetFilenames:
+			SNOW: garefn.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ggrefn.shp
+		TilesetFilenames:
+			SNOW: garefn.shp
+		Start: 1
+		ShadowStart: 4
+	make:
+		Filename: gtrefnmk.shp
+		TilesetFilenames:
+			SNOW: garefnmk.shp
+			URBAN: gurefnmk.shp
+			NEWURBAN: gnrefnmk.shp
+			DESERT: gdrefnmk.shp
+			LUNAR: glrefnmk.shp
+		Length: 25
+		ShadowStart: 25
+	idle-drill:
+		Filename: ggrefnl1.shp
+		TilesetFilenames:
+			SNOW: garefnl1.shp
+		Length: 6
+		Tick: 1500
+	idle-bib:
+		Filename: ggrefnbb.shp
+		TilesetFilenames:
+			SNOW: garefnbb.shp
+		ShadowStart: 2
+		ZOffset: -512
+	damaged-idle-bib:
+		Filename: ggrefnbb.shp
+		TilesetFilenames:
+			SNOW: garefnbb.shp
+		Start: 1
+		ShadowStart: 3
+		ZOffset: -512
+	docking-overlay:
+		Filename: ggrefnor.shp
+		TilesetFilenames:
+			SNOW: garefnor.shp
+		Length: 20
+		ShadowStart: 20
+	icon:
+		Filename: cameo|reficon.shp
+		Offset: 0,0

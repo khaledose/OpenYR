@@ -1,0 +1,56 @@
+narefn:
+	Inherits: ^Refinery
+	Inherits@SHAPE: ^NormalRefineryShape
+	Buildable:
+		Prerequisites: ~building.soviets, napowr, ~techlevel.1
+	IsometricSelectable:
+		DecorationHeight: 90
+	Power:
+		Amount: -50
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 2000
+	CustomSellValue:
+		Value: 300
+	RevealsShroud:
+		Range: 6c0
+	FreeActor:
+		Actor: harv
+		SpawnOffset: 3,1
+		Facing: 640
+	WithDockedOverlay:
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@bib:
+		Sequence: idle-bib
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	WithIdleOverlay@drill:
+		Sequence: idle-drill
+		# PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	FloatingSpriteEmitter@refinerysmoke1:
+		Offset: -1024,-384,4096
+		RequiresCondition: resource-delivered
+		Image: smoke
+		Sequences: small
+		Palette: effect50alpha
+		SpawnFrequency: 1, 2
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 27, 54
+		Duration: 39
+	FloatingSpriteEmitter@refinerysmoke2:
+		Offset: 128,-1408,4096
+		RequiresCondition: resource-delivered
+		Image: smoke
+		Sequences: small
+		Palette: effect50alpha
+		SpawnFrequency: 1, 2
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 27, 54
+		Duration: 39
