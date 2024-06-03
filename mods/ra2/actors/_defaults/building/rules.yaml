@@ -187,6 +187,32 @@ barracks.infiltrated:
 	ProvidesPrerequisite:
 		Prerequisite: barracks.infiltrated
 
+^Refinery:
+	Inherits: ^BaseStructure
+	Buildable:
+		Description: meta-refinery.description
+		BuildPaletteOrder: 20
+	Tooltip:
+		Name: meta-refinery.name
+	Tooltip@NoRow:
+		Name: meta-refinery.name
+	Refinery:
+		UseStorage: false
+	DockHost:
+		Type: Unload
+		DockAngle: 640
+		DockOffset: 1c0, 1c0, 0
+		# RequiresCondition: !chronodisable
+	InfiltrateForCash:
+		Types: SpyInfiltrate
+		Percentage: 20
+		InfiltratedNotification: CashStolen
+		InfiltrationNotification: BuildingInfiltratedCashStolen
+		Minimum: 500
+	GrantConditionOnHostDock:
+		Condition: resource-delivered
+		AfterDockDuration: 3
+
 ^TechBuilding:
 	Inherits: ^Building
 	Inherits@CAPTURE: ^CapturableBuilding
