@@ -54,6 +54,7 @@ Rules:
 	ra2|actors/misc/lights/rules.yaml
 	ra2|actors/misc/rocks/rules.yaml
 	ra2|actors/misc/trees/rules.yaml
+	ra2|actors/misc/tunnels/rules.yaml
 	ra2|actors/player/commander/rules.yaml
 	ra2|actors/player/editor/rules.yaml
 	ra2|actors/world/factions.yaml
@@ -101,6 +102,7 @@ Sequences:
 	ra2|actors/misc/lights/sequences.yaml
 	ra2|actors/misc/rocks/sequences.yaml
 	ra2|actors/misc/trees/sequences.yaml
+	ra2|actors/misc/tunnels/sequences.yaml
 	ra2|actors/world/smudgelayers/sequences.yaml
 
 ModelSequences:
