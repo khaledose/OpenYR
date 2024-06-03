@@ -1,0 +1,8 @@
+harv:
+	Inherits@MUZZLE: ^WithCannonMuzzle
+	harvest:
+		Filename: conquer|oregath.shp
+		Length: 15
+		Facings: 8
+	icon:
+		Filename: cameo|harvicon.shp

@@ -1,0 +1,32 @@
+harv:
+	Inherits: ^MinerVehicle
+	Inherits@EXPERIENCE: ^GainsExperience
+	Buildable:
+		Description: actor-harv.description
+	StoresResources:
+		Capacity: 40
+	Tooltip:
+		Name: actor-harv.name
+	Tooltip@NoRow:
+		Name: actor-harv.name
+	Armament@primary:
+		Weapon: 20mmRapid
+		LocalOffset: 384,0,1024
+		MuzzleSequence: muzzle
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: 20mmrapidE
+		LocalOffset: 384,0,1024
+		MuzzleSequence: muzzle
+		RequiresCondition: rank-elite
+	Turreted:
+		Offset: 196,0,-24
+		RealignDelay: -1
+	AttackTurreted:
+		Voice: Attack
+	BodyOrientation:
+		QuantizedFacings: 32
+	WithVoxelTurret:
+	WithMuzzleOverlay:
+	Voiced:
+		VoiceSet: WarMinerVoice

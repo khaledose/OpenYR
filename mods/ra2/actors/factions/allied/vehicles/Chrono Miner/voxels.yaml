@@ -1,0 +1,3 @@
+cmin:
+	idle: local|cmin
+	unload: local|cmon

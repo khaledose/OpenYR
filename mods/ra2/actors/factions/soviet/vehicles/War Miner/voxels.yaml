@@ -1,0 +1,4 @@
+harv:
+	idle: local|harv
+	turret: local|harvtur
+	unload: local|horv
