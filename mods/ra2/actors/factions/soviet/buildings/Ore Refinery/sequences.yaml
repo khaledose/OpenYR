@@ -1,0 +1,52 @@
+narefn:
+	Defaults:
+		Offset: -13, -53
+	idle:
+		Filename: ngrefn.shp
+		TilesetFilenames:
+			SNOW: narefn.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ngrefn.shp
+		TilesetFilenames:
+			SNOW: narefn.shp
+		Start: 1
+		ShadowStart: 4
+	make:
+		Filename: ntrefnmk.shp
+		TilesetFilenames:
+			SNOW: narefnmk.shp
+			URBAN: nurefnmk.shp
+			NEWURBAN: nnrefnmk.shp
+			DESERT: ndrefnmk.shp
+			LUNAR: nlrefnmk.shp
+		Length: 26
+		ShadowStart: 26
+	idle-drill:
+		Filename: ngrefnl1.shp
+		TilesetFilenames:
+			SNOW: narefnl1.shp
+		Length: 3
+		Tick: 1500
+	idle-bib:
+		Filename: ngrefnbb.shp
+		TilesetFilenames:
+			SNOW: narefnbb.shp
+		ShadowStart: 3
+		ZOffset: -512
+	damaged-idle-bib:
+		Filename: ngrefnbb.shp
+		TilesetFilenames:
+			SNOW: narefnbb.shp
+		Start: 1
+		ShadowStart: 4
+		ZOffset: -512
+	docking-overlay:
+		Filename: ngrefnor.shp
+		TilesetFilenames:
+			SNOW: narefnor.shp
+		Length: 20
+		ShadowStart: 20
+	icon:
+		Filename: cameo|nreficon.shp
+		Offset: 0,0
