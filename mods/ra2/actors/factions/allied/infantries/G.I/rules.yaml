@@ -44,3 +44,6 @@ e1:
 		UndeploySounds: igidepb.wav
 	Voiced:
 		VoiceSet: GIVoice
+	SpawnerMaster:
+		Actors: e2,e2,e2,e2,e2
+		SpawnOffsets: 1,0,0, 0,1,0, 1,1,0, 2,0,0, 0,2,0

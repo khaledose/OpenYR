@@ -1,6 +1,6 @@
 Metadata:
 	Title: Red Alert 2: Yuri's Revenge
-	Version: {DEV_VERSION}
+	Version: bleed
 	Website: https://github.com/khaledose/OpenYR
 	WebIcon32: https://www.openra.net/images/icons/ra_32x32.png
 	WindowTitle: OpenRA - Red Alert 2: Yuri's Revenge
@@ -71,7 +71,7 @@ Packages:
 
 MapFolders:
 	ra2|maps: System
-	~^SupportDir|maps/ra2/{DEV_VERSION}: User
+	~^SupportDir|maps/ra2/bleed: User
 
 Assemblies:
 	^BinDir|OpenRA.Mods.Ra2.dll
