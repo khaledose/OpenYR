@@ -8,17 +8,35 @@ public class SpawnerSlaveInfo : PausableConditionalTraitInfo
 	public override object Create(ActorInitializer init) { return new SpawnerSlave(this); }
 }
 
-public class SpawnerSlave : PausableConditionalTrait<SpawnerSlaveInfo>, INotifyMasterChanged
+public class SpawnerSlave : PausableConditionalTrait<SpawnerSlaveInfo>, ILinkSpawners, INotifyMasterChanged, INotifyKilled, INotifyOwnerChanged
 {
+	protected SpawnerMaster MasterSpawner;
+
 	public SpawnerSlave(SpawnerSlaveInfo info) : base(info)
 	{
 	}
 
-	public void OnMasterKilled(Actor self)
+	void ILinkSpawners.Link(Actor self, Actor master, MasterSpawner spawner)
+	{
+		MasterSpawner = spawner;
+	}
+
+
+	void INotifyMasterChanged.OnMasterKilled(Actor self)
 	{
 	}
 
-	public void OnMasterOwnerChanged(Actor self)
+	void INotifyMasterChanged.OnMasterOwnerChanged(Actor self)
 	{
+	}
+
+	void INotifyKilled.Killed(Actor self, AttackInfo e)
+	{
+
+	}
+
+	void INotifyOwnerChanged.OnOwnerChanged(Actor self, Player oldOwner, Player newOwner)
+	{
+
 	}
 }
