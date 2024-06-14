@@ -12,11 +12,11 @@ public class SpawnerMasterInfo : PausableConditionalTraitInfo
 	[Desc("Actors to spawn.")]
 	public readonly string[] Actors = Array.Empty<string>();
 
-	[Desc("Link spawned actor to parent.")]
-	public readonly bool LinkToParent = true;
-
 	[Desc("Place slave actor will be spawned at.")]
 	public readonly WVec[] SpawnOffsets = Array.Empty<WVec>();
+
+	[Desc("Link spawned actor to parent.")]
+	public readonly bool LinkToParent = true;
 
 	[Desc("Allow slaves to respawn.")]
 	public readonly bool AllowRespawn = true;
@@ -27,40 +27,40 @@ public class SpawnerMasterInfo : PausableConditionalTraitInfo
 	[Desc("Delay between each respawn.")]
 	public readonly int RespawnDelay = 150;
 
-	public override void RulesetLoaded(Ruleset rules, ActorInfo ai)
-	{
-		base.RulesetLoaded(rules, ai);
-	}
-
 	public override object Create(ActorInitializer init) { return new SpawnerMaster(this); }
 }
 
-public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick, INotifyKilled, INotifyOwnerChanged
+public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick, INotifyKilled, INotifyOwnerChanged, INotifySlaveChanged
 {
-	public List<LinkedSpawnerSlave> LinkedSlaves;
-	int respawnTicks = -1;
+	protected readonly List<LinkedSlave> LinkedSlaves = new();
+	int respawnTicks;
 	bool initialSpawn = true;
 
 	public SpawnerMaster(SpawnerMasterInfo info) : base(info)
 	{
-		LinkedSlaves = Info.Actors
-			.Zip(Info.SpawnOffsets,
-				 (name, offset) =>
-					new LinkedSpawnerSlave
-					{
-						Name = name,
-						Offset = offset
-					})
-			.ToList();
+		respawnTicks = Info.RespawnDelay;
 	}
 
 	protected override void Created(Actor self)
 	{
 		base.Created(self);
+		InitializeSlaves(self);
 		RefreshSlaves(self);
 	}
 
-	protected virtual void CreateSlave(Actor self, LinkedSpawnerSlave slave)
+	protected virtual void InitializeSlaves(Actor self)
+	{
+		for (var i = 0; i < Info.Actors.Length; i++)
+		{
+			LinkedSlaves.Add(new LinkedSlave
+			{
+				Name = Info.Actors[i],
+				Offset = i < Info.SpawnOffsets.Length ? Info.SpawnOffsets[i] : WVec.Zero,
+			});
+		}
+	}
+
+	protected virtual void CreateSlave(Actor self, LinkedSlave linkedSlave)
 	{
 		var typeDictionary = new TypeDictionary { new OwnerInit(self.Owner) };
 		if (Info.LinkToParent)
@@ -68,11 +68,14 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 			typeDictionary.Add(new ParentActorInit(self));
 		}
 
-		slave.Actor = self.World.CreateActor(false, slave.Name, typeDictionary);
-		slave.SpawnerSlave = slave.Actor.Trait<SpawnerSlave>();
-		slave.MasterChanged = slave.Actor
-			.TraitsImplementing<INotifyMasterChanged>()
-			.FirstOrDefault();
+		linkedSlave.Actor = self.World.CreateActor(false, linkedSlave.Name, typeDictionary);
+		linkedSlave.MasterChanged = linkedSlave.Actor
+			 .TraitsImplementing<INotifyMasterChanged>()
+			 .FirstOrDefault();
+		linkedSlave.SlaveLinked = linkedSlave.Actor
+			 .TraitsImplementing<INotifySlaveLinked>()
+			 .FirstOrDefault();
+		linkedSlave.SlaveLinked.Link(linkedSlave.Actor, self);
 	}
 
 	protected virtual void RefreshSlaves(Actor self)
@@ -85,7 +88,8 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 			return;
 		}
 
-		foreach (var slave in LinkedSlaves.Where(s => !s.IsAlive))
+		var deadSlaves = LinkedSlaves.Where(s => !s.IsAlive);
+		foreach (var slave in deadSlaves)
 		{
 			CreateSlave(self, slave);
 
@@ -143,7 +147,8 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 
 	void INotifyKilled.Killed(Actor self, AttackInfo e)
 	{
-		foreach (var slave in LinkedSlaves.Where(s => s.IsAlive))
+		var aliveSlaves = LinkedSlaves.Where(s => s.IsAlive);
+		foreach (var slave in aliveSlaves)
 		{
 			slave.MasterChanged?.OnMasterKilled(slave.Actor);
 		}
@@ -151,9 +156,14 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 
 	void INotifyOwnerChanged.OnOwnerChanged(Actor self, Player oldOwner, Player newOwner)
 	{
-		foreach (var slave in LinkedSlaves.Where(s => s.IsAlive))
+		var aliveSlaves = LinkedSlaves.Where(s => s.IsAlive);
+		foreach (var slave in aliveSlaves)
 		{
 			slave.MasterChanged?.OnMasterOwnerChanged(slave.Actor);
 		}
 	}
+
+	void INotifySlaveChanged.OnSlaveKilled(Actor self){}
+
+	void INotifySlaveChanged.OnSlaveOwnerChanged(Actor self){}
 }

@@ -1,7 +1,9 @@
+using OpenRA.Traits;
+
 namespace OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Slave.Traits;
 
 [RequireExplicitImplementation]
-public interface ILinkSpawners
+public interface INotifySlaveLinked
 {
-	void Link(Actor self, Actor master, MasterSpawner spawner);
+	void Link(Actor self, Actor master);
 }

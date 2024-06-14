@@ -1,0 +1,8 @@
+﻿namespace OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Slave.Traits;
+
+public interface INotifySlaveChanged
+{
+	void OnSlaveKilled(Actor self);
+
+	void OnSlaveOwnerChanged(Actor self);
+}
