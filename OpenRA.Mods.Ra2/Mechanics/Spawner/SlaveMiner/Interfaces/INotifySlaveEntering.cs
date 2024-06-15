@@ -1,6 +1,6 @@
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Activities;
+namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Interfaces;
 
 [RequireExplicitImplementation]
 public interface INotifySlaveEntering

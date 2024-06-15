@@ -1,10 +1,8 @@
-using System.Collections.Generic;
-using System.Linq;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.RA2.Mechanics.SlaveMiner.Traits;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Orders;
+namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Orders;
 
 public class DeployNearResourcesTargeter : IOrderTargeter
 {

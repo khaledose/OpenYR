@@ -1,5 +1,4 @@
-﻿using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Master.Traits;
-using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Slave.Traits;
+﻿using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Interfaces;
 
 namespace OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Master;
 

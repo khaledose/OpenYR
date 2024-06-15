@@ -1,9 +1,6 @@
-using System.Linq;
-using OpenRA;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Traits;
 
-namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Traits;
+namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
 
 public class DeployedMasterMinerInfo : MasterMinerInfo
 {
@@ -22,15 +19,12 @@ public class DeployedMasterMinerInfo : MasterMinerInfo
 	}
 }
 
-public class DeployedMasterMiner : MasterMiner, ITick
+public class DeployedMasterMiner : MasterMiner
 {
 	public new readonly DeployedMasterMinerInfo Info;
-	bool initialSpawn = true;
 
 	[Sync]
-	int respawnTicks = -1;
-	[Sync]
-	int scanTicks = -1;
+	int scanTicks;
 
 	public DeployedMasterMiner(ActorInitializer init, DeployedMasterMinerInfo info)
 		: base(init, info)
@@ -56,20 +50,20 @@ public class DeployedMasterMiner : MasterMiner, ITick
 		}
 	}
 
-	void ITick.Tick(Actor self)
+	protected override void Tick(Actor self)
 	{
-		if (IsTraitPaused || IsTraitDisabled)
+		base.Tick(self);
+
+		if (IsTraitPaused || IsTraitDisabled || ScanResourcesTick(self))
 		{
 			return;
 		}
 
-		ReplenishDeadSlaves(self);
-		if (ScanResourcesTick(self))
+		var readySlaves = LinkedSlaves.Where(s => s.IsReady);
+		foreach (var slave in readySlaves)
 		{
-			return;
+			SpawnSlave(self, slave.Actor);
 		}
-
-		RespawnSlavesTick(self);
 	}
 
 	bool ScanResourcesTick(Actor self)
@@ -82,7 +76,7 @@ public class DeployedMasterMiner : MasterMiner, ITick
 
 		scanTicks = Info.ScanDelay;
 
-		var density = GetResourceDensityAtLocation(self.Location);
+		var density = GetResourcesDensity(self.Location);
 		if (density < 10 * Info.ScanRadius && Transforms.CanDeploy())
 		{
 			self.QueueActivity(false, Transforms.GetTransformActivity());
@@ -90,34 +84,5 @@ public class DeployedMasterMiner : MasterMiner, ITick
 		}
 
 		return false;
-	}
-
-	void RespawnSlavesTick(Actor self)
-	{
-		var disposedSlaves = SlaveEntries.Where(s => s.IsValid && !s.Actor.IsInWorld).ToArray();
-
-		if (initialSpawn)
-		{
-			foreach (var slave in disposedSlaves)
-			{
-				SpawnIntoWorld(self, slave.Actor, self.CenterPosition);
-			}
-
-			initialSpawn = false;
-			return;
-		}
-
-		if (disposedSlaves.Length > 0 && respawnTicks == 0)
-		{
-			var slaveEntry = disposedSlaves.FirstOrDefault();
-			SpawnIntoWorld(self, slaveEntry.Actor, self.CenterPosition);
-		}
-
-		if (disposedSlaves.Length > 0 && respawnTicks < 0)
-		{
-			respawnTicks = Info.RespawnTicks;
-		}
-
-		respawnTicks--;
 	}
 }

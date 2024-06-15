@@ -1,5 +1,6 @@
 using OpenRA.Mods.Common.Activities;
-using OpenRA.Mods.RA2.Mechanics.SlaveMiner.Traits;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Interfaces;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 

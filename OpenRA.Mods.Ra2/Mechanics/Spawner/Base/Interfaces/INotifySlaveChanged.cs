@@ -1,4 +1,4 @@
-﻿namespace OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Slave.Traits;
+﻿namespace OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Interfaces;
 
 public interface INotifySlaveChanged
 {

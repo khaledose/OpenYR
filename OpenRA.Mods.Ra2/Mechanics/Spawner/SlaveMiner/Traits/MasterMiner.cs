@@ -1,13 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using OpenRA.Mods.AS.Traits;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.RA2.Mechanics.SlaveMiner.Activities;
-using OpenRA.Mods.RA2.Mechanics.SlaveMiner.Orders;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Master;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Traits;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.SlaveMiner;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Interfaces;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Orders;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Traits;
+namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
 
 public class MasterMinerInfo : SpawnerMasterInfo, Requires<TransformsInfo>
 {
@@ -46,9 +45,10 @@ public class MasterMinerInfo : SpawnerMasterInfo, Requires<TransformsInfo>
 	}
 }
 
-public abstract class MasterMiner : SpawnerMaster, INotifyActorDisposing, INotifyTransform, IIssueOrder, IResolveOrder
+public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed, INotifyTransform, IIssueOrder, IResolveOrder
 {
 	public new readonly MasterMinerInfo Info;
+	protected new readonly List<MinerLinkedSlave> LinkedSlaves = new();
 	public CPos? OrderLocation => orderLocation;
 
 	protected readonly Transforms Transforms;
@@ -67,12 +67,36 @@ public abstract class MasterMiner : SpawnerMaster, INotifyActorDisposing, INotif
 	}
 
 	protected MasterMiner(ActorInitializer init, MasterMinerInfo info)
-		: base(init, info)
+		: base(info)
 	{
 		Info = info;
 		World = init.Self.World;
 		Transforms = init.Self.TraitOrDefault<Transforms>();
 		ResourceLayer = World.WorldActor.Trait<IResourceLayer>();
+	}
+
+	protected override void CreateSlave(Actor self, LinkedSlave linkedSlave)
+	{
+		base.CreateSlave(self, linkedSlave);
+
+
+		OnSlaveCreated(self, linkedSlave as MinerLinkedSlave);	
+	}
+
+	protected override void OnSlaveCreated(Actor self, LinkedSlave linkedSlave)
+	{
+		base.OnSlaveCreated(self, linkedSlave);
+		if (linkedSlave is MinerLinkedSlave minerLinkedSlave)
+		{
+			minerLinkedSlave.MasterTransformed = linkedSlave.Actor
+			 .TraitsImplementing<INotifySlaveMinerTransformed>()
+			 .FirstOrDefault();
+		}
+	}
+
+	void INotifySlaveMinerTransformed.OnTransformCompleted(Actor self, MasterMiner masterMiner)
+	{
+		OnTransformCompletedInner(self, masterMiner);
 	}
 
 	void INotifyTransform.BeforeTransform(Actor self) { }
@@ -83,8 +107,6 @@ public abstract class MasterMiner : SpawnerMaster, INotifyActorDisposing, INotif
 	{
 		AfterTransformInner(toActor);
 	}
-
-	void INotifyActorDisposing.Disposing(Actor self) { }
 
 	Order IIssueOrder.IssueOrder(Actor self, IOrderTargeter order, in Target target, bool queued)
 	{
@@ -105,15 +127,7 @@ public abstract class MasterMiner : SpawnerMaster, INotifyActorDisposing, INotif
 		}
 	}
 
-	protected virtual void ReplenishDeadSlaves(Actor self)
-	{
-		foreach (var slaveEntry in SlaveEntries.Where(s => !s.IsValid))
-		{
-			Replenish(self, slaveEntry);
-		}
-	}
-
-	public virtual bool CanSlavesHarvestCell(CPos cell)
+	public virtual bool CanHarvestCell(CPos cell)
 	{
 		if (cell.Layer != 0)
 			return false;
@@ -125,24 +139,18 @@ public abstract class MasterMiner : SpawnerMaster, INotifyActorDisposing, INotif
 		return Info.Resources.Contains(resourceType);
 	}
 
-	public virtual int GetResourceDensityAtLocation(CPos location)
+	public virtual int GetResourcesDensity(CPos location)
 	{
 		var totalDensity = 0;
 		foreach (var tile in World.Map.FindTilesInCircle(location, Info.ScanRadius))
 		{
-			if (CanSlavesHarvestCell(tile))
+			if (CanHarvestCell(tile))
 			{
 				totalDensity += ResourceLayer.GetResource(tile).Density;
 			}
 		}
 
 		return totalDensity;
-	}
-
-	public virtual void OnTransformCompleted(MasterMiner oldMasterMiner)
-	{
-		SlaveEntries = oldMasterMiner.SlaveEntries;
-		orderLocation = oldMasterMiner.orderLocation;
 	}
 
 	protected virtual void AfterTransformInner(Actor newMaster)
@@ -153,15 +161,24 @@ public abstract class MasterMiner : SpawnerMaster, INotifyActorDisposing, INotif
 			return;
 		}
 
-		foreach (var slaveEntry in SlaveEntries.Where(s => s.IsValid))
+		var aliveSlaves = LinkedSlaves.Where(s => s.IsAlive);
+		foreach (var slave in aliveSlaves)
 		{
-			slaveEntry.SpawnerSlave.LinkMaster(slaveEntry.Actor, newMaster, masterMiner);
-			var notifySlave = slaveEntry.Actor.TraitsImplementing<INotifyMasterTransformed>().FirstEnabledTraitOrDefault();
-			notifySlave.OnMasterTransformed(slaveEntry.Actor);
+			slave.SlaveLinked.Link(slave.Actor, newMaster);
+			slave.MasterTransformed.OnTransformCompleted(slave.Actor, masterMiner);
 		}
 
-		masterMiner.OnTransformCompleted(this);
-		SlaveEntries = Array.Empty<BaseSpawnerSlaveEntry>();
+		newMaster
+			.TraitsImplementing<INotifySlaveMinerTransformed>()
+			.FirstOrDefault().OnTransformCompleted(newMaster, this);
+		LinkedSlaves.Clear();
+	}
+
+	protected virtual void OnTransformCompletedInner(Actor self, MasterMiner masterMiner)
+	{
+		LinkedSlaves.Clear();
+		LinkedSlaves.AddRange(masterMiner.LinkedSlaves);
+		orderLocation = masterMiner.orderLocation;
 	}
 
 	protected virtual void ResolveOrderInner(Actor self, Order order)

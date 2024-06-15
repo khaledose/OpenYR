@@ -1,0 +1,3 @@
+smin:
+	idle: localmd|smin
+	turret: localmd|smintur

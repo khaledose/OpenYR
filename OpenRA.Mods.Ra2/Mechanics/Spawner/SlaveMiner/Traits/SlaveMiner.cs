@@ -1,12 +1,11 @@
-using OpenRA.Graphics;
-using OpenRA.Mods.AS.Traits;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.Common.Traits.Render;
-using OpenRA.Mods.RA2.Mechanics.SlaveMiner.Activities;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Traits;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Interfaces;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Activities;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Traits;
+namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
 
 public class SlaveMinerInfo : SpawnerSlaveInfo
 {
@@ -19,7 +18,7 @@ public class SlaveMinerInfo : SpawnerSlaveInfo
 	}
 }
 
-public class SlaveMiner : SpawnerSlave, ITick, INotifyIdle, INotifyMasterTransformed
+public class SlaveMiner : SpawnerSlave, INotifyIdle, INotifySlaveMinerTransformed
 {
 	readonly SlaveMinerInfo info;
 	MasterMiner masterMiner;
@@ -37,28 +36,9 @@ public class SlaveMiner : SpawnerSlave, ITick, INotifyIdle, INotifyMasterTransfo
 		harvester = self.TraitOrDefault<Harvester>();
 	}
 
-	public override void LinkMaster(Actor self, Actor master, BaseSpawnerMaster spawnerMaster)
+	protected override void Tick(Actor self)
 	{
-		base.LinkMaster(self, master, spawnerMaster);
-		masterMiner = Master.TraitOrDefault<MasterMiner>();
-		if (!harvester.IsTraitDisabled)
-		{
-			self.QueueActivity(false, new FindAndDeliverResources(self));
-		}
-	}
-
-	public override void OnMasterKilled(Actor self, Actor attacker, SpawnerSlaveDisposal disposal)
-	{
-		base.OnMasterKilled(self, attacker, disposal);
-
-		if (disposal != SpawnerSlaveDisposal.KillSlaves && !string.IsNullOrEmpty(info.FreeSound) && self.IsInWorld)
-		{
-			Game.Sound.Play(SoundType.World, info.FreeSound, self.CenterPosition);
-		}
-	}
-
-	void ITick.Tick(Actor self)
-	{
+		base.Tick(self);
 		if (!self.IsInWorld)
 		{
 			return;
@@ -70,10 +50,27 @@ public class SlaveMiner : SpawnerSlave, ITick, INotifyIdle, INotifyMasterTransfo
 		}
 	}
 
+	protected override void OnMasterLinkedInner(Actor self, Actor master)
+	{
+		base.OnMasterLinkedInner(self, master);
+		masterMiner = master.TraitOrDefault<MasterMiner>();
+		if (!harvester.IsTraitDisabled)
+		{
+			self.QueueActivity(false, new FindAndDeliverResources(self));
+		}
+	}
+
+	protected override void OnMasterChangedInner(Actor self)
+	{
+		base.OnMasterChangedInner(self);
+
+		Game.Sound.Play(SoundType.World, info.FreeSound, self.CenterPosition);
+	}
+
 	void INotifyIdle.TickIdle(Actor self)
 	{
 		if (!self.IsInWorld ||
-			Master is null ||
+			master is null ||
 			masterMiner.IsTraitPaused ||
 			masterMiner.IsTraitDisabled ||
 			harvester.IsTraitDisabled)
@@ -83,15 +80,18 @@ public class SlaveMiner : SpawnerSlave, ITick, INotifyIdle, INotifyMasterTransfo
 
 		if (masterMiner is MobileMasterMiner)
 		{
-			self.QueueActivity(false, new EnterMasterMiner(self, Target.FromActor(Master), null));
+			self.QueueActivity(false, new EnterMasterMiner(self, Target.FromActor(master), null));
+			return;
 		}
-		else if (masterMiner is DeployedMasterMiner)
+
+		if (masterMiner is DeployedMasterMiner)
 		{
 			self.QueueActivity(new FindAndDeliverResources(self));
+			return;
 		}
 	}
 
-	void INotifyMasterTransformed.OnMasterTransformed(Actor self)
+	void INotifySlaveMinerTransformed.OnTransformCompleted(Actor self, MasterMiner masterMiner)
 	{
 		if (!self.IsInWorld)
 		{

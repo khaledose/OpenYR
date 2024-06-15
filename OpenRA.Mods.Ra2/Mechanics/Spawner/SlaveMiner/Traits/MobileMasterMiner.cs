@@ -1,11 +1,11 @@
-using System.Linq;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.RA2.Mechanics.SlaveMiner.Activities;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Activities;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Interfaces;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Traits;
+namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
 
 public class MobileMasterMinerInfo : MasterMinerInfo
 {
@@ -27,10 +27,10 @@ public class MobileMasterMinerInfo : MasterMinerInfo
 	}
 }
 
-public class MobileMasterMiner : MasterMiner, ITick, INotifySlaveEntering, INotifyIdle
+public class MobileMasterMiner : MasterMiner, INotifySlaveEntering, INotifyIdle
 {
 	public new readonly MobileMasterMinerInfo Info;
-	public bool WaitingForPickup => SlaveEntries.Any(s => s.Actor.IsInWorld);
+	public bool WaitingForPickup => LinkedSlaves.Any(s => s.IsAlive);
 
 	public MobileMasterMiner(ActorInitializer init, MobileMasterMinerInfo info)
 		: base(init, info)
@@ -50,16 +50,6 @@ public class MobileMasterMiner : MasterMiner, ITick, INotifySlaveEntering, INoti
 		self.QueueActivity(queued, new DeployNearResources(self, OrderLocation));
 		self.ShowTargetLines();
 		orderLocation = null;
-	}
-
-	void ITick.Tick(Actor self)
-	{
-		if (IsTraitPaused || IsTraitDisabled)
-		{
-			return;
-		}
-
-		ReplenishDeadSlaves(self);
 	}
 
 	void INotifySlaveEntering.OnSlaveEntering(Actor self, Actor slave)

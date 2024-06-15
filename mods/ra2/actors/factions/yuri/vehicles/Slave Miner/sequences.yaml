@@ -1,0 +1,6 @@
+smin:
+	Inherits@MUZZLE: ^WithMachineGunMuzzle
+	icon:
+		Filename: cameomd|sminicon.shp
+	muzzle:
+		Filename: smin.shp

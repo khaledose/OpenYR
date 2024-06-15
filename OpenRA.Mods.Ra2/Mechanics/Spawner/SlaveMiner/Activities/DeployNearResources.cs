@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using OpenRA.Activities;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Pathfinder;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.RA2.Mechanics.SlaveMiner.Traits;
+using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Activities;
+namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Activities;
 
 public class DeployNearResources : Activity
 {
@@ -27,7 +24,6 @@ public class DeployNearResources : Activity
 	public DeployNearResources(Actor self, CPos? orderLocation = null)
 	{
 		world = self.World;
-		ActivityType = ActivityType.Move;
 		masterMiner = self.TraitOrDefault<MobileMasterMiner>();
 		masterMinerInfo = masterMiner.Info;
 		mobile = self.Trait<Mobile>();
@@ -103,7 +99,7 @@ public class DeployNearResources : Activity
 				var distanceToLoc = (loc - searchFromLoc).Length;
 
 				// Retrieve resource density at loc (you need to have a function or data structure to access this information)
-				var resourceDensity = masterMiner.GetResourceDensityAtLocation(loc);
+				var resourceDensity = masterMiner.GetResourcesDensity(loc);
 				if (resourceDensity < 10 * masterMinerInfo.ScanRadius)
 					return PathGraph.PathCostForInvalidPath;
 
@@ -132,7 +128,7 @@ public class DeployNearResources : Activity
 			return false;
 		}
 
-		var resourceDensity = masterMiner.GetResourceDensityAtLocation(location);
+		var resourceDensity = masterMiner.GetResourcesDensity(location);
 		if (resourceDensity < 10 * masterMinerInfo.ScanRadius)
 		{
 			return false;
@@ -141,7 +137,7 @@ public class DeployNearResources : Activity
 		foreach (var buildingCell in buildingInfo.Tiles(location))
 		{
 			var adj = Util.AdjacentCells(world, Target.FromCell(world, buildingCell));
-			if (adj.Any(c => masterMiner.CanSlavesHarvestCell(c)))
+			if (adj.Any(c => masterMiner.CanHarvestCell(c)))
 			{
 				return true;
 			}

@@ -1,9 +1,10 @@
 ﻿using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Slave.Traits;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Interfaces;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Master;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
-namespace OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Master.Traits;
+namespace OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Traits;
 
 [Desc("This actor can spawn actors.")]
 public class SpawnerMasterInfo : PausableConditionalTraitInfo
@@ -30,9 +31,10 @@ public class SpawnerMasterInfo : PausableConditionalTraitInfo
 	public override object Create(ActorInitializer init) { return new SpawnerMaster(this); }
 }
 
-public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick, INotifyKilled, INotifyOwnerChanged, INotifySlaveChanged
+public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick, INotifyActorDisposing, INotifyOwnerChanged, INotifySlaveChanged
 {
 	protected readonly List<LinkedSlave> LinkedSlaves = new();
+	[Sync]
 	int respawnTicks;
 	bool initialSpawn = true;
 
@@ -69,6 +71,11 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 		}
 
 		linkedSlave.Actor = self.World.CreateActor(false, linkedSlave.Name, typeDictionary);
+		OnSlaveCreated(self, linkedSlave);
+	}
+
+	protected virtual void OnSlaveCreated(Actor self, LinkedSlave linkedSlave)
+	{
 		linkedSlave.MasterChanged = linkedSlave.Actor
 			 .TraitsImplementing<INotifyMasterChanged>()
 			 .FirstOrDefault();
@@ -132,8 +139,13 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 		});
 	}
 
-	protected void Tick(Actor self)
+	protected virtual void Tick(Actor self)
 	{
+		if (IsTraitPaused || IsTraitDisabled)
+		{
+			return;
+		}
+
 		RefreshSlaves(self);
 	}
 
@@ -145,7 +157,7 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 			SpawnSlave(self, slave.Actor);
 	}
 
-	void INotifyKilled.Killed(Actor self, AttackInfo e)
+	void INotifyActorDisposing.Disposing(Actor self)
 	{
 		var aliveSlaves = LinkedSlaves.Where(s => s.IsAlive);
 		foreach (var slave in aliveSlaves)
