@@ -50,7 +50,7 @@ public class EnterMasterMiner : Enter
 			}
 
 			notifySlaveEntering.OnSlaveEntered(enterActor, self);
-			w.Remove(self);
+			self.Dispose();
 		});
 	}
 }

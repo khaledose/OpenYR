@@ -152,9 +152,6 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 	void ITick.Tick(Actor self)
 	{
 		Tick(self);
-
-		foreach (var slave in LinkedSlaves.Where(s => s.IsReady))
-			SpawnSlave(self, slave.Actor);
 	}
 
 	void INotifyActorDisposing.Disposing(Actor self)
