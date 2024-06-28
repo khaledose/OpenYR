@@ -6,7 +6,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Master.Activities;
 
-class EnterMasterMiner : Enter
+public class EnterMasterMiner : Enter
 {
 	readonly Actor enterActor;
 	readonly MasterMiner masterMiner;

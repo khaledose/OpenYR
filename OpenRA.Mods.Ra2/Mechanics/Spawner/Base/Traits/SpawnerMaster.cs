@@ -62,7 +62,7 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 		}
 	}
 
-	protected virtual void CreateSlave(Actor self, LinkedSlave linkedSlave)
+	protected virtual Actor CreateSlave(Actor self)
 	{
 		var typeDictionary = new TypeDictionary { new OwnerInit(self.Owner) };
 		if (Info.LinkToParent)
@@ -70,19 +70,19 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 			typeDictionary.Add(new ParentActorInit(self));
 		}
 
-		linkedSlave.Actor = self.World.CreateActor(false, linkedSlave.Name, typeDictionary);
-		OnSlaveCreated(self, linkedSlave);
-	}
+		var linkedSlave = LinkedSlaves.FirstOrDefault(s => !s.IsAlive && !s.IsReady);
+		if(linkedSlave is null)
+		{
+			return null;
+		}
 
-	protected virtual void OnSlaveCreated(Actor self, LinkedSlave linkedSlave)
-	{
-		linkedSlave.MasterChanged = linkedSlave.Actor
-			 .TraitsImplementing<INotifyMasterChanged>()
-			 .FirstOrDefault();
-		linkedSlave.SlaveLinked = linkedSlave.Actor
-			 .TraitsImplementing<INotifySlaveLinked>()
-			 .FirstOrDefault();
-		linkedSlave.SlaveLinked.Link(linkedSlave.Actor, self);
+		linkedSlave.Actor = self.World.CreateActor(false, linkedSlave.Name, typeDictionary);
+		var slaveLinked = linkedSlave.Actor
+			.TraitsImplementing<INotifySlaveLinked>()
+			.FirstOrDefault();
+
+		slaveLinked.Link(linkedSlave.Actor, self);
+		return linkedSlave.Actor;
 	}
 
 	protected virtual void RefreshSlaves(Actor self)
@@ -96,9 +96,9 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 		}
 
 		var deadSlaves = LinkedSlaves.Where(s => !s.IsAlive);
-		foreach (var slave in deadSlaves)
+		while (LinkedSlaves.Any(s => !s.IsAlive && !s.IsReady))
 		{
-			CreateSlave(self, slave);
+			CreateSlave(self);
 
 			if (!Info.RespawnAll && !initialSpawn)
 			{
@@ -162,7 +162,8 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 		var aliveSlaves = LinkedSlaves.Where(s => s.IsAlive);
 		foreach (var slave in aliveSlaves)
 		{
-			slave.MasterChanged?.OnMasterKilled(slave.Actor);
+			var masterChanged = slave.Actor.TraitsImplementing<INotifyMasterChanged>().FirstOrDefault();
+			masterChanged?.OnMasterKilled(slave.Actor);
 		}
 	}
 
@@ -171,7 +172,8 @@ public class SpawnerMaster : PausableConditionalTrait<SpawnerMasterInfo>, ITick,
 		var aliveSlaves = LinkedSlaves.Where(s => s.IsAlive);
 		foreach (var slave in aliveSlaves)
 		{
-			slave.MasterChanged?.OnMasterOwnerChanged(slave.Actor);
+			var masterChanged = slave.Actor.TraitsImplementing<INotifyMasterChanged>().FirstOrDefault();
+			masterChanged?.OnMasterOwnerChanged(slave.Actor);
 		}
 	}
 

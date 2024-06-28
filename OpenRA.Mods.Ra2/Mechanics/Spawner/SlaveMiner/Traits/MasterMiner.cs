@@ -1,7 +1,6 @@
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Master;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Interfaces;
 using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Traits;
-using OpenRA.Mods.Ra2.Mechanics.Spawner.SlaveMiner;
 using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Interfaces;
 using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Orders;
 using OpenRA.Traits;
@@ -48,7 +47,6 @@ public class MasterMinerInfo : SpawnerMasterInfo, Requires<TransformsInfo>
 public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed, INotifyTransform, IIssueOrder, IResolveOrder
 {
 	public new readonly MasterMinerInfo Info;
-	protected new readonly List<MinerLinkedSlave> LinkedSlaves = new();
 	public CPos? OrderLocation => orderLocation;
 
 	protected readonly Transforms Transforms;
@@ -73,25 +71,6 @@ public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed,
 		World = init.Self.World;
 		Transforms = init.Self.TraitOrDefault<Transforms>();
 		ResourceLayer = World.WorldActor.Trait<IResourceLayer>();
-	}
-
-	protected override void CreateSlave(Actor self, LinkedSlave linkedSlave)
-	{
-		base.CreateSlave(self, linkedSlave);
-
-
-		OnSlaveCreated(self, linkedSlave as MinerLinkedSlave);	
-	}
-
-	protected override void OnSlaveCreated(Actor self, LinkedSlave linkedSlave)
-	{
-		base.OnSlaveCreated(self, linkedSlave);
-		if (linkedSlave is MinerLinkedSlave minerLinkedSlave)
-		{
-			minerLinkedSlave.MasterTransformed = linkedSlave.Actor
-			 .TraitsImplementing<INotifySlaveMinerTransformed>()
-			 .FirstOrDefault();
-		}
 	}
 
 	void INotifySlaveMinerTransformed.OnTransformCompleted(Actor self, MasterMiner masterMiner)
@@ -164,8 +143,15 @@ public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed,
 		var aliveSlaves = LinkedSlaves.Where(s => s.IsAlive);
 		foreach (var slave in aliveSlaves)
 		{
-			slave.SlaveLinked.Link(slave.Actor, newMaster);
-			slave.MasterTransformed.OnTransformCompleted(slave.Actor, masterMiner);
+			var slaveLinked = slave.Actor
+				.TraitsImplementing<INotifySlaveLinked>()
+				.FirstOrDefault();
+			slaveLinked.Link(slave.Actor, newMaster);
+
+			var slaveMinerTransformed = slave.Actor
+				.TraitsImplementing<INotifySlaveMinerTransformed>()
+				.FirstOrDefault();
+			slaveMinerTransformed.OnTransformCompleted(slave.Actor, masterMiner);
 		}
 
 		newMaster

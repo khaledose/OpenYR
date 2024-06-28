@@ -38,7 +38,7 @@ smin:
 	# Turreted:
 	# 	Offset: 512, 0, 0
 	# WithMuzzleOverlay:
-	# WithVoxelBody:
+	WithVoxelBody:
 	ProvidesPrerequisite@yarefn:
 		Prerequisite: yarefn
 	MobileMasterMiner:
