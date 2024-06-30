@@ -1,5 +1,4 @@
 using OpenRA.Activities;
-using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Pathfinder;
 using OpenRA.Mods.Common.Traits;
@@ -89,25 +88,16 @@ public class DeployNearResources : Activity
 			BlockedByActor.Immovable,
 			loc =>
 			{
-				if ((loc - searchFromLoc).LengthSquared > searchRadius)
+				var length = (loc - self.Location).LengthSquared;
+				if (length > searchRadius)
 					return PathGraph.PathCostForInvalidPath;
 
 				if (!CanDeployAtLocation(self, loc))
 					return PathGraph.MovementCostForUnreachableCell;
 
-				// Calculate distance between current location and loc
-				var distanceToLoc = (loc - searchFromLoc).Length;
-
-				// Retrieve resource density at loc (you need to have a function or data structure to access this information)
 				var resourceDensity = masterMiner.GetResourcesDensity(loc);
-				if (resourceDensity < 10 * masterMinerInfo.ScanRadius)
-					return PathGraph.PathCostForInvalidPath;
-
-				// Calculate cost modifier based on distance and resource density
-				var distanceWeight = distanceToLoc * distanceToLoc;
-				var densityWeight = -resourceDensity;
-
-				return Math.Max(distanceWeight + densityWeight, 0);
+				var weight = length - resourceDensity;
+				return Math.Max(weight, 0);
 			});
 
 		if (path.Count > 0)
@@ -129,21 +119,12 @@ public class DeployNearResources : Activity
 		}
 
 		var resourceDensity = masterMiner.GetResourcesDensity(location);
-		if (resourceDensity < 10 * masterMinerInfo.ScanRadius)
+		if (resourceDensity <= 0)
 		{
 			return false;
 		}
 
-		foreach (var buildingCell in buildingInfo.Tiles(location))
-		{
-			var adj = Util.AdjacentCells(world, Target.FromCell(world, buildingCell));
-			if (adj.Any(c => masterMiner.CanHarvestCell(c)))
-			{
-				return true;
-			}
-		}
-
-		return false;
+		return true;
 	}
 
 	public override IEnumerable<Target> GetTargets(Actor self)

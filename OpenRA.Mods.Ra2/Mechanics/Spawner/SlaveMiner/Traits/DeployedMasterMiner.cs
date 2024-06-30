@@ -22,6 +22,7 @@ public class DeployedMasterMinerInfo : MasterMinerInfo
 public class DeployedMasterMiner : MasterMiner
 {
 	public new readonly DeployedMasterMinerInfo Info;
+	Building building;
 
 	[Sync]
 	int scanTicks;
@@ -30,6 +31,12 @@ public class DeployedMasterMiner : MasterMiner
 		: base(init, info)
 	{
 		Info = info;
+	}
+
+	protected override void Created(Actor self)
+	{
+		base.Created(self);
+		building = self.TraitOrDefault<Building>();
 	}
 
 	protected override void ResolveOrderInner(Actor self, Order order)
@@ -66,6 +73,16 @@ public class DeployedMasterMiner : MasterMiner
 		}
 	}
 
+	public override bool CanDeployAtCell(Actor self, CPos cell)
+	{
+		if (building != null && !self.World.CanPlaceBuilding(cell, self.Info, building.Info, self))
+		{
+			return false;
+		}
+
+		return base.CanDeployAtCell(self, cell);
+	}
+
 	bool ScanResourcesTick(Actor self)
 	{
 		if (scanTicks > 0)
@@ -75,9 +92,8 @@ public class DeployedMasterMiner : MasterMiner
 		}
 
 		scanTicks = Info.ScanDelay;
-
-		var density = GetResourcesDensity(self.Location);
-		if (density < 10 * Info.ScanRadius && Transforms.CanDeploy())
+		var cell = GetBestMiningLocation(self) ?? self.Location;
+		if (cell != CPos.Zero && (cell - self.Location).Length > Info.ScanRadius && GetResourcesDensity(cell) <= 0)
 		{
 			self.QueueActivity(false, Transforms.GetTransformActivity());
 			return true;

@@ -16,8 +16,13 @@ public class EnterMasterMiner : Enter
 		: base(self, target, targetLineColor)
 	{
 		enterActor = target.Actor;
-		masterMiner = enterActor.TraitOrDefault<MasterMiner>();
-		notifySlaveEntering = enterActor.TraitsImplementing<INotifySlaveEntering>().FirstEnabledTraitOrDefault();
+		if (!enterActor.IsDead)
+		{
+			masterMiner = enterActor.TraitOrDefault<MasterMiner>();
+			notifySlaveEntering = enterActor
+				.TraitsImplementing<INotifySlaveEntering>()
+				.FirstEnabledTraitOrDefault();
+		}
 	}
 
 	protected override bool TryStartEnter(Actor self, Actor targetActor)
@@ -50,7 +55,7 @@ public class EnterMasterMiner : Enter
 			}
 
 			notifySlaveEntering.OnSlaveEntered(enterActor, self);
-			self.Dispose();
+			w.Remove(self);
 		});
 	}
 }

@@ -41,7 +41,7 @@ yarefn:
 		Image: smin
 	DeployedMasterMiner:
 		Actors: slav,slav,slav,slav,slav
-		ScanRadius: 10
+		ScanRadius: 5
 		ScanDelay: 50
 		LinkToParent: true
 		# PauseOnCondition: chronodisable

@@ -43,7 +43,7 @@ smin:
 		Prerequisite: yarefn
 	MobileMasterMiner:
 		Actors: slav,slav,slav,slav,slav
-		ScanRadius: 10
+		ScanRadius: 3
 		ScanDelay: 5
 		# PauseOnCondition: chronodisable
 	Transforms:

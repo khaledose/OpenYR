@@ -1,8 +1,12 @@
+using OpenRA.Mods.Common.Activities;
+using OpenRA.Mods.Common.Pathfinder;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Interfaces;
+using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Master;
 using OpenRA.Mods.Ra2.Mechanics.Spawner.Base.Traits;
 using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Interfaces;
 using OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Orders;
+using OpenRA.Primitives;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Mechanics.Spawner.SlaveMiner.Traits;
@@ -49,6 +53,7 @@ public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed,
 	public new readonly MasterMinerInfo Info;
 	public CPos? OrderLocation => orderLocation;
 
+	protected Actor mobileMiner;
 	protected readonly Transforms Transforms;
 	protected readonly IResourceLayer ResourceLayer;
 	protected readonly World World;
@@ -71,6 +76,11 @@ public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed,
 		World = init.Self.World;
 		Transforms = init.Self.TraitOrDefault<Transforms>();
 		ResourceLayer = World.WorldActor.Trait<IResourceLayer>();
+	}
+
+	protected override void Created(Actor self)
+	{
+		base.Created(self);
 	}
 
 	void INotifySlaveMinerTransformed.OnTransformCompleted(Actor self, MasterMiner masterMiner)
@@ -106,6 +116,22 @@ public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed,
 		}
 	}
 
+	public virtual bool CanDeployAtCell(Actor self, CPos cell)
+	{
+		if (Transforms.IsTraitPaused || Transforms.IsTraitDisabled)
+		{
+			return false;
+		}
+
+		var resourceDensity = GetResourcesDensity(cell);
+		if (resourceDensity <= 0)
+		{
+			return false;
+		}
+
+		return true;
+	}
+
 	public virtual bool CanHarvestCell(CPos cell)
 	{
 		if (cell.Layer != 0)
@@ -130,6 +156,38 @@ public abstract class MasterMiner : SpawnerMaster, INotifySlaveMinerTransformed,
 		}
 
 		return totalDensity;
+	}
+
+	public virtual CPos? GetBestMiningLocation(Actor self)
+	{
+		mobileMiner = self.World.CreateActor(
+			false,
+			Transforms.Info.IntoActor,
+			new TypeDictionary
+			{
+				new OwnerInit(self.Owner),
+			});
+		var pathfinder = new PathFinder(mobileMiner);
+
+		var paths = pathfinder.FindPathToTargetCellByPredicate(
+			mobileMiner,
+			new[] { self.Location },
+			loc => CanDeployAtCell(self, loc),
+			BlockedByActor.Immovable,
+			loc =>
+			{
+				var length = (loc - self.Location).LengthSquared;
+				if (length > Info.ScanRadius)
+					return PathGraph.PathCostForInvalidPath;
+
+				if (!CanDeployAtCell(self, loc))
+					return PathGraph.MovementCostForUnreachableCell;
+
+				var resourceDensity = GetResourcesDensity(loc);
+				var weight = length - resourceDensity;
+				return Math.Max(weight, 0);
+			});
+		return paths.FirstOrDefault();
 	}
 
 	protected virtual void AfterTransformInner(Actor newMaster)
