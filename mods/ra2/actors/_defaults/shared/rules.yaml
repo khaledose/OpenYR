@@ -114,3 +114,12 @@
 	SpawnActorOnDeath@crate:
 		DeathType: NonTemporal
 		Actor: crate.money
+
+^HasTurret:
+	Inherits: ^Voxel
+	Turreted:
+		TurnSpeed: 120
+		RealignDelay: 20
+	AttackTurreted:
+		Voice: Attack
+	WithVoxelTurret:

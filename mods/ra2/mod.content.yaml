@@ -47,10 +47,13 @@ Rules:
 	ra2|actors/factions/yuri/buildings/Barracks/rules.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/rules.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
+	ra2|actors/factions/yuri/buildings/Slave Miner/rules.yaml
 	ra2|actors/factions/yuri/defenses/Wall/rules.yaml
 	ra2|actors/factions/yuri/infantries/Engineer/rules.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/rules.yaml
+	ra2|actors/factions/yuri/infantries/Slave/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
+	ra2|actors/factions/yuri/vehicles/Slave Miner/rules.yaml
 	ra2|actors/misc/rules.yaml
 	ra2|actors/misc/bridges/rules.yaml
 	ra2|actors/misc/crates/rules.yaml
@@ -100,9 +103,12 @@ Sequences:
 	ra2|actors/factions/yuri/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Bio Reactor/sequences.yaml
 	ra2|actors/factions/yuri/buildings/Construction Yard/sequences.yaml
+	ra2|actors/factions/yuri/buildings/Slave Miner/sequences.yaml
 	ra2|actors/factions/yuri/defenses/Wall/sequences.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/sequences.yaml
+	ra2|actors/factions/yuri/infantries/Slave/sequences.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/yuri/vehicles/Slave Miner/sequences.yaml
 	ra2|actors/misc/sequences.yaml
 	ra2|actors/misc/bridges/sequences.yaml
 	ra2|actors/misc/crates/sequences.yaml
@@ -117,8 +123,9 @@ ModelSequences:
 	ra2|actors/factions/allied/vehicles/Chrono Miner/voxels.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voxels.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voxels.yaml
-	ra2|actors/factions/yuri/vehicles/MCV/voxels.yaml
 	ra2|actors/factions/soviet/vehicles/War Miner/voxels.yaml
+	ra2|actors/factions/yuri/vehicles/MCV/voxels.yaml
+	ra2|actors/factions/yuri/vehicles/Slave Miner/voxels.yaml
 
 TileSets:
 	ra2|actors/world/tilesets/temperat.yaml
@@ -140,8 +147,10 @@ Voices:
 	ra2|actors/factions/soviet/infantries/Engineer/voices.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voices.yaml
 	ra2|actors/factions/soviet/vehicles/War Miner/voices.yaml
+	ra2|actors/factions/yuri/buildings/Slave Miner/voices.yaml
 	ra2|actors/factions/yuri/infantries/Engineer/voices.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/voices.yaml
+	ra2|actors/factions/yuri/infantries/Slave/voices.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/voices.yaml
 
 Weapons:
@@ -157,4 +166,5 @@ Weapons:
 	ra2|actors/factions/soviet/infantries/Conscript/weapons.yaml
 	ra2|actors/factions/soviet/vehicles/War Miner/weapons.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/weapons.yaml
+	ra2|actors/factions/yuri/infantries/Slave/weapons.yaml
 	ra2|actors/misc/bridges/weapons.yaml

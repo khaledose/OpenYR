@@ -1,0 +1,55 @@
+smin:
+	Inherits: ^Vehicle
+	Inherits@TURRET: ^HasTurret
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@SELECTION_MODE: ^LowPrioritySelectionMode
+	Inherits@SELFHEALING: ^SelfHealing
+	Buildable:
+		Description: actor-smin.description
+		BuildPaletteOrder: 10
+	Selectable:
+		Priority: 7
+		Bounds: 1544, 2509, 0, -289
+	Health:
+		HP: 150000
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 1500
+	Mobile:
+		Speed: 30
+		TurnSpeed: 20
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-smin.name
+	Tooltip@NoRow:
+		Name: actor-smin.name
+	Armament@primary:
+		Weapon: 20mmrapid
+		LocalOffset: 512,0,1388
+		MuzzleSequence: muzzle
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: 20mmrapidE
+		LocalOffset: 512,0,1388
+		MuzzleSequence: muzzle
+		RequiresCondition: rank-elite
+	Turreted:
+		Offset: 512, 0, 0
+		InitialFacing: 896
+	WithMuzzleOverlay:
+	WithVoxelBody:
+	ProvidesPrerequisite@yarefn:
+		Prerequisite: yarefn
+	Transforms:
+		Facing: 896
+		Voice: Deploy
+		IntoActor: yarefn
+		TransformSounds: vsladepa.wav
+	MobileMasterMiner:
+		Actors: slav,slav,slav,slav,slav
+		ScanRadius: 3
+		ScanDelay: 250
+	Voiced:
+		VoiceSet: SlaveMinerVoice

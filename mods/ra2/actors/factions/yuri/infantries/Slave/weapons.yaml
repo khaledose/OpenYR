@@ -1,0 +1,9 @@
+Shovel:
+	Inherits: ^SA
+	ReloadDelay: 30
+	Range: 1c512
+	Report: isl1atta.wav
+	ValidTargets: Ground
+	Warhead@1Dam: TargetDamage
+		Damage: 3000
+		ValidTargets: Ground

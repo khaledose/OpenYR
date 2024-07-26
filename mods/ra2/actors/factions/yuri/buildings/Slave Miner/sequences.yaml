@@ -1,0 +1,38 @@
+yarefn:
+	Inherits@MUZZLE: ^WithMachineGunMuzzle
+	Defaults:
+		Offset: 0, -31
+	idle:
+		Filename: ygrefn.shp
+		TilesetFilenames:
+			SNOW: yarefn.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ygrefn.shp
+		TilesetFilenames:
+			SNOW: yarefn.shp
+		Start: 1
+		ShadowStart: 4
+	make:
+		Filename: ygrefnmk.shp
+		TilesetFilenames:
+			SNOW: yarefnmk.shp
+		Length: 17
+		ShadowStart: 17
+	idle-bib:
+		Filename: ygrefn_a.shp
+		TilesetFilenames:
+			SNOW: yarefn_a.shp
+		Length: 2
+		ShadowStart: 2
+		Tick: 150
+	damaged-idle-bib:
+		Filename: ygrefn_a.shp
+		TilesetFilenames:
+			SNOW: yarefn_a.shp
+		Length: 2
+		ShadowStart: 2
+		Tick: 150
+	icon:
+		Filename: cameomd|sminicon.shp
+		Offset: 0,0

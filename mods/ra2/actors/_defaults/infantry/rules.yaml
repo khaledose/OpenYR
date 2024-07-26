@@ -77,6 +77,47 @@
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 
+^MinerInfantry:
+	Inherits: ^GroundInfantry
+	Inherits@1: ^LowPrioritySelectionMode
+	Harvester:
+		Type: InfantryUnload
+		Resources: Ore, Gems
+		BaleLoadDelay: 24
+		BaleUnloadDelay: 1
+		FullyLoadedSpeed: 100
+		HarvestVoice: Harvest
+		EmptyCondition: no-ore
+	StoresResources:
+		Capacity: 4
+		Resources: Ore, Gems
+	DockClientManager:
+		Voice: Move
+	WithSlaveBody:
+		HarvestingSequence: harvest
+		HarvestingCondition: harvesting
+		RequiresCondition: harvesting
+	WithInfantryBody:
+		RequiresCondition: no-ore && !harvesting
+	WithInfantryBody@full:
+		MoveSequence: full-run
+		DefaultAttackSequence: shoot
+		RequiresCondition: !no-ore && !harvesting
+	WithStoresResourcesPipsDecoration:
+		Margin: 4, 3
+		Palette: ra
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 1
+		Image: small-color-pips
+		EmptySequence: empty
+		FullSequence: green
+		ResourceSequences:
+			Ore: yellow
+			Gems: blue
+	MapEditorData:
+		Categories: Infantry - Miner
+
 ^DeployableInfantry:
 	Inherits: ^GroundInfantry
 	Mobile:

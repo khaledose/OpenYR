@@ -1,5 +1,6 @@
 harv:
 	Inherits: ^MinerVehicle
+	Inherits@TURRET: ^HasTurret
 	Inherits@EXPERIENCE: ^GainsExperience
 	Buildable:
 		Description: actor-harv.description
@@ -21,12 +22,6 @@ harv:
 		RequiresCondition: rank-elite
 	Turreted:
 		Offset: 196,0,-24
-		RealignDelay: -1
-	AttackTurreted:
-		Voice: Attack
-	BodyOrientation:
-		QuantizedFacings: 32
-	WithVoxelTurret:
 	WithMuzzleOverlay:
 	Voiced:
 		VoiceSet: WarMinerVoice

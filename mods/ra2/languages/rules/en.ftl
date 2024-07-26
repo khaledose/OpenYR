@@ -651,6 +651,10 @@ actor-yapowr =
    .description = Provides power for other structures.
       Can be occupied with up to 5 infantry for 100 more power each.
 
+actor-yarefn =
+   .name = Slave Miner
+   .description = Gathers and processes ore.
+
 ## Yuri Defenses
 actor-yawall =
    .name = Citadel Wall
@@ -663,6 +667,15 @@ actor-init =
 
       Strong vs Infantry
       Weak vs Vehicles, Aircraft
+
+actor-slav =
+   .name = Slave
+   .description = Gathers Ore and Gems.
+
+## Yuri Vehicles
+actor-smin =
+   .name = Slave Miner
+   .description = Gathers and processes ore.
 
 ## Misc
 ## Light

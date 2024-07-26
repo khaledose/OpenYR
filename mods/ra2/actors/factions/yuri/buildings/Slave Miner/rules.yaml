@@ -1,0 +1,112 @@
+yarefn:
+	Inherits: ^Refinery
+	Inherits@TURRET: ^HasTurret
+	Inherits@EXPERIENCE: ^GainsExperience
+	Inherits@DEPLOY: ^DeployIntoVehicle
+	Inherits@SHAPE: ^2x2Shape
+	Buildable:
+		Prerequisites: ~building.yuri, yapowr, ~techlevel.1
+		Description: actor-yarefn.description
+	Building:
+		Footprint: x+ x+
+		UndeploySounds: vslade2a.wav
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 200000
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 1500
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-yarefn.name
+	Tooltip@NoRow:
+		Name: actor-yarefn.name
+	Armament@primary:
+		Weapon: 20mmRapid
+		LocalOffset: 512, 0, 1132
+		MuzzleSequence: muzzle
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: 20mmRapidE
+		LocalOffset: 512, 0, 1132
+		MuzzleSequence: muzzle
+		RequiresCondition: rank-elite
+	Turreted:
+		Offset: -724, -576, 1536
+		InitialFacing: 896
+	RenderVoxels:
+		Image: smin
+	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
+	WithMuzzleOverlay:
+	Transforms:
+		IntoActor: smin
+	DeployedMasterMiner:
+		Actors: slav,slav,slav,slav,slav
+		ScanRadius: 5
+		ScanDelay: 50
+		LinkToParent: true
+		RequiresCondition: !build-incomplete
+	DockHost:
+		Type: InfantryUnload
+		DockOffset: 724, 0, 0
+		DockAngle: 120
+		MaxQueueLength: 5
+	DockHost@1:
+		Type: InfantryUnload
+		DockOffset: 0, 724, 0
+		DockAngle: 120
+		MaxQueueLength: 5
+	WithIdleOverlay@bib:
+		Sequence: idle-bib
+		RequiresCondition: !build-incomplete
+	FloatingSpriteEmitter@refinerysmoke1:
+		Offset: -400, -256, 2304
+		Image: smoke
+		Sequences: small
+		Palette: effect75alpha
+		SpawnFrequency: 1
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 100, 150
+		Duration: 20
+		RequiresCondition: resource-delivered
+	FloatingSpriteEmitter@refinerysmoke2:
+		Offset: 0, 400, 2304
+		Image: smoke
+		Sequences: small
+		Palette: effect75alpha
+		SpawnFrequency: 1
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 100, 150
+		Duration: 20
+		RequiresCondition: resource-delivered
+	FloatingSpriteEmitter@refinerysmoke3:
+		Offset: 32, 192, 2304
+		Image: smoke
+		Sequences: small
+		Palette: effect75alpha
+		SpawnFrequency: 1
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 100, 150
+		Duration: 20
+		RequiresCondition: resource-delivered
+	FloatingSpriteEmitter@refinerysmoke4:
+		Offset: 350, -256, 2304
+		Image: smoke
+		Sequences: small
+		Palette: effect75alpha
+		SpawnFrequency: 1
+		Lifetime: 30, 40
+		Speed: 0, 36
+		Gravity: 100, 150
+		Duration: 20
+		RequiresCondition: resource-delivered
+	Voiced:
+		VoiceSet: SlaveMinerVoice
+	-Sellable:

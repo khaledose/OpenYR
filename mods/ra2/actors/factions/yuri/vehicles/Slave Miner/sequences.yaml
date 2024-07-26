@@ -1,0 +1,4 @@
+smin:
+	Inherits@MUZZLE: ^WithMachineGunMuzzle
+	icon:
+		Filename: cameomd|sminicon.shp
