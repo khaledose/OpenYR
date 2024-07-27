@@ -31,6 +31,37 @@
 	Warhead@2Eff: CreateEffect
 		ValidTargets: Ground, Air
 
+^Missile:
+	Inherits@WATEREXPLOSION: MediumWaterExplosion
+	ValidTargets: Ground, Water, Air
+	Projectile: Missile
+		Image: dragon
+		Palette: ra
+		Shadow: true
+		Blockable: false
+		TerrainHeightAware: true
+		AllowSnapping: true
+		Speed: 512
+		Arm: 2
+		TrailInterval: 1
+		ContrailDelay: 0
+		ContrailLength: 30
+		ContrailStartWidth: 30
+		ContrailEndWidth: 10
+		ContrailStartColor: D8D8FF
+		ContrailStartColorAlpha: 150
+		CruiseAltitude: 2048
+		HorizontalRateOfTurn: 60
+		VerticalRateOfTurn: 120
+		MinimumLaunchAngle: 128
+		MaximumLaunchAngle: 255
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Ground, Water, Air
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
+		ValidTargets: Ground, Air
+
 ^SA:
 	Inherits: ^MachineGun
 	Warhead@1Dam: TargetDamage
