@@ -1,0 +1,264 @@
+Player:
+	Inherits: ^BasePlayer
+	PlayerResources:
+		DefaultCash: 100000
+		SelectableCash: 5000, 10000, 20000, 50000, 100000
+		CashTickUpNotification: CashTickUp
+		CashTickDownNotification: CashTickDown
+		InsufficientFundsNotification: InsufficientFunds
+		InsufficientFundsTextNotification: notification-insufficient-funds
+	TechTree:
+	ClassicProductionQueue@Building:
+		Type: Building
+		Group: Building
+		DisplayOrder: 1
+		LowPowerModifier: 200
+		ReadyAudio: ConstructionComplete
+		ReadyTextNotification: notification-construction-complete
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Support:
+		Type: Support
+		Group: Support
+		DisplayOrder: 2
+		LowPowerModifier: 200
+		ReadyAudio: ConstructionComplete
+		ReadyTextNotification: notification-construction-complete
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Infantry:
+		Type: Infantry
+		Group: Infantry
+		DisplayOrder: 3
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Vehicle:
+		Type: Vehicle
+		Group: Vehicle
+		DisplayOrder: 4
+		BuildDurationModifier: 100
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Aircraft:
+		Type: Aircraft
+		Group: Aircraft
+		DisplayOrder: 5
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	ClassicProductionQueue@Ship:
+		Type: Ship
+		Group: Ship
+		DisplayOrder: 6
+		LowPowerModifier: 200
+		ReadyAudio: UnitReady
+		ReadyTextNotification: notification-unit-ready
+		BlockedAudio: NoBuild
+		BlockedTextNotification: notification-unable-to-build-more
+		LimitedAudio: BuildingInProgress
+		LimitedTextNotification: notification-unable-to-comply-building-in-progress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: true
+		BuildTimeSpeedReduction: 100, 91, 82, 73, 64, 55, 50
+	PlaceBuilding:
+		ToggleVariantKey: ToggleVariant
+		NewOptionsNotification: NewOptions
+		CannotPlaceNotification: BuildingCannotPlaceAudio
+		NewOptionsTextNotification: notification-new-construction-options
+		CannotPlaceTextNotification: notification-cannot-deploy-here
+	SupportPowerManager:
+	ScriptTriggers:
+	MissionObjectives:
+		WinNotification: Win
+		LoseNotification: Lose
+		LeaveNotification: Leave
+	ConquestVictoryConditions:
+	PowerManager:
+		SpeechNotification: LowPower
+		TextNotification: notification-low-power
+	AllyRepair:
+	GpsWatcher:
+	FrozenActorLayer:
+	BaseAttackNotifier:
+		AllyNotification: OurAllyIsUnderAttack
+		TextNotification: notification-base-under-attack
+		AllyTextNotification: notification-ally-under-attack
+	BaseAttackNotifier@Warning:
+		NotifyInterval: 10000
+		Notification: BaseAttackWarning
+		AllyNotification: BaseAttackWarning
+	BaseAttackNotifier@RadarPing:
+		NotifyInterval: 10000
+		Notification:
+	HarvesterAttackNotifier:
+		Notification: OreMinerUnderAttack
+		TextNotification: notification-ore-miner-under-attack
+	PlayerStatistics:
+	PlaceBeacon:
+		BeaconSequence: idle
+		ArrowSequence:
+		CircleSequence:
+		IsPlayerPalette: true
+		Palette: player
+	GrantConditionOnPrerequisiteManager:
+	# ProductionIconOverlayManager@chevron-veteran:
+	# 	Type: chevron-veteran
+	# 	Image: cameo-chevron
+	# 	Sequence: veteran
+	# 	Palette: pips
+	# ProductionIconOverlayManager@chevron-elite:
+	# 	Type: chevron-elite
+	# 	Image: cameo-chevron
+	# 	Sequence: elite
+	# 	Palette: pips
+	PlayerExperience:
+	GameSaveViewportManager:
+	EnemyWatcher:
+		NotificationInterval: 125
+	PlayerRadarTerrain:
+	# Lobby Options
+	Shroud:
+		ExploredMapCheckboxEnabled: True
+		FogCheckboxDisplayOrder: 3
+	ProvidesRadar:
+		RequiresCondition: freeminimap
+	GrantConditionOnPrerequisite@FREEMINIMAP:
+		Condition: freeminimap
+		Prerequisites: global-freeminimap
+	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
+		ID: factundeploy
+		Label: checkbox-redeployable-mcvs.label
+		Description: checkbox-redeployable-mcvs.description
+		Enabled: True
+		DisplayOrder: 5
+		Prerequisites: global-factundeploy
+	LobbyPrerequisiteCheckbox@FREEMINIMAP:
+		ID: freeradar
+		Label: checkbox-free-minimap.label
+		Description: checkbox-free-minimap.description
+		Enabled: True
+		DisplayOrder: 8
+		Prerequisites: global-freeminimap
+	LobbyPrerequisiteCheckbox@GLOBALSWLIMIT:
+		ID: swlimit
+		Label: checkbox-limit-super-weapons.label
+		Description: checkbox-limit-super-weapons.description
+		Enabled: True
+		DisplayOrder: 9
+		Prerequisites: global-swlimit
+	LobbyPrerequisiteCheckbox@GLOBALTECHAREA:
+		ID: techbuildarea
+		Label: checkbox-tech-build-area.label
+		Description: checkbox-tech-build-area.description
+		Enabled: False
+		DisplayOrder: 10
+		Prerequisites: global-techbuildarea
+	LobbyPrerequisiteCheckbox@INSTANTCAPTURE:
+		ID: instantcapture
+		Label: checkbox-instant-capture.label
+		Description: checkbox-instant-capture.description
+		Enabled: False
+		DisplayOrder: 11
+		Prerequisites: global-instantcapture
+	LobbyPrerequisiteCheckbox@SHOWOWNERNAME:
+		ID: showownername
+		Label: checkbox-show-owner-name.label
+		Description: checkbox-show-owner-name.description
+		Enabled: True
+		Visible: True
+		DisplayOrder: 17
+		Prerequisites: global-showownername
+	DeveloperMode:
+		CheckboxDisplayOrder: 14
+		CheckboxEnabled: true
+		Cash: 100000
+		FastBuild: true
+		FastCharge: true
+		DisableShroud: true
+		UnlimitedPower: true
+		BuildAnywhere: true
+	ProvidesTechPrerequisite@1:
+		Id: techlevel.1
+		Name: options-tech-level.one
+		Prerequisites: techlevel.1
+	ProvidesTechPrerequisite@2:
+		Id: techlevel.2
+		Name: options-tech-level.two
+		Prerequisites: techlevel.1, techlevel.2
+	ProvidesTechPrerequisite@3:
+		Id: techlevel.3
+		Name: options-tech-level.three
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3
+	ProvidesTechPrerequisite@4:
+		Id: techlevel.4
+		Name: options-tech-level.four
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4
+	ProvidesTechPrerequisite@5:
+		Id: techlevel.5
+		Name: options-tech-level.five
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5
+	ProvidesTechPrerequisite@6:
+		Id: techlevel.6
+		Name: options-tech-level.six
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6
+	ProvidesTechPrerequisite@7:
+		Id: techlevel.7
+		Name: options-tech-level.seven
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7
+	ProvidesTechPrerequisite@8:
+		Id: techlevel.8
+		Name: options-tech-level.eight
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7, techlevel.8
+	ProvidesTechPrerequisite@9:
+		Id: techlevel.9
+		Name: options-tech-level.nine
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7, techlevel.8, techlevel.9,
+	ProvidesTechPrerequisite@10:
+		Id: techlevel.10
+		Name: options-tech-level.ten
+		Prerequisites: techlevel.1, techlevel.2, techlevel.3, techlevel.4, techlevel.5, techlevel.6, techlevel.7, techlevel.8, techlevel.9, techlevel.10

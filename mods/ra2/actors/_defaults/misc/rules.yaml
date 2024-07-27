@@ -1,0 +1,63 @@
+^SystemActor:
+	Immobile:
+		OccupiesSpace: false
+	BodyOrientation:
+	AlwaysVisible:
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
+	QuantizeFacingsFromSequence:
+	MapEditorData:
+		Categories: Misc - System
+
+^Ambient:
+	Inherits: ^SystemActor
+	-Immobile:
+	Aircraft:
+		CruiseAltitude: 0c1
+		VTOL: true
+	RejectsOrders:
+	Interactable:
+	# AmbientSound:
+	#	AudibleThroughFog: true
+	-MapEditorData:
+	RenderSpritesEditorOnly:
+		Image: ambient
+
+^LampPost:
+	Interactable:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RenderSpritesEditorOnly:
+		Image: galite
+		Palette: terrainalpha
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
+	TerrainLightSource:
+		Range: 19c544
+		Intensity: 0.2
+		RedTint: 0.05
+		GreenTint: 0.05
+		BlueTint: 0.01
+	MapEditorData:
+		Categories: Misc - Lights
+
+^Crate:
+	Inherits: ^Sprite
+	HiddenUnderFog:
+	Interactable:
+	Tooltip:
+		Name: meta-crate-name
+	Crate:
+		TerrainTypes: Clear, Sand, Rough, Road, DirtRoad, Ore, Gems, Water
+	RenderSprites:
+		Image: crate
+		Palette: terrain
+	WithCrateBody:
+		LandSequence: land
+		WaterSequence: water
+	MapEditorData:
+		Categories: Misc - Crates

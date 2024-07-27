@@ -1,0 +1,252 @@
+^Explosion:
+	Defaults:
+		Length: *
+		ZOffset: 4000
+		IgnoreWorldTint: true
+
+smoke:
+	Inherits: ^Explosion
+	small:
+		Filename: conquer|sgrysmk1.shp
+	large:
+		Filename: conquer|lgrysmk1.shp
+
+fire:
+	Inherits: ^Explosion
+	small:
+		Filename: conquer|fire03.shp
+	medium:
+		Filename: conquer|fire02.shp
+	large:
+		Filename: conquer|fire01.shp
+
+barrelexplosion:
+	Inherits: ^Explosion
+	small:
+		Filename: conquer|brrlexp1.shp
+	large:
+		Filename: conquer|brrlexp2.shp
+
+ivanexplosion:
+	Inherits: ^Explosion
+	normal:
+		Filename: conquer|crivexp.shp
+	elite:
+		Filename: conquer|crivexp2.shp
+
+nukeexplosion:
+	Inherits: ^Explosion
+	large:
+		Filename: conquer|nukeanim.shp
+	ball:
+		Filename: conquer|nukeball.shp
+	small:
+		Filename: conquer|mininuke.shp
+
+radexplosion:
+	Inherits: ^Explosion
+	demo:
+		Filename: conquer|demtexp.shp
+
+waterexplosion:
+	Inherits: ^Explosion
+	small:
+		Filename: conquer|h2o_exp3.shp
+	medium:
+		Filename: conquer|h2o_exp2.shp
+	large:
+		Filename: conquer|h2o_exp1.shp
+
+chronoexplosion:
+	Inherits: ^Explosion
+	warpin:
+		Filename: conquer|warpin.shp
+	warpout:
+		Filename: conquer|warpout.shp
+	warpaway:
+		Filename: conquer|warpaway.shp
+
+debris:
+	Defaults:
+		Length: *
+	small1:
+		Filename: dbris1sm.shp
+	small2:
+		Filename: dbris2sm.shp
+	small3:
+		Filename: dbris3sm.shp
+	small4:
+		Filename: dbris4sm.shp
+	small5:
+		Filename: dbris5sm.shp
+	small6:
+		Filename: dbris6sm.shp
+	small7:
+		Filename: dbris7sm.shp
+	small8:
+		Filename: dbris8sm.shp
+	small9:
+		Filename: dbris9sm.shp
+	large1:
+		Filename: dbris1lg.shp
+	large2:
+		Filename: dbris2lg.shp
+	large3:
+		Filename: dbris3lg.shp
+	large4:
+		Filename: dbris4lg.shp
+	large5:
+		Filename: dbris5lg.shp
+	large6:
+		Filename: dbris6lg.shp
+	large7:
+		Filename: dbris7lg.shp
+	large8:
+		Filename: dbris8lg.shp
+	large9:
+		Filename: dbris9lg.shp
+	large10:
+		Filename: dbrs10lg.shp
+	rock1:
+		Filename: dbri-wm1.shp
+	rock2:
+		Filename: dbri-wm2.shp
+	rock3:
+		Filename: dbri-wm3.shp
+
+explosion:
+	Defaults:
+		Length: *
+		ZOffset: 4000
+		IgnoreWorldTint: true
+	piff:
+		Filename: conquer|piff.shp
+	piffpiff:
+		Filename: conquer|piffpiff.shp
+	small_explosion:
+		Filename: conquer|explosml.shp
+	medium_explosion:
+		Filename: conquer|explomed.shp
+	large_explosion:
+		Filename: conquer|explolrg.shp
+	tiny_bang:
+		Filename: conquer|s_bang16.shp
+	small_bang:
+		Filename: conquer|s_bang24.shp
+	medium_bang:
+		Filename: conquer|s_bang34.shp
+	large_bang:
+		Filename: conquer|s_bang48.shp
+	tiny_brnl:
+		Filename: conquer|s_brnl20.shp
+	small_brnl:
+		Filename: conquer|s_brnl30.shp
+	medium_brnl:
+		Filename: conquer|s_brnl40.shp
+	large_brnl:
+		Filename: conquer|s_brnl58.shp
+	tiny_tumu:
+		Filename: conquer|s_tumu22.shp
+	small_tumu:
+		Filename: conquer|s_tumu30.shp
+	medium_tumu:
+		Filename: conquer|s_tumu42.shp
+	large_tumu:
+		Filename: conquer|s_tumu60.shp
+	tiny_clsn:
+		Filename: conquer|s_clsn16.shp
+	small_clsn:
+		Filename: conquer|s_clsn22.shp
+	medium_clsn:
+		Filename: conquer|s_clsn30.shp
+	large_clsn:
+		Filename: conquer|s_clsn42.shp
+	verylarge_clsn:
+		Filename: conquer|s_clsn58.shp
+	tiny_twlt:
+		Filename: conquer|twlt026.shp
+	small_twlt:
+		Filename: conquer|twlt036.shp
+	medium_twlt:
+		Filename: conquer|twlt050.shp
+	large_twlt:
+		Filename: conquer|twlt070.shp
+	verylarge_twlt:
+		Filename: conquer|twlt100.shp
+	tiny_grey_explosion:
+		Filename: conquer|xgrysml1.shp
+	small_grey_explosion:
+		Filename: conquer|xgrysml2.shp
+	medium_grey_explosion:
+		Filename: conquer|xgrymed1.shp
+	large_grey_explosion:
+		Filename: conquer|xgrymed2.shp
+	elite_explosion:
+		Filename: conquer|vtexplod.shp
+	apoc_explosion:
+		Filename: conquer|apocexp.shp
+	flak_puff:
+		Filename: conquer|htrkpuff.shp
+	flak_puff_AA:
+		Filename: conquer|smkpuff.shp
+	tesla_impact:
+		Filename: conquer|tstimpct.shp
+	tesla_explosion:
+		Filename: conquer|tstlexp.shp
+	powerplant_explosion:
+		Filename: conquer|gtpowexp.shp
+	iron_fx:
+		Filename: conquer|ironfx.shp
+	ironblast:
+		Filename: conquer|ironblst.shp
+	forceshield:
+		Filename: conqmd|forcshld.shp
+	chronofd:
+		Filename: conquer|chronofd.shp
+	chronosk:
+		Filename: conquer|chronosk.shp
+	psi_wave:
+		Filename: conquer|ring1.shp
+	psi_wave_big:
+		Filename: conquer|ring1.shp
+		Scale: 1.5
+	weathercloud1:
+		Filename: conquer|wccloud1.shp
+	weathercloud2:
+		Filename: conquer|wccloud2.shp
+	weathercloud1f:
+		Filename: conquer|wccloud1.shp
+		FlipX: true
+	weathercloud2f:
+		Filename: conquer|wccloud2.shp
+		FlipX: true
+	weatherbolt1:
+		Filename: conquer|wclbolt1.shp
+	weatherbolt2:
+		Filename: conquer|wclbolt2.shp
+	weatherbolt3:
+		Filename: conquer|wclbolt3.shp
+	weatherbolt1f:
+		Filename: conquer|wclbolt1.shp
+		FlipX: true
+	weatherbolt2f:
+		Filename: conquer|wclbolt2.shp
+		FlipX: true
+	weatherbolt3f:
+		Filename: conquer|wclbolt3.shp
+		FlipX: true
+	weatherboltexplosion:
+		Filename: conquer|explolb.shp
+	weatherboltexplosionf:
+		Filename: conquer|explolb.shp
+		FlipX: true
+	largefire:
+		Filename: conquer|fire01.shp
+	kirovtesla:
+		Filename: conquer|ktstlexp.shp
+	yuriface:
+		Filename: conqmd|pdfxcld.shp
+		Offset: 0,-64
+		ZOffset: 1c0
+	controlwave:
+		Filename: pdfxloc.shp

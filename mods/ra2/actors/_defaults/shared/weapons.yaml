@@ -1,0 +1,88 @@
+^Debris:
+	Inherits@WATEREXPLOSION: SmallWaterExplosion
+	Range: 3c512
+	Projectile: Bullet
+		Speed: 125, 166
+		LaunchAngle: 70, 190
+		Image: debris
+		Sequences: small1
+	Warhead@Validation: TargetDamage
+	Warhead@2Eff: CreateEffect
+		Explosions: tiny_bang
+		ImpactSounds: gexp07a.wav
+		InvalidTargets: Water
+		ValidTargets: Ground, Air
+
+SmallDebris:
+	Inherits: ^Debris
+	Projectile: Bullet
+		Sequences: small1, small2, small3, small4, small5, small6, small7, small8, small9
+
+LargeDebris:
+	Inherits: ^Debris
+	Projectile: Bullet
+		Sequences: large1, large2, large3, large4, large5, large6, large7, large8, large9, large10
+
+RockDebris:
+	Inherits: ^Debris
+	Projectile: Bullet
+		Sequences: rock1, rock2, rock3
+
+Explosion:
+	Warhead@2Eff: CreateEffect
+		Explosions: large_twlt, large_bang, large_brnl, verylarge_clsn, large_tumu
+		ImpactSounds: gexp06a.wav, gexp07a.wav
+		ImpactActors: false
+		ValidTargets: Ground, Water, Air
+
+SmallWaterExplosion:
+	Warhead@2EffWater: CreateEffect
+		Image: waterexplosion
+		Explosions: small
+		ImpactSounds: gexpwasa.wav, gexpwasb.wav
+		ValidTargets: Water
+
+MediumWaterExplosion:
+	Inherits: SmallWaterExplosion
+	Warhead@2EffWater: CreateEffect
+		Explosions: medium
+		ImpactSounds: gexpwama.wav, gexpwamb.wav
+
+LargeWaterExplosion:
+	Inherits: SmallWaterExplosion
+	Warhead@2EffWater: CreateEffect
+		Explosions: large
+		ImpactSounds: gexpwala.wav, gexpwalb.wav, gexpwalc.wav
+
+BuildingExplosion:
+	Inherits: Explosion
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+VehicleExplosion:
+	Inherits: Explosion
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch
+
+MiniNukeExplosion:
+	Inherits: Explosion
+	Warhead@2Eff: CreateEffect
+		Image: nukeexplosion
+		Explosions: small
+		ImpactSounds: gexpapoa.wav
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+InfantryExplosion:
+	Warhead@1Eff: CreateEffect
+		Explosions: medium_bang
+		ImpactSounds: igenexpa.wav
+		ImpactActors: false
+		ValidTargets: Ground, Water, Air
+
+TemporalExplosion:
+	Warhead@1Eff: CreateEffect
+		Explosions: temporal_explosion
+		ImpactSounds: ichrkill.wav
+		ImpactActors: false
+		ValidTargets: Ground, Water, Air

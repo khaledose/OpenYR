@@ -1,0 +1,42 @@
+^BaseWorld:
+	Inherits: ^Palettes
+	Inherits@RandomFaction: ^RandomFactions
+	Inherits@AlliedFactions: ^AlliedFactions
+	Inherits@SovietFactions: ^SovietFactions
+	Inherits@YuriFactions: ^YuriFactions
+	Inherits@LOCOMOTORS: ^Locomotors
+	AlwaysVisible:
+	MusicPlaylist:
+		VictoryMusic: scorex
+		DefeatMusic: score
+	ActorMap:
+	Selection:
+	ControlGroups:
+	ScreenMap:
+	TerrainGeometryOverlay:
+	TerrainLighting:
+	TerrainRenderer:
+	VoxelCache:
+	ModelRenderer:
+	DebugVisualizations:
+	ShroudRenderer:
+		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
+		UseExtendedIndex: true
+		FogPalette: shroud
+		ShroudPalette: shroud
+	ResourceRenderer:
+		ResourceTypes:
+			Ore:
+				Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+				Palette: resource
+				Name: resource-ore
+			Gems:
+				Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+				Palette: resource
+				Name: resource-gems
+	CliffBackImpassabilityLayer:
+	TintPostProcessEffect:
+		Ambient: 1.0
+		Red: 1.0
+		Green: 1.0
+		Blue: 1.0

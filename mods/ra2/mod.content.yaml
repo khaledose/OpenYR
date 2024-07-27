@@ -1,0 +1,48 @@
+Cursors:
+	ra2|cursors/cursors.yaml
+
+Missions:
+	ra2|missions/missions.yaml
+
+Music:
+	ra2|audio/music.yaml
+
+Notifications:
+	ra2|audio/notifications.yaml
+
+Rules:
+	ra2|actors/_defaults/misc/rules.yaml
+	ra2|actors/_defaults/player/rules.yaml
+	ra2|actors/_defaults/world/rules.yaml
+	ra2|actors/misc/rules.yaml
+	ra2|actors/misc/crates/rules.yaml
+	ra2|actors/player/commander/rules.yaml
+	ra2|actors/player/editor/rules.yaml
+	ra2|actors/world/factions.yaml
+	ra2|actors/world/locomotors.yaml
+	ra2|actors/world/palettes.yaml
+	ra2|actors/world/smudgelayers/rules.yaml
+	ra2|actors/world/world.yaml
+	ra2|actors/world/worldeditor.yaml
+
+Sequences:
+	ra2|actors/_defaults/shared/sequences.yaml
+	ra2|actors/_defaults/world/sequences.yaml
+	ra2|actors/misc/sequences.yaml
+	ra2|actors/misc/crates/sequences.yaml
+	ra2|actors/world/smudgelayers/sequences.yaml
+
+ModelSequences:
+
+TileSets:
+	ra2|actors/world/tilesets/temperat.yaml
+	ra2|actors/world/tilesets/snow.yaml
+	ra2|actors/world/tilesets/urban.yaml
+	ra2|actors/world/tilesets/newurban.yaml
+	ra2|actors/world/tilesets/desert.yaml
+	ra2|actors/world/tilesets/lunar.yaml
+
+Voices:
+
+Weapons:
+	ra2|actors/_defaults/shared/weapons.yaml

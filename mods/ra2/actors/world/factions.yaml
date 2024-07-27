@@ -1,0 +1,75 @@
+^AlliedFactions:
+	Faction@allies:
+		Name: faction-random-allies.name
+		InternalName: random-allies
+		RandomFactionMembers: america, england, france, germany, korea
+		Side: Randoms
+		Description: faction-random-allies.description
+	Faction@usa:
+		Name: faction-america.name
+		InternalName: america
+		Side: Allies
+		Description: faction-america.description
+	Faction@uk:
+		Name: faction-england.name
+		InternalName: england
+		Side: Allies
+		Description: faction-england.description
+	Faction@france:
+		Name: faction-france.name
+		InternalName: france
+		Side: Allies
+		Description: faction-france.description
+	Faction@germany:
+		Name: faction-germany.name
+		InternalName: germany
+		Side: Allies
+		Description: faction-germany.description
+	Faction@korea:
+		Name: faction-korea.name
+		InternalName: korea
+		Side: Allies
+		Description: faction-korea.description
+
+^SovietFactions:
+	Faction@soviets:
+		Name: faction-random-soviets.name
+		InternalName: random-soviets
+		RandomFactionMembers: russia, iraq, cuba, libya
+		Side: Randoms
+		Description: faction-random-soviets.description
+	Faction@russia:
+		Name: faction-russia.name
+		InternalName: russia
+		Side: Soviets
+		Description: faction-russia.description
+	Faction@iraq:
+		Name: faction-iraq.name
+		InternalName: iraq
+		Side: Soviets
+		Description: faction-iraq.description
+	Faction@cuba:
+		Name: faction-cuba.name
+		InternalName: cuba
+		Side: Soviets
+		Description: faction-cuba.description
+	Faction@libya:
+		Name: faction-libya.name
+		InternalName: libya
+		Side: Soviets
+		Description: faction-libya.description
+
+^YuriFactions:
+	Faction@yuri:
+		Name: faction-yuri.name
+		InternalName: psicorps
+		Side: Randoms
+		Description: faction-yuri.description
+
+^RandomFactions:
+	Faction@random:
+		Name: faction-random.name
+		InternalName: Random
+		RandomFactionMembers: random-allies, random-soviets, psicorps
+		Side: Randoms
+		Description: faction-random.description

@@ -1,0 +1,205 @@
+^Locomotors:
+	Locomotor@FOOT:
+		Name: foot
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 90
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 90
+	Locomotor@DINO:
+		Name: dino
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		SharesCell: false
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 100
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 100
+			Gems: 100
+	JumpjetLocomotor@JUMPJET:
+		Name: jumpjet
+		Crushes: crate
+		SharesCell: true
+		JumpjetTransitionCost: 100
+		TerrainSpeeds:
+			Clear: 90
+			Road: 100
+			Bridge: 100
+			Rail: 90
+			DirtRoad: 100
+			Rough: 80
+			Tiberium: 90
+			BlueTiberium: 90
+			Veins: 50
+			Jumpjet: 110
+	Locomotor@CHRONO:
+		Name: chrono
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		MoveIntoShroud: false
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 100
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 100
+			Gems: 100
+	Locomotor@SWIMSUIT:
+		Name: swimsuit
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 90
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 90
+			Beach: 70
+			Water: 70
+	Locomotor@FLAMEGUY:
+		Name: flameguy
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 45
+			Sand: 45
+			Rough: 45
+			Rail: 45
+			Road: 50
+			Bridge: 50
+			DirtRoad: 50
+			Ore: 45
+			Gems: 45
+	Locomotor@WHEELED:
+		Name: wheeled
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 50
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 90
+	Locomotor@TRACKED:
+		Name: tracked
+		Crushes: crate, tree, fence
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 50
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 90
+	Locomotor@HEAVYTRACKED:
+		Name: heavytracked
+		Crushes: crate, tree, fence, infantry
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 50
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 90
+	Locomotor@OMNICRUSHER:
+		Name: omnicrusher
+		Crushes: crate, tree, fence, wall, infantry, vehicle
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 50
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 90
+	Locomotor@NAVAL:
+		Name: naval
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Water: 100
+	Locomotor@AMPHIBIOUS:
+		Name: amphibious
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 100
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 100
+			Gems: 100
+			Beach: 100
+			Water: 100
+	Locomotor@HEAVYAMPHIBIOUS:
+		Name: heavyamphibious
+		Crushes: crate, tree, fence, infantry
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 100
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 100
+			Gems: 100
+			Beach: 100
+			Water: 100
+	Locomotor@OMNIAMPHIBIOUS:
+		Name: omniamphibious
+		Crushes: crate, tree, fence, infantry, vehicle
+		CrushDamageTypes: NonTemporal, Crush
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Rail: 100
+			Road: 100
+			Bridge: 100
+			DirtRoad: 100
+			Ore: 100
+			Gems: 100
+			Beach: 100
+			Water: 100
