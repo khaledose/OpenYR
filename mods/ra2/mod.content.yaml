@@ -28,6 +28,7 @@ Rules:
 	ra2|actors/factions/allied/defenses/Wall/rules.yaml
 	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
 	ra2|actors/factions/allied/infantries/G.I/rules.yaml
+	ra2|actors/factions/allied/infantries/Guardian G.I/rules.yaml
 	ra2|actors/factions/allied/vehicles/Chrono Miner/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
 	ra2|actors/factions/neutral/buildings/civilian/rules.yaml
@@ -85,6 +86,7 @@ Sequences:
 	ra2|actors/factions/allied/buildings/Power Plant/sequences.yaml
 	ra2|actors/factions/allied/defenses/Wall/sequences.yaml
 	ra2|actors/factions/allied/infantries/G.I/sequences.yaml
+	ra2|actors/factions/allied/infantries/Guardian G.I/sequences.yaml
 	ra2|actors/factions/allied/vehicles/Chrono Miner/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
 	ra2|actors/factions/neutral/buildings/civilian/sequences.yaml
@@ -139,6 +141,7 @@ Voices:
 	ra2|actors/_defaults/infantry/voices.yaml
 	ra2|actors/factions/allied/infantries/Engineer/voices.yaml
 	ra2|actors/factions/allied/infantries/G.I/voices.yaml
+	ra2|actors/factions/allied/infantries/Guardian G.I/voices.yaml
 	ra2|actors/factions/allied/vehicles/Chrono Miner/voices.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voices.yaml
 	ra2|actors/factions/neutral/buildings/civilian/voices.yaml
@@ -159,6 +162,7 @@ Weapons:
 	ra2|actors/_defaults/weapon/weapons.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/weapons.yaml
 	ra2|actors/factions/allied/infantries/G.I/weapons.yaml
+	ra2|actors/factions/allied/infantries/Guardian G.I/weapons.yaml
 	ra2|actors/factions/neutral/buildings/prop/weapons.yaml
 	ra2|actors/factions/neutral/buildings/tech/weapons.yaml
 	ra2|actors/factions/neutral/infantries/weapons.yaml

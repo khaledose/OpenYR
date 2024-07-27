@@ -1,0 +1,9 @@
+GGIVoice:
+	Inherits: ^InfantryDeath
+	Voices:
+		Select: iggisea, iggiseb, iggisec, iggised, iggisee, iggisef
+		Move: iggimoa, iggimob, iggimoc, iggimod, iggimoe
+		Attack: iggiata, iggiatb, iggiatc, iggiatd, iggiate
+		Deploy: iggidea, iggideb, iggidec
+		Feedback: iggifea, iggifeb, iggifec, iggifed, iggifee, iggifef
+		Die: iggidia, iggidib, iggidic, iggidid, iggidie

@@ -1,0 +1,48 @@
+ggi:
+	Inherits: ^DeployableInfantry
+	Inherits@VETERAN: ^InfantryPromotable
+	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry.allies, ~techlevel.2
+		Description: actor-ggi.description
+		BuildPaletteOrder: 40
+	Health:
+		HP: 10000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 400
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-ggi.name
+	Tooltip@NoRow:
+		Name: actor-ggi.name
+	Armament@primary:
+		Weapon: M60
+		RequiresCondition: !rank-elite && undeployed
+	Armament@elite:
+		Weapon: M60E
+		RequiresCondition: rank-elite && undeployed
+	Armament@deployed:
+		Name: deployed
+		Weapon: MissileLauncher
+		Turret: deploy
+		LocalOffset: 480,63,992
+		RequiresCondition: !rank-elite && deployed
+	Armament@elite-deployed:
+		Name: deployed
+		Weapon: MissileLauncherE
+		Turret: deploy
+		LocalOffset: 480,64,992
+		RequiresCondition: rank-elite && deployed
+	GrantConditionOnDeploy:
+		DeploySounds: iggidepa.wav
+		UndeploySounds: iggidepa.wav
+	Voiced:
+		VoiceSet: GGIVoice

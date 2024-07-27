@@ -1,0 +1,32 @@
+ggi:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^DeathAnimation
+	Inherits@SHOOTER: ^Shooter
+	Inherits@PRONE: ^ProneShooter
+	Defaults:
+		Filename: conqmd|ggi.shp
+	icon:
+		Filename: cameomd|gdgiicon.shp
+	shoot:
+		Start: 204
+	deploy:
+		Start: 300
+		Length: 15
+	deployed:
+		Start: 315
+		Length: 1
+		Facings: 8
+	deployed-shoot:
+		Start: 323
+		Length: 6
+		Facings: 8
+	liedown:
+		Start: 164
+	prone-shoot:
+		Start: 252
+	standup:
+		Start: 182
+	cheer:
+		Start: 196
+	paradrop:
+		Start: 371

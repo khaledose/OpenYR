@@ -1,0 +1,33 @@
+MissileLauncher:
+	Inherits: ^Missile
+	ReloadDelay: 40
+	Range: 8c0
+	MinRange: 1c0
+	Report: iggiat2a.wav, iggiat2b.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 4000
+		Spread: 0c128
+		Falloff: 100, 83, 67, 50, 0
+		Versus:
+			None: 20
+			Flak: 20
+			Plate: 20
+			Light: 100
+			Medium: 50
+			Heavy: 100
+			Wood: 10
+			Steel: 10
+			Concrete: 10
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath, SuppressTerrorDrone, NonTemporal
+
+MissileLauncherE:
+	Inherits: MissileLauncher
+	ReloadDelay: 20
+	Warhead@1Dam: SpreadDamage
+		Damage: 5000
+	Warhead@2Eff: CreateEffect
+		Explosions: small_explosion
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
