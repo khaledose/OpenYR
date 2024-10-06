@@ -1,0 +1,88 @@
+# Base for all actors.
+^CoreVisibleActor:
+	# All our actors are sprite based and need to render sprites.
+	RenderSprites:
+		FactionImages:
+	# At default fog hides every actor.
+	HiddenUnderFog:
+	# Required to see debug overlays.
+	CombatDebugOverlay:
+	# Display debug information above actor.
+	RenderDebugState:
+
+# Base for all movable units.
+^CoreUnit:
+	Inherits: ^CoreVisibleActor
+	# Default set which fits for most units: Occupy exactly 1 cell / 32x32 pixel tile.
+	HitShape:
+		Type: Circle
+			Radius: 512
+	# In general all units can be selected by using its full cell / tile.
+	Selectable:
+		Bounds: 1024, 1024
+		# Make the default priority higher, so units are prefered over constructions.
+		Priority: 20
+	# Units have a healthbar when selected or hovered.
+	SelectionDecorations:
+	# Draw target lines.
+	DrawLineToTarget:
+		Palette:
+	# Enemy units must be destroyed to win a game.
+	MustBeDestroyed:
+	# Units reveals shroud when they get killed.
+	RevealOnDeath:
+		Radius: 5c0
+		Duration: 125
+	# Units are visible on the radar.
+	AppearsOnRadar:
+	# Units are visible on the map preview.
+	AppearsOnMapPreview:
+	# Allow units to use the AttackMove and AssaultMove commands.
+	AttackMove:
+		AssaultMoveCursor: attackmove
+		AssaultMoveBlockedCursor: attackmove-blocked
+		Voice: Move
+	# Use their center position instead of their footprint for fog hiding logic.
+	HiddenUnderFog:
+		Type: CenterPosition
+	# Units should die when owner lost the game.
+	OwnerLostAction:
+		Action: Kill
+	# Show control group numbers when selected.
+	WithTextControlGroupDecoration:
+		UsePlayerColor: true
+	# Play sound notification on destruction.
+	ActorLostNotification:
+		Notification: UnitLost
+		TextNotification: notification-unit-lost
+	# Unit is added to the observer stats.
+	UpdatesPlayerStatistics:
+	# Unit gives veterancy score on death to the killer unit.
+	GivesVeterancy:
+	# Unit gives cash on donation.
+	DeliversCash:
+		Voice: Move
+
+# Base for all sprite actors.
+^CoreSprite:
+	# Allow actors to rotate and use facings.
+	BodyOrientation:
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
+	# Automatically detect the number of facings from the sequences.
+	QuantizeFacingsFromSequence:
+
+# Base for all voxel actors.
+^CoreVoxel:
+	# All our actors are voxel based and need to render voxels.
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.3,1.3,1.3
+	# Allow actors to rotate and use facings.
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false

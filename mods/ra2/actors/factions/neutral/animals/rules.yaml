@@ -1,0 +1,217 @@
+cow:
+	Inherits@1: ^CoreAnimal
+	Inherits@2: ^FeedbackOnDamage
+	Selectable:
+		Bounds: 1c0, 1c512, 0, -600
+	Health:
+		HP: 15000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-cow.name
+	ScaredyCat:
+		PanicSequencePrefix:
+	Voiced:
+		VoiceSet: CowVoice
+
+all:
+	Inherits: ^CoreAnimal
+	Selectable:
+		Bounds: 2c0, 1c512, 0, -600
+	Health:
+		HP: 20000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: actor-all.name
+	Armament:
+		Weapon: AlligatorBite
+	AttackFrontal:
+		FacingTolerance: 2
+		Voice: Attack
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: AlligatorVoice
+
+polarb:
+	Inherits@1: ^CoreAnimal
+	Inherits@2: ^FeedbackOnDamage
+	Selectable:
+		Bounds: 1c0, 1c512, 0, -600
+	Health:
+		HP: 20000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: actor-polarb.name
+	Armament:
+		Weapon: BearBite
+	AttackFrontal:
+		FacingTolerance: 2
+		Voice: Attack
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: BearVoice
+
+josh:
+	Inherits@1: ^CoreAnimal
+	Inherits@2: ^FeedbackOnDamage
+	Selectable:
+		Bounds: 0c512, 1c0, 0, -200
+	Health:
+		HP: 20000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 90
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: actor-josh.name
+	Armament:
+		Weapon: ChimpBite
+	AttackFrontal:
+		FacingTolerance: 2
+		Voice: Attack
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: ChimpanzeeVoice
+
+caml:
+	Inherits: ^CoreAnimal
+	Selectable:
+		Bounds: 1c0, 1c612, 0, -700
+	Health:
+		HP: 20000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 200
+	Mobile:
+		Speed: 90
+	RevealsShroud:
+		Range: 2c0
+	Tooltip:
+		Name: actor-caml.name
+	Voiced:
+		VoiceSet: CamelVoice
+
+dnoa:
+	Inherits@1: ^CoreAnimal
+	Inherits@2: ^SelfHealed
+	Inherits@3: ^DogImmune
+	Selectable:
+		Bounds: 2c0, 3c512, 0, -1c512
+	Health:
+		HP: 30000
+	Armor:
+		Type: Plate
+	Valued:
+		Cost: 2700
+	Mobile:
+		Speed: 120
+		Locomotor: dino
+	RevealsShroud:
+		Range: 5c0
+	Tooltip:
+		Name: actor-dnoa.name
+	Tooltip@NoRow:
+		Name: actor-dnoa.name
+	Armament@primary:
+		Weapon: TRexInfBite
+	Armament@secondary:
+		Weapon: TRexBite
+	AttackFrontal:
+		FacingTolerance: 2
+		Voice: Attack
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	Voiced:
+		VoiceSet: TRexVoice
+	-TurnOnIdle:
+
+dog:
+	Inherits@1: ^CoreAnimal
+	Inherits@2: ^InfantryPromotable
+	Inherits@3: ^FeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry, !infantry.yuri, ~techlevel.2
+		Description: meta-dog.description
+		BuildPaletteOrder: 30
+	Selectable:
+		Bounds: 724, 1158, 0, -241
+	Health:
+		HP: 10000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 200
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 105
+	RevealsShroud:
+		Range: 9c0
+	Tooltip:
+		Name: meta-dog.name
+	Armament:
+		Weapon: GoodTeeth
+	AttackLeap:
+		Speed: 105
+		LeapCondition: attacking
+		Voice: Attack
+	RenderSprites:
+		Image: adog
+		FactionImages:
+			america: adog
+			england: adog
+			france: adog
+			germany: adog
+			korea: adog
+			russia: sdog
+			iraq: sdog
+			cuba: sdog
+			libya: sdog
+	WithFacingSpriteBody:
+		Sequence: shoot
+		RequiresCondition: attacking
+	WithInfantryBody:
+		RequiresCondition: !attacking
+	Voiced:
+		VoiceSet: DogVoice
+	-Wanders:
+	-GrantConditionOnVeterancyLevel:

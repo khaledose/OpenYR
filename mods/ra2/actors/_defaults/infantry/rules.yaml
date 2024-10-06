@@ -1,28 +1,122 @@
-^Infantry:
-	Inherits: ^Actor
-	Inherits@1: ^Sprite
-	Inherits@2: ^HospitalHealing
+# Base for all being actors (Infantries, Animals, etc).
+^CoreBeing:
+	Inherits@1: ^CoreUnit
+	Inherits@2: ^CoreSprite
+	Inherits@3: ^HealedByHospital
+	Buildable:
+		Queue: Infantry
+	# Calculated size for infantry to match shared cells.
 	Selectable:
 		Bounds: 482, 1448, 0, -530
-	Buildable:
-		BuildDurationModifier: 100
-	Cloneable:
-		Types: Infantry
-	RenderSprites:
-		PlayerPalette: infantry
-	WithEditorInfantryBody:
-
-^Person:
-	Inherits: ^Infantry
+	# Infantry hitshape
+	HitShape:
+		Type: Circle
+			Radius: 128
+	# Infantry movement characteristics.
 	Mobile:
-		Voice: Move
 		Locomotor: foot
 		AlwaysTurnInPlace: true
 		TurnsWhileMoving: true
+		Voice: Move
+	# Vehicles can kill infantry by driving over them.
 	Crushable:
 		WarnProbability: 0
-		CrushClasses: vehicle
+		CrushClasses: infantry
 		CrushSound: igensqua.wav
+	# Actor can be targeted by anything which attacks ground.
+	Targetable:
+		TargetTypes: Ground, Infantry, Disguise
+	# Infantry dies on chronoshift.
+	Chronoshiftable:
+		ExplodeInstead: true
+		ReturnToOrigin: false
+	# Actor is edible by actors with AttackLeap trait.
+	EdibleByLeap:
+	# Actor can be guarded.
+	Guardable:
+	# Infantry can enter Cargo actors.
+	Passenger:
+		CargoType: Infantry
+		Weight: 1
+		Voice: Move
+	# Infantry turns when idle.
+	TurnOnIdle:
+		MinDelay: 125
+		MaxDelay: 250
+	# Render sprite with infantry player palette.
+	RenderSprites:
+		PlayerPalette: infantry
+	# Automatically detect the number of facings from the default stand sequence.
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	# Infantry has different state sequences.
+	WithInfantryBody:
+		StandSequences: stand
+		IdleSequences: idle1, idle2
+		MoveSequence: run
+	# Infantry has own death animations.
+	WithDeathAnimation@normal:
+		DeathSequencePalette: infantry
+		DeathTypes:
+			ExplosionDeath: 1
+			BulletDeath: 2
+		FallbackSequence: die1
+	# Actor sprite body displayed in the editor.
+	WithEditorInfantryBody:
+	# Sounds to play on actor's death.
+	DeathSounds@normal:
+
+# Base for all animal actors.
+^CoreAnimal:
+	Inherits: ^CoreBeing
+	# Actor wanders the world periodically.
+	Wanders:
+		MinMoveDelay: 150
+		MaxMoveDelay: 750
+
+# Base for all people actors.
+^CorePerson:
+	Inherits: ^CoreBeing
+	# Spawn infantry corpse on death.
+	FireWarheadsOnDeath@corpse:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Weapon: CorpseSpawner
+		EmptyWeapon: CorpseSpawner
+	# Spawn FLAMEGUY on death by fire.
+	SpawnActorOnDeath@flame:
+		Actor: FLAMEGUY
+		DeathType: FlameDeath
+	# Infantry death animation special effects.
+	WithDeathAnimation@effect:
+		DeathSequencePalette: effect
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			BruteDeath: 8
+	# Sounds to play on actor's death.
+	DeathSounds@normal:
+		DeathTypes: ExplosionDeath, BulletDeath
+
+# Base for all civilian actors.
+^CoreCivilian:
+	Inherits: ^CorePerson
+	# Civilian default name
+	Tooltip:
+		Name: meta-civilianinfantry.name
+	# Actor wanders the world periodically.
+	Wanders:
+		MinMoveDelay: 150
+		MaxMoveDelay: 750
+	# Actor panics when under attack.
+	ScaredyCat:
+	# Civilians have only one idle sequence
+	WithInfantryBody:
+		IdleSequences: idle1
+
+# Base for all soldier actors.
+^CoreSoldier:
+	Inherits@1: ^CorePerson
+	Inherits@2: ^CoreArmedInfantry
+	# Infantry takes cover when under attack.
 	TakeCover:
 		DamageModifiers:
 			Prone30Percent: 30
@@ -31,55 +125,17 @@
 			Prone80Percent: 80
 			Prone100Percent: 100
 		DamageTriggers: TriggerProne
-	Guardable:
-	Targetable:
-		TargetTypes: Ground, Infantry, Disguise
-	EdibleByLeap:
-	Chronoshiftable:
-		ExplodeInstead: true
-		ReturnToOrigin: false
-	TurnOnIdle:
-		MinDelay: 125
-		MaxDelay: 250
-	WithInfantryBody:
-		IdleSequences: idle1, idle2
-		StandSequences: stand
-		MoveSequence: run
-	QuantizeFacingsFromSequence:
-		Sequence: stand
-	Explodes@corpse:
-		DeathTypes: NonTemporal, ExplosionDeath, BulletDeath
-		Weapon: CorpseSpawner
-		EmptyWeapon: CorpseSpawner
-	WithDeathAnimation@normal:
-		DeathSequencePalette: infantry
-		DeathTypes:
-			ExplosionDeath: 1
-			BulletDeath: 2
-	DeathSounds@normal:
-		DeathTypes: ExplosionDeath, BulletDeath
-	SpawnActorOnDeath@flame:
-		Actor: FLAMEGUY
-		DeathType: FlameDeath
-	MapEditorData:
-		Categories: Infantry
-
-^GroundInfantry:
-	Inherits: ^Person
+	# Infantry can guard other guardable actors.
 	Guard:
 		Voice: Attack
-	AttackFrontal:
-		Voice: Attack
-		FacingTolerance: 2
-	RevealOnFire:
-		ArmamentNames: primary
-		Duration: 50
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
 
-^MinerInfantry:
-	Inherits: ^GroundInfantry
-	Inherits@1: ^LowPrioritySelectionMode
+# Base for miner infantry actors.
+^CoreMinerInfantry:
+	Inherits: ^CorePerson
+	# Miners have lower priority than other units when selected.
+	Selectable:
+		Priority: 10
+	# Actor harvests Ore and Gems
 	Harvester:
 		Type: InfantryUnload
 		Resources: Ore, Gems
@@ -88,24 +144,17 @@
 		FullyLoadedSpeed: 100
 		HarvestVoice: Harvest
 		EmptyCondition: no-ore
+	# Capacity of resources the actor can carry when harvesting.
 	StoresResources:
 		Capacity: 4
 		Resources: Ore, Gems
+	# Actor dumps harvested resources into DockHost.
 	DockClientManager:
 		Voice: Move
-	WithSlaveBody:
-		HarvestingSequence: harvest
-		HarvestingCondition: harvesting
-		RequiresCondition: harvesting
-	WithInfantryBody:
-		RequiresCondition: no-ore && !harvesting
-	WithInfantryBody@full:
-		MoveSequence: full-run
-		DefaultAttackSequence: shoot
-		RequiresCondition: !no-ore && !harvesting
+	# Actor has decoration for resources stored while harvesting.
 	WithStoresResourcesPipsDecoration:
 		Margin: 4, 3
-		Palette: ra
+		Palette: pips
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 1
@@ -115,137 +164,89 @@
 		ResourceSequences:
 			Ore: yellow
 			Gems: blue
-	MapEditorData:
-		Categories: Infantry - Miner
+	# Actor has special sequence when it carries resources.
+	WithInfantrySequenceModifier:
+		SequencePrefix: full-
+		RequiresCondition: !no-ore
 
-^DeployableInfantry:
-	Inherits: ^GroundInfantry
+# Base for deployable infantry actors.
+^CoreDeployableInfantry:
+	Inherits@1: ^CoreSoldier
+	Inherits@2: ^CoreArmedInfantry
+	# Actor can only move when undeployed.
 	Mobile:
 		RequiresCondition: undeployed
+	# Actor can only take cover when undeployed when it's under attack.
 	TakeCover:
 		RequiresCondition: undeployed
+	# Actor location is revealed when it shoots using primary or deployed armaments.
 	RevealOnFire:
 		ArmamentNames: primary, deployed
-	AttackFrontal:
-		Armaments: primary, deployed
-		Voice: Attack
-		FacingTolerance: 2
-		RequiresCondition: undeployed
+	# Actor can deploy and grant conditions on deploy and undeploy.
+	Deployable:
+		DeployedCondition: deployed
+		UndeployedCondition: undeployed
+	# Actor becomes a turret when deployed.
 	Turreted:
 		Turret: deploy
 		RealignDelay: -1
 		RequiresCondition: deployed
+	# Actor attacks as a turret when deployed.
 	AttackTurreted:
 		Turrets: deploy
 		Armaments: deployed
 		Voice: Attack
 		RequiresCondition: deployed
-	GrantConditionOnDeploy:
-		UndeployedCondition: undeployed
-		DeployedCondition: deployed
-		Voice: Deploy
-	WithDeployedInfantryBody:
-		RequiresCondition: !undeployed
+	# Actor attacks facing target only when undeployed.
+	AttackFrontal:
+		RequiresCondition: undeployed
+	# Actor has normal body when undeployed.
 	WithInfantryBody:
 		RequiresCondition: undeployed
+	# Actor has special body when deployed.
+	WithDeployedAttackInfantryBody:
+		RequiresCondition: !undeployed
 
-^BasicCivilian:
-	Buildable:
-		Queue: Infantry.Neutral
-	Health:
-		HP: 5000
-	Armor:
-		Type: None
-	Valued:
-		Cost: 10
-	DeliversCash:
-		Payload: 100
-	Mobile:
-		Speed: 60
-	RevealsShroud:
-		Range: 2c0
-	Tooltip:
-		Name: meta-civilianinfantry.name
-	Tooltip@NoRow:
-		Name: meta-civilianinfantry.name
+# Grouped traits for standard infantry attack behavior.
+^CoreArmedInfantry:
+	# Units without a turret have to stop and aim at a target to shoot.
+	AttackFrontal:
+		FacingTolerance: 15
+		Voice: Attack
+	# Auto target enemies nearby.
+	AutoTarget:
+	AutoTargetPriority:
+		ValidTargets: Ground, Water, Air, Ship, Defense
+		InvalidTargets: Structure
+	# Grants condition when shooting.
+	GrantConditionOnAttack:
+		Condition: shooting
+		RevokeDelay: 100
+	# Make sure turning is not triggered when shooting.
+	TurnOnIdle:
+		RequiresCondition: !shooting
+	# Actor is revealed when attacking.
+	RevealOnFire:
+		ArmamentNames: primary
+		Duration: 50
+	# Specify sequences to use when shooting.
 	WithInfantryBody:
-		IdleSequences: idle1
-	MapEditorData:
-		Categories: Infantry, Infantry - Civilian
+		DefaultAttackSequence: shoot
 
-^Civilian:
-	Inherits: ^Person
-	Inherits@1: ^BasicCivilian
-	Inherits@2: ^Panicker
-	Inherits@3: ^Wanderer
-	-TakeCover:
-
-^ArmedCivilian:
-	Inherits: ^GroundInfantry
-	Inherits@1: ^BasicCivilian
-
-^Engineer:
-	Inherits: ^Person
-	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
-	Buildable:
-		Queue: Infantry
-		Description: meta-engineer.description
-		BuildPaletteOrder: 20
-	Health:
-		HP: 7500
-	Armor:
-		Type: None
-	Valued:
-		Cost: 500
-	DeliversCash:
-		Payload: 250
-	Mobile:
-		Speed: 60
-	RevealsShroud:
-		Range: 4c0
-	Tooltip:
-		Name: meta-engineer.name
-	Tooltip@NoRow:
-		Name: meta-engineer.name
-	InstantlyRepairs:
-		Types: building
-		RepairSound: urepair.wav
-		ValidRelationships: Ally, Neutral
-	RepairsBridges:
-		RepairNotification: BridgeRepaired
-	CaptureManager:
-	Captures@INSTANT:
-		CaptureTypes: building, tech
-		RequiresCondition: instantcapture
-	Captures@TIMED:
-		CaptureDelay: 75
-		CaptureTypes: building, tech
-		RequiresCondition: !instantcapture
-	GrantConditionOnPrerequisite@INSTANTCAPTURE:
-		Condition: instantcapture
-		Prerequisites: global-instantcapture
-
-FLAMEGUY:
-	Inherits: ^ExistsInWorld
-	Inherits@1: ^Sprite
-	HitShape:
-	HiddenUnderFog:
-	Mobile:
-		Speed: 71
-		Locomotor: flameguy
-	WithInfantryBody:
-		IdleSequences: run
-	Health:
-		HP: 16000
-	ChangesHealth:
-		Step: -1000
-		StartIfBelow: 101
-	ScaredyCat:
-		PanicSequencePrefix:
-	RenderSprites:
-		Palette: flameguy
-	WithDeathAnimation:
-		FallbackSequence: die
-		UseDeathTypeSuffix: false
-		DeathSequencePalette: flameguy
-		DeathPaletteIsPlayerPalette: false
+# Add locomotor to world...
+^CoreWorld:
+	Locomotor@FOOT:
+		Name: foot
+		Crushes: crate
+		CrushDamageTypes: NonTemporal, Crush
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 100
+			Sand: 100
+			Rough: 100
+			Road: 100
+			DirtRoad: 100
+			Bridge: 100
+			Rail: 90
+			Ore: 90
+			Gems: 90

@@ -1,12 +1,7 @@
 slav:
-	Inherits: ^MinerInfantry
-	Inherits@VETERAN: ^InfantryPromotable
-	Buildable:
-		Queue: Infantry.Unused
-		Prerequisites: ~yarefn, ~techlevel.1
-		Description: actor-slav.description
-	Selectable:
-		Priority: 6
+	Inherits@1: ^CoreMinerInfantry
+	Inherits@2: ^CoreArmedInfantry
+	Inherits@3: ^InfantryPromotable
 	Health:
 		HP: 12500
 	Armor:
@@ -17,9 +12,7 @@ slav:
 		Radius: 5c0
 	Tooltip:
 		Name: actor-slav.name
-	Tooltip@NoRow:
-		Name: actor-slav.name
-	Armament@primary:
+	Armament:
 		Weapon: Shovel
 	SlaveMiner:
 		FreeSound: isl1lia.wav
@@ -34,5 +27,4 @@ slav:
 	Voiced@free:
 		VoiceSet: FreeSlaveVoice
 		RequiresCondition: freeslave
-	-TakeCover:
 	-GrantConditionOnVeterancyLevel:

@@ -1,0 +1,33 @@
+tug:
+	Inherits: ^CivilianShip
+	Health:
+		HP: 20000
+	Mobile:
+		TurnSpeed: 8
+	Tooltip:
+		Name: actor-tug.name
+	Tooltip@NoRow:
+		Name: actor-tug.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	AmbientSound:
+		SoundFiles: gtugboaa.wav, gtugboab.wav
+		Interval: 300, 600
+	Voiced:
+		VoiceSet: TugVoice
+
+cruise:
+	Inherits: ^CivilianShip
+	Health:
+		HP: 30000
+	Mobile:
+		TurnSpeed: 4
+	Tooltip:
+		Name: actor-cruise.name
+	Tooltip@NoRow:
+		Name: actor-cruise.name
+	AmbientSound:
+		SoundFiles: gship1a
+		Interval: 500, 1000
+	Voiced:
+		VoiceSet: CruiseVoice

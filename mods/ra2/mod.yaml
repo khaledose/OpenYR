@@ -79,7 +79,7 @@ Assemblies:
 	^BinDir|OpenRA.Mods.Common.dll
 
 AssetBrowser:
-	SpriteExtensions: .shp, .tmp, .tem, .des, .sno, .int, .png
+	SpriteExtensions: .shp, .tem, .des, .sno, .urb, .ubn, .lun, .png
 	ModelExtensions: .vxl
 	AudioExtensions: .aud, .wav
 	VideoExtensions: .vqa
@@ -99,9 +99,10 @@ ServerTraits:
 MapGrid:
 	Type: RectangularIsometric
 	TileSize: 60,30
-	DefaultSubCell: 2
+	EnableDepthBuffer: True
 	MaximumTerrainHeight: 16
 	SubCellOffsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
+	DefaultSubCell: 2
 
 SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
 
@@ -114,7 +115,7 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 DefaultOrderGenerator: UnitOrderGenerator
 
 GameSpeeds:
-	DefaultSpeed: faster
+	DefaultSpeed: fastest
 	Speeds:
 		slowest:
 			Name: options-game-speed.slowest
@@ -142,37 +143,37 @@ GameSpeeds:
 			OrderLatency: 6
 
 ModContent:
-	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
-	HeaderMessage: The original game content must be copied from an original game disc.
+	InstallPromptMessage: Red Alert 2: Yuri's Revenge requires artwork and audio from the original game.
+	HeaderMessage: Game content may be extracted from the original game discs or an\nexisting digital install.
 	Packages:
 		ContentPackage@ra2:
 			Title: Red Alert 2 Files
 			Identifier: ra2
 			TestFiles: ^SupportDir|Content/ra2/ra2.mix, ^SupportDir|Content/ra2/language.mix
-			Sources: ra2, origin, tfd
+			Sources: ra2, steam, origin, tfd
 			Required: true
 		ContentPackage@ra2-music:
 			Title: Red Alert 2 Music
 			Identifier: ra2-music
 			TestFiles: ^SupportDir|Content/ra2/theme.mix
-			Sources: ra2, origin, tfd
+			Sources: ra2, steam, origin, tfd
 		ContentPackage@yr:
 			Title: Yuri's Revenge Files
 			Identifier: yr
 			TestFiles: ^SupportDir|Content/ra2/ra2md.mix, ^SupportDir|Content/ra2/langmd.mix
-			Sources: origin-yr, tfd-yr
+			Sources: yr, steam, origin, tfd
 			Required: true
 		ContentPackage@yr-music:
 			Title: Yuri's Revenge Music
 			Identifier: yr-music
 			TestFiles: ^SupportDir|Content/ra2/thememd.mix
-			Sources: origin-yr, tfd-yr
+			Sources: yr, steam, origin, tfd
 	Sources:
 		ra2|installer/ra2.yaml
+		ra2|installer/yr.yaml
 		ra2|installer/origin.yaml
-		ra2|installer/origin-yr.yaml
+		ra2|installer/steam.yaml
 		ra2|installer/firstdecade.yaml
-		ra2|installer/firstdecade-yr.yaml
 
 Include: mod.content.yaml
 Include: mod.chrome.yaml

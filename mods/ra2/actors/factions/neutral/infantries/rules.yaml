@@ -1,156 +1,129 @@
+^Civilian:
+	Health:
+		HP: 5000
+	Armor:
+		Type: None
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 100
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 2c0
+
 civ1:
-	Inherits: ^Civilian
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
 	Voiced:
 		VoiceSet: CivilianAlliedFemaleVoice
 
 civ2:
-	Inherits: ^Civilian
+	Inherits: civ1
 	Voiced:
 		VoiceSet: CivilianAlliedMaleVoice
 
 civ3:
-	Inherits: ^Civilian
-	Voiced:
-		VoiceSet: CivilianAlliedMaleVoice
-
-civa:
-	Inherits: ^ArmedCivilian
-	Inherits@PANIC: ^Panicker
-	Inherits@WANDERS: ^Wanderer
-	Armament:
-		Weapon: Pistola
-	Voiced:
-		VoiceSet: CivilianTexanVoice
-	-TakeCover:
-
-civb:
-	Inherits: ^ArmedCivilian
-	Inherits@PANIC: ^Panicker
-	Inherits@WANDERS: ^Wanderer
-	Armament:
-		Weapon: Pistola
-	Voiced:
-		VoiceSet: CivilianTexanVoice
-	-TakeCover:
-
-civc:
-	Inherits: ^ArmedCivilian
-	Inherits@PANIC: ^Panicker
-	Inherits@WANDERS: ^Wanderer
-	Armament:
-		Weapon: Pistola
-	Voiced:
-		VoiceSet: CivilianTexanVoice
-	-TakeCover:
+	Inherits: civ2
 
 civbbp:
-	Inherits: ^Civilian
-	Voiced:
-		VoiceSet: CivilianAlliedMaleVoice
+	Inherits: civ2
 
 civbfm:
-	Inherits: ^Civilian
-	Voiced:
-		VoiceSet: CivilianAlliedMaleVoice
+	Inherits: civ2
 
 civbf:
-	Inherits: ^Civilian
-	Voiced:
-		VoiceSet: CivilianAlliedFemaleVoice
+	Inherits: civ1
 
 civbtm:
-	Inherits: ^Civilian
-	Voiced:
-		VoiceSet: CivilianAlliedMaleVoice
+	Inherits: civ2
 
 civsfm:
-	Inherits: ^Civilian
+	Inherits: civ2
 	Voiced:
 		VoiceSet: CivilianSovietMaleVoice
 
+civstm:
+	Inherits: civsfm
+
 civsf:
-	Inherits: ^Civilian
+	Inherits: civ1
 	Voiced:
 		VoiceSet: CivilianSovietFemaleVoice
 
-civstm:
-	Inherits: ^Civilian
+civa:
+	Inherits@1: civ1
+	Inherits@2: ^CoreArmedInfantry
+	Armament:
+		Weapon: Pistola
 	Voiced:
-		VoiceSet: CivilianSovietMaleVoice
+		VoiceSet: CivilianTexanVoice
+
+civb:
+	Inherits: civa
+
+civc:
+	Inherits: civa
 
 vladimir:
-	Inherits: ^ArmedCivilian
+	Inherits@1: ^CoreSoldier
+	Inherits@2: ^Civilian
 	DeliversCash:
 		Payload: 200
 	Tooltip:
 		Name: actor-vladimir.name
-	Tooltip@NoRow:
-		Name: actor-vladimir.name
 	Armament:
 		Weapon: Pistola
-	WithInfantryBody:
-		IdleSequences: idle1, idle2
 
 pentgen:
-	Inherits: ^ArmedCivilian
-	DeliversCash:
-		Payload: 200
+	Inherits: vladimir
 	Tooltip:
 		Name: actor-pentgen.name
-	Tooltip@NoRow:
-		Name: actor-pentgen.name
-	Armament:
-		Weapon: Pistola
+	WithInfantryBody:
+		IdleSequences: idle1
 	Voiced:
 		VoiceSet: GIVoice
 
 ssrv:
-	Inherits: ^ArmedCivilian
+	Inherits: pentgen
 	Tooltip:
 		Name: actor-ssrv.name
-	Tooltip@NoRow:
-		Name: actor-ssrv.name
-	Armament:
-		Weapon: Pistola
 	Voiced:
 		VoiceSet: SecretServiceVoice
 
 pres:
-	Inherits: ^Person
-	Inherits@1: ^BasicCivilian
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
 	DeliversCash:
 		Payload: 2000
 	Tooltip:
 		Name: actor-pres.name
-	Tooltip@NoRow:
-		Name: actor-pres.name
 
 # Yuri's Revenge Civilians
 rmnv:
-	Inherits: ^Person
-	Inherits@1: ^BasicCivilian
+	Inherits@1: ^CorePerson
+	Inherits@2: ^Civilian
 	Tooltip:
 		Name: actor-rmnv.name
-	Tooltip@NoRow:
-		Name: actor-rmnv.name
+	WithInfantryBody:
+		IdleSequences: idle1
 	Voiced:
 		VoiceSet: RomanovVoice
 
 eins:
-	Inherits: ^Civilian
+	Inherits@1: ^CoreCivilian
+	Inherits@2: ^Civilian
 	DeliversCash:
 		Payload: 200
 	Tooltip:
-		Name: actor-eins.name
-	Tooltip@NoRow:
 		Name: actor-eins.name
 	Voiced:
 		VoiceSet: EinsteinVoice
 
 mumy:
-	Inherits: ^ArmedCivilian
-	Inherits@SELFHEALING: ^SelfHealing
-	Inherits@WANDERS: ^Wanderer
+	Inherits@1: ^CorePerson
+	Inherits@2: ^CoreArmedInfantry
+	Inherits@3: ^SelfHealed
 	Health:
 		HP: 40000
 	Armor:
@@ -165,50 +138,109 @@ mumy:
 		Range: 6c0
 	Tooltip:
 		Name: actor-mumy.name
-	Tooltip@NoRow:
-		Name: actor-mumy.name
-	WithInfantryBody:
-		IdleSequences: idle1, idle2
 	Voiced:
 		VoiceSet: MummyVoice
-	-TakeCover:
 
 arnd:
-	Inherits: ^ArmedCivilian
+	Inherits: ^CoreSoldier
 	Health:
 		HP: 20000
 	Armor:
 		Type: Plate
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 100
 	Mobile:
 		Speed: 90
+	RevealsShroud:
+		Range: 2c0
 	Tooltip:
-		Name: actor-arnd.name
-	Tooltip@NoRow:
 		Name: actor-arnd.name
 	Armament:
 		Weapon: TermiGun
-	WithInfantryBody:
-		IdleSequences: idle1, idle2
 	Voiced:
 		VoiceSet: ArnoldVoice
 
 stln:
-	Inherits: ^ArmedCivilian
+	Inherits: ^CoreSoldier
 	Health:
 		HP: 20000
 	Armor:
 		Type: Plate
+	Valued:
+		Cost: 10
+	DeliversCash:
+		Payload: 100
 	Mobile:
 		Speed: 90
+	RevealsShroud:
+		Range: 2c0
 	Tooltip:
-		Name: actor-stln.name
-	Tooltip@NoRow:
 		Name: actor-stln.name
 	Armament@primary:
 		Weapon: StalGun
 	Armament@secondary:
 		Weapon: StalGren
-	WithInfantryBody:
-		IdleSequences: idle1, idle2
 	Voiced:
 		VoiceSet: StallionVoice
+
+lunr:
+	Inherits@1: ^CoreSoldier
+	Inherits@2: ^InfantryPromotable
+	Inherits@3: ^FeedbackOnDamage
+	Health:
+		HP: 12500
+	Armor:
+		Type: None
+	Mobile:
+		Speed: 60
+	Valued:
+		Cost: 600
+	DeliversCash:
+		Payload: 300
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-lunr.name
+	Armament:
+		Weapon: LunarLaser
+		LocalOffset: 128,196,512, 128,-196,512
+	Voiced:
+		VoiceSet: CosmonautVoice
+	-TakeCover:
+	-GrantConditionOnVeterancyLevel:
+
+engineer:
+	Inherits@1: ^CorePerson
+	Inherits@2: ^FeedbackOnDamage
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~infantry, ~techlevel.1
+		Description: meta-engineer.description
+		BuildPaletteOrder: 20
+	Health:
+		HP: 7500
+	Armor:
+		Type: None
+	Valued:
+		Cost: 500
+	DeliversCash:
+		Payload: 250
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: meta-engineer.name
+	InstantlyRepairs:
+		Types: building
+		RepairSound: urepair.wav
+		ValidRelationships: Ally, Neutral
+	RepairsBridges:
+		RepairNotification: BridgeRepaired
+	CaptureManager:
+	Captures:
+		CaptureTypes: building, tech
+	Voiced:
+		VoiceSet: EngineerVoice

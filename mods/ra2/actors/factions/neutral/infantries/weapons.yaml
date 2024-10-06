@@ -56,3 +56,28 @@ ClintGun:
 	Report: icliatta.wav, icliattb.wav, icliattc.wav
 	Warhead@1Dam: TargetDamage
 		Damage: 12500
+
+LunarLaser:
+	Inherits: ^PrismBeam
+	ReloadDelay: 20
+	Range: 7c0
+	Report: ilasatta.wav
+	ValidTargets: Ground, Water, Air
+	Warhead@1Dam: TargetDamage
+		Damage: 2500
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 75
+			Medium: 50
+			Heavy: 50
+			Wood: 100
+			Steel: 100
+			Concrete: 100
+			Drone: 100
+			Rocket: 100
+		ValidTargets: Ground, Water, Air
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ImpactSounds: gexpifva.wav

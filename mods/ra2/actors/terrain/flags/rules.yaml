@@ -1,0 +1,76 @@
+causfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-causfgl.name
+	Tooltip@NoRow:
+		Name: actor-causfgl.name
+
+cacufgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-cacufgl.name
+	Tooltip@NoRow:
+		Name: actor-cacufgl.name
+
+cafrfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-cafrfgl.name
+	Tooltip@NoRow:
+		Name: actor-cafrfgl.name
+
+cagefgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-cagefgl.name
+	Tooltip@NoRow:
+		Name: actor-cagefgl.name
+
+cairfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-cairfgl.name
+	Tooltip@NoRow:
+		Name: actor-cairfgl.name
+
+calbfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-calbfgl.name
+	Tooltip@NoRow:
+		Name: actor-calbfgl.name
+
+cankfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-cankfgl.name
+	Tooltip@NoRow:
+		Name: actor-cankfgl.name
+
+capofgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-capofgl.name
+	Tooltip@NoRow:
+		Name: actor-capofgl.name
+
+carufgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-carufgl.name
+	Tooltip@NoRow:
+		Name: actor-carufgl.name
+
+caskfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-caskfgl.name
+	Tooltip@NoRow:
+		Name: actor-caskfgl.name
+
+caukfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: actor-caukfgl.name
+	Tooltip@NoRow:
+		Name: actor-caukfgl.name

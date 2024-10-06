@@ -1,23 +1,24 @@
-Cursors:
-	ra2|cursors/cursors.yaml
-
-Missions:
-	ra2|missions/missions.yaml
-
 Music:
 	ra2|audio/music.yaml
 
 Notifications:
+	ra2|actors/factions/allied/infantries/G.I/sounds.yaml
+	ra2|actors/factions/allied/infantries/Guardian G.I/sounds.yaml
+	ra2|actors/factions/neutral/animals/sounds.yaml
 	ra2|audio/notifications.yaml
 
 Rules:
 	ra2|actors/_defaults/building/rules.yaml
+	ra2|actors/_defaults/core/rules.yaml
 	ra2|actors/_defaults/building/traits.yaml
 	ra2|actors/_defaults/infantry/rules.yaml
 	ra2|actors/_defaults/infantry/traits.yaml
 	ra2|actors/_defaults/misc/rules.yaml
 	ra2|actors/_defaults/player/rules.yaml
 	ra2|actors/_defaults/shared/rules.yaml
+	ra2|actors/_defaults/naval/rules.yaml
+	ra2|actors/_defaults/shapes/rules.yaml
+	ra2|actors/_defaults/terrain/rules.yaml
 	ra2|actors/_defaults/vehicle/rules.yaml
 	ra2|actors/_defaults/vehicle/traits.yaml
 	ra2|actors/_defaults/world/rules.yaml
@@ -26,23 +27,24 @@ Rules:
 	ra2|actors/factions/allied/buildings/Ore Refinery/rules.yaml
 	ra2|actors/factions/allied/buildings/Power Plant/rules.yaml
 	ra2|actors/factions/allied/defenses/Wall/rules.yaml
-	ra2|actors/factions/allied/infantries/Engineer/rules.yaml
 	ra2|actors/factions/allied/infantries/G.I/rules.yaml
 	ra2|actors/factions/allied/infantries/Guardian G.I/rules.yaml
 	ra2|actors/factions/allied/vehicles/Chrono Miner/rules.yaml
 	ra2|actors/factions/allied/vehicles/MCV/rules.yaml
+	ra2|actors/factions/neutral/animals/rules.yaml
 	ra2|actors/factions/neutral/buildings/civilian/rules.yaml
 	ra2|actors/factions/neutral/buildings/prop/rules.yaml
 	ra2|actors/factions/neutral/buildings/tech/rules.yaml
 	ra2|actors/factions/neutral/buildings/wall/rules.yaml
 	ra2|actors/factions/neutral/infantries/rules.yaml
+	ra2|actors/factions/neutral/navals/rules.yaml
+	ra2|actors/factions/neutral/vehicles/rules.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/rules.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/soviet/buildings/Ore Refinery/rules.yaml
 	ra2|actors/factions/soviet/buildings/Tesla Reactor/rules.yaml
 	ra2|actors/factions/soviet/defenses/Wall/rules.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/rules.yaml
-	ra2|actors/factions/soviet/infantries/Engineer/rules.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/rules.yaml
 	ra2|actors/factions/soviet/vehicles/War Miner/rules.yaml
 	ra2|actors/factions/yuri/buildings/Barracks/rules.yaml
@@ -50,21 +52,21 @@ Rules:
 	ra2|actors/factions/yuri/buildings/Construction Yard/rules.yaml
 	ra2|actors/factions/yuri/buildings/Slave Miner/rules.yaml
 	ra2|actors/factions/yuri/defenses/Wall/rules.yaml
-	ra2|actors/factions/yuri/infantries/Engineer/rules.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/rules.yaml
 	ra2|actors/factions/yuri/infantries/Slave/rules.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/rules.yaml
 	ra2|actors/factions/yuri/vehicles/Slave Miner/rules.yaml
 	ra2|actors/misc/rules.yaml
-	ra2|actors/misc/bridges/rules.yaml
-	ra2|actors/misc/crates/rules.yaml
-	ra2|actors/misc/drills/rules.yaml
-	ra2|actors/misc/lights/rules.yaml
-	ra2|actors/misc/rocks/rules.yaml
-	ra2|actors/misc/trees/rules.yaml
-	ra2|actors/misc/tunnels/rules.yaml
 	ra2|actors/player/commander/rules.yaml
 	ra2|actors/player/editor/rules.yaml
+	ra2|actors/terrain/bridges/rules.yaml
+	ra2|actors/terrain/crates/rules.yaml
+	ra2|actors/terrain/drills/rules.yaml
+	ra2|actors/terrain/flags/rules.yaml
+	ra2|actors/terrain/lights/rules.yaml
+	ra2|actors/terrain/palettes/rules.yaml
+	ra2|actors/terrain/rocks/rules.yaml
+	ra2|actors/terrain/trees/rules.yaml
 	ra2|actors/world/factions.yaml
 	ra2|actors/world/locomotors.yaml
 	ra2|actors/world/palettes.yaml
@@ -77,6 +79,7 @@ Sequences:
 	ra2|actors/_defaults/infantry/sequences.yaml
 	ra2|actors/_defaults/misc/sequences.yaml
 	ra2|actors/_defaults/shared/sequences.yaml
+	ra2|actors/_defaults/terrain/sequences.yaml
 	ra2|actors/_defaults/vehicle/sequences.yaml
 	ra2|actors/_defaults/weapon/sequences.yaml
 	ra2|actors/_defaults/world/sequences.yaml
@@ -89,11 +92,14 @@ Sequences:
 	ra2|actors/factions/allied/infantries/Guardian G.I/sequences.yaml
 	ra2|actors/factions/allied/vehicles/Chrono Miner/sequences.yaml
 	ra2|actors/factions/allied/vehicles/MCV/sequences.yaml
+	ra2|actors/factions/neutral/animals/sequences.yaml
 	ra2|actors/factions/neutral/buildings/civilian/sequences.yaml
 	ra2|actors/factions/neutral/buildings/prop/sequences.yaml
 	ra2|actors/factions/neutral/buildings/tech/sequences.yaml
 	ra2|actors/factions/neutral/buildings/wall/sequences.yaml
 	ra2|actors/factions/neutral/infantries/sequences.yaml
+	ra2|actors/factions/neutral/navals/sequences.yaml
+	ra2|actors/factions/neutral/vehicles/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Barracks/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Construction Yard/sequences.yaml
 	ra2|actors/factions/soviet/buildings/Ore Refinery/sequences.yaml
@@ -112,18 +118,21 @@ Sequences:
 	ra2|actors/factions/yuri/vehicles/MCV/sequences.yaml
 	ra2|actors/factions/yuri/vehicles/Slave Miner/sequences.yaml
 	ra2|actors/misc/sequences.yaml
-	ra2|actors/misc/bridges/sequences.yaml
-	ra2|actors/misc/crates/sequences.yaml
-	ra2|actors/misc/drills/sequences.yaml
-	ra2|actors/misc/lights/sequences.yaml
-	ra2|actors/misc/rocks/sequences.yaml
-	ra2|actors/misc/trees/sequences.yaml
-	ra2|actors/misc/tunnels/sequences.yaml
+	ra2|actors/terrain/bridges/sequences.yaml
+	ra2|actors/terrain/crates/sequences.yaml
+	ra2|actors/terrain/drills/sequences.yaml
+	ra2|actors/terrain/flags/sequences.yaml
+	ra2|actors/terrain/lights/sequences.yaml
+	ra2|actors/terrain/palettes/sequences.yaml
+	ra2|actors/terrain/rocks/sequences.yaml
+	ra2|actors/terrain/trees/sequences.yaml
 	ra2|actors/world/smudgelayers/sequences.yaml
 
 ModelSequences:
 	ra2|actors/factions/allied/vehicles/Chrono Miner/voxels.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voxels.yaml
+	ra2|actors/factions/neutral/navals/voxels.yaml
+	ra2|actors/factions/neutral/vehicles/voxels.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voxels.yaml
 	ra2|actors/factions/soviet/vehicles/War Miner/voxels.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/voxels.yaml
@@ -139,19 +148,20 @@ TileSets:
 
 Voices:
 	ra2|actors/_defaults/infantry/voices.yaml
-	ra2|actors/factions/allied/infantries/Engineer/voices.yaml
+	ra2|actors/_defaults/naval/voices.yaml
 	ra2|actors/factions/allied/infantries/G.I/voices.yaml
 	ra2|actors/factions/allied/infantries/Guardian G.I/voices.yaml
 	ra2|actors/factions/allied/vehicles/Chrono Miner/voices.yaml
 	ra2|actors/factions/allied/vehicles/MCV/voices.yaml
+	ra2|actors/factions/neutral/animals/voices.yaml
 	ra2|actors/factions/neutral/buildings/civilian/voices.yaml
 	ra2|actors/factions/neutral/infantries/voices.yaml
+	ra2|actors/factions/neutral/navals/voices.yaml
+	ra2|actors/factions/neutral/vehicles/voices.yaml
 	ra2|actors/factions/soviet/infantries/Conscript/voices.yaml
-	ra2|actors/factions/soviet/infantries/Engineer/voices.yaml
 	ra2|actors/factions/soviet/vehicles/MCV/voices.yaml
 	ra2|actors/factions/soviet/vehicles/War Miner/voices.yaml
 	ra2|actors/factions/yuri/buildings/Slave Miner/voices.yaml
-	ra2|actors/factions/yuri/infantries/Engineer/voices.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/voices.yaml
 	ra2|actors/factions/yuri/infantries/Slave/voices.yaml
 	ra2|actors/factions/yuri/vehicles/MCV/voices.yaml
@@ -163,6 +173,7 @@ Weapons:
 	ra2|actors/factions/allied/buildings/Power Plant/weapons.yaml
 	ra2|actors/factions/allied/infantries/G.I/weapons.yaml
 	ra2|actors/factions/allied/infantries/Guardian G.I/weapons.yaml
+	ra2|actors/factions/neutral/animals/weapons.yaml
 	ra2|actors/factions/neutral/buildings/prop/weapons.yaml
 	ra2|actors/factions/neutral/buildings/tech/weapons.yaml
 	ra2|actors/factions/neutral/infantries/weapons.yaml
@@ -171,4 +182,3 @@ Weapons:
 	ra2|actors/factions/soviet/vehicles/War Miner/weapons.yaml
 	ra2|actors/factions/yuri/infantries/Initiate/weapons.yaml
 	ra2|actors/factions/yuri/infantries/Slave/weapons.yaml
-	ra2|actors/misc/bridges/weapons.yaml

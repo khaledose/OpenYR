@@ -3,3 +3,48 @@ mpspawn:
 
 waypoint:
 	Inherits: ^SystemActor
+
+amcv.colorpicker:
+	Inherits: ^ColorPicker
+	RenderSprites:
+		Image: amcv
+	RenderVoxels:
+		Image: amcv
+
+smcv.colorpicker:
+	Inherits: ^ColorPicker
+	RenderSprites:
+		Image: smcv
+	RenderVoxels:
+		Image: smcv
+
+pcv.colorpicker:
+	Inherits: ^ColorPicker
+	RenderSprites:
+		Image: pcv
+	RenderVoxels:
+		Image: pcv
+
+flameguy:
+	Inherits@1: ^CoreVisibleActor
+	Inherits@2: ^CoreSprite
+	Interactable:
+	HitShape:
+	Health:
+		HP: 16000
+	Mobile:
+		Speed: 45
+		Locomotor: foot
+	ChangesHealth:
+		Step: -1000
+		StartIfBelow: 101
+	ScaredyCat:
+	RenderSprites:
+		Palette: flameguy
+	WithInfantryBody:
+		IdleSequences: run
+	WithDeathAnimation:
+		FallbackSequence: die
+		UseDeathTypeSuffix: false
+		DeathSequencePalette: flameguy
+		DeathPaletteIsPlayerPalette: false

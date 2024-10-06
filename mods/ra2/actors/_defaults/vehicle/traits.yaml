@@ -36,3 +36,42 @@
 	GrantConditionOnPrerequisite@MACHINESHOP:
 		Condition: repair
 		Prerequisites: camach
+
+^TransportableVehicle:
+	Passenger:
+		CargoType: Vehicle
+		Weight: 3
+		Voice: Move
+
+^TransportVehiclesAndInfantries:
+	Cargo:
+		Types: Infantry, Vehicle
+		MaxWeight: 12
+		AfterLoadDelay: 0
+		BeforeUnloadDelay: 0
+		AfterUnloadDelay: 0
+		PassengerFacing: 384
+		UnloadTerrainTypes: Clear, Rough, Bridge, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadVoice: Move
+		EjectOnDeath: false
+		LoadingCondition: notmobile
+		LoadedCondition: loaded
+	WithCargoPipsDecoration:
+		Margin: 4, 3
+		Palette: pips
+		Position: BottomLeft
+		RequiresSelection: true
+		Image: small-color-pips
+		EmptySequence: empty
+		FullSequence: green
+		CustomPipSequences:
+			gray: gray
+			yellow: yellow
+			blue: blue
+			red: red
+
+^TransportInfantries:
+	Inherits: ^TransportVehiclesAndInfantries
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5

@@ -1,7 +1,7 @@
 cakrmw:
 	Inherits: ^Wall
 	Buildable:
-		Queue: Support.Civilian.Shared
+		Queue: Support.Unused
 	Tooltip:
 		Name: actor-cakrmw.name
 	Tooltip@NoRow:

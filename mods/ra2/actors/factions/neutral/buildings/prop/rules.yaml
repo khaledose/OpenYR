@@ -132,7 +132,7 @@ camisc01:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 	Targetable@barrel:
 		TargetTypes: Barrel
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: LargeBarrelExplosion
 		EmptyWeapon: LargeBarrelExplosion
 
@@ -142,7 +142,7 @@ camisc02:
 		Name: actor-camisc02.name
 	Tooltip@NoRow:
 		Name: actor-camisc02.name
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: SmallBarrelExplosion
 		EmptyWeapon: SmallBarrelExplosion
 
@@ -541,7 +541,7 @@ camisc06:
 		Name: actor-camisc06.name
 	Tooltip@NoRow:
 		Name: actor-camisc06.name
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: MiniNukeExplosion
 		EmptyWeapon: MiniNukeExplosion
 	SoundOnDamageTransition:

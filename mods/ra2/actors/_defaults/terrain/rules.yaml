@@ -1,0 +1,212 @@
+^LampPost:
+	Interactable:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RenderSpritesEditorOnly:
+		Image: galite
+		Palette: terrainalpha
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
+	TerrainLightSource:
+		Range: 19c544
+		Intensity: 0.2
+		RedTint: 0.05
+		GreenTint: 0.05
+		BlueTint: 0.01
+	MapEditorData:
+		Categories: Terrain - Lighting
+
+^OreDrill:
+	Inherits: ^BasicBuilding
+	Tooltip:
+		Name: meta-oredrill-name
+	Tooltip@NoRow:
+		Name: meta-oredrill-name
+	Targetable:
+		TargetTypes: OreDrill
+	SeedsResource:
+		ResourceType: Ore
+		Interval: 50
+	RenderSprites:
+		Palette: player
+	WithSpriteBody:
+	WithIdleAnimation:
+		Interval: 50
+	RadarColorFromTerrain:
+		Terrain: Ore
+	AppearsOnMapPreview:
+		Terrain: Ore
+	MapEditorData:
+		Categories: Terrain - Drills
+
+^Tree:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-tree-name
+	Tooltip@NoRow:
+		Name: meta-tree-name
+	Targetable:
+		TargetTypes: Ground, Tree, NoAutoTarget
+	Crushable:
+		CrushClasses: tree
+		CrushSound: gsancrua.wav
+	RenderSprites:
+		Palette: terrain
+	RadarColorFromTerrain:
+		Terrain: Tree
+	AppearsOnMapPreview:
+		Terrain: Tree
+	MapEditorData:
+		Categories: Terrain - Trees
+		ExcludeTilesets: LUNAR
+
+^Rock:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-rock-name
+	Tooltip@NoRow:
+		Name: meta-rock-name
+	WithSpriteBody:
+	RenderSprites:
+		Palette: terrain
+	RadarColorFromTerrain:
+		Terrain: Rock
+	AppearsOnMapPreview:
+		Terrain: Rock
+	MapEditorData:
+		Categories: Terrain - Rocks
+
+^Flag:
+	Inherits: ^Prop
+	WithSpriteBody:
+	WithIdleOverlay:
+		Sequence: idle-anim
+	MapEditorData:
+		Categories: Terrain - Flags
+
+^Crate:
+	Inherits: ^Sprite
+	HiddenUnderFog:
+	Interactable:
+	Tooltip:
+		Name: meta-crate-name
+	Crate:
+		TerrainTypes: Clear, Sand, Rough, Road, DirtRoad, Ore, Gems, Water
+	RenderSprites:
+		Image: crate
+		Palette: terrain
+	WithCrateBody:
+		LandSequence: land
+		WaterSequence: water
+	MapEditorData:
+		Categories: Terrain - Crates
+
+^Bridge:
+	Interactable:
+	AlwaysVisible:
+	RenderSprites:
+		Palette: terrain
+	SequenceNormalizer:
+	WithBridgeSpriteBody:
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		QuantizedFacings: 1
+	RadarColorFromTerrain:
+		Terrain: Bridge
+	AppearsOnMapPreview:
+		Terrain: Bridge
+	AppearsOnRadar:
+	MapEditorData:
+		Categories: Terrain - Bridges
+
+^BridgeRamp:
+	Inherits: ^Bridge
+	BridgeNode:
+		Type: Head
+	EditorOnlyTooltip:
+		Name: meta-bridge-ramp-name
+
+^BridgeNode:
+	Inherits: ^Bridge
+	Health:
+		HP: 50000
+	Armor:
+		Type: Concrete
+	BridgeNode:
+		Type: Segment
+	Targetable:
+		TargetTypes: Ground, Building, Bridge
+		RequiresForceFire: true
+	ShakeOnDeath:
+		Duration: 5
+		Intensity: 1
+
+^BridgeX:
+	Inherits@shape: ^1x3Shape
+	Building:
+		Footprint: = = =
+	BridgeNode:
+		Axis: X
+
+^BridgeY:
+	Inherits@shape: ^3x1Shape
+	Building:
+		Footprint: ===
+	BridgeNode:
+		Axis: Y
+
+^BridgeHut:
+	Inherits: ^Object
+	BridgeHut:
+	WithSpriteBody:
+	MapEditorData:
+		Categories: Terrain - Bridges
+
+^Palette:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-palette-name
+	Tooltip@NoRow:
+		Name: meta-palette-name
+	RenderSprites:
+		Palette: terrain
+
+^StreetSign:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-streetsign-name
+	Tooltip@NoRow:
+		Name: meta-streetsign-name
+	RenderSprites:
+		Palette: terrain
+
+^TrafficLight:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-trafficlight-name
+	Tooltip@NoRow:
+		Name: meta-trafficlight-name
+	RenderSprites:
+		Palette: terrain
+
+^StreetLight:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-streetlight-name
+	Tooltip@NoRow:
+		Name: meta-streetlight-name
+	RenderSprites:
+		Palette: terrain
+
+^TelephonePole:
+	Inherits: ^Prop
+	Tooltip:
+		Name: meta-telephonepole-name
+	Tooltip@NoRow:
+		Name: meta-telephonepole-name
+	RenderSprites:
+		Palette: terrain

@@ -1,0 +1,6 @@
+ShipVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select:
+		Move:
+		Die: gnavsina

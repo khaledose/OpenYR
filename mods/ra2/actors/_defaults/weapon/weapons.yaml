@@ -23,7 +23,7 @@
 	Projectile: Bullet
 		Image: 120mm
 		Speed: 500
-		Palette: ra
+		Palette: pips
 		Shadow: true
 		LaunchAngle: 62
 	Warhead@1Dam: SpreadDamage
@@ -36,7 +36,7 @@
 	ValidTargets: Ground, Water, Air
 	Projectile: Missile
 		Image: dragon
-		Palette: ra
+		Palette: pips
 		Shadow: true
 		Blockable: false
 		TerrainHeightAware: true
@@ -61,6 +61,22 @@
 		Explosions: small_grey_explosion
 		ImpactSounds: gexpifva.wav, gexpifvb.wav, gexpifvc.wav
 		ValidTargets: Ground, Air
+
+^PrismBeam:
+	InvalidTargets: Underwater, Bridge, Wall, Fence, Tree
+	Projectile: LaserZap
+		Duration: 15
+		Width: 70
+		ZOffset: 2047
+		UsePlayerColor: true
+		SecondaryBeam: true
+		SecondaryBeamWidth: 20
+		SecondaryBeamZOffset: 2047
+		SecondaryBeamColor: FFFFFF80
+	Warhead@1Dam: TargetDamage
+		Spread: 0c64
+		InvalidTargets: Underwater, Bridge, Wall, Fence, Tree
+
 
 ^SA:
 	Inherits: ^MachineGun

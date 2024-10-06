@@ -23,5 +23,5 @@ napowr:
 		Sequence: idle-lights
 		# PauseOnCondition: chronodisable
 		RequiresCondition: !build-incomplete
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: TeslaReactorExplosion

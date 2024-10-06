@@ -6,3 +6,32 @@
 		Melted: igenmela, igenmelb, igenmelc
 		Explosion: gexpshaa
 		Virus: gvirexpa, gvirexpb
+
+DogVoice:
+	DefaultVariant: .wav
+	Voices:
+		Attack: idogatca
+		Move: idogmova
+		Select: idogsela
+		Feedback: idogfea, idogfeb, idogfec
+		Die: idogdiea
+
+EngineerVoice:
+	Inherits: ^InfantryDeath
+	Prefixes:
+		america: iena
+		england: iena
+		france: iena
+		germany: iena
+		korea: iena
+		russia: iens
+		iraq: iens
+		cuba: iens
+		libya: iens
+		psicorps: ieny
+	Voices:
+		Select: sea, seb, sec, sed
+		Move: moa, mob, moc
+		Action: ata, atb, atc
+		Feedback: fea, feb, fec
+		Die: dia, dib, dic, did

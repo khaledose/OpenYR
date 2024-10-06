@@ -67,7 +67,7 @@ yarefn:
 		Offset: -400, -256, 2304
 		Image: smoke
 		Sequences: small
-		Palette: effect75alpha
+		Palette: effect50alpha
 		SpawnFrequency: 1
 		Lifetime: 30, 40
 		Speed: 0, 36
@@ -78,7 +78,7 @@ yarefn:
 		Offset: 0, 400, 2304
 		Image: smoke
 		Sequences: small
-		Palette: effect75alpha
+		Palette: effect50alpha
 		SpawnFrequency: 1
 		Lifetime: 30, 40
 		Speed: 0, 36
@@ -89,7 +89,7 @@ yarefn:
 		Offset: 32, 192, 2304
 		Image: smoke
 		Sequences: small
-		Palette: effect75alpha
+		Palette: effect50alpha
 		SpawnFrequency: 1
 		Lifetime: 30, 40
 		Speed: 0, 36
@@ -100,7 +100,7 @@ yarefn:
 		Offset: 350, -256, 2304
 		Image: smoke
 		Sequences: small
-		Palette: effect75alpha
+		Palette: effect50alpha
 		SpawnFrequency: 1
 		Lifetime: 30, 40
 		Speed: 0, 36

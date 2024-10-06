@@ -78,21 +78,6 @@
 			Gems: 90
 			Beach: 70
 			Water: 70
-	Locomotor@FLAMEGUY:
-		Name: flameguy
-		Crushes: crate
-		CrushDamageTypes: NonTemporal, Crush
-		SharesCell: true
-		TerrainSpeeds:
-			Clear: 45
-			Sand: 45
-			Rough: 45
-			Rail: 45
-			Road: 50
-			Bridge: 50
-			DirtRoad: 50
-			Ore: 45
-			Gems: 45
 	Locomotor@WHEELED:
 		Name: wheeled
 		Crushes: crate

@@ -22,20 +22,54 @@ caoild:
 		InitialDelay: 100
 		Interval: 100
 		Amount: 20
-		# PauseOnCondition: chronodisable
 		RequiresCondition: enabled
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: OilExplosion
 	WithIdleOverlay@pump:
 		Sequence: idle-pump
-		PauseOnCondition: !enabled # || chronodisable
+		PauseOnCondition: !enabled
 	WithIdleOverlay@flag:
 		Sequence: flag
-		Offset: 1000,0,0
-		# PauseOnCondition: chronodisable
 	AmbientSound@running:
 		SoundFiles: boillo2a.wav, boillo2b.wav, boillo2c.wav
 		RequiresCondition: enabled
+
+caairp:
+	Inherits: ^TechBuilding
+	Inherits@SHAPE: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 80000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-caairp.name
+	Tooltip@NoRow:
+		Name: actor-caairp.name
+	TooltipDescription:
+		Description: actor-caairp.description
+	ProvidesPrerequisite@allies:
+		Prerequisite: techparadrops.allies
+		Factions: america, germany, england, france, korea
+		ResetOnOwnerChange: true
+		RequiresCondition: enabled
+	ProvidesPrerequisite@Soviets:
+		Prerequisite: techparadrops.soviets
+		Factions: cuba, libya, iraq, russia
+		ResetOnOwnerChange: true
+		RequiresCondition: enabled
+	ProvidesPrerequisite@PsiCorps:
+		Prerequisite: techparadrops.psicorps
+		Factions: psicorps
+		ResetOnOwnerChange: true
+		RequiresCondition: enabled
+	SupportPowerChargeBar:
+	WithIdleOverlay:
+	WithIdleOverlay@flag:
+		Sequence: flag
 
 cahosp:
 	Inherits: ^TechBuilding
@@ -54,14 +88,47 @@ cahosp:
 		Name: actor-cahosp.name
 	TooltipDescription:
 		Description: actor-cahosp.description
-	ProvidesPrerequisite@default:
-		RequiresCondition: enabled # && !chronodisable
+	ProvidesPrerequisite:
+		RequiresCondition: enabled
 	WithIdleOverlay:
-		# PauseOnCondition: disabled || chronodisable
 	WithIdleOverlay@flag:
 		Sequence: flag
 		Offset: 0,-500,2520
-		# PauseOnCondition: chronodisable
+
+cathosp:
+	Inherits: cahosp
+	Tooltip:
+		Name: actor-cathosp.name
+	Tooltip@NoRow:
+		Name: actor-cathosp.name
+	TooltipDescription:
+		Description: actor-cathosp.description
+
+caoutp:
+	Inherits: ^TechBuilding
+	Inherits@SHAPE: ^4x3Shape
+	Building:
+		Footprint: xx++ xx++ xx++
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 200000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	Tooltip:
+		Name: actor-caoutp.name
+	Tooltip@NoRow:
+		Name: actor-caoutp.name
+	TooltipDescription:
+		Description: actor-caoutp.description
+	WithIdleOverlay@crane:
+		Sequence: idle-crane
+	WithIdleOverlay@bib:
+		Sequence: bib
+	WithIdleOverlay@flag:
+		Sequence: flag
 
 capowr:
 	Inherits: ^TechBuilding
@@ -70,7 +137,7 @@ capowr:
 		DecorationHeight: 90
 	Power:
 		Amount: 200
-		RequiresCondition: enabled # && !chronodisable
+		RequiresCondition: enabled
 	Health:
 		HP: 80000
 	Armor:
@@ -86,7 +153,6 @@ capowr:
 	WithIdleOverlay@flag:
 		Sequence: flag
 		Offset: 1000, 0, 0
-		# PauseOnCondition: chronodisable
 
 camach:
 	Inherits: ^TechBuilding
@@ -105,11 +171,10 @@ camach:
 		Name: actor-camach.name
 	TooltipDescription:
 		Description: actor-camach.description
-	ProvidesPrerequisite@default:
-		RequiresCondition: enabled # && !chronodisable
+	ProvidesPrerequisite:
+		RequiresCondition: enabled
 	WithIdleOverlay@flag:
 		Sequence: flag
-		# PauseOnCondition: chronodisable
 
 caslab:
 	Inherits: ^TechBuilding
@@ -128,8 +193,198 @@ caslab:
 		Name: actor-caslab.name
 	TooltipDescription:
 		Description: actor-caslab.description
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite:
 		RequiresCondition: enabled
 	WithIdleOverlay@flag:
 		Sequence: flag
-		# PauseOnCondition: chronodisable
+
+# Campaign Tech Buildings
+
+calab:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x4Shape
+	IsometricSelectable:
+		DecorationHeight: 90
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-calab.name
+	Tooltip@NoRow:
+		Name: actor-calab.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: calab.rubble
+
+calab.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x4Rubble
+	RenderSprites:
+		Image: calab
+
+catech01:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@shape: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 40000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: actor-catech01.name
+	Tooltip@NoRow:
+		Name: actor-catech01.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: catech01.rubble
+
+catech01.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x3Rubble
+	RenderSprites:
+		Image: catech01
+
+catime01:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-catime01.name
+	Tooltip@NoRow:
+		Name: actor-catime01.name
+
+catime02:
+	Inherits: ^CivilianBuilding
+	Inherits@shape: ^4x3Shape
+	IsometricSelectable:
+		DecorationHeight: 45
+	Health:
+		HP: 100000
+	Armor:
+		Type: Steel
+	Tooltip:
+		Name: actor-catime02.name
+	Tooltip@NoRow:
+		Name: actor-catime02.name
+
+yacomd:
+	Inherits: ^CivilianBuilding
+	Inherits@CAPTURE: ^CapturableBuilding
+	Inherits@SHAPE: ^4x4Shape
+	IsometricSelectable:
+		DecorationHeight: 180
+	Health:
+		HP: 100000
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 3000
+	RevealsShroud:
+		Range: 8c0
+	Tooltip:
+		Name: actor-yacomd.name
+	Tooltip@NoRow:
+		Name: actor-yacomd.name
+	SpawnActorOnDeath@rubble:
+		DeathType: NonTemporal
+		Actor: yacomd.rubble
+
+yacomd.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x4Rubble
+	RenderSprites:
+		Image: yacomd
+
+yapppt:
+	Inherits: ^CivilianBuilding
+	#Inherits@GARRISON: ^Garrisonable
+	Inherits@SOUND: ^CollapsingMonumentSound
+	Inherits@SHAPE: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 75
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Tooltip:
+		Name: actor-yapppt.name
+	Tooltip@NoRow:
+		Name: actor-yapppt.name
+	# -WithIdleOverlay@garrisoned:
+
+yarock:
+	Inherits: ^CivilianBuilding
+	Inherits@SHAPE: ^3x3Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Health:
+		HP: 70000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: actor-yarock.name
+	Tooltip@NoRow:
+		Name: actor-yarock.name
+
+napsya:
+	Inherits: ^CivilianBuilding
+	Inherits@SHAPE: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Power:
+		Amount: -100
+	Health:
+		HP: 75000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 1000
+	RevealsShroud:
+		Range: 10c0
+	Tooltip:
+		Name: actor-napsya.name
+	Tooltip@NoRow:
+		Name: actor-napsya.name
+	WithIdleOverlay@spin:
+		Sequence: idle-spin
+	AmbientSound@Ambient:
+		SoundFiles: gpsyampa.wav, gpsyampb.wav, gpsyampc.wav
+
+napsyb:
+	Inherits: ^BaseStructure
+	Inherits@SHAPE: ^2x2Shape
+	IsometricSelectable:
+		DecorationHeight: 120
+	Power:
+		Amount: -100
+	Health:
+		HP: 75000
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 1000
+	RevealsShroud:
+		Range: 10c0
+	Tooltip:
+		Name: actor-napsyb.name
+	Tooltip@NoRow:
+		Name: actor-napsyb.name
+	WithIdleOverlay@spin:
+		Sequence: idle-spin
+		RequiresCondition: !build-incomplete
+	AmbientSound@Ambient:
+		SoundFiles: gpsyampa.wav, gpsyampb.wav, gpsyampc.wav
+		RequiresCondition: !build-incomplete

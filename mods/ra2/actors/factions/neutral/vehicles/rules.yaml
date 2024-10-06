@@ -1,0 +1,204 @@
+bus:
+	Inherits: ^CivilianVehicle
+	Inherits@CARGO: ^TransportInfantries
+	Mobile:
+		RequiresCondition: !notmobile
+	Cargo:
+		-LoadedCondition:
+	Tooltip:
+		Name: actor-bus.name
+	Tooltip@NoRow:
+		Name: actor-bus.name
+
+limo:
+	Inherits: bus
+	Tooltip:
+		Name: actor-limo.name
+	Tooltip@NoRow:
+		Name: actor-limo.name
+
+pick:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-pick.name
+	Tooltip@NoRow:
+		Name: actor-pick.name
+
+car:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-car.name
+	Tooltip@NoRow:
+		Name: actor-car.name
+
+wini:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-wini.name
+	Tooltip@NoRow:
+		Name: actor-wini.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+propa:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-propa.name
+	Tooltip@NoRow:
+		Name: actor-propa.name
+	Voiced:
+		VoiceSet: VehicleVoice
+
+cop:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-cop.name
+	Tooltip@NoRow:
+		Name: actor-cop.name
+	AmbientSound:
+		SoundFiles: vcoplo1.wav vcoplo2a.wav vcoplo2b.wav
+
+euroc:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-euroc.name
+	Tooltip@NoRow:
+		Name: actor-euroc.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+cona:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-cona.name
+	Tooltip@NoRow:
+		Name: actor-cona.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+trucka:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-trucka.name
+	Tooltip@NoRow:
+		Name: actor-trucka.name
+	Voiced:
+		VoiceSet: CivVehicleVoice
+
+truckb:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-truckb.name
+	Tooltip@NoRow:
+		Name: actor-truckb.name
+	Voiced:
+		VoiceSet: CivVehicleVoice
+
+suvb:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-suvb.name
+	Tooltip@NoRow:
+		Name: actor-suvb.name
+
+suvw:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-suvw.name
+	Tooltip@NoRow:
+		Name: actor-suvw.name
+
+stang:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-stang.name
+	Tooltip@NoRow:
+		Name: actor-stang.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+ptruck:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ptruck.name
+	Tooltip@NoRow:
+		Name: actor-ptruck.name
+
+taxi:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-taxi.name
+	Tooltip@NoRow:
+		Name: actor-taxi.name
+	RenderVoxels:
+		NormalsPalette: ts-normals
+
+#Yuri's Revenge Vehicles
+ambu:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ambu.name
+	Tooltip@NoRow:
+		Name: actor-ambu.name
+
+bcab:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-bcab.name
+	Tooltip@NoRow:
+		Name: actor-bcab.name
+
+cblc:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-cblc.name
+	Tooltip@NoRow:
+		Name: actor-cblc.name
+	Voiced:
+		VoiceSet: CableCarVoice
+
+ddbx:
+	Inherits: bus
+	Tooltip:
+		Name: actor-ddbx.name
+	Tooltip@NoRow:
+		Name: actor-ddbx.name
+
+doly:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-doly.name
+	Tooltip@NoRow:
+		Name: actor-doly.name
+	Voiced:
+		VoiceSet: CivVehicleVoice
+
+ftrk:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ftrk.name
+	Tooltip@NoRow:
+		Name: actor-ftrk.name
+
+jeep:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-jeep.name
+	Tooltip@NoRow:
+		Name: actor-jeep.name
+
+ycab:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-ycab.name
+	Tooltip@NoRow:
+		Name: actor-ycab.name
+
+civp:
+	Inherits: ^CivilianVehicle
+	Tooltip:
+		Name: actor-civp.name
+	Tooltip@NoRow:
+		Name: actor-civp.name
+	Voiced:
+		VoiceSet: VehicleVoice

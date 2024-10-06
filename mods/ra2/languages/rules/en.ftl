@@ -71,16 +71,14 @@ notification-tech-building-lost = Tech building lost.
 meta-constructionyard =
    .name = Construction Yard
    .description = Allows construction of base structures.
-
 meta-refinery =
    .name = Ore Refinery
    .description = Processes ore into credits.
-
 meta-civbuilding =
    .name = Civilian Building
-
 meta-rubble =
    .name = Rubble
+meta-palette-name = Palette
 
 ## Bridges
 actor-cabhut =
@@ -111,14 +109,32 @@ meta-engineer =
 
       Unarmed
 
+meta-dog =
+   .name = Attack Dog
+   .description = Anti-infantry unit.
+
+      Abilities:
+      - Can detect Spies
+
 ## Neutral Buildings
 ## Tech Buildings
 actor-caoild =
    .name = Tech Oil Derrick
    .description = Periodically provides cash.
+actor-caairp =
+   .name = Tech Airport
+   .description = Provides Paradrop support power.
 actor-cahosp =
+   .name = Old Civilian Hospital
+   .description = Allows infantry to self-heal.
+actor-cathosp =
    .name = Tech Hospital
    .description = Allows infantry to self-heal.
+actor-caoutp =
+   .name = Tech Outpost
+   .description = Provides repairing ground for vehicles.
+      Armed with a missile launcher.
+      Provides build area.
 actor-capowr =
    .name = Tech Power Plant
    .description = Provides 400 power.
@@ -128,6 +144,8 @@ actor-camach =
 actor-caslab =
    .name = Tech Secret Lab
    .description = Allow construction of a new 3rd tier vehicle.
+actor-napsya =
+   .name = Psychic Amplifier
 actor-napsyb =
    .name = Psychic Beacon
 actor-yarock =
@@ -473,6 +491,30 @@ actor-cawt01 =
 actor-cats01 =
    .name = Twin Silos
 
+## Flags
+actor-causfgl =
+   .name = American Flag
+actor-cacufgl =
+   .name = Cuban Flag
+actor-cafrfgl =
+   .name = French Flag
+actor-cagefgl =
+   .name = German Flag
+actor-cairfgl =
+   .name = Iraqi Flag
+actor-calbfgl =
+   .name = Libyan Flag
+actor-cankfgl =
+   .name = North Korean Flag
+actor-capofgl =
+   .name = Polish Flag
+actor-carufgl =
+   .name = Soviet Flag
+actor-caskfgl =
+   .name = South Korean Flag
+actor-caukfgl =
+   .name = British Flag
+
 ## Walls
 actor-cakrmw =
    .name = Kremlin Walls
@@ -484,6 +526,78 @@ actor-cafncw =
    .name = White Fence
 actor-cafncp =
    .name = Prison Camp Fence
+
+## Animals
+actor-cow =
+   .name = Cow
+actor-all =
+   .name = Alligator
+actor-polarb =
+   .name = Polar Bear
+actor-josh =
+   .name = Monkey
+actor-caml =
+   .name = Camel
+actor-dnoa =
+   .name = T-Rex
+
+## Civilian Vehicles
+actor-bus =
+   .name = School Bus
+actor-limo =
+   .name = Limousine
+actor-pick =
+   .name = Pickup Truck
+actor-car =
+   .name = Automobile
+actor-wini =
+   .name = Recreational Vehicle
+actor-propa =
+   .name = Propaganda Truck
+actor-cop =
+   .name = Police Car
+actor-euroc =
+   .name = Automobile
+actor-cona =
+   .name = Excavator
+actor-trucka =
+   .name = Truck
+actor-truckb =
+   .name = Truck
+actor-suvb =
+   .name = Automobile
+actor-suvw =
+   .name = Automobile
+actor-stang =
+   .name = Automobile
+actor-ptruck =
+   .name = Pickup Truck
+actor-taxi =
+   .name = Taxi
+actor-ambu =
+   .name = Ambulance
+actor-bcab =
+   .name = Black Cab
+actor-cblc =
+   .name = Cable Car
+actor-ddbx =
+   .name = Bus
+actor-doly =
+   .name = Camera Dolly
+actor-ftrk =
+   .name = Fire Truck
+actor-jeep =
+   .name = Pickup Truck
+actor-ycab =
+   .name = Yellow Cab
+actor-civp =
+   .name = Passenger Plane
+
+## Civilian Navals
+actor-tug =
+   .name = Tug Boat
+actor-cruise =
+   .name = Cruise Ship
 
 ## Civilian Infantries
 meta-civilianinfantry =
@@ -506,6 +620,8 @@ actor-arnd =
    .name = Arnnie Frankenfurter
 actor-stln =
    .name = Sammy Stallion
+actor-lunr =
+   .name = Cosmonaut
 
 ## Factions
 faction-random =

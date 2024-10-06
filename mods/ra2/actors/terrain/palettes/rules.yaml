@@ -1,0 +1,11 @@
+PALET01:
+	Inherits: ^Palette
+
+PALET02:
+	Inherits: ^Palette
+
+PALET03:
+	Inherits: ^Palette
+
+PALET04:
+	Inherits: ^Palette

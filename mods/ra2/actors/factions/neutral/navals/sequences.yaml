@@ -1,0 +1,5 @@
+tug:
+	Inherits: ^NoIcon
+
+cruise:
+	Inherits: ^NoIcon

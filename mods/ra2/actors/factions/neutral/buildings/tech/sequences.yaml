@@ -8,7 +8,7 @@ caoild:
 			NEWURBAN: cnoild.shp
 			DESERT: cdoild.shp
 			LUNAR: cloild.shp
-		Offset: 0, -30
+		# Offset: 0, -30, 25
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -44,7 +44,54 @@ caoild:
 			DESERT: cdoild_f.shp
 			LUNAR: cloild_f.shp
 		Length: 16
-		Offset: 0, -9
+
+caairp:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: ctairp.shp
+		TilesetFilenames:
+			SNOW: caairp.shp
+			URBAN: cuairp.shp
+			NEWURBAN: cnairp.shp
+			DESERT: cdairp.shp
+			LUNAR: clairp.shp
+		Offset: 0, -45, 40
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-overlay:
+		Filename: ctairp_a.shp
+		TilesetFilenames:
+			SNOW: caairp_a.shp
+			URBAN: cuairp_a.shp
+			NEWURBAN: cnairp_a.shp
+			DESERT: cdairp_a.shp
+			LUNAR: clairp_a.shp
+		Length: 10
+		Tick: 400
+	damaged-idle-overlay:
+		Filename: ctairp_a.shp
+		TilesetFilenames:
+			SNOW: caairp_a.shp
+			URBAN: cuairp_a.shp
+			NEWURBAN: cnairp_a.shp
+			DESERT: cdairp_a.shp
+			LUNAR: clairp_a.shp
+		Start: 10
+		Length: 10
+		Tick: 400
+	flag:
+		Filename: ctairp_f.shp
+		TilesetFilenames:
+			SNOW: caairp_f.shp
+			URBAN: cuairp_f.shp
+			NEWURBAN: cnairp_f.shp
+			DESERT: cdairp_f.shp
+			LUNAR: clairp_f.shp
+		ZOffset: 128
+		Length: 16
 
 cahosp:
 	Inherits: ^NoIcon
@@ -56,7 +103,7 @@ cahosp:
 			NEWURBAN: cnhosp.shp
 			DESERT: cdhosp.shp
 			LUNAR: clhosp.shp
-		Offset: -30, -75
+		Offset: -30, -75, 70
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -94,13 +141,153 @@ cahosp:
 		Length: 16
 		Offset: -9, -23
 
+cathosp:
+	Inherits: cahosp
+
+caoutp:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: ctoutp.shp
+		TilesetFilenames:
+			SNOW: caoutp.shp
+			URBAN: cuoutp.shp
+			NEWURBAN: cnoutp.shp
+			DESERT: cdoutp.shp
+			LUNAR: cloutp.shp
+		Offset: -15, -50, 45
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-crane:
+		Filename: ctoutp_d.shp
+		TilesetFilenames:
+			SNOW: caoutp_d.shp
+			URBAN: cuoutp_d.shp
+			NEWURBAN: cnoutp_d.shp
+			DESERT: cdoutp_d.shp
+			LUNAR: cloutp_d.shp
+		ShadowStart: 2
+	damaged-idle-crane:
+		Filename: ctoutp_d.shp
+		TilesetFilenames:
+			SNOW: caoutp_d.shp
+			URBAN: cuoutp_d.shp
+			NEWURBAN: cnoutp_d.shp
+			DESERT: cdoutp_d.shp
+			LUNAR: cloutp_d.shp
+		Start: 1
+		ShadowStart: 3
+	repair-start:
+		Filename: ctoutp_a.shp
+		TilesetFilenames:
+			SNOW: caoutp_a.shp
+			URBAN: cuoutp_a.shp
+			NEWURBAN: cnoutp_a.shp
+			DESERT: cdoutp_a.shp
+			LUNAR: cloutp_a.shp
+		Length: 10
+		Tick: 200
+		ShadowStart: 20
+	damaged-repair-start:
+		Filename: ctoutp_a.shp
+		TilesetFilenames:
+			SNOW: caoutp_a.shp
+			URBAN: cuoutp_a.shp
+			NEWURBAN: cnoutp_a.shp
+			DESERT: cdoutp_a.shp
+			LUNAR: cloutp_a.shp
+		Start: 10
+		Length: 10
+		Tick: 200
+		ShadowStart: 30
+	repair:
+		Filename: ctoutp_b.shp
+		TilesetFilenames:
+			SNOW: caoutp_b.shp
+			URBAN: cuoutp_b.shp
+			NEWURBAN: cnoutp_b.shp
+			DESERT: cdoutp_b.shp
+			LUNAR: cloutp_b.shp
+		Length: 20
+		Tick: 200
+		ShadowStart: 40
+	damaged-repair:
+		Filename: ctoutp_b.shp
+		TilesetFilenames:
+			SNOW: caoutp_b.shp
+			URBAN: cuoutp_b.shp
+			NEWURBAN: cnoutp_b.shp
+			DESERT: cdoutp_b.shp
+			LUNAR: cloutp_b.shp
+		Start: 20
+		Length: 20
+		Tick: 200
+		ShadowStart: 60
+	repair-end:
+		Filename: ctoutp_c.shp
+		TilesetFilenames:
+			SNOW: caoutp_c.shp
+			URBAN: cuoutp_c.shp
+			NEWURBAN: cnoutp_c.shp
+			DESERT: cdoutp_c.shp
+			LUNAR: cloutp_c.shp
+		Length: 10
+		Tick: 200
+		ShadowStart: 20
+	damaged-repair-end:
+		Filename: ctoutp_c.shp
+		TilesetFilenames:
+			SNOW: caoutp_c.shp
+			URBAN: cuoutp_c.shp
+			NEWURBAN: cnoutp_c.shp
+			DESERT: cdoutp_c.shp
+			LUNAR: cloutp_c.shp
+		Start: 10
+		Length: 10
+		Tick: 200
+		ShadowStart: 30
+	bib:
+		Filename: ctoutpbb.shp
+		TilesetFilenames:
+			SNOW: caoutpbb.shp
+			URBAN: cuoutpbb.shp
+			NEWURBAN: cnoutpbb.shp
+			DESERT: cdoutpbb.shp
+			LUNAR: cloutpbb.shp
+		Offset: -15, -50, 0
+		ZOffset: -512
+		ZRamp: 1
+	damaged-bib:
+		Filename: ctoutpbb.shp
+		TilesetFilenames:
+			SNOW: caoutpbb.shp
+			URBAN: cuoutpbb.shp
+			NEWURBAN: cnoutpbb.shp
+			DESERT: cdoutpbb.shp
+			LUNAR: cloutpbb.shp
+		Start: 1
+		Offset: -15, -50, 0
+		ZOffset: -512
+		ZRamp: 1
+	flag:
+		Filename: ctoutp_f.shp
+		TilesetFilenames:
+			SNOW: caoutp_f.shp
+			URBAN: cuoutp_f.shp
+			NEWURBAN: cnoutp_f.shp
+			DESERT: cdoutp_f.shp
+			LUNAR: cloutp_f.shp
+		Length: 16
+
 capowr:
 	Inherits: ^NoIcon
 	Defaults:
 		Filename: cgpowr.shp
 		TilesetFilenames:
 			SNOW: capowr.shp
-		Offset: 0, -30
+		Offset: 0, -30, 25
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -123,7 +310,7 @@ camach:
 		Filename: cgmach.shp
 		TilesetFilenames:
 			SNOW: camach.shp
-		Offset: 0, -45
+		Offset: 0, -45, 40
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -141,7 +328,7 @@ caslab:
 		Filename: cgslab.shp
 		TilesetFilenames:
 			SNOW: caslab.shp
-		Offset: 0, -45
+		Offset: 0, -45, 40
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -152,3 +339,166 @@ caslab:
 		TilesetFilenames:
 			SNOW: caslab_f.shp
 		Length: 16
+
+# Campaign Tech Buildings
+
+calab:
+	Inherits: ^BuildingWithRubble
+	Inherits@GARRISON: ^GarrisonableBuilding
+	Defaults:
+		Filename: ctlab.shp
+		TilesetFilenames:
+			SNOW: calab.shp
+			URBAN: culab.shp
+			NEWURBAN: cnlab.shp
+			DESERT: cdlab.shp
+			LUNAR: cllab.shp
+		Offset: 15,-52
+
+catech01:
+	Inherits: ^BuildingWithRubble
+	Inherits@GARRISON: ^GarrisonableBuilding
+	Defaults:
+		Filename: cttech01.shp
+		TilesetFilenames:
+			SNOW: catech01.shp
+			URBAN: cutech01.shp
+			NEWURBAN: cntech01.shp
+			DESERT: cdtech01.shp
+			LUNAR: cltech01.shp
+		Offset: 0,-45
+
+catime01:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: cgtime01.shp
+		Offset: -15,-52
+
+catime02:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: cgtime02.shp
+		Offset: -15,-52
+
+yacomd:
+	Inherits: ^BuildingWithRubble
+	Defaults:
+		Filename: ygcomd.shp
+		TilesetFilenames:
+			SNOW: yacomd.shp
+			LUNAR: ylcomd.shp
+		Offset: 0,-60
+
+yapppt:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: ytpppt.shp
+		TilesetFilenames:
+			SNOW: yapppt.shp
+			URBAN: yupppt.shp
+			NEWURBAN: ynpppt.shp
+			DESERT: ydpppt.shp
+			LUNAR: ylpppt.shp
+		Offset: 0,-45
+
+yarock:
+	Inherits: ^BuildingNoRubble
+	Defaults:
+		Filename: ygrock.shp
+		TilesetFilenames:
+			SNOW: yarock.shp
+		Offset: 0,-45
+	rocket-ready:
+		Filename: ygrock_a.shp
+		TilesetFilenames:
+			SNOW: yarock_a.shp
+		Length: 20
+		ShadowStart: 20
+		Tick: 200
+	rocket-idle:
+		Filename: ygrock_a.shp
+		TilesetFilenames:
+			SNOW: yarock_a.shp
+		Start: 19
+		ShadowStart: 39
+
+napsya:
+	Inherits: ^NoIcon
+	Defaults:
+		Filename: ntpsya.shp
+		TilesetFilenames:
+			SNOW: napsya.shp
+			DESERT: ndpsya.shp
+			NEWURBAN: nnpsya.shp
+			URBAN: nupsya.shp
+			LUNAR: nlpsya.shp
+		Offset: 0, -30
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-spin:
+		Filename: ntpsya_a.shp
+		TilesetFilenames:
+			SNOW: napsya_a.shp
+			DESERT: ndpsya_a.shp
+			NEWURBAN: nnpsya_a.shp
+			URBAN: nupsya_a.shp
+			LUNAR: nlpsya_a.shp
+		Length: 14
+		ShadowStart: 28
+		Tick: 150
+	damaged-idle-spin:
+		Filename: ntpsya_a.shp
+		TilesetFilenames:
+			SNOW: napsya_a.shp
+			DESERT: ndpsya_a.shp
+			NEWURBAN: nnpsya_a.shp
+			URBAN: nupsya_a.shp
+			LUNAR: nlpsya_a.shp
+		Start: 14
+		Length: 14
+		ShadowStart: 42
+		Tick: 150
+
+napsyb:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: 0, -30
+	idle:
+		Filename: ngpsyb.shp
+		TilesetFilenames:
+			SNOW: napsyb.shp
+		ShadowStart: 3
+	damaged-idle:
+		Filename: ngpsyb.shp
+		TilesetFilenames:
+			SNOW: napsyb.shp
+		Start: 1
+		ShadowStart: 4
+	idle-spin:
+		Filename: ngpsyb_a.shp
+		TilesetFilenames:
+			SNOW: napsyb_a.shp
+		Length: 15
+		ShadowStart: 30
+		Tick: 150
+	damaged-idle-spin:
+		Filename: ngpsyb_a.shp
+		TilesetFilenames:
+			SNOW: napsyb_a.shp
+		Start: 15
+		Length: 15
+		ShadowStart: 45
+		Tick: 150
+	make:
+		Filename: ntpsybmk.shp
+		TilesetFilenames:
+			SNOW: napsybmk.shp
+			DESERT: ndpsybmk.shp
+			LUNAR: nlpsybmk.shp
+			NEWURBAN: nnpsybmk.shp
+			URBAN: nupsybmk.shp
+		Length: 25
+		ShadowStart: 25

@@ -1,0 +1,74 @@
+bus:
+	Inherits: ^NoIcon
+
+limo:
+	Inherits: ^NoIcon
+
+car:
+	Inherits: ^NoIcon
+
+pick:
+	Inherits: ^NoIcon
+
+wini:
+	Inherits: ^NoIcon
+
+propa:
+	Inherits: ^NoIcon
+
+cop:
+	Inherits: ^NoIcon
+
+euroc:
+	Inherits: ^NoIcon
+
+cona:
+	Inherits: ^NoIcon
+
+trucka:
+	Inherits: ^NoIcon
+
+truckb:
+	Inherits: ^NoIcon
+
+suvb:
+	Inherits: ^NoIcon
+
+suvw:
+	Inherits: ^NoIcon
+
+taxi:
+	Inherits: ^NoIcon
+
+stang:
+	Inherits: ^NoIcon
+
+ptruck:
+	Inherits: ^NoIcon
+
+ambu:
+	Inherits: ^NoIcon
+
+bcab:
+	Inherits: ^NoIcon
+
+cblc:
+	Inherits: ^NoIcon
+
+ddbx:
+	Inherits: ^NoIcon
+
+doly:
+	Inherits: ^NoIcon
+
+ftrk:
+	Inherits: ^NoIcon
+
+jeep:
+	Inherits: ^NoIcon
+
+ycab:
+	Inherits: ^NoIcon
+
+civp:
+	Inherits: ^NoIcon

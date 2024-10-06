@@ -1,0 +1,7 @@
+dnoa:
+	DefaultVariant: .wav
+	Notifications:
+		Idle: grexroa1, grexroa2
+			InterruptType: Interrupt
+		Run: grexfooa, grexfoob, grexfooc
+			InterruptType: Interrupt

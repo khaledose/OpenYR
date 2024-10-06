@@ -1,0 +1,74 @@
+bus:
+	idle: local|bus
+
+car:
+	idle: local|car
+
+limo:
+	idle: local|limo
+
+pick:
+	idle: local|pick
+
+wini:
+	idle: local|wini
+
+propa:
+	idle: local|propa
+
+ptruck:
+	idle: local|ptruck
+
+cop:
+	idle: local|cop
+
+euroc:
+	idle: local|euroc
+
+cona:
+	idle: local|cona
+
+trucka:
+	idle: local|trucka
+
+truckb:
+	idle: local|truckb
+
+stang:
+	idle: local|stang
+
+suvb:
+	idle: local|suvb
+
+suvw:
+	idle: local|suvw
+
+taxi:
+	idle: local|taxi
+
+ambu:
+	idle: localmd|ambu
+
+bcab:
+	idle: localmd|bcab
+
+cblc:
+	idle: localmd|cblc
+
+ddbx:
+	idle: localmd|ddbx
+
+doly:
+	idle: localmd|doly
+
+ftrk:
+	idle: localmd|ftrk
+
+jeep:
+	idle: localmd|jeep
+
+ycab:
+	idle: localmd|ycab
+
+civp:
+	idle: localmd|civp

@@ -1,0 +1,19 @@
+palet01:
+	Inherits: ^Palette
+	idle:
+		Filename: palet01.shp
+
+palet02:
+	Inherits: ^Palette
+	idle:
+		Filename: palet02.shp
+
+palet03:
+	Inherits: ^Palette
+	idle:
+		Filename: palet03.shp
+
+palet04:
+	Inherits: ^Palette
+	idle:
+		Filename: palet04.shp

@@ -25,10 +25,28 @@
       "executablePath": "..\\..\\engine\\bin\\OpenRA.exe",
       "commandLineArgs": "Game.Mod=d2k Engine.EngineDir=..\\..\\engine Engine.LaunchPath=..\\..\\engine\\bin Engine.ModSearchPaths=..\\..\\mods,..\\..\\engine\\mods Debug.DisplayDeveloperSettings=true"
     },
-    "Utility": {
+    "RA2 Map Import": {
       "commandName": "Executable",
       "executablePath": "..\\..\\engine\\bin\\OpenRA.Utility.exe",
-      "commandLineArgs": "ra2 --check-yaml",
+      "commandLineArgs": "ra2 --import-ra2-map ..\\maps\\8_highway_borealis.map",
+      "environmentVariables": {
+        "ENGINE_DIR": "..\\..\\engine",
+        "MOD_SEARCH_PATHS": "..\\..\\mods,..\\..\\engine\\mods"
+      }
+    },
+    "RA2 Map Unpack": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.Utility.exe",
+      "commandLineArgs": "ra2 --map unpack 8_highway_borealis.oramap",
+      "environmentVariables": {
+        "ENGINE_DIR": "..\\..\\engine",
+        "MOD_SEARCH_PATHS": "..\\..\\mods,..\\..\\engine\\mods"
+      }
+    },
+    "Sequence Import": {
+      "commandName": "Executable",
+      "executablePath": "..\\..\\engine\\bin\\OpenRA.Utility.exe",
+      "commandLineArgs": "ra2 --sequence-import artmd.ini",
       "environmentVariables": {
         "ENGINE_DIR": "..\\..\\engine",
         "MOD_SEARCH_PATHS": "..\\..\\mods,..\\..\\engine\\mods"

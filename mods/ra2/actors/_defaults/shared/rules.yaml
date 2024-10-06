@@ -73,7 +73,7 @@
 	Selectable:
 		PriorityModifiers: Ctrl
 
-^SelfHealing:
+^SelfHealed:
 	ChangesHealth:
 		PercentageStep: 1
 		Step: 0

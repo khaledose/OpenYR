@@ -1,6 +1,0 @@
-engineer:
-	Inherits: ^Engineer
-	Buildable:
-		Prerequisites: ~infantry.allies, ~techlevel.1
-	Voiced:
-		VoiceSet: AlliedEngineerVoice

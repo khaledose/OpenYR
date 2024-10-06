@@ -1,0 +1,53 @@
+CowVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gcowsela, gcowselb, gcowselc
+		Move: gcowmova, gcowmovb
+		Feedback: gcowsela, gcowselb, gcowselc
+		Die: gcowdiea
+		Ambient: gcowsela, gcowselb, gcowselc
+
+AlligatorVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gallsela, gallselb
+		Move: gallmova, gallmovb
+		Attack: gallmova, gallmovb
+		Die: galldiea
+
+BearVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gbeasela, gbeaselb
+		Move: gbeamova, gbeamovb, gbeamovc
+		Attack: gbeamova, gbeamovb, gbeamovc
+		Feedback: gbeafeaa, gbeafeab
+		Die: gbeadiea, gbeadieb
+
+ChimpanzeeVoice:
+	Inherits: ^InfantryDeath
+	DefaultVariant: .wav
+	Voices:
+		Select: gchisela, gchiselb
+		Move: gchimova, gchimovb
+		Attack: gchiatta, gchiattb, gchiattc
+		Feedback: gchifeaa, gchifeab
+		Die: gchidiea, gchidieb
+		Ambient: gchiamba, gchiambb, gchiambc
+
+CamelVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gcamsela, gcamselb, gcamselc
+		Move: gcammova, gcammovb
+		Die: gcamdiea
+		Foot: gcamstaa, gcamstab
+
+TRexVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: grexsela, grexselb, grexselc
+		Move: grexmova, grexmovb
+		Attack: grexatta, grexattb, grexattc
+		Die: grexdiea
+		Fall: grexfala

@@ -63,3 +63,19 @@ moveflsh:
 		Filename: conquer|ring.shp
 		Length: *
 		Tick: 30
+
+flameguy:
+	Defaults:
+		Filename: conquer|flameguy.shp
+		Facings: 8
+		Tick: 80
+		IgnoreWorldTint: true
+	idle:
+	stand:
+	run:
+	panic-run:
+		Length: 6
+	die:
+		Start: 44
+		Facings: 1
+		Length: 104

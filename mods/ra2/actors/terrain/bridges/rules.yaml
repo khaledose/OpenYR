@@ -1,0 +1,120 @@
+cabhut:
+	Inherits: ^BridgeHut
+	Tooltip:
+		Name: actor-cabhut.name
+	Tooltip@NoRow:
+		Name: actor-cabhut.name
+	RenderSprites:
+		Palette: player
+
+# Concrete Low Bridges
+
+^ConcreteLowBridge:
+	Tooltip:
+		Name: meta-concrete-bridge.name
+
+# X Ramps
+
+lobrdb21:
+	Inherits: ^BridgeRamp
+	Inherits@DIRECTION: ^BridgeX
+	Inherits@TOOLTIP: ^ConcreteLowBridge
+
+lobrdb19:
+	Inherits: lobrdb21
+
+# X Segments
+
+lobrdb01:
+	Inherits: ^BridgeNode
+	Inherits@DIRECTION: ^BridgeX
+	Inherits@TOOLTIP: ^ConcreteLowBridge
+
+lobrdb02:
+	Inherits: lobrdb01
+
+lobrdb03:
+	Inherits: lobrdb01
+
+lobrdb04:
+	Inherits: lobrdb01
+
+# Y Ramps
+
+lobrdb25:
+	Inherits: ^BridgeRamp
+	Inherits@DIRECTION: ^BridgeY
+	Inherits@TOOLTIP: ^ConcreteLowBridge
+
+lobrdb23:
+	Inherits: lobrdb25
+
+# Y Segments
+
+lobrdb10:
+	Inherits: ^BridgeNode
+	Inherits@DIRECTION: ^BridgeY
+	Inherits@TOOLTIP: ^ConcreteLowBridge
+
+lobrdb11:
+	Inherits: lobrdb10
+
+lobrdb12:
+	Inherits: lobrdb10
+
+lobrdb13:
+	Inherits: lobrdb10
+
+# Wooden Low Bridges
+
+^WoodenLowBridge:
+	Tooltip:
+		Name: meta-wooden-bridge.name
+
+# X Ramps
+
+lobrdg21:
+	Inherits: lobrdb21
+	Inherits@TOOLTIP: ^WoodenLowBridge
+
+lobrdg19:
+	Inherits: lobrdg21
+
+# X Segments
+
+lobrdg01:
+	Inherits: lobrdb01
+	Inherits@TOOLTIP: ^WoodenLowBridge
+
+lobrdg02:
+	Inherits: lobrdg01
+
+lobrdg03:
+	Inherits: lobrdg01
+
+lobrdg04:
+	Inherits: lobrdg01
+
+# Y Ramps
+
+lobrdg25:
+	Inherits: lobrdb25
+	Inherits@TOOLTIP: ^WoodenLowBridge
+
+lobrdg23:
+	Inherits: lobrdg25
+
+# Y Segments
+
+lobrdg10:
+	Inherits: lobrdb10
+	Inherits@TOOLTIP: ^WoodenLowBridge
+
+lobrdg11:
+	Inherits: lobrdg10
+
+lobrdg12:
+	Inherits: lobrdg10
+
+lobrdg13:
+	Inherits: lobrdg10

@@ -1,7 +1,7 @@
 init:
-	Inherits: ^GroundInfantry
-	Inherits@VETERAN: ^InfantryPromotable
-	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Inherits@1: ^CoreSoldier
+	Inherits@2: ^InfantryPromotable
+	Inherits@3: ^FeedbackOnDamage
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.yuri, ~techlevel.1
@@ -20,8 +20,6 @@ init:
 	RevealsShroud:
 		Range: 9c0
 	Tooltip:
-		Name: actor-init.name
-	Tooltip@NoRow:
 		Name: actor-init.name
 	Armament@primary:
 		Weapon: PsychicJab

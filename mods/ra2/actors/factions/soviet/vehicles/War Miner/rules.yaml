@@ -4,6 +4,8 @@ harv:
 	Inherits@EXPERIENCE: ^GainsExperience
 	Buildable:
 		Description: actor-harv.description
+	VeterancyOnProduction:
+		InitialRank: 2
 	StoresResources:
 		Capacity: 40
 	Tooltip:

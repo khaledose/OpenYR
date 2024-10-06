@@ -5,3 +5,30 @@ CorpseSpawner:
 		Explosions: death_a, death_b, death_c, death_d, death_e, death_f
 		ValidTargets: Ground
 		Delay: 12
+
+GoodTeeth:
+	ValidTargets: Infantry
+	InvalidTargets: DogImmune
+	ReloadDelay: 30
+	Range: 1c512
+	Report: idogatta.wav
+	Projectile: InstantHit
+		Blockable: true
+	Warhead@1Dam: TargetDamage
+		Damage: 300000
+		Spread: 1
+		ValidTargets: Infantry
+		InvalidTargets: DogImmune
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+			Drone: 0
+			Rocket: 0
+		DamageTypes: BulletDeath, NonTemporal

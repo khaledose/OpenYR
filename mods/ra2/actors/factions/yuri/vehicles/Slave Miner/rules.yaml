@@ -3,7 +3,7 @@ smin:
 	Inherits@TURRET: ^HasTurret
 	Inherits@EXPERIENCE: ^GainsExperience
 	Inherits@SELECTION_MODE: ^LowPrioritySelectionMode
-	Inherits@SELFHEALING: ^SelfHealing
+	Inherits@SELFHEALING: ^SelfHealed
 	Buildable:
 		Description: actor-smin.description
 		BuildPaletteOrder: 10

@@ -1,0 +1,143 @@
+^1x1SHAPE:
+	Defaults:
+		Offset: 0.0, 15.0, 0
+
+^1x2SHAPE:
+	Defaults:
+		Offset: -15.0, 22.5, 0
+
+^1x3SHAPE:
+	Defaults:
+		Offset: -30.0, 30.0, 0
+
+^1x4SHAPE:
+	Defaults:
+		Offset: -45.0, 37.5, 0
+
+^1x5SHAPE:
+	Defaults:
+		Offset: -60.0, 45.0, 0
+
+^1x6SHAPE:
+	Defaults:
+		Offset: -75.0, 52.5, 0
+
+^2x1SHAPE:
+	Defaults:
+		Offset: 15.0, 22.5, 0
+
+^2x2SHAPE:
+	Defaults:
+		Offset: 0.0, 30.0, 0
+
+^2x3SHAPE:
+	Defaults:
+		Offset: -15.0, 37.5, 0
+
+^2x4SHAPE:
+	Defaults:
+		Offset: -30.0, 45.0, 0
+
+^2x5SHAPE:
+	Defaults:
+		Offset: -45.0, 52.5, 0
+
+^2x6SHAPE:
+	Defaults:
+		Offset: -60.0, 60.0, 0
+
+^3x1SHAPE:
+	Defaults:
+		Offset: 30.0, 30.0, 0
+
+^3x2SHAPE:
+	Defaults:
+		Offset: 15.0, 37.5, 0
+
+^3x3SHAPE:
+	Defaults:
+		Offset: 0.0, 45.0, 0
+
+^3x4SHAPE:
+	Defaults:
+		Offset: -15.0, 52.5, 0
+
+^3x5SHAPE:
+	Defaults:
+		Offset: -30.0, 60.0, 0
+
+^3x6SHAPE:
+	Defaults:
+		Offset: -45.0, 67.5, 0
+
+^4x1SHAPE:
+	Defaults:
+		Offset: 45.0, 37.5, 0
+
+^4x2SHAPE:
+	Defaults:
+		Offset: 30.0, 45.0, 0
+
+^4x3SHAPE:
+	Defaults:
+		Offset: 15.0, 52.5, 0
+
+^4x4SHAPE:
+	Defaults:
+		Offset: 0.0, 60.0, 0
+
+^4x5SHAPE:
+	Defaults:
+		Offset: -15.0, 67.5, 0
+
+^4x6SHAPE:
+	Defaults:
+		Offset: -30.0, 75.0, 0
+
+^5x1SHAPE:
+	Defaults:
+		Offset: 60.0, 45.0, 0
+
+^5x2SHAPE:
+	Defaults:
+		Offset: 45.0, 52.5, 0
+
+^5x3SHAPE:
+	Defaults:
+		Offset: 30.0, 60.0, 0
+
+^5x4SHAPE:
+	Defaults:
+		Offset: 15.0, 67.5, 0
+
+^5x5SHAPE:
+	Defaults:
+		Offset: 0.0, 75.0, 0
+
+^5x6SHAPE:
+	Defaults:
+		Offset: -15.0, 82.5, 0
+
+^6x1SHAPE:
+	Defaults:
+		Offset: 75.0, 52.5, 0
+
+^6x2SHAPE:
+	Defaults:
+		Offset: 60.0, 60.0, 0
+
+^6x3SHAPE:
+	Defaults:
+		Offset: 45.0, 67.5, 0
+
+^6x4SHAPE:
+	Defaults:
+		Offset: 30.0, 75.0, 0
+
+^6x5SHAPE:
+	Defaults:
+		Offset: 15.0, 82.5, 0
+
+^6x6SHAPE:
+	Defaults:
+		Offset: 0.0, 90.0, 0

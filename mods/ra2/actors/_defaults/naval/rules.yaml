@@ -1,0 +1,38 @@
+^Ship:
+	Inherits: ^Actor
+	Inherits@1: ^Voxel
+	Inherits@2: ^LowHealthSpeedPenalty
+	Inherits@3: ^VehicleDamagedEffects
+	Inherits@4: ^MachineShopRepair
+	Buildable:
+		BuildDurationModifier: 100
+	Mobile:
+		Voice: Move
+		TurnSpeed: 20
+		Locomotor: naval
+		TerrainOrientationAdjustmentMargin: 256
+	FireWarheadsOnDeath:
+		Weapon: VehicleExplosion
+		EmptyWeapon: VehicleExplosion
+		DeathTypes: NonTemporal
+	Targetable:
+		TargetTypes: Water, Ship
+	Guardable:
+
+^CivilianShip:
+	Inherits: ^Ship
+	Selectable:
+		Bounds: 1544, 2509, 0, -289
+	Health:
+		HP: 20000
+	Armor:
+		Type: Light
+	Valued:
+		Cost: 0
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 8c0
+	WithVoxelBody:
+	MapEditorData:
+		Categories: Naval - Civilian

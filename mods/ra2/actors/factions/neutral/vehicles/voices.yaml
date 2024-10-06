@@ -1,0 +1,21 @@
+VehicleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select:
+		Move:
+		Die: vgendiea vgendieb vgendiec vgendied vgendiee vgendief
+
+CarVoice:
+	Inherits: VehicleVoice
+	Voices:
+		Select: gcarsela
+
+CableCarVoice:
+	Inherits: VehicleVoice
+	Voices:
+		Select: vtrosela vtroselb
+
+CivVehicleVoice:
+	Inherits: VehicleVoice
+	Voices:
+		Select: iciamoa iciamob iciamoc

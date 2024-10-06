@@ -1,0 +1,210 @@
+GALITE:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-white-name
+	TerrainLightSource:
+		Range: 19c544
+		Intensity: 0.2
+		RedTint: 0.05
+		GreenTint: 0.05
+		BlueTint: 0.01
+
+INGALITE:
+	Inherits: GALITE
+
+INGALITE_2:
+	Inherits: GALITE
+
+INGALITE_3:
+	Inherits: GALITE
+
+NEGLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-black-name
+	TerrainLightSource:
+		Range: 13c688
+		Intensity: -0.15
+		RedTint: 0.03
+		GreenTint: 0.04
+		BlueTint: 0.04
+
+REDLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-red-name
+	TerrainLightSource:
+		Range: 15c640
+		Intensity: 0.01
+		RedTint: 1.5
+		GreenTint: 0.01
+		BlueTint: 0.01
+
+INREDLMP:
+	Inherits: REDLAMP
+
+NEGRED:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-cyan-name
+	TerrainLightSource:
+		Range: 15c640
+		Intensity: -0.05
+		RedTint: -1.5
+		GreenTint: 0.01
+		BlueTint: 0.01
+
+GRENLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-green-name
+	TerrainLightSource:
+		Range: 15c640
+		Intensity: 0.01
+		RedTint: 0.01
+		GreenTint: 1.5
+		BlueTint: 0.01
+
+INGRNLMP:
+	Inherits: GRENLAMP
+
+BLUELAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-blue-name
+	TerrainLightSource:
+		Range: 15c640
+		Intensity: 0.01
+		RedTint: 0.01
+		GreenTint: 0.01
+		BlueTint: 0.7
+
+INBLULMP:
+	Inherits: BLUELAMP
+
+YELWLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-yellow-name
+	TerrainLightSource:
+		Range: 15c640
+		Intensity: 0.01
+		RedTint: 1.5
+		GreenTint: 1.5
+		BlueTint: 0.01
+
+INYELWLAMP:
+	Inherits: YELWLAMP
+
+INORANLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-orange-name
+	TerrainLightSource:
+		Range: 11c736
+		Intensity: 0.01
+		RedTint: 2.0
+		GreenTint: 1.4
+		BlueTint: 0.3
+
+PURPLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-purple-name
+	TerrainLightSource:
+		Range: 11c736
+		Intensity: 0.01
+		RedTint: 2.0
+		GreenTint: 0.01
+		BlueTint: 2.0
+
+INPURPLAMP:
+	Inherits: PURPLAMP
+
+TEMMORLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-morning-temp-name
+	TerrainLightSource:
+		Range: 11c736
+		Intensity: 0.01
+		RedTint: 0.78
+		GreenTint: 0.4
+		BlueTint: 0.01
+
+TEMDAYLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-day-temp-name
+	TerrainLightSource:
+		Range: 11c736
+		Intensity: 0.01
+		RedTint: 0.7
+		GreenTint: 0.3
+		BlueTint: 0.01
+
+TEMDUSLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-dusk-temp-name
+	TerrainLightSource:
+		Range: 11c736
+		Intensity: 0.01
+		RedTint: 0.78
+		GreenTint: 0.4
+		BlueTint: 0.01
+
+TEMNITLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-night-temp-name
+	TerrainLightSource:
+		Range: 11c736
+		Intensity: 0.01
+		RedTint: 0.7
+		GreenTint: 0.6
+		BlueTint: 0.01
+
+SNOMORLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-morning-snow-name
+	TerrainLightSource:
+		Range: 13c688
+		Intensity: 0.01
+		RedTint: 0.1
+		GreenTint: 0.1
+		BlueTint: 0.01
+
+SNODAYLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-day-snow-name
+	TerrainLightSource:
+		Range: 13c688
+		Intensity: 0.005
+		RedTint: 0.25
+		GreenTint: 0.35
+		BlueTint: 0.02
+
+SNODUSLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-dusk-snow-name
+	TerrainLightSource:
+		Range: 13c688
+		Intensity: 0.005
+		RedTint: 0.3
+		GreenTint: 0.4
+		BlueTint: 0.01
+
+SNONITLAMP:
+	Inherits: ^LampPost
+	EditorOnlyTooltip:
+		Name: actor-galite-dusk-night-name
+	TerrainLightSource:
+		Range: 11c736
+		Intensity: 0.01
+		RedTint: 0.15
+		GreenTint: 0.25
+		BlueTint: 0.05

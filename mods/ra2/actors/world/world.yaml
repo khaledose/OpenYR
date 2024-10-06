@@ -81,7 +81,9 @@ World:
 		Ratio: 5
 		Interval: 50
 		Palette: effect
+	BridgesManager:
 	BridgeLayer:
+	ElevatedBridgeLayer:
 	WarheadDebugOverlay:
 	ExitsDebugOverlayManager:
 	CustomTerrainDebugOverlay:
@@ -106,6 +108,7 @@ World:
 	SpawnStartingUnits:
 		DropdownDisplayOrder: 1
 	PathFinder:
+	SyncDeploy:
 	ValidateOrder:
 	DebugPauseState:
 	RadarPings:
@@ -139,3 +142,4 @@ World:
 		TerrainFlashImage: moveflsh
 		TerrainFlashSequence: idle
 		TerrainFlashPalette: moveflash
+	WithWorldMoveSound:

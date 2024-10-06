@@ -19,5 +19,5 @@ gapowr:
 		Sequence: idle-glow
 		# PauseOnCondition: chronodisable
 		RequiresCondition: !build-incomplete
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: PowerPlantExplosion

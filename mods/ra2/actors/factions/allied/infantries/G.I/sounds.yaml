@@ -1,0 +1,7 @@
+e1:
+	DefaultVariant: .wav
+	Notifications:
+		Deploying: igidepa
+			InterruptType: Interrupt
+		Undeploying: igidepb
+			InterruptType: Interrupt

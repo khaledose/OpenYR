@@ -1,4 +1,5 @@
 ﻿using OpenRA.Mods.Cnc.UtilityCommands;
+using OpenRA.Mods.Common.FileFormats;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
@@ -152,6 +153,10 @@ public class ImportRa2MapCommand : ImportGen2MapCommand, IUtilityCommand
 		{ 0xEA, "lobrdb_r_nw" }, // lobrdb2
 		{ 0xEB, "lobrdb_r_ne" }, // lobrdb3
 		{ 0xEC, "lobrdb_r_sw" }, // lobrdb4
+
+		// Wooden Elevated Bridges
+		{ 0xED, "bridgb1" },
+		{ 0xEE, "bridgb2" },
 
 		// Other
 		{ 0xF0, "cakrmw" }, // kremlin walls
@@ -345,11 +350,59 @@ public class ImportRa2MapCommand : ImportGen2MapCommand, IUtilityCommand
 
 	protected override string[] LampActors { get; } =
 	{
-		"GALITE", "INGALITE", "NEGLAMP", "REDLAMP", "NEGRED", "GRENLAMP", "BLUELAMP", "YELWLAMP",
-		"INYELWLAMP", "PURPLAMP", "INPURPLAMP", "INORANLAMP", "INGRNLMP", "INREDLMP", "INBLULMP"
+		"GALITE", "INGALITE", "INGALITE_2", "INGALITE_3", "NEGLAMP", "REDLAMP", "NEGRED", "GRENLAMP", "BLUELAMP", "YELWLAMP",
+		"INYELWLAMP", "PURPLAMP", "INPURPLAMP", "INORANLAMP", "INGRNLMP", "INREDLMP", "INBLULMP",
+		"TEMMORLAMP", "TEMDAYLAMP", "TEMDUSLAMP", "TEMNITLAMP", "SNOMORLAMP", "SNODAYLAMP",
+		"SNODUSLAMP", "SNONITLAMP"
 	};
 
 	protected override string[] CreepActors { get; } = Array.Empty<string>();
 
 	#endregion
+
+	protected override void ReadLamps(Map map, IniFile file)
+	{
+		var lightingTypes = new Dictionary<string, string>()
+			{
+				{ "LightIntensity", "Intensity" },
+				{ "LightRedTint", "RedTint" },
+				{ "LightGreenTint", "GreenTint" },
+				{ "LightBlueTint", "BlueTint" },
+			};
+
+		var nodes = new List<MiniYamlNode>();
+		foreach (var lamp in LampActors)
+		{
+			var lightingSection = file.GetSection(lamp, true);
+			var lightingNodes = new List<MiniYamlNode>();
+
+			foreach (var kv in lightingSection)
+			{
+				if (kv.Key == "LightVisibility")
+				{
+					// Convert leptons to WDist
+					var visibility = FieldLoader.GetValue<int>(kv.Key, kv.Value);
+					visibility = (visibility == 0) ? 1 : visibility;
+					lightingNodes.Add(new MiniYamlNode("Range", FieldSaver.FormatValue(new WDist(visibility * 4))));
+				}
+				else if (lightingTypes.TryGetValue(kv.Key, out var lightingType))
+				{
+					// Some maps use "," instead of "."!
+					var value = FieldLoader.GetValue<float>(kv.Key, kv.Value.Replace(',', '.'));
+					lightingNodes.Add(new MiniYamlNode(lightingType, FieldSaver.FormatValue(value)));
+				}
+			}
+
+			if (lightingNodes.Count > 0)
+			{
+				nodes.Add(new MiniYamlNode(lamp, new MiniYaml("", new[]
+				{
+						new MiniYamlNode("TerrainLightSource", new MiniYaml("", lightingNodes))
+					})));
+			}
+		}
+
+		map.RuleDefinitions = map.RuleDefinitions.WithNodesAppended(nodes);
+	}
+
 }

@@ -1,0 +1,9 @@
+TugVoice:
+	Inherits: ShipVoice
+	Voices:
+		Select: gtugboaa gtugboab
+
+CruiseVoice:
+	Inherits: ShipVoice
+	Voices:
+		Select: gship1a

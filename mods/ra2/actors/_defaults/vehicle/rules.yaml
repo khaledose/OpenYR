@@ -5,7 +5,6 @@
 	Inherits@3: ^VehicleDamagedEffects
 	Inherits@4: ^MachineShopRepair
 	Buildable:
-		Queue: Vehicle
 		BuildDurationModifier: 100
 	Mobile:
 		Voice: Move
@@ -13,7 +12,7 @@
 		TurnSpeed: 20
 		Locomotor: wheeled
 		TerrainOrientationAdjustmentMargin: 256
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: VehicleExplosion
 		EmptyWeapon: VehicleExplosion
 		DeathTypes: NonTemporal
@@ -21,10 +20,34 @@
 		TargetTypes: Ground, Vehicle, DroneInfection
 	Guardable:
 
+^CivilianVehicle:
+	Inherits: ^Vehicle
+	Selectable:
+		Bounds: 1544, 2509, 0, -289
+	Health:
+		HP: 10000
+	Armor:
+		Type: Light
+	Valued:
+		Cost: 0
+	DeliversCash:
+		Payload: 100
+		Voice: Move
+	Mobile:
+		Speed: 120
+	RevealsShroud:
+		Range: 8c0
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: CarVoice
+	MapEditorData:
+		Categories: Vehicle - Civilian
+
 ^ConstructionVehicle:
 	Inherits: ^Vehicle
 	Inherits@1: ^LowPrioritySelectionMode
 	Buildable:
+		Queue: Vehicle
 		Description: meta-constructionvehicle.description
 		BuildPaletteOrder: 50
 	Selectable:
@@ -60,8 +83,9 @@
 ^MinerVehicle:
 	Inherits: ^Vehicle
 	Inherits@SELECTION_MODE: ^LowPrioritySelectionMode
-	Inherits@SELFHEALING: ^SelfHealing
+	Inherits@SELFHEALING: ^SelfHealed
 	Buildable:
+		Queue: Vehicle
 		BuildPaletteOrder: 10
 	Selectable:
 		Priority: 7
@@ -97,7 +121,7 @@
 	WithStoresResourcesPipsDecoration:
 		Image: small-color-pips
 		Margin: 4, 3
-		Palette: ra
+		Palette: pips
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 5

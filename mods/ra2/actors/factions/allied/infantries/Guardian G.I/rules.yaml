@@ -1,7 +1,7 @@
 ggi:
-	Inherits: ^DeployableInfantry
-	Inherits@VETERAN: ^InfantryPromotable
-	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Inherits@1: ^CoreDeployableInfantry
+	Inherits@2: ^InfantryPromotable
+	Inherits@3: ^FeedbackOnDamage
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.allies, ~techlevel.2
@@ -21,8 +21,6 @@ ggi:
 		Range: 6c0
 	Tooltip:
 		Name: actor-ggi.name
-	Tooltip@NoRow:
-		Name: actor-ggi.name
 	Armament@primary:
 		Weapon: M60
 		RequiresCondition: !rank-elite && undeployed
@@ -41,8 +39,5 @@ ggi:
 		Turret: deploy
 		LocalOffset: 480,64,992
 		RequiresCondition: rank-elite && deployed
-	GrantConditionOnDeploy:
-		DeploySounds: iggidepa.wav
-		UndeploySounds: iggidepa.wav
 	Voiced:
 		VoiceSet: GGIVoice

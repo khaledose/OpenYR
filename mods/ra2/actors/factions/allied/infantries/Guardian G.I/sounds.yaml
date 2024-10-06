@@ -1,0 +1,7 @@
+ggi:
+	DefaultVariant: .wav
+	Notifications:
+		Deploying: iggidepa
+			InterruptType: Interrupt
+		Undeploying: iggidepa
+			InterruptType: Interrupt

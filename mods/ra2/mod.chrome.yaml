@@ -1,6 +1,9 @@
 Chrome:
 	ra2|chrome/chrome.yaml
 
+Cursors:
+	ra2|chrome/cursors.yaml
+
 ChromeLayout:
 	ra2|chrome/layouts/assetbrowser.yaml
 	ra2|chrome/layouts/ingame-player.yaml

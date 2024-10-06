@@ -1,0 +1,43 @@
+^Drill:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: -1, -16
+	idle:
+		ShadowStart: 11
+	active:
+		Start: 1
+		Length: 10
+		ShadowStart: 12
+		Tick: 160
+
+^Tree:
+	Inherits: ^NoIcon
+	idle:
+		ShadowStart: 1
+
+^Rock:
+	Inherits: ^NoIcon
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+
+^Flag:
+	Inherits: ^NoIcon
+	Defaults:
+		Offset: 0,-15
+	idle:
+		ShadowStart: 3
+	idle-anim:
+		Length: 16
+		ShadowStart: 16
+
+^Palette:
+	Defaults:
+		Offset: 0, -15
+
+^Bridge:
+	Defaults:
+		ZOffset: -1c511
+		Start: 1
+		ZRamp: 1
+		Offset: 0, 0, 0.5

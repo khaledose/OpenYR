@@ -1,4 +1,4 @@
-^GivesFeedbackOnDamage:
+^FeedbackOnDamage:
 	GrantConditionOnDamageState@feedback:
 		Condition: feedback
 		ValidDamageStates: Critical
@@ -16,7 +16,7 @@
 		Types: chevron-veteran
 		Prerequisites: barracks.infiltrated
 
-^HospitalHealing:
+^HealedByHospital:
 	ChangesHealth@HOSPITAL:
 		PercentageStep: 1
 		Delay: 100
@@ -33,11 +33,12 @@
 		Condition: heal
 		Prerequisites: cahosp
 
-^Wanderer:
-	Wanders:
-		MinMoveDelay: 150
-		MaxMoveDelay: 750
+^DogImmune:
+	Targetable@DOGIMMUNITY:
+		TargetTypes: DogImmune
 
-^Panicker:
-	ScaredyCat:
-		AttackPanicChance: 0
+^TransportableInfantry:
+	Passenger:
+		CargoType: Infantry
+		Weight: 1
+		Voice: Move

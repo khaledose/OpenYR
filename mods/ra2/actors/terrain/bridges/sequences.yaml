@@ -1,0 +1,600 @@
+cabhut:
+	Inherits: ^Prop
+	Defaults:
+		Filename: cabhut.shp
+
+^ConcreteXBridge:
+	damaged-idle:
+		Filename: lobrdb07.tem
+		TilesetFilenames:
+			SNOW: lobrdb07.sno
+			DESERT: lobrdb07.des
+			URBAN: lobrdb07.urb
+			NEWURBAN: lobrdb07.ubn
+			LUNAR: lobrdb07.lun
+	damaged-prev-idle:
+		Filename: lobrdb05.tem
+		TilesetFilenames:
+			SNOW: lobrdb05.sno
+			DESERT: lobrdb05.des
+			URBAN: lobrdb05.urb
+			NEWURBAN: lobrdb05.ubn
+			LUNAR: lobrdb05.lun
+	damaged-next-idle:
+		Filename: lobrdb06.tem
+		TilesetFilenames:
+			SNOW: lobrdb06.sno
+			DESERT: lobrdb06.des
+			URBAN: lobrdb06.urb
+			NEWURBAN: lobrdb06.ubn
+			LUNAR: lobrdb06.lun
+	dead-prev-idle:
+		Filename: lobrdb08.tem
+		TilesetFilenames:
+			SNOW: lobrdb08.sno
+			DESERT: lobrdb08.des
+			URBAN: lobrdb08.urb
+			NEWURBAN: lobrdb08.ubn
+			LUNAR: lobrdb08.lun
+	dead-next-idle:
+		Filename: lobrdb09.tem
+		TilesetFilenames:
+			SNOW: lobrdb09.sno
+			DESERT: lobrdb09.des
+			URBAN: lobrdb09.urb
+			NEWURBAN: lobrdb09.ubn
+			LUNAR: lobrdb09.lun
+
+^ConcreteYBridge:
+	damaged-idle:
+		Filename: lobrdb16.tem
+		TilesetFilenames:
+			SNOW: lobrdb16.sno
+			DESERT: lobrdb16.des
+			URBAN: lobrdb16.urb
+			NEWURBAN: lobrdb16.ubn
+			LUNAR: lobrdb16.lun
+	damaged-prev-idle:
+		Filename: lobrdb15.tem
+		TilesetFilenames:
+			SNOW: lobrdb15.sno
+			DESERT: lobrdb15.des
+			URBAN: lobrdb15.urb
+			NEWURBAN: lobrdb15.ubn
+			LUNAR: lobrdb15.lun
+	damaged-next-idle:
+		Filename: lobrdb14.tem
+		TilesetFilenames:
+			SNOW: lobrdb14.sno
+			DESERT: lobrdb14.des
+			URBAN: lobrdb14.urb
+			NEWURBAN: lobrdb14.ubn
+			LUNAR: lobrdb14.lun
+	dead-prev-idle:
+		Filename: lobrdb18.tem
+		TilesetFilenames:
+			SNOW: lobrdb18.sno
+			DESERT: lobrdb18.des
+			URBAN: lobrdb18.urb
+			NEWURBAN: lobrdb18.ubn
+			LUNAR: lobrdb18.lun
+	dead-next-idle:
+		Filename: lobrdb17.tem
+		TilesetFilenames:
+			SNOW: lobrdb17.sno
+			DESERT: lobrdb17.des
+			URBAN: lobrdb17.urb
+			NEWURBAN: lobrdb17.ubn
+			LUNAR: lobrdb17.lun
+
+^WoodenXBridge:
+	damaged-idle:
+		Filename: lobrdg07.tem
+		TilesetFilenames:
+			SNOW: lobrdg07.sno
+			DESERT: lobrdg07.des
+			URBAN: lobrdg07.urb
+			NEWURBAN: lobrdg07.ubn
+			LUNAR: lobrdg07.lun
+	damaged-prev-idle:
+		Filename: lobrdg05.tem
+		TilesetFilenames:
+			SNOW: lobrdg05.sno
+			DESERT: lobrdg05.des
+			URBAN: lobrdg05.urb
+			NEWURBAN: lobrdg05.ubn
+			LUNAR: lobrdg05.lun
+	damaged-next-idle:
+		Filename: lobrdg06.tem
+		TilesetFilenames:
+			SNOW: lobrdg06.sno
+			DESERT: lobrdg06.des
+			URBAN: lobrdg06.urb
+			NEWURBAN: lobrdg06.ubn
+			LUNAR: lobrdg06.lun
+	dead-prev-idle:
+		Filename: lobrdg08.tem
+		TilesetFilenames:
+			SNOW: lobrdg08.sno
+			DESERT: lobrdg08.des
+			URBAN: lobrdg08.urb
+			NEWURBAN: lobrdg08.ubn
+			LUNAR: lobrdg08.lun
+	dead-next-idle:
+		Filename: lobrdg09.tem
+		TilesetFilenames:
+			SNOW: lobrdg09.sno
+			DESERT: lobrdg09.des
+			URBAN: lobrdg09.urb
+			NEWURBAN: lobrdg09.ubn
+			LUNAR: lobrdg09.lun
+
+^WoodenYBridge:
+	damaged-idle:
+		Filename: lobrdg16.tem
+		TilesetFilenames:
+			SNOW: lobrdg16.sno
+			DESERT: lobrdg16.des
+			URBAN: lobrdg16.urb
+			NEWURBAN: lobrdg16.ubn
+			LUNAR: lobrdg16.lun
+	damaged-prev-idle:
+		Filename: lobrdg15.tem
+		TilesetFilenames:
+			SNOW: lobrdg15.sno
+			DESERT: lobrdg15.des
+			URBAN: lobrdg15.urb
+			NEWURBAN: lobrdg15.ubn
+			LUNAR: lobrdg15.lun
+	damaged-next-idle:
+		Filename: lobrdg14.tem
+		TilesetFilenames:
+			SNOW: lobrdg14.sno
+			DESERT: lobrdg14.des
+			URBAN: lobrdg14.urb
+			NEWURBAN: lobrdg14.ubn
+			LUNAR: lobrdg14.lun
+	dead-prev-idle:
+		Filename: lobrdg18.tem
+		TilesetFilenames:
+			SNOW: lobrdg18.sno
+			DESERT: lobrdg18.des
+			URBAN: lobrdg18.urb
+			NEWURBAN: lobrdg18.ubn
+			LUNAR: lobrdg18.lun
+	dead-next-idle:
+		Filename: lobrdg17.tem
+		TilesetFilenames:
+			SNOW: lobrdg17.sno
+			DESERT: lobrdg17.des
+			URBAN: lobrdg17.urb
+			NEWURBAN: lobrdg17.ubn
+			LUNAR: lobrdg17.lun
+
+## Concrete Low Bridges
+
+# X Ramps
+
+lobrdb21:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdb21.tem
+		TilesetFilenames:
+			SNOW: lobrdb21.sno
+			DESERT: lobrdb21.des
+			URBAN: lobrdb21.urb
+			NEWURBAN: lobrdb21.ubn
+			LUNAR: lobrdb21.lun
+	damaged-next-idle:
+		Filename: lobrdb22.tem
+		TilesetFilenames:
+			SNOW: lobrdb22.sno
+			DESERT: lobrdb22.des
+			URBAN: lobrdb22.urb
+			NEWURBAN: lobrdb22.ubn
+			LUNAR: lobrdb22.lun
+	dead-next-idle:
+		Filename: lobrdb22.tem
+		TilesetFilenames:
+			SNOW: lobrdb22.sno
+			DESERT: lobrdb22.des
+			URBAN: lobrdb22.urb
+			NEWURBAN: lobrdb22.ubn
+			LUNAR: lobrdb22.lun
+
+lobrdb19:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdb19.tem
+		TilesetFilenames:
+			SNOW: lobrdb19.sno
+			DESERT: lobrdb19.des
+			URBAN: lobrdb19.urb
+			NEWURBAN: lobrdb19.ubn
+			LUNAR: lobrdb19.lun
+	damaged-next-idle:
+		Filename: lobrdb20.tem
+		TilesetFilenames:
+			SNOW: lobrdb20.sno
+			DESERT: lobrdb20.des
+			URBAN: lobrdb20.urb
+			NEWURBAN: lobrdb20.ubn
+			LUNAR: lobrdb20.lun
+	dead-next-idle:
+		Filename: lobrdb20.tem
+		TilesetFilenames:
+			SNOW: lobrdb20.sno
+			DESERT: lobrdb20.des
+			URBAN: lobrdb20.urb
+			NEWURBAN: lobrdb20.ubn
+			LUNAR: lobrdb20.lun
+
+# X Segments
+
+lobrdb01:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteXBridge
+	idle:
+		Filename: lobrdb01.tem
+		TilesetFilenames:
+			SNOW: lobrdb01.sno
+			DESERT: lobrdb01.des
+			URBAN: lobrdb01.urb
+			NEWURBAN: lobrdb01.ubn
+			LUNAR: lobrdb01.lun
+
+lobrdb02:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteXBridge
+	idle:
+		Filename: lobrdb02.tem
+		TilesetFilenames:
+			SNOW: lobrdb02.sno
+			DESERT: lobrdb02.des
+			URBAN: lobrdb02.urb
+			NEWURBAN: lobrdb02.ubn
+			LUNAR: lobrdb02.lun
+
+lobrdb03:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteXBridge
+	idle:
+		Filename: lobrdb03.tem
+		TilesetFilenames:
+			SNOW: lobrdb03.sno
+			DESERT: lobrdb03.des
+			URBAN: lobrdb03.urb
+			NEWURBAN: lobrdb03.ubn
+			LUNAR: lobrdb03.lun
+
+lobrdb04:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteXBridge
+	idle:
+		Filename: lobrdb04.tem
+		TilesetFilenames:
+			SNOW: lobrdb04.sno
+			DESERT: lobrdb04.des
+			URBAN: lobrdb04.urb
+			NEWURBAN: lobrdb04.ubn
+			LUNAR: lobrdb04.lun
+
+# Y Ramps
+
+lobrdb25:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdb25.tem
+		TilesetFilenames:
+			SNOW: lobrdb25.sno
+			DESERT: lobrdb25.des
+			URBAN: lobrdb25.urb
+			NEWURBAN: lobrdb25.ubn
+			LUNAR: lobrdb25.lun
+	damaged-next-idle:
+		Filename: lobrdb26.tem
+		TilesetFilenames:
+			SNOW: lobrdb26.sno
+			DESERT: lobrdb26.des
+			URBAN: lobrdb26.urb
+			NEWURBAN: lobrdb26.ubn
+			LUNAR: lobrdb26.lun
+	dead-next-idle:
+		Filename: lobrdb26.tem
+		TilesetFilenames:
+			SNOW: lobrdb26.sno
+			DESERT: lobrdb26.des
+			URBAN: lobrdb26.urb
+			NEWURBAN: lobrdb26.ubn
+			LUNAR: lobrdb26.lun
+
+lobrdb23:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdb23.tem
+		TilesetFilenames:
+			SNOW: lobrdb23.sno
+			DESERT: lobrdb23.des
+			URBAN: lobrdb23.urb
+			NEWURBAN: lobrdb23.ubn
+			LUNAR: lobrdb23.lun
+	damaged-next-idle:
+		Filename: lobrdb24.tem
+		TilesetFilenames:
+			SNOW: lobrdb24.sno
+			DESERT: lobrdb24.des
+			URBAN: lobrdb24.urb
+			NEWURBAN: lobrdb24.ubn
+			LUNAR: lobrdb24.lun
+	dead-next-idle:
+		Filename: lobrdb24.tem
+		TilesetFilenames:
+			SNOW: lobrdb24.sno
+			DESERT: lobrdb24.des
+			URBAN: lobrdb24.urb
+			NEWURBAN: lobrdb24.ubn
+			LUNAR: lobrdb24.lun
+
+# Y Segments
+
+lobrdb10:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteYBridge
+	idle:
+		Filename: lobrdb10.tem
+		TilesetFilenames:
+			SNOW: lobrdb10.sno
+			DESERT: lobrdb10.des
+			URBAN: lobrdb10.urb
+			NEWURBAN: lobrdb10.ubn
+			LUNAR: lobrdb10.lun
+
+lobrdb11:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteYBridge
+	idle:
+		Filename: lobrdb11.tem
+		TilesetFilenames:
+			SNOW: lobrdb11.sno
+			DESERT: lobrdb11.des
+			URBAN: lobrdb11.urb
+			NEWURBAN: lobrdb11.ubn
+			LUNAR: lobrdb11.lun
+
+lobrdb12:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteYBridge
+	idle:
+		Filename: lobrdb12.tem
+		TilesetFilenames:
+			SNOW: lobrdb12.sno
+			DESERT: lobrdb12.des
+			URBAN: lobrdb12.urb
+			NEWURBAN: lobrdb12.ubn
+			LUNAR: lobrdb12.lun
+
+lobrdb13:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^ConcreteYBridge
+	idle:
+		Filename: lobrdb13.tem
+		TilesetFilenames:
+			SNOW: lobrdb13.sno
+			DESERT: lobrdb13.des
+			URBAN: lobrdb13.urb
+			NEWURBAN: lobrdb13.ubn
+			LUNAR: lobrdb13.lun
+
+# Wooden Low Bridges
+
+# X Ramps
+
+lobrdg21:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdg21.tem
+		TilesetFilenames:
+			SNOW: lobrdg21.sno
+			DESERT: lobrdg21.des
+			URBAN: lobrdg21.urb
+			NEWURBAN: lobrdg21.ubn
+			LUNAR: lobrdg21.lun
+	damaged-next-idle:
+		Filename: lobrdg22.tem
+		TilesetFilenames:
+			SNOW: lobrdg22.sno
+			DESERT: lobrdg22.des
+			URBAN: lobrdg22.urb
+			NEWURBAN: lobrdg22.ubn
+			LUNAR: lobrdg22.lun
+	dead-next-idle:
+		Filename: lobrdg22.tem
+		TilesetFilenames:
+			SNOW: lobrdg22.sno
+			DESERT: lobrdg22.des
+			URBAN: lobrdg22.urb
+			NEWURBAN: lobrdg22.ubn
+			LUNAR: lobrdg22.lun
+
+lobrdg19:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdg19.tem
+		TilesetFilenames:
+			SNOW: lobrdg19.sno
+			DESERT: lobrdg19.des
+			URBAN: lobrdg19.urb
+			NEWURBAN: lobrdg19.ubn
+			LUNAR: lobrdg19.lun
+	damaged-prev-idle:
+		Filename: lobrdg20.tem
+		TilesetFilenames:
+			SNOW: lobrdg20.sno
+			DESERT: lobrdg20.des
+			URBAN: lobrdg20.urb
+			NEWURBAN: lobrdg20.ubn
+			LUNAR: lobrdg20.lun
+	dead-prev-idle:
+		Filename: lobrdg20.tem
+		TilesetFilenames:
+			SNOW: lobrdg20.sno
+			DESERT: lobrdg20.des
+			URBAN: lobrdg20.urb
+			NEWURBAN: lobrdg20.ubn
+			LUNAR: lobrdg20.lun
+
+# X Segments
+
+lobrdg01:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenXBridge
+	idle:
+		Filename: lobrdg01.tem
+		TilesetFilenames:
+			SNOW: lobrdg01.sno
+			DESERT: lobrdg01.des
+			URBAN: lobrdg01.urb
+			NEWURBAN: lobrdg01.ubn
+			LUNAR: lobrdg01.lun
+
+lobrdg02:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenXBridge
+	idle:
+		Filename: lobrdg02.tem
+		TilesetFilenames:
+			SNOW: lobrdg02.sno
+			DESERT: lobrdg02.des
+			URBAN: lobrdg02.urb
+			NEWURBAN: lobrdg02.ubn
+			LUNAR: lobrdg02.lun
+
+lobrdg03:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenXBridge
+	idle:
+		Filename: lobrdg03.tem
+		TilesetFilenames:
+			SNOW: lobrdg03.sno
+			DESERT: lobrdg03.des
+			URBAN: lobrdg03.urb
+			NEWURBAN: lobrdg03.ubn
+			LUNAR: lobrdg03.lun
+
+lobrdg04:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenXBridge
+	idle:
+		Filename: lobrdg04.tem
+		TilesetFilenames:
+			SNOW: lobrdg04.sno
+			DESERT: lobrdg04.des
+			URBAN: lobrdg04.urb
+			NEWURBAN: lobrdg04.ubn
+			LUNAR: lobrdg04.lun
+
+# Y Ramps
+
+lobrdg25:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdg25.tem
+		TilesetFilenames:
+			SNOW: lobrdg25.sno
+			DESERT: lobrdg25.des
+			URBAN: lobrdg25.urb
+			NEWURBAN: lobrdg25.ubn
+			LUNAR: lobrdg25.lun
+	damaged-prev-idle:
+		Filename: lobrdg26.tem
+		TilesetFilenames:
+			SNOW: lobrdg26.sno
+			DESERT: lobrdg26.des
+			URBAN: lobrdg26.urb
+			NEWURBAN: lobrdg26.ubn
+			LUNAR: lobrdg26.lun
+	dead-prev-idle:
+		Filename: lobrdg26.tem
+		TilesetFilenames:
+			SNOW: lobrdg26.sno
+			DESERT: lobrdg26.des
+			URBAN: lobrdg26.urb
+			NEWURBAN: lobrdg26.ubn
+			LUNAR: lobrdg26.lun
+
+lobrdg23:
+	Inherits: ^Bridge
+	idle:
+		Filename: lobrdg23.tem
+		TilesetFilenames:
+			SNOW: lobrdg23.sno
+			DESERT: lobrdg23.des
+			URBAN: lobrdg23.urb
+			NEWURBAN: lobrdg23.ubn
+			LUNAR: lobrdg23.lun
+	damaged-next-idle:
+		Filename: lobrdg24.tem
+		TilesetFilenames:
+			SNOW: lobrdg24.sno
+			DESERT: lobrdg24.des
+			URBAN: lobrdg24.urb
+			NEWURBAN: lobrdg24.ubn
+			LUNAR: lobrdg24.lun
+	dead-next-idle:
+		Filename: lobrdg24.tem
+		TilesetFilenames:
+			SNOW: lobrdg24.sno
+			DESERT: lobrdg24.des
+			URBAN: lobrdg24.urb
+			NEWURBAN: lobrdg24.ubn
+			LUNAR: lobrdg24.lun
+
+# Y Segments
+
+lobrdg10:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenYBridge
+	idle:
+		Filename: lobrdg10.tem
+		TilesetFilenames:
+			SNOW: lobrdg10.sno
+			DESERT: lobrdg10.des
+			URBAN: lobrdg10.urb
+			NEWURBAN: lobrdg10.ubn
+			LUNAR: lobrdg10.lun
+
+lobrdg11:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenYBridge
+	idle:
+		Filename: lobrdg11.tem
+		TilesetFilenames:
+			SNOW: lobrdg11.sno
+			DESERT: lobrdg11.des
+			URBAN: lobrdg11.urb
+			NEWURBAN: lobrdg11.ubn
+			LUNAR: lobrdg11.lun
+
+lobrdg12:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenYBridge
+	idle:
+		Filename: lobrdg12.tem
+		TilesetFilenames:
+			SNOW: lobrdg12.sno
+			DESERT: lobrdg12.des
+			URBAN: lobrdg12.urb
+			NEWURBAN: lobrdg12.ubn
+			LUNAR: lobrdg12.lun
+
+lobrdg13:
+	Inherits: ^Bridge
+	Inherits@DAMAGED: ^WoodenYBridge
+	idle:
+		Filename: lobrdg13.tem
+		TilesetFilenames:
+			SNOW: lobrdg13.sno
+			DESERT: lobrdg13.des
+			URBAN: lobrdg13.urb
+			NEWURBAN: lobrdg13.ubn
+			LUNAR: lobrdg13.lun

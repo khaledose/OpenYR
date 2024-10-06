@@ -4,10 +4,3 @@ smcv:
 		IntoActor: nacnst
 	Voiced:
 		VoiceSet: SovietConstructionVehicleVoice
-
-smcv.colorpicker:
-	Inherits: ^ColorPicker
-	RenderSprites:
-		Image: smcv
-	RenderVoxels:
-		Image: smcv

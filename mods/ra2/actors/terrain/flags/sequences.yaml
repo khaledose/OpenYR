@@ -1,0 +1,202 @@
+causfgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctusfgl.shp
+		TilesetFilenames:
+			SNOW: causfgl.shp
+			URBAN: cuusfgl.shp
+			NEWURBAN: cnusfgl.shp
+			DESERT: cdusfgl.shp
+			LUNAR: clusfgl.shp
+	idle-anim:
+		Filename: ctusfgl_a.shp
+		TilesetFilenames:
+			SNOW: causfgl_a.shp
+			URBAN: cuusfgl_a.shp
+			NEWURBAN: cnusfgl_a.shp
+			DESERT: cdusfgl_a.shp
+			LUNAR: clusfgl_a.shp
+
+cacufgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctcufgl.shp
+		TilesetFilenames:
+			SNOW: cacufgl.shp
+			URBAN: cucufgl.shp
+			NEWURBAN: cncufgl.shp
+			DESERT: cdcufgl.shp
+			LUNAR: clcufgl.shp
+	idle-anim:
+		Filename: ctcufgl_a.shp
+		TilesetFilenames:
+			SNOW: cacufgl_a.shp
+			URBAN: cucufgl_a.shp
+			NEWURBAN: cncufgl_a.shp
+			DESERT: cdcufgl_a.shp
+			LUNAR: clcufgl_a.shp
+
+cafrfgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctfrfgl.shp
+		TilesetFilenames:
+			SNOW: cafrfgl.shp
+			URBAN: cufrfgl.shp
+			NEWURBAN: cnfrfgl.shp
+			DESERT: cdfrfgl.shp
+			LUNAR: clfrfgl.shp
+	idle-anim:
+		Filename: ctfrfgl_a.shp
+		TilesetFilenames:
+			SNOW: cafrfgl_a.shp
+			URBAN: cufrfgl_a.shp
+			NEWURBAN: cnfrfgl_a.shp
+			DESERT: cdfrfgl_a.shp
+			LUNAR: clfrfgl_a.shp
+
+cagefgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctgefgl.shp
+		TilesetFilenames:
+			SNOW: cagefgl.shp
+			URBAN: cugefgl.shp
+			NEWURBAN: cngefgl.shp
+			DESERT: cdgefgl.shp
+			LUNAR: clgefgl.shp
+	idle-anim:
+		Filename: ctgefgl_a.shp
+		TilesetFilenames:
+			SNOW: cagefgl_a.shp
+			URBAN: cugefgl_a.shp
+			NEWURBAN: cngefgl_a.shp
+			DESERT: cdgefgl_a.shp
+			LUNAR: clgefgl_a.shp
+
+cairfgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctirfgl.shp
+		TilesetFilenames:
+			SNOW: cairfgl.shp
+			URBAN: cuirfgl.shp
+			NEWURBAN: cnirfgl.shp
+			DESERT: cdirfgl.shp
+			LUNAR: clirfgl.shp
+	idle-anim:
+		Filename: ctirfgl_a.shp
+		TilesetFilenames:
+			SNOW: cairfgl_a.shp
+			URBAN: cuirfgl_a.shp
+			NEWURBAN: cnirfgl_a.shp
+			DESERT: cdirfgl_a.shp
+			LUNAR: clirfgl_a.shp
+
+calbfgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctlbfgl.shp
+		TilesetFilenames:
+			SNOW: calbfgl.shp
+			URBAN: culbfgl.shp
+			NEWURBAN: cnlbfgl.shp
+			DESERT: cdlbfgl.shp
+			LUNAR: cllbfgl.shp
+	idle-anim:
+		Filename: ctlbfgl_a.shp
+		TilesetFilenames:
+			SNOW: calbfgl_a.shp
+			URBAN: culbfgl_a.shp
+			NEWURBAN: cnlbfgl_a.shp
+			DESERT: cdlbfgl_a.shp
+			LUNAR: cllbfgl_a.shp
+
+cankfgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctnkfgl.shp
+		TilesetFilenames:
+			SNOW: cankfgl.shp
+			URBAN: cunkfgl.shp
+			NEWURBAN: cnnkfgl.shp
+			DESERT: cdnkfgl.shp
+			LUNAR: clnkfgl.shp
+	idle-anim:
+		Filename: ctnkfgl_a.shp
+		TilesetFilenames:
+			SNOW: cankfgl_a.shp
+			URBAN: cunkfgl_a.shp
+			NEWURBAN: cnnkfgl_a.shp
+			DESERT: cdnkfgl_a.shp
+			LUNAR: clnkfgl_a.shp
+
+capofgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctusfgl.shp
+		TilesetFilenames:
+			SNOW: causfgl.shp
+			URBAN: cuusfgl.shp
+			NEWURBAN: cnusfgl.shp
+			DESERT: cdusfgl.shp
+			LUNAR: clusfgl.shp
+	idle-anim:
+		Filename: capofgl_a.shp
+
+carufgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctrufgl.shp
+		TilesetFilenames:
+			SNOW: carufgl.shp
+			URBAN: curufgl.shp
+			NEWURBAN: cnrufgl.shp
+			DESERT: cdrufgl.shp
+			LUNAR: clrufgl.shp
+	idle-anim:
+		Filename: ctrufgl_a.shp
+		TilesetFilenames:
+			SNOW: carufgl_a.shp
+			URBAN: curufgl_a.shp
+			NEWURBAN: cnrufgl_a.shp
+			DESERT: cdrufgl_a.shp
+			LUNAR: clrufgl_a.shp
+
+caskfgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctskfgl.shp
+		TilesetFilenames:
+			SNOW: caskfgl.shp
+			URBAN: cuskfgl.shp
+			NEWURBAN: cnskfgl.shp
+			DESERT: cdskfgl.shp
+			LUNAR: clskfgl.shp
+	idle-anim:
+		Filename: ctskfgl_a.shp
+		TilesetFilenames:
+			SNOW: caskfgl_a.shp
+			URBAN: cuskfgl_a.shp
+			NEWURBAN: cnskfgl_a.shp
+			DESERT: cdskfgl_a.shp
+			LUNAR: clskfgl_a.shp
+
+caukfgl:
+	Inherits: ^Flag
+	idle:
+		Filename: ctukfgl.shp
+		TilesetFilenames:
+			SNOW: caukfgl.shp
+			URBAN: cuukfgl.shp
+			NEWURBAN: cnukfgl.shp
+			DESERT: cdukfgl.shp
+			LUNAR: clukfgl.shp
+	idle-anim:
+		Filename: ctukfgl_a.shp
+		TilesetFilenames:
+			SNOW: caukfgl_a.shp
+			URBAN: cuukfgl_a.shp
+			NEWURBAN: cnukfgl_a.shp
+			DESERT: cdukfgl_a.shp
+			LUNAR: clukfgl_a.shp

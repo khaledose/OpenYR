@@ -1,0 +1,5 @@
+tug:
+	idle: local|tug
+
+cruise:
+	idle: local|cruise

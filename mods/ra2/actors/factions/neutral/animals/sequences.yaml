@@ -1,0 +1,152 @@
+cow:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Inherits@SHOOTER: ^AnimalAttack
+	Defaults:
+		Filename: conquer|cow.shp
+	stand:
+		ShadowStart: 116
+	run:
+		ShadowStart: 124
+	idle1:
+		ShadowStart: 172
+	idle2:
+		ShadowStart: 187
+	die1:
+		ShadowStart: 202
+	die2:
+		ShadowStart: 202
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+
+all:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Inherits@SHOOTER: ^AnimalAttack
+	Defaults:
+		Filename: conquer|all.shp
+	stand:
+		ShadowStart: 164
+	run:
+		ShadowStart: 172
+	shoot:
+		ShadowStart: 280
+	idle1:
+		ShadowStart: 220
+	idle2:
+		ShadowStart: 235
+	die1:
+		ShadowStart: 250
+	die2:
+		ShadowStart: 265
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+
+polarb:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Inherits@SHOOTER: ^AnimalAttack
+	Defaults:
+		Filename: conquer|polarb.shp
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+
+josh:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Inherits@SHOOTER: ^AnimalAttack
+	Defaults:
+		Filename: conquer|josh.shp
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+
+caml:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Inherits@SHOOTER: ^AnimalAttack
+	Defaults:
+		Filename: conqmd|caml.shp
+	cheer:
+		Length: 15
+		Start: 71
+	paradrop:
+		Length: 1
+		Start: 0
+
+dnoa:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Defaults:
+		Filename: conqmd|dnoa.shp
+	shoot:
+		Start: 116
+		Length: 13
+		Facings: 8
+	paradrop:
+		Start: 0
+		Length: 1
+
+dnob:
+	Inherits: ^BasicInfantry
+	Inherits@SHOOTER: ^AnimalAttack
+	Defaults:
+		Filename: conqmd|dnob.shp
+	stand:
+		Start: 0
+		Length: 6
+		Facings: 8
+	run:
+		Start: 48
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 96
+		Length: 40
+	idle2:
+		Start: 136
+		Length: 40
+	die1:
+		Start: 176
+		Length: 40
+	die2:
+		Start: 216
+		Length: 35
+
+^Dog:
+	Inherits: ^BasicInfantry
+	Inherits@DEATH: ^AnimalDeathAnimation
+	Inherits@SHOOTER: ^AnimalAttack
+	cheer:
+		Start: 164
+	paradrop:
+		Start: 11
+
+adog:
+	Inherits: ^Dog
+	Defaults:
+		Filename: conquer|adog.shp
+	icon:
+		Filename: cameo|adogicon.shp
+
+sdog:
+	Inherits: ^Dog
+	Defaults:
+		Filename: conquer|adog.shp
+	icon:
+		Filename: cameo|adogicon.shp

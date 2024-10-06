@@ -1,7 +1,7 @@
 e2:
-	Inherits: ^GroundInfantry
-	Inherits@VETERAN: ^InfantryPromotable
-	Inherits@FEEDBACK: ^GivesFeedbackOnDamage
+	Inherits@1: ^CoreSoldier
+	Inherits@2: ^InfantryPromotable
+	Inherits@3: ^FeedbackOnDamage
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~infantry.soviets, ~techlevel.1
@@ -20,8 +20,6 @@ e2:
 	RevealsShroud:
 		Range: 5c0
 	Tooltip:
-		Name: actor-e2.name
-	Tooltip@NoRow:
 		Name: actor-e2.name
 	Armament@primary:
 		Weapon: M1Carbine
